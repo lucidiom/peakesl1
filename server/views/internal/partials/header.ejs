@@ -1,0 +1,174 @@
+<header id="header-container">
+    <div id="header">
+        <div class="container">
+            <div class="left-side">
+                <div id="logo">
+                    <a href="/"><img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/logo.webp" alt=""></a>
+                </div>
+
+                <nav id="navigation">
+                    <ul id="responsive">
+                        <li><a href="/teachers/">
+                                <%= __('header.findTeacher') %>
+                            </a></li>
+                        <li><a href="/lessons/">
+                                <%= __('header.lessons') %>
+                            </a></li>
+                        <li><a href="/social-program/">Social Program</a></li>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </div>
+
+
+            <div class="right-side">
+
+
+
+
+                <div class="header-widget padding-right-0">
+                    <div class="header-notifications">
+                        <div class="header-messages">
+                            <a href="/messages/">
+                                <i class="icon-feather-mail"></i>
+                                <% if(unreadMsg> 0){ %><span class="header-not-nocount">&nbsp;</span>
+                                    <% } %>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="header-widget hide-on-mobile">
+                    <div class="header-notifications">
+
+                        <div class="header-notifications-trigger">
+                            <a href="#" id="notification-btn" class="notifications-header-icon"><i class="icon-feather-bell"></i>
+                                <% if (locals.notifications) { %>
+                                    <% if (notifications.length> 0) { %><span>
+                                            <%= notifications.length%>
+                                        </span>
+                                        <% } %>
+                                            <% } %>
+                            </a>
+                        </div>
+
+                        <!-- Dropdown -->
+                        <div class="header-notifications-dropdown">
+                            <div class="header-notifications-headline">
+                                <h4>
+                                    <%= __('header.notifications.headline') %>
+                                </h4>
+                                <button onclick="resetNotifications()" class="mark-as-read" title="<%= __('header.notifications.readAll') %>" data-tippy-placement="left">
+                                    <i class="icon-feather-check-square"></i>
+                                </button>
+                            </div>
+
+                            <div class="header-notifications-content">
+                                <div class="header-notifications-scroll" data-simplebar>
+                                    <ul id="notifications-container">
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <% if (user.visible==false || user.availability==0) { %>
+                    <div class="header-widget" id="become-a-teacher-btn">
+                        <a href="/settings-teacher/" class="button button-primary regteacher-btn">
+                            <%= __('header.becomeTeacher') %>
+                        </a>
+                    </div>
+                    <% } %>
+
+
+                        <div class="header-widget padding-left-5">
+                            <div class="header-notifications user-menu">
+                                <div class="header-notifications-trigger">
+                                    <a href="#">
+                                        <div class="user-avatar"><img src="/profilepicture/<%= user._id %>" alt=""></div>
+                                    </a>
+                                </div>
+
+                                <div class="header-notifications-dropdown">
+                                    <div class="user-status">
+                                        <div class="user-details">
+                                            <div class="user-avatar"><img src="/profilepicture/<%= user._id %>" alt=""></div>
+                                            <div class="user-name">
+                                                <span>
+                                                    <%= user.firstname %>
+                                                        <%= user.lastname %>
+                                                </span>
+                                                <small>
+                                                    <%= user.email %>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <ul class="user-menu-small-nav">
+                                        <li><a href="/balance/" id="header-balance"><i class="icon-line-awesome-money"> </i> <span>
+                                                    <%= __('header.freePoints',user.balance.toFixed(2)) %>
+                                                </span></a></li>
+
+                                        <li><a href="/settings"><i class="icon-feather-settings"></i>
+                                                <span>
+                                                    <%= __('header.settings') %>
+                                                </span></a>
+                                        </li>
+
+                                        <li class="user-menu-seperator"> </li>
+
+                                        <li class="subheadline">
+                                            <%= __('header.teacher-subheadline') %>
+                                        </li>
+                                        <% if (user.visible==true) { %>
+                                            <li><a id="header-profile-link" href="/teacher/<%= user.id %>/"><i class="icon-feather-user"> </i>
+                                                    <span>
+                                                        <%= __('header.profile') %>
+                                                    </span> </a> </li>
+                                            <% } %>
+                                                <li><a href="/settings-teacher/"><i class="icon-feather-settings"></i>
+                                                        <span>
+                                                            <%= __('header.teacherSettings') %>
+                                                        </span></a>
+                                                </li>
+
+                                                <li class="user-menu-seperator"> </li>
+
+
+                                                <li id="btn-logout">
+                                                    <form action="/logout" method="POST">
+                                                        <button href="#" type="submit">
+                                                            <span>
+                                                                <%= __('general.sign-out') %>
+                                                            </span>
+                                                        </button>
+                                                    </form>
+                                                </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <span class="mmenu-trigger">
+                            <button class="hamburger hamburger--collapse" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </span>
+
+            </div>
+
+        </div>
+    </div>
+</header>
+<div class="clearfix"></div>

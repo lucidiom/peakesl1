@@ -1,0 +1,118 @@
+<div class="dashboard-headline">
+    <h3>Apply as Teacher</h3>
+</div>
+
+
+
+<div class="row">
+    <div class="col-xl-8 col-lg-8 content-right-offset">
+
+
+        <!-- Hedaline -->
+        <div class="single-page-section">
+            <h3>Was bist du?</h3>
+
+            <!-- Billing Cycle Radios  -->
+            <div class="billing-cycle margin-top-25">
+
+                <!-- Radio -->
+                <div class="radio">
+                    <input id="radio-5" name="radio-payment-type" type="radio" checked>
+                    <label for="radio-5">
+                        <span class="radio-label"></span>
+                        Schüler / Student
+                        <span class="billing-cycle-details">
+                            <span class="regular-price-tag">15% Gebühren pro Unterrichtsstunde</span>
+                        </span>
+                    </label>
+                </div>
+
+                <!-- Radio -->
+                <div class="radio">
+                    <input id="radio-6" name="radio-payment-type" type="radio" disabled>
+                    <label for="radio-6" class="disabled"><span class="radio-label"></span>
+                        Professioneller Lehrer
+                        <span class="billing-cycle-details">
+                            <span class="regular-price-tag line-through" style="text-decoration: none;">demnächst</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="single-page-section">
+            <div class="submit-field">
+                <h3>Beschreibe kurz, wieso du Lehrer bei brainstr werden möchtest</h3>
+                <textarea id="aboutyou" cols="30" rows="5" class="with-border"></textarea>
+            </div>
+        </div>
+
+
+        <div class="single-page-section">
+            <h3>Dokumente</h3>
+            <span>Bitte lade hier alle benötigten Dokumente hoch. Du kannst Scans oder Photos hochladen. Bitte achte
+                darauf, dass die Aufnahmen gut lesbar sind. Deine Dokumente werden ausschließlich zu Verifizierung
+                deiner Identität verwendet und auf keinen Fall weitergegeben oder anderweitig ausgewertet.</span>
+
+            <br><br>
+            <div class="attachments-container">
+                <div class="attachment-box ripple-effect">
+                    <span class="upload-text">...</span>
+                    <i>Schüler- / Studentenausweis</i>
+                </div>
+
+                <!--<a href="#" class="attachment-box ripple-effect"><span>...</span><i>Personalausweis (Vorne)</i></a>
+                    <a href="#" class="attachment-box ripple-effect"><span>...</span><i>Personalausweis (Hinten)</i></a>-->
+            </div>
+
+            <br>
+
+            <div class="uploadButton margin-top-0">
+                <input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload">
+                <label class="uploadButton-button ripple-effect" for="upload">Datei hochladen</label>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Summary -->
+    <div class="col-xl-4 col-lg-4 margin-top-0 margin-bottom-60">
+
+        <!-- Summary -->
+        <div class="boxed-widget summary margin-top-0">
+            <div class="boxed-widget-headline">
+                <h3>Zusammenfassung</h3>
+            </div>
+            <div class="boxed-widget-inner sidebar-teacherregistration">
+                <ul>
+                    <li>Schüler / Student <span>kostenlos</span></li>
+                    <li>Gebühr/Unterrichtsstunde <span>10%</span></li>
+                    <li class="total-costs">Bearbeitungszeit <span>circa 1 Tag</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Summary / End -->
+
+        <!-- Checkbox -->
+        <div class="checkbox margin-top-30">
+            <input type="checkbox" id="terms" value="accepted">
+            <label for="terms"><span class="checkbox-icon"></span> Ich stimme den <a href="./terms" target="_blank">Nutzungsbedingungen</a>
+                und der <a href="./privacy" target="_blank">Datenschutzerklärung</a> zu.</label>
+        </div>
+
+        <div class="notification error margin-top-20" id="login-notification">
+            <p>...</p>
+        </div>
+
+        <button id="regteacher-submit" class="button big ripple-effect margin-top-20">Bewerbung
+            absenden</button>
+    </div>
+
+</div>
+
+
+
+<script src="./controller/registration_teacher.js" defer></script>

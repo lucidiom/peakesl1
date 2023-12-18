@@ -1,0 +1,314 @@
+<script>
+    /* beautify preserve:start */
+    var transactions = JSON.parse(<%- JSON.stringify(JSON.stringify(transactions)) %>);
+    /* beautify preserve:end */
+</script>
+<script src="https://js.stripe.com/v3/"></script>
+
+
+
+
+<a class="popup-with-zoom-anim" href="#small-dialog-2" id="balance-dialog-transactiondetails-link"></a>
+<div id="small-dialog-2" class="zoom-anim-dialog dialog-with-tabs mfp-hide">
+    <div class="sign-in-form">
+        <div class="popup-tabs-container">
+            <div class="popup-tab-content" id="tab">
+                <div class="welcome-text margin-top-0 margin-bottom-0">
+                    <h3><%= __('general.transaction') %></h3>
+                    <span class="paid margin-top-20" id="td-status" style="display: inline-block;"> </span>
+
+                    <div class="row margin-top-30">
+                        <div class="col-6">
+                            <span class="td-head"><%= __('general.transaction') %></span>
+                            <span class="td-value" id="td-id"></span>
+
+                            <br>
+
+                            <span class="td-head"><%= __('balance.action') %></span>
+                            <span class="td-value" id="td-type"></span>
+                        </div>
+
+                        <div class="col-6">
+                            <span class="td-head"><%= __('general.points') %></span>
+                            <span class="td-value" id="td-points"></span>
+
+                            <br>
+
+                            <span class="td-head"><%= __('general.date') %></span>
+                            <span class="td-value" id="td-date"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row margin-top-20 justify-content-center">
+                        <div class="col-md-4" id="receipt-col">
+                            <a class="button gray full-width" id="td-receipt-link" style="height:auto!important" href="#" target="_blank">Receipt</a>
+                        </div>
+                        <div class="col-md-8">
+                            <button class="button button-primary full-width" style="height:auto!important" type="submit" form="add-note" onclick="$.magnificPopup.close();"><%= __('general.close') %></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="notification notice margin-bottom-40" id="notification">
+    <p></p>
+</div>
+
+
+<div class="row">
+
+    <div class="col-md-8">
+
+
+
+
+        <div class="col-12" style="display:none;" id="payout-panel">
+            <div class="single-page-section">
+                <div class="dashboard-box margin-top-0">
+                    <div class="headline">
+                        <h3 class="margin-bottom-0"><%= __('balance.payout-request') %></h3>
+                    </div>
+                    <div class="content">
+                        <div class="container">
+
+                            <div>
+                                <br>
+
+                                <div class="submit-field">
+                                    <input id="payout-slider" />
+                                </div>
+
+
+                                <div class="col-xl-12">
+                                    <div class="submit-field">
+                                        <h5><%= __('balance.payout.method') %></h5>
+                                        <div class="account-type payout-select">
+                                            <div>
+                                                <input type="radio" class="account-type-radio" id="payout-check-sepa" checked>
+                                                <label for="payout-check-sepa" class="ripple-effect-dark"><%= __('balance.payout.sepa') %></label>
+                                            </div>
+
+                                            <div>
+                                                <input type="radio" class="account-type-radio" id="payout-check-paypal">
+                                                <label for="payout-check-paypal" class="ripple-effect-dark"><%= __('balance.payout.paypal') %></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12" id="payout-sepa">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="submit-field">
+                                                <h5><%= __('balance.payout.iban') %></h5>
+                                                <input type="text" class="with-border" value="" id="payout-iban">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="submit-field">
+                                                <h5><%= __('balance.payout.bic') %></h5>
+                                                <input type="text" class="with-border" value="" id="payout-bic">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12" id="payout-paypal" style="display:none">
+                                    <div class="submit-field">
+                                        <h5><%= __('balance.payout.paypal-mail') %></h5>
+                                        <input type="text" class="with-border" value="" id="payout-paypalmail">
+                                    </div>
+                                </div>
+
+
+                                <a href="javascript:void(0);" class="button ripple-effect button-block" id="confirm-payout-btn"><%= __('balance.payout.send') %></a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-12">
+            <div class="single-page-section">
+                <div class="dashboard-box margin-top-0">
+                    <div class="headline">
+                        <h3 class="margin-bottom-0 d-inline-block"><%= __('balance.headline') %></h3>
+                    </div>
+
+                    <div class="content">
+                        <div class="row balance-row">
+                            <div class="col-md-6">
+                                <span><%= __('balance.available') %> <i class="help-icon" data-tippy-placement="top" title="<%= __('balance.available-note') %>"></i></span>
+                                <h4 data-currency="<%= user.balance %>"></h4>
+
+                                <% if (user.currency != "eur") { %>
+                                <h5><span data-currency-converted="<%= user.balance %>"></span></h5>
+                                <% } %>
+                            </div>
+
+                            <div class="col-md-6">
+                                <span><%= __('balance.blocked') %> <i class="help-icon" data-tippy-placement="top" title="<%= __('balance.blocked-note') %>"></i></span>
+                                <h4 id="balance-blockedbalance" data-currency="<%= user.floatingBalance %>"></h4>
+
+                                <% if (user.currency != "eur") { %>
+                                <h5><span data-currency-converted="<%= user.floatingBalance %>"></span></h5>
+                                <% } %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-12">
+            <div class="single-page-section">
+                <div class="dashboard-box margin-top-0">
+                    <div class="headline">
+                        <h3 class="margin-bottom-0 d-inline-block"><%= __('balance.buy-points') %></h3>
+                    </div>
+
+                    <div class="content">
+                        <div class="row balance-row">
+
+                            <div class="col-md-4 col-lg-3">
+                                <div class="topup-amount-btn" id="topup-2" onclick="changeTopup(2);">
+                                    <p>2€</p>
+                                    <span data-currency-converted="2"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3">
+                                <div class="topup-amount-btn" id="topup-20" onclick="changeTopup(20);">
+                                    <p>20€</p>
+                                    <span data-currency-converted="20"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3">
+                                <div class="topup-amount-btn" id="topup-30" onclick="changeTopup(30);">
+                                    <p>30€</p>
+                                    <span data-currency-converted="30"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3">
+                                <div class="topup-amount-btn" id="topup-50" onclick="changeTopup(50);">
+                                    <p>50€</p>
+                                    <span data-currency-converted="50"></span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3">
+                                <div class="topup-amount-btn selected" id="topup-100" onclick="changeTopup(100);">
+                                    <p>100€</p>
+                                    <span data-currency-converted="100"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3">
+                                <div class="topup-amount-btn" id="topup-200" onclick="changeTopup(200);">
+                                    <p>200€</p>
+                                    <span data-currency-converted="200"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3">
+                                <div class="topup-amount-btn" id="topup-500" onclick="changeTopup(500);">
+                                    <p>500€</p>
+                                    <span data-currency-converted="500"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3">
+                                <div class="topup-amount-btn" id="topup-750" onclick="changeTopup(750);">
+                                    <p>750€</p>
+                                    <span data-currency-converted="750"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <a href="javascript:void(0);" class="button button-block margin-top-20" id="proceed-to-checkout"><%= __('balance.buy-btn') %></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="col-12">
+            <div class="notification error margin-bottom-40">
+                <p></p>
+            </div>
+
+            <div class="single-page-section">
+                <div class="dashboard-box margin-top-0">
+                    <div class="headline">
+                        <h3 class="margin-bottom-0"><%= __('general.transactions') %></h3>
+                    </div>
+                    <div class="content">
+                        <ul class="dashboard-box-list" id="transactions-list"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <small class="footnote"><%= __('balance.footnote-1') %></small>
+            <small class="footnote"><%= __('balance.footnote-2') %></small>
+            <small class="footnote"><%= __('balance.footnote-3') %></small>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Sidebar -->
+    <div class="col-md-4">
+        <% if (user.visible == true) { %>
+        <div class="col-12">
+            <div class="single-page-section">
+                <div class="dashboard-box margin-top-0">
+                    <div class="headline">
+                        <h3 class="margin-bottom-0 d-inline-block"><%= __('balance.payout-request') %></h3>
+                    </div>
+
+                    <div class="content">
+                        <div class="row balance-row">
+                            <div class="col-md-12">
+                                <a href="javascript:void(0);" class="button gray button-block" id="payout-btn"><%= __('balance.payout-btn') %></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% } %>
+    </div>
+
+
+</div>
+
+
+<script src="./data/<%= locale %>.js"></script>
+<script src="/controller/balance.js" defer></script>

@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+Options +FollowSymlinks
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ - [env=proto:https]
+RewriteCond %{HTTPS} !=on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>

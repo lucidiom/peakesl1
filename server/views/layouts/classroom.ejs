@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>">
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <meta property="og:title" content="brainstr - your worldwide online tutoring platform">
+    <meta property="og:description" content="Find your online tutor or become one yourself with brainstr. Easy and quick setup to get started right away.">
+    <meta name="twitter:image" content="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/home-background.jpg">
+    <meta property="og:url" content="https://brainstr.de">
+
+    <meta name="twitter:title" content="brainstr - your worldwide online tutoring platform">
+    <meta name="twitter:description" content="Find your online tutor or become one yourself with brainstr. Easy and quick setup to get started right away.">
+    <meta name="twitter:image" content="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/home-background.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta property="og:site_name" content="brainstr">
+
+    <meta name="title" content="brainstr - Find your online tutor or become one yourself">
+    <meta name="description" content="Find worldwide your perfect online tutor or become one yourself and start earning money from teaching. Get started today to boost your knowledge and skills.">
+
+    <link rel="icon" type="image/png" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/apple-touch-icon.png" />
+
+
+    <link rel="preload" href="/css/bootstrap-grid.css" as="style">
+    <link rel="preload" href="/css/style.css" as="style" />
+    <link rel="preload" href="/css/icons.css" as="style">
+
+    <link rel="stylesheet" href="/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/icons.css">
+    <link rel="stylesheet" href="/css/pickr.css" />
+    <link rel="stylesheet" href="/css/classroom.css" />
+
+
+    <% if(env=="production" ){ %>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSPXSHZKKE"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-GSPXSHZKKE');
+        </script>
+        <% } %>
+
+
+            <script>
+                var i18n_locale = "<%= locale %>";
+            </script>
+
+            <script src="/i18n/<%= locale %>.js"></script>
+
+            <script>
+                /* beautify preserve:start */
+                var uData = JSON.parse(<%- JSON.stringify(JSON.stringify(user)) %>);
+
+                var EXCHANGE_RATES = JSON.parse(<%- JSON.stringify(JSON.stringify(exchangeRates)) %>);
+                /* beautify preserve:end */
+            </script>
+
+            <script src="/config.js"></script>
+
+            <script src="/js/jquery-3.5.1.min.js"></script>
+
+            <script src="/js/i18n/bundle.js"></script>
+
+            <script src="/js/moment.js"></script>
+            <script src="/js/moment-locales/<%= locale %>.js"></script>
+
+            <script src="/js/socket.io.min.js"></script>
+
+            <script src="/js/i18n/init.js"></script>
+
+            <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+</head>
+
+<body>
+
+
+
+
+    <div id="wrapper">
+        <%- body %>
+    </div>
+
+
+
+    <script src="/controller/init.js"></script>
+
+    <script src="/js/tippy.all.min.js"></script>
+    <script src="/js/magnific-popup.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/jquery-resizable.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>">
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <% if(locals.meta) { %>
+        <meta property="og:site_name" content="brainstr">
+        <meta name="twitter:site" content="@brainstr3">
+
+        <meta property="og:title" content="<%= title %>">
+        <meta property="og:site_name" content="brainstr">
+        <meta property="og:url" content="<%= meta.url %>">
+        <meta property="og:description" content="<%= meta.description %>">
+        <meta property="og:image" content="<%= meta.image %>">
+
+        <meta name="twitter:image" content="<%= meta.image %>">
+        <meta name="twitter:title" content="<%= title %>">
+        <meta name="twitter:description" content="<%= meta.description %>">
+        <meta name="twitter:image" content="<%= meta.image %>">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <meta name="title" content="<%= title %>">
+        <meta name="description" content="<%= meta.description %>">
+        <meta name="keywords" content="<%= meta.keywords %>">
+        <% } %>
+
+
+            <link rel="icon" type="image/png" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/favicon.png" />
+            <link rel="apple-touch-icon" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/apple-touch-icon.png" />
+
+
+            <link rel="preload" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/fonts/Material-Icons.ttf?e8u1sb" as="font" crossorigin="anonymous" />
+            <link rel="preload" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/fonts/Feather-Icons.ttf?7ncawf" as="font" crossorigin="anonymous" />
+            <link rel="preload" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/fonts/Line-Awesome.ttf?15lwq9" as="font" crossorigin="anonymous" />
+
+            <link rel="preload" href="/css/bootstrap-grid.css" as="style">
+            <link rel="preload" href="/css/style.css" as="style" />
+            <link rel="preload" href="/css/icons.css" as="style">
+
+            <link rel="stylesheet" href="/css/bootstrap-grid.css">
+            <link rel="stylesheet" href="/css/style.css">
+            <link rel="stylesheet" href="/css/icons.css">
+
+
+            <% if(env=="production" ){ %>
+                <script>
+                    !function (w, d, t) {
+                        w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || []; ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }; for (var i = 0; i < ttq.methods.length; i++)ttq.setAndDefer(ttq, ttq.methods[i]); ttq.instance = function (t) { for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)ttq.setAndDefer(e, ttq.methods[n]); return e }, ttq.load = function (e, n) { var i = "https://analytics.tiktok.com/i18n/pixel/events.js"; ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {}; var o = document.createElement("script"); o.type = "text/javascript", o.async = !0, o.src = i + "?sdkid=" + e + "&lib=" + t; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(o, a) };
+
+                        ttq.load('CFIVTSRC77U6J4U08L90');
+                        ttq.page();
+                    }(window, document, 'ttq');
+                </script>
+
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSPXSHZKKE"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+
+                    function gtag() { dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-GSPXSHZKKE');
+                </script>
+                <% } %>
+
+
+                    <script>
+                        var i18n_locale = "<%= locale %>";
+
+        /* beautify preserve:start */
+        <% if (locals.user) { %>
+        var uData = JSON.parse(<%- JSON.stringify(JSON.stringify(user)) %>);
+        <% } %>
+
+        <% if (locals.data) { %>
+        var pageData = JSON.parse(<%- JSON.stringify(JSON.stringify(data)) %>);
+        <% } %>
+
+        var EXCHANGE_RATES = JSON.parse(<%- JSON.stringify(JSON.stringify(exchangeRates)) %>);
+                        /* beautify preserve:end */
+                    </script>
+
+
+                    <% if(env=="production" ){ %>
+                        <!-- Facebook Pixel Code -->
+                        <script>
+                            ! function (f, b, e, v, n, t, s) {
+                                if (f.fbq) return;
+                                n = f.fbq = function () {
+                                    n.callMethod ?
+                                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                };
+                                if (!f._fbq) f._fbq = n;
+                                n.push = n;
+                                n.loaded = !0;
+                                n.version = '2.0';
+                                n.queue = [];
+                                t = b.createElement(e);
+                                t.async = !0;
+                                t.src = v;
+                                s = b.getElementsByTagName(e)[0];
+                                s.parentNode.insertBefore(t, s)
+                            }(window, document, 'script',
+                                'https://connect.facebook.net/en_US/fbevents.js');
+                            fbq('init', '989837071786143');
+                            fbq('track', 'PageView');
+                        </script>
+                        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=989837071786143&ev=PageView&noscript=1" /></noscript>
+                        <!-- End Facebook Pixel Code -->
+
+                        <% } %>
+</head>
+
+<body style="background:#fff">
+    <script src="/i18n/<%= locale %>.js"></script>
+
+    <script src="/config.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="/js/i18n/bundle.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="/js/moment-locales/<%= locale %>.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@4.0.1/dist/socket.io.min.js"></script>
+
+    <script src="/js/i18n/init.js"></script>
+
+
+
+
+    <%- body %>
+
+
+
+
+        <script src="/controller/init.js"></script>
+        <script src="/js/mmenu.min.js"></script>
+        <script src="/js/tippy.all.min.js"></script>
+        <script src="/js/simplebar.min.js"></script>
+        <script src="/js/bootstrap-slider.min.js"></script>
+        <script src="/js/bootstrap-select.min.js"></script>
+        <script src="/js/snackbar.js"></script>
+        <script src="/js/magnific-popup.min.js"></script>
+        <script src="/js/slick.min.js"></script>
+
+        <script src="/js/custom.js"></script>
+</body>
+
+</html>

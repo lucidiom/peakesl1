@@ -1,0 +1,129 @@
+<script>
+    /* beautify preserve:start */
+    var lessons = JSON.parse(<%- JSON.stringify(JSON.stringify(lessons)) %>);
+    var usercache = JSON.parse(<%- JSON.stringify(JSON.stringify(usercache)) %>);
+    /* beautify preserve:end */
+</script>
+
+
+
+<div class="dashboard-headline">
+    <h3><%= __('lessons.my-lessons') %></h3>
+</div>
+
+
+
+
+<div class="row">
+
+    <!-- Dashboard Box -->
+    <div class="col-xl-12">
+
+        <div class="notification error margin-bottom-40" id="gnot">
+            <p></p>
+        </div>
+
+
+        <h3 class="margin-bottom-20"><%= __('lessons.teacher-lessons') %></h3>
+        <div class="notification error margin-bottom-40" id="tnot">
+            <p></p>
+        </div>
+        <div class="dashboard-box margin-top-0" id="li-container-tid">
+            <div class="content">
+                <ul class="dashboard-box-list" id="li-container-list-tid"></ul>
+            </div>
+        </div>
+
+
+        <br><br><br>
+
+
+        <h3 class="margin-bottom-20"><%= __('lessons.student-lessons') %></h3>
+        <div class="notification error margin-bottom-40" id="snot">
+            <p></p>
+        </div>
+        <div class="dashboard-box margin-top-0" id="li-container-sid">
+            <div class="content">
+                <ul class="dashboard-box-list" id="li-container-list-sid"></ul>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+<a class="popup-with-zoom-anim" href="#small-dialog" id="confirm-modal-link"></a>
+<div id="small-dialog"" class=" zoom-anim-dialog dialog-with-tabs mfp-hide">
+    <div class="sign-in-form">
+        <div class="popup-tabs-container">
+            <div class="popup-tab-content" id="tab">
+                <div class="welcome-text margin-top-20 margin-bottom-0">
+                    <h3>Confirm Lesson Completion</h3>
+                    <br>
+
+                    <p>
+                        Confirm that the lesson was completed to your satisfaction and leave a feedback for your teacher.
+                    </p>
+
+                    <div class='starrr' id="confirm-rating"></div>
+
+                    <br> <br>
+
+                    <textarea name="" id="confirm-review-text" cols="4" rows="2" placeholder="Write a public comment (optional)"></textarea>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button class="button gray full-width ripple-effect-dark" type="button" form="add-note" style="width: 30px;" onclick="$.magnificPopup.close();"><%= __('general.cancel') %></button>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="hidden" id="confirm-lesson-id">
+                            <input type="hidden" id="confirm-lesson-rating">
+                            <button class="button button-primary full-width ripple-effect-dark" id="confirm-btn" style="width: 30px;" onclick="confirmLesson()" disabled>Confirm Lesson</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a class="popup-with-zoom-anim" href="#small-dialog-2" id="dispute-modal-link"></a>
+<div id="small-dialog-2"" class=" zoom-anim-dialog dialog-with-tabs mfp-hide">
+    <div class="sign-in-form">
+        <div class="popup-tabs-container">
+            <div class="popup-tab-content" id="tab">
+                <div class="welcome-text margin-top-20 margin-bottom-0">
+                    <h3><%= __('lessons.start-dispute-headline') %></h3>
+                    <p>
+                        <%= __('lessons.start-dispute-text') %>
+                    </p>
+                    <textarea id="dispute-text" rows="10"><%= __('lessons.start-dispute-textarea-placeholder') %></textarea>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button class="button gray full-width ripple-effect-dark" type="button" form="add-note" style="width: 30px;" onclick="$.magnificPopup.close();"><%= __('general.cancel') %></button>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="hidden" id="dispute-id">
+
+                            <button class="button button-primary full-width ripple-effect-dark" type="submit" form="add-note" style="width: 30px;" onclick="sendDispute()"><%= __('general.send') %></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/js/starrr.js"></script>
+
+<script src="./data/<%= locale %>.js"></script>
+<script src="/js/pagination.min.js"></script>
+<script src="/controller/lessons.js" defer></script>

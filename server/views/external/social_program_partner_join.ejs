@@ -1,0 +1,162 @@
+<script src="https://js.stripe.com/v3/"></script>
+
+
+<div class="ix" style="margin-top: -40px;">
+
+    <div class="ix-head" style="background-image: url('https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/bsp_partner.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 50px;
+    width: 100vw;
+    padding: 0px 25px 25px 25px;
+    position: relative;
+    max-height: 800px;
+    margin-bottom: 0px;">
+
+        <div style="background-color: black; opacity: 0.6; position: absolute;top:0;left:0;width:100%; height: 100%;z-index:0;background-image: none !important;"></div>
+
+        <div class="container margin-top-30 margin-bottom-30" style="z-index:2;padding: 0 !important; padding-top: 75px !important;background-image: none !important;background-color: transparent !important;">
+            <div class="row align-items-center">
+                <div class="col-md-6" id="infobox">
+                    <h1 style="font-size: 48px;color:#fff;">🇺🇦<br><%- __('social-program-partner.headline','<br>') %></h1>
+                    <h2 class="legal" style="line-height: 1.8;color:#fff;"><%- __('social-program-partner.subheadline') %></h2>
+                </div>
+
+                <div class="col-md-1"> </div>
+
+                <div class="col-md-5" id="contribute">
+                    <div style="background-color: #fff;border-radius: 5px;box-shadow: var(--shadow);padding:40px;border: solid 1px var(--border);">
+
+                        <div id="registration-form">
+                            <h2 style="font-weight: normal;font-size: 22px;margin-bottom: 25px;"><%- __('social-program-partner.contr-headline') %></h2>
+
+                            <div class="notification error" id="contribution-notification">
+                                <p>...</p>
+                                <a class="close"></a>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="input-contribution">
+                                        <span></span>
+                                        <input class="border no-shadow" type="number" placeholder="" id="amount" value="10" min="5">
+                                    </div>
+
+                                    <div class="amount-suggestions">
+                                        <div onclick="setAmount(5)">5€</div>
+                                        <div onclick="setAmount(10)">10€</div>
+                                        <div onclick="setAmount(25)">25€</div>
+                                        <div onclick="setAmount(50)">50€</div>
+                                        <div onclick="setAmount(100)">100€</div>
+                                        <div onclick="setAmount(250)">250€</div>
+                                        <div onclick="setAmount(500)">500€</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div id="lesson-counter"></div>
+
+                            <br>
+
+                            <div class="checkbox ts-freeteaching-checkbox">
+                                <input type="checkbox" id="monthly" checked>
+                                <label for="monthly"><span class="checkbox-icon"></span><%- __('social-program-partner.contr-monthly') %></label>
+                            </div>
+
+                            <br> <br>
+
+                            <button id="btn-submit" class="button button-primary button-block"><%- __('social-program-partner.cta') %></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights mobile-spacer-top-300">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="block index-feature margin-top-25">
+                        <h2 style="line-height:1.4"><%- __('social-program-partner.h1') %></h2>
+                        <p><%- __('social-program-partner.t1') %></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="block index-feature margin-top-25">
+                        <h2 style="line-height:1.4"><%- __('social-program-partner.h2') %></h2>
+                        <p><%- __('social-program-partner.t2') %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights gray">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-sm-12">
+                    <img src="https://images.pexels.com/photos/5212655/pexels-photo-5212655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="brainstr interactive classroom" loading="lazy">
+                </div>
+
+                <div class="col-md-5 col-sm-12 align-self-center">
+                    <h2 class="margin-bottom-25"><%- __('social-program-partner.h3','<b>') %></b></h2>
+                    <p class="margin-bottom-20">
+                        <%- __('social-program-partner.t3') %>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section padding-top-100 padding-bottom-100 index-highlights">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('social-program-partner.h4') %></h2>
+                        <p class="legal">
+                            <%- __('social-program-partner.t4','<a href="mailto:partner@brainstr.org">partner@brainstr.org</a>','<br>') %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights landing-last-cta">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h2 class="margin-bottom-25"><%- __('social-program-partner.cta-headline','<b>') %></b></h2>
+                    <p>
+                        <%- __('social-program-partner.cta-text', '<br>' ) %>
+                    </p>
+                    <a href="#contribute" class="button button-primary margin-top-10"><%- __('social-program-partner.cta-btn') %></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/js/slick.min.js"></script>
+
+    <script src="/data/<%= locale %>.js"></script>
+    <script src="/controller/social_program_partner_join.js" defer></script>

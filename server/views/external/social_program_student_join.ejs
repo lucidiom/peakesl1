@@ -1,0 +1,246 @@
+<div class="ix" style="margin-top: -40px;">
+
+    <div class="ix-head" style="background-image: url('https://images.pexels.com/photos/6325984/pexels-photo-6325984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 50px;
+    width: 100vw;
+    padding: 0px 25px 25px 25px;
+    position: relative;
+    max-height: 800px;
+    margin-bottom: 0px;">
+
+        <div style="background-color: black; opacity: 0.6; position: absolute;top:0;left:0;width:100%; height: 100%;z-index:0;background-image: none !important;"></div>
+
+        <div class="container margin-top-30 margin-bottom-30" style="z-index:2;padding: 0 !important; padding-top: 75px !important;background-image: none !important;background-color: transparent !important;">
+            <div class="row align-items-center">
+                <div class="col-md-6" id="infobox">
+                    <h1 style="font-size: 48px;color:#fff;">🇺🇦<br><%- __('social-program-student.headline', '<br>' ) %></h1>
+                    <h2 class="legal" style="line-height: 1.8;color:#fff;"><%- __('social-program-student.subheadline') %></h2>
+                </div>
+
+                <div class="col-md-1"> </div>
+
+                <div class="col-md-5" id="signup">
+                    <div style="background-color: #fff;border-radius: 5px;box-shadow: var(--shadow);padding:40px;border: solid 1px var(--border);">
+
+                        <div id="registration-form">
+                            <form action="post" id="signup-form">
+                                <input type="hidden" id="type" value="student">
+
+                                <h2 style="font-weight: normal;font-size: 22px;margin-bottom: 25px;"><%- __('social-program-student.cta-btn') %></h2>
+
+                                <div class="notification error" id="login-notification">
+                                    <p>...</p>
+                                    <a class="close"></a>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input class="border no-shadow" type="text" placeholder="<%= __('general.first-name') %>" id="name">
+                                    </div>
+                                    <div class="col-6">
+                                        <input class="border no-shadow" type="text" placeholder="<%= __('general.last-name') %>" id="surname">
+                                    </div>
+                                </div>
+                                <input class="border no-shadow" type="email" placeholder="<%= __('general.email') %>" id="emailaddress">
+                                <input class="border no-shadow" type="password" placeholder="<%= __('general.password') %>" id="password">
+
+                                <div class="checkbox ts-socialstudent-checkbox">
+                                    <input type="checkbox" id="socialstudent">
+                                    <label for="socialstudent"><span class="checkbox-icon"></span><%- __('social-program-student.social-student-option') %></label>
+                                </div>
+
+                                <div id="div-loading" style="display:none;width:100%; text-align: center;"><img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/loading_books.gif" alt="Loading..." /></div>
+                                <button id="btn-submit" class="button button-primary button-block margin-top-20 g-recaptcha" form="signup-form" data-sitekey="<%= gcaptcha_key %>" data-callback='onClickRegister' data-action='signup'><%- __('social-program-student.cta-btn') %></button>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights mobile-spacer-top">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="block index-feature margin-top-25">
+                        <div style="display: inline-block;padding: 0;width: 26px;" class="verified-badge-with-title badge-socialteacher"></div>
+                        <h2 style="line-height:1.4"><%- __('social-program-student.h1') %></h2>
+                        <p><%- __('social-program-student.t1') %></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="block index-feature margin-top-25">
+                        <div style="display:block;padding: 0;width: 26px;height:35px;"></div>
+                        <h2 style="line-height:1.4"><%- __('social-program-student.h2') %></h2>
+                        <p><%- __('social-program-student.t2') %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights gray">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-sm-12">
+                    <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/brainstr-classroom_<%= locale %>.webp" alt="brainstr interactive classroom">
+                </div>
+
+                <div class="col-md-5 col-sm-12 align-self-center">
+                    <h2 class="margin-bottom-25"><%- __('brainstr-as-student.slides.1.headline') %></h2>
+                    <p class="margin-bottom-20"><%- __('brainstr-as-student.slides.1.text') %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section padding-top-100 padding-bottom-100 index-highlights">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('brainstr-as-student.blocks.1.headline') %></h2>
+                        <p><%- __('brainstr-as-student.blocks.1.text') %></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('brainstr-as-student.blocks.2.headline') %></h2>
+                        <p><%- __('brainstr-as-student.blocks.2.text') %></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('brainstr-as-student.blocks.3.headline') %></h2>
+                        <p><%- __('brainstr-as-student.blocks.3.text') %></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('brainstr-as-student.blocks.4.headline') %></h2>
+                        <p><%- __('brainstr-as-student.blocks.4.text') %></p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row margin-top-50">
+                <div class="col-md-3">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('brainstr-as-student.blocks.5.headline') %></h2>
+                        <p><%- __('brainstr-as-student.blocks.5.text') %></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('brainstr-as-student.blocks.6.headline') %></h2>
+                        <p><%- __('brainstr-as-student.blocks.6.text') %></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('brainstr-as-student.blocks.7.headline') %></h2>
+                        <p><%- __('brainstr-as-student.blocks.7.text') %></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('brainstr-as-student.blocks.8.headline') %></h2>
+                        <p><%- __('brainstr-as-student.blocks.8.text') %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights gray">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 col-sm-12 align-self-center">
+                    <h2 class="margin-bottom-25"><%- __('brainstr-as-student.slides.2.headline') %></h2>
+                    <p class="margin-bottom-20"><%- __('brainstr-as-student.slides.2.text') %></p>
+                </div>
+
+                <div class="col-md-7 col-sm-12">
+                    <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/brainstr-teacher-profiles-2_<%= locale %>.webp" alt="brainstr find your perfect tutor">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-sm-12">
+                    <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/brainstr-booking_<%= locale %>.webp" alt="brainstr fast and secure lesson booking">
+                </div>
+
+                <div class="col-md-5 col-sm-12 align-self-center">
+                    <h2 class="margin-bottom-25"><%- __('brainstr-as-student.slides.3.headline') %></h2>
+                    <p class="margin-bottom-20"><%- __('brainstr-as-student.slides.3.text') %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights gray">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 col-sm-12 align-self-center">
+                    <h2 class="margin-bottom-25"><%- __('brainstr-as-student.slides.4.headline') %></h2>
+                    <p class="margin-bottom-20"><%- __('brainstr-as-student.slides.4.text') %></p>
+                </div>
+
+                <div class="col-md-7 col-sm-12">
+                    <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/brainstr-maths.webp" alt="brainstr become a tutor">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights landing-last-cta" style="background-image:url(https://images.pexels.com/photos/1251861/pexels-photo-1251861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h2 class="margin-bottom-25"><%- __('social-program-student.cta-headline', "<b>" ) %></b></h2>
+                    <p><%- __('social-program-student.cta-text', "<br>" ) %></p>
+                    <a href="#signup" class="button button-primary margin-top-10"><%- __('social-program-student.cta') %></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/js/slick.min.js"></script>
+
+    <script src="/data/<%= locale %>.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=<%= gcaptcha_key %>"></script>
+    <script src="/controller/social_program_student_join.js" defer></script>

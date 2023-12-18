@@ -1,0 +1,802 @@
+<div class="ix">
+
+    <div class="ix-head">
+        <div class="container margin-top-0">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2><%- __('index-new.head.subheadline') %></h2>
+                    <h1><%- __('index-new.head.headline') %></h1>
+
+                    <div class="d-flex ix-subject-select">
+                        <div></div>
+                        <button class="button button-primary" onclick="topCTAClick();"><%- __('index-new.head.btn-text') %></button>
+                    </div>
+
+                    <small class="d-block margin-top-50"><%- __('index-new.head.subtext') %> <a href="/tutors/"><%- __('index-new.head.link-tutors') %></a></small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="section padding-top-75 padding-bottom-75 index-highlights">
+        <div class="container text-left">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="block index-feature text-left margin-top-25">
+                        <h3 class="text-left">
+                            <%= __('index-new.shortinfo.1-headline') %>
+                        </h3>
+                        <p>
+                            <%= __('index-new.shortinfo.1-text') %>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="block index-feature text-left margin-top-25">
+                        <h3 class="text-left">
+                            <%= __('index-new.shortinfo.2-headline') %>
+                        </h3>
+                        <p>
+                            <%= __('index-new.shortinfo.2-text') %>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="block index-feature text-left margin-top-25">
+                        <h3 class="text-left">
+                            <%= __('index-new.shortinfo.3-headline') %>
+                        </h3>
+                        <p>
+                            <%= __('index-new.shortinfo.3-text') %>
+                        </p>
+                    </div>
+                </div>
+
+                <!--
+                <div class="col-md-4">
+                    <div class="freelancer freelancer-landing" style="width:100%">
+                        <div class="freelancer-overview">
+                            <div class="freelancer-overview-inner">
+                                <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                    <b>Customized Learning</b>
+                                    <br>
+                                    Choose from a variety of teachers for your 1-on-1 lesson and discuss and learn exactly the topic, you need help with.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="freelancer freelancer-landing" style="width:100%">
+                        <div class="freelancer-overview">
+                            <div class="freelancer-overview-inner">
+                                <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                    <b>Pay Per Lesson</b>
+                                    <br>
+                                    With brainstr you pay only by lesson - this way you can use your available budget most efficently.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="freelancer freelancer-landing" style="width:100%">
+                        <div class="freelancer-overview">
+                            <div class="freelancer-overview-inner">
+                                <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                    <b>COVID-19 safe</b>
+                                    <br>
+                                    Safe distance learning - without mask and risks. Great education despite the pandemic with brainstr.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights gray">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 col-sm-12 align-self-center">
+                    <h2 class="margin-bottom-25 text-left"><%- __('brainstr-as-student.slides.2.headline') %></h2>
+                    <p class="margin-bottom-20"><%- __('brainstr-as-student.slides.2.text') %></p>
+                    <p class="legal">
+                        <a href="/virtual-classroom/">
+                            <%= __('index-new.explore-tutors') %> →
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-md-7 col-sm-12">
+                    <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/brainstr-teacher-profiles-2_<%= locale %>.webp" alt="brainstr find your perfect tutor">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-sm-12">
+                    <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/brainstr-booking_<%= locale %>.webp" alt="brainstr fast and secure lesson booking">
+                </div>
+
+                <div class="col-md-5 col-sm-12 align-self-center">
+                    <h2 class="margin-bottom-25 text-left"><%- __('brainstr-as-student.slides.3.headline') %></h2>
+                    <p class="margin-bottom-20"><%- __('brainstr-as-student.slides.3.text') %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights gray">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 col-sm-12 align-self-center">
+                    <h2 class="margin-bottom-25 text-left"><%- __('virtual-classroom.slides.1.headline') %></h2>
+                    <p class="margin-bottom-20">
+                        <%- __('virtual-classroom.slides.1.text') %>
+                    </p>
+                    <p class="legal">
+                        <a href="/virtual-classroom/">
+                            <%= __('index-new.about-virtual-classroom') %> →
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-md-7 col-sm-12">
+                    <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/brainstr-classroom-interactive_<%= locale %>.webp" alt="brainstr interactive classroom" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Tutor Team -->
+    <div class="section padding-top-100 padding-bottom-75 full-width-carousel-fix">
+        <div class=" container">
+            <div class="row">
+
+                <div class="col-md-12 justify-content-center margin-bottom-25">
+                    <h2><%- __('index-new.team.headline', '<mark class="color">' , '</mark>' ) %></h2>
+                    <div class="text-center legal">
+                        <a href="/tutors/"><%- __('index-new.team.all-link') %></a>
+                    </div>
+                </div>
+
+                <div class="col-xl-12">
+                    <div class="default-slick-carousel freelancers-container freelancers-grid-layout" id="topbrainstrs">
+
+
+                        <% if(locale=="ru" ){ %>
+
+                            <div class="freelancer freelancer-landing">
+                                <div class="freelancer-overview">
+                                    <div class="freelancer-overview-inner">
+                                        <div class="freelancer-avatar">
+                                            <div class="verified-badge" data-tippy-placement="top" title="<%= __('teacher.verified.tooltip') %>"></div>
+                                            <a href="/teacher/605755457e297844dc823465/">
+                                                <img src="/profilepicture/605755457e297844dc823465/" alt="Женя С" id="teacherimg-605755457e297844dc823465" />
+                                            </a>
+                                        </div>
+                                        <div class="freelancer-name">
+                                            <h4>
+                                                <a href="/teacher/605755457e297844dc823465/">Женя С</a>
+                                            </h4>
+                                        </div>
+                                        <!--
+                                    <div class="freelancer-rating">
+                                        <div class="star-rating" data-rating="4.5"></div>
+                                    </div>-->
+
+                                        <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                            <b>Учится на психолога</b>
+                                            <br>
+                                            Закончила школу в г. Нижний Одес (Республика Коми), отлично сдала ЕГЭ и поступила в в Москву на бюджет. Изучала английский углубленно
+                                            в языковой школe. Прошла интервью с командой Brainstr
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="freelancer freelancer-landing">
+                                <div class="freelancer-overview">
+                                    <div class="freelancer-overview-inner">
+                                        <div class="freelancer-avatar">
+                                            <div class="verified-badge" data-tippy-placement="top" title="<%= __('teacher.verified.tooltip') %>"></div>
+                                            <a href="/teacher/6085d1319f402959e9c5478f/">
+                                                <img src="/profilepicture/6085d1319f402959e9c5478f/" alt="Женя С" id="teacherimg-6085d1319f402959e9c5478f" />
+                                            </a>
+                                        </div>
+                                        <div class="freelancer-name">
+                                            <h4>
+                                                <a href="/teacher/6085d1319f402959e9c5478f/">Рома Ш</a>
+                                            </h4>
+                                        </div>
+                                        <!--
+                                    <div class="freelancer-rating">
+                                        <div class="star-rating" data-rating="4.5"></div>
+                                    </div>-->
+
+                                        <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                            Учится на третьем курсе, преподает программирование и робототехнику детям по всей России. Знает, как посмотреть на мир глазами школьника и помогает освоить азы программирования и алгоритмического мышления.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="freelancer freelancer-landing">
+                                <div class="freelancer-overview">
+                                    <div class="freelancer-overview-inner">
+                                        <div class="freelancer-avatar">
+                                            <div class="verified-badge" data-tippy-placement="top" title="<%= __('teacher.verified.tooltip') %>"></div>
+                                            <a href="/teacher/606b6d4fadcf226338057028/">
+                                                <img src="/profilepicture/606b6d4fadcf226338057028/" alt="Надя Ш" id="teacherimg-606b6d4fadcf226338057028" />
+                                            </a>
+                                        </div>
+                                        <div class="freelancer-name">
+                                            <h4>
+                                                <a href="/teacher/606b6d4fadcf226338057028/">Надя Ш</a>
+                                            </h4>
+                                        </div>
+                                        <!--
+                                    <div class="freelancer-rating">
+                                        <div class="star-rating" data-rating="4.5"></div>
+                                    </div>-->
+
+                                        <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                            <b>Учится на факультете иностранных языков</b>
+                                            <br>
+                                            Работает онлайн-репетитором по английскому языку в течение трех лет. Сдала Кембриджский экзамен. Руководит направлением стажировок в студенческой организации. Прошла интервью с командой Brainstr
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="freelancer freelancer-landing">
+                                <div class="freelancer-overview">
+                                    <div class="freelancer-overview-inner">
+                                        <div class="freelancer-avatar">
+                                            <div class="verified-badge" data-tippy-placement="top" title="<%= __('teacher.verified.tooltip') %>"></div>
+                                            <a href="/teacher/60886302ae59536691f81439/">
+                                                <img src="/profilepicture/60886302ae59536691f81439/" alt="Женя С" id="teacherimg-60886302ae59536691f81439" />
+                                            </a>
+                                        </div>
+                                        <div class="freelancer-name">
+                                            <h4>
+                                                <a href="/teacher/60886302ae59536691f81439/">Леонид К</a>
+                                            </h4>
+                                        </div>
+                                        <!--
+                                    <div class="freelancer-rating">
+                                        <div class="star-rating" data-rating="4.5"></div>
+                                    </div>-->
+
+                                        <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                            Учится в МАИ, преподает в онлайн-школе. Знает, как показать физику и математику на пальцах буквально на пальцах. Подготовил к ОГЭ по математике и физике ребят, которым предметы совсем не давались
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="freelancer freelancer-landing">
+                                <div class="freelancer-overview">
+                                    <div class="freelancer-overview-inner">
+                                        <div class="freelancer-avatar">
+                                            <div class="verified-badge" data-tippy-placement="top" title="<%= __('teacher.verified.tooltip') %>"></div>
+                                            <a href="/teacher/606ad234dab88f635b4858f0/">
+                                                <img src="/profilepicture/606ad234dab88f635b4858f0/" alt="Катя В" id="teacherimg-606ad234dab88f635b4858f0" />
+                                            </a>
+                                        </div>
+                                        <div class="freelancer-name">
+                                            <h4>
+                                                <a href="/teacher/606ad234dab88f635b4858f0/">Катя В</a>
+                                            </h4>
+                                        </div>
+                                        <!--
+                                    <div class="freelancer-rating">
+                                        <div class="star-rating" data-rating="4.5"></div>
+                                    </div>-->
+
+                                        <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                            <b>Учится на  на направлении "Перевод и переводоведение".</b>
+                                            <br>
+                                            Знает английский, китайский и немецкий. Работала в языковой школе. Прошла интервью с командой Brainstr
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="freelancer freelancer-landing">
+                                <div class="freelancer-overview">
+                                    <div class="freelancer-overview-inner">
+                                        <div class="freelancer-avatar">
+                                            <div class="verified-badge" data-tippy-placement="top" title="<%= __('teacher.verified.tooltip') %>"></div>
+                                            <a href="/teacher/60719d3ad58fee19c0b2e33a/">
+                                                <img src="/profilepicture/60719d3ad58fee19c0b2e33a/" alt="Анна Р" id="teacherimg-60719d3ad58fee19c0b2e33a" />
+                                            </a>
+                                        </div>
+                                        <div class="freelancer-name">
+                                            <h4>
+                                                <a href="/teacher/60719d3ad58fee19c0b2e33a/">Анна Р</a>
+                                            </h4>
+                                        </div>
+                                        <!--
+                                    <div class="freelancer-rating">
+                                        <div class="star-rating" data-rating="4.5"></div>
+                                    </div>-->
+
+                                        <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                            <b>Учится в Финансовом университете</b>
+                                            <br>
+                                            Переехала из Уфы в Турцию и преподает уже два года. Изучала английский в Канаде, работала в международной организации AIESEC. Прошла интервью с командой Brainstr
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <% } else if(locale=="de" ) { %>
+
+                                <div class="freelancer freelancer-landing">
+                                    <div class="freelancer-overview">
+                                        <div class="freelancer-overview-inner">
+                                            <div class="freelancer-avatar">
+                                                <div class="verified-badge" data-tippy-placement="top" title="<%= __('teacher.verified.tooltip') %>"></div>
+                                                <a href="/teacher/6045c530f97bae73a6939c29/">
+                                                    <img src="/profilepicture/6045c530f97bae73a6939c29/" alt="Nele" />
+                                                </a>
+                                            </div>
+                                            <div class="freelancer-name">
+                                                <h4>
+                                                    <a href="/teacher/6045c530f97bae73a6939c29/">Nele</a>
+                                                </h4>
+                                            </div>
+                                            <!--
+                                    <div class="freelancer-rating">
+                                        <div class="star-rating" data-rating="4.5"></div>
+                                    </div>-->
+
+                                            <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                                <b>Schülerin</b>
+                                                <br>
+                                                Nele ist kurz davor ihr Abitur zu machen und unterstützt dich in den Fächern Deutsch und Französisch auf brainstr.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="freelancer freelancer-landing">
+                                    <div class="freelancer-overview">
+                                        <div class="freelancer-overview-inner">
+                                            <div class="freelancer-avatar">
+                                                <div class="verified-badge" data-tippy-placement="top" title="<%= __('teacher.verified.tooltip') %>"></div>
+                                                <a href="/teacher/604fcc4a0a2f513777076313/">
+                                                    <img src="/profilepicture/604fcc4a0a2f513777076313/" alt="Nele" />
+                                                </a>
+                                            </div>
+                                            <div class="freelancer-name">
+                                                <h4>
+                                                    <a href="/teacher/604fcc4a0a2f513777076313/">Анастасия</a>
+                                                </h4>
+                                            </div>
+                                            <!--
+                                    <div class="freelancer-rating">
+                                        <div class="star-rating" data-rating="4.5"></div>
+                                    </div>-->
+
+                                            <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                                <b>Studentin</b>
+                                                <br>
+                                                Анастасия unterstütz dich in den Fächern Russisch und Wirtschaft. Sie studiert aktuell in Deutschland.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <% } else { %>
+                                    <div class="freelancer freelancer-landing">
+                                        <div class="freelancer-overview">
+                                            <div class="freelancer-overview-inner">
+                                                <div class="freelancer-avatar">
+                                                    <div class="verified-badge" data-tippy-placement="top" title="<%= __('teacher.verified.tooltip') %>"></div>
+                                                    <a href="/teacher/605755457e297844dc823465/">
+                                                        <img src="/profilepicture/605755457e297844dc823465/" alt="Женя С" id="teacherimg-605755457e297844dc823465" />
+                                                    </a>
+                                                </div>
+                                                <div class="freelancer-name">
+                                                    <h4>
+                                                        <a href="/teacher/605755457e297844dc823465/">Женя С</a>
+                                                    </h4>
+                                                </div>
+                                                <!--
+                                    <div class="freelancer-rating">
+                                        <div class="star-rating" data-rating="4.5"></div>
+                                    </div>-->
+
+                                                <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                                    <b>Учится на психолога</b>
+                                                    <br>
+                                                    Закончила школу в г. Нижний Одес (Республика Коми), отлично сдала ЕГЭ и поступила в в Москву на бюджет. Изучала английский углубленно
+                                                    в языковой школe. Прошла интервью с командой Brainstr
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="freelancer freelancer-landing">
+                                        <div class="freelancer-overview">
+                                            <div class="freelancer-overview-inner">
+                                                <div class="freelancer-avatar">
+                                                    <div class="verified-badge" data-tippy-placement="top" title="<%= __('teacher.verified.tooltip') %>"></div>
+                                                    <a href="/teacher/606b6d4fadcf226338057028/">
+                                                        <img src="/profilepicture/606b6d4fadcf226338057028/" alt="Надя Ш" id="teacherimg-606b6d4fadcf226338057028" />
+                                                    </a>
+                                                </div>
+                                                <div class="freelancer-name">
+                                                    <h4>
+                                                        <a href="/teacher/606b6d4fadcf226338057028/">Надя Ш</a>
+                                                    </h4>
+                                                </div>
+                                                <!--
+                                    <div class="freelancer-rating">
+                                        <div class="star-rating" data-rating="4.5"></div>
+                                    </div>-->
+
+                                                <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                                    <b>Учится на факультете иностранных языков</b>
+                                                    <br>
+                                                    Работает онлайн-репетитором по английскому языку в течение трех лет. Сдала Кембриджский экзамен. Руководит направлением стажировок в студенческой организации. Прошла интервью с командой Brainstr
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="freelancer freelancer-landing">
+                                        <div class="freelancer-overview">
+                                            <div class="freelancer-overview-inner">
+                                                <div class="freelancer-avatar">
+                                                    <div class="verified-badge" data-tippy-placement="top" title="<%= __('teacher.verified.tooltip') %>"></div>
+                                                    <a href="/teacher/606ad234dab88f635b4858f0/">
+                                                        <img src="/profilepicture/606ad234dab88f635b4858f0/" alt="Катя В" id="teacherimg-606ad234dab88f635b4858f0" />
+                                                    </a>
+                                                </div>
+                                                <div class="freelancer-name">
+                                                    <h4>
+                                                        <a href="/teacher/606ad234dab88f635b4858f0/">Катя В</a>
+                                                    </h4>
+                                                </div>
+                                                <!--
+                                    <div class="freelancer-rating">
+                                        <div class="star-rating" data-rating="4.5"></div>
+                                    </div>-->
+
+                                                <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                                    <b>Учится на  на направлении "Перевод и переводоведение".</b>
+                                                    <br>
+                                                    Знает английский, китайский и немецкий. Работала в языковой школе. Прошла интервью с командой Brainstr
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="freelancer freelancer-landing">
+                                        <div class="freelancer-overview">
+                                            <div class="freelancer-overview-inner">
+                                                <div class="freelancer-avatar">
+                                                    <div class="verified-badge" data-tippy-placement="top" title="<%= __('teacher.verified.tooltip') %>"></div>
+                                                    <a href="/teacher/60719d3ad58fee19c0b2e33a/">
+                                                        <img src="/profilepicture/60719d3ad58fee19c0b2e33a/" alt="Анна Р" id="teacherimg-60719d3ad58fee19c0b2e33a" />
+                                                    </a>
+                                                </div>
+                                                <div class="freelancer-name">
+                                                    <h4>
+                                                        <a href="/teacher/60719d3ad58fee19c0b2e33a/">Анна Р</a>
+                                                    </h4>
+                                                </div>
+                                                <!--
+                                    <div class="freelancer-rating">
+                                        <div class="star-rating" data-rating="4.5"></div>
+                                    </div>-->
+
+                                                <div class="col-md-12 margin-top-20" style="color:#262b31;text-align:left">
+                                                    <b>Учится в Финансовом университете</b>
+                                                    <br>
+                                                    Переехала из Уфы в Турцию и преподает уже два года. Изучала английский в Канаде, работала в международной организации AIESEC. Прошла интервью с командой Brainstr
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <% } %>
+                    </div>
+
+                    <br> <br>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- How to -->
+    <div class="section padding-top-50 padding-bottom-75 ix-halfscreen-section">
+
+        <div class="row align-items-center">
+            <div class="col-md-6 col-sm-12">
+                <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/girl-explaining.webp" alt="">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 offset-md-6 padding-left-50">
+                    <h2><%- __('index-new.howto.headline', '<mark class="color">' , '</mark>' ) %></h2>
+
+                    <div class="numbered">
+                        <ol>
+                            <li><%- __('index-new.howto.step1') %></li>
+                            <li><%- __('index-new.howto.step2') %></li>
+                            <li><%- __('index-new.howto.step3') %></li>
+                        </ol>
+                    </div>
+
+                    <br>
+
+                    <a href="/tutors/" class="button button-primary"><%- __('index-new.howto.btn') %></a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Tutor helps with ... -->
+    <div class="section padding-top-50 padding-bottom-75 ix-halfscreen-section">
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 padding-right-50">
+                    <h2><%- __('index-new.whattutorsprovide.headline', '<mark class="color">' , '</mark>' ) %></h2>
+
+                    <ul>
+                        <li><%- __('index-new.whattutorsprovide.1') %></li>
+                        <li><%- __('index-new.whattutorsprovide.2') %></li>
+                        <li><%- __('index-new.whattutorsprovide.3') %></li>
+                        <li><%- __('index-new.whattutorsprovide.4') %></li>
+                        <li><%- __('index-new.whattutorsprovide.5') %></li>
+                    </ul>
+
+                    <br>
+
+                    <a href="/tutors/" class="button button-primary"><%- __('index-new.whattutorsprovide.btn') %></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-md-6 offset-md-6">
+                <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/homework.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- QA -->
+    <!--
+    <div class="section padding-top-75 padding-bottom-75 ix-qa">
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="col-md-12 justify-content-center margin-bottom-25">
+                    <h2><%- __('index-new.qa.headline-1', '<mark class="color">', '</mark>') %></h2>
+                    <p class="text-center"><%- __('index-new.qa.text-1') %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+
+
+    <!-- FAQ -->
+    <!--
+    <div class="section padding-top-75 padding-bottom-75 index-highlights gray">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-md-12 justify-content-center margin-bottom-25">
+                    <h2>Frequently asked <mark class="color">questions</mark></h2>
+                </div>
+
+                <div class="col-md-12">
+
+                    <div class="accordion js-accordion faq">
+
+
+                        <div class="accordion__item js-accordion-item faq">
+                            <div class="accordion-header js-accordion-header">Panel 1</div>
+                            <div class="accordion-body js-accordion-body" style="display: block;">
+                                <div class="accordion-body__contents">
+                                    Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion__item js-accordion-item">
+                            <div class="accordion-header js-accordion-header">Panel 3</div>
+
+                            <div class="accordion-body js-accordion-body">
+
+                                <div class="accordion-body__contents">
+                                    Efficiently enable enabled sources and cost effective products. Completely synthesize principle-centered information after ethical communities. Efficiently innovate open-source infrastructures via inexpensive materials.
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    -->
+
+
+
+
+    <!-- Principles -->
+    <div class="section padding-top-100 padding-bottom-75 index-highlights gray">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-md-12 justify-content-center margin-bottom-25">
+                    <h2><%- __('index-new.principals.headline', '<mark class="color">' , '</mark>' ) %></h2>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="margin-bottom-10"><%- __('index-new.principals.headline-1') %></h3>
+                    <p><%- __('index-new.principals.text-1') %></p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="margin-bottom-10"><%- __('index-new.principals.headline-2') %></h3>
+                    <p><%- __('index-new.principals.text-2') %></p>
+                </div>
+
+                <div class=" col-md-4">
+                    <h3 class="margin-bottom-10"><%- __('index-new.principals.headline-3') %></h3>
+                    <p><%- __('index-new.principals.text-3') %></p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Info Blocks -->
+    <div class="section padding-top-100 margin-top-50 padding-bottom-50 index-highlights">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-md-3">
+                    <h3 class="margin-bottom-10"><%- __('index-new.blocks.headline-1') %></h3>
+                    <p><%- __('index-new.blocks.text-1') %></p>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="margin-bottom-10"><%- __('index-new.blocks.headline-2') %></h3>
+                    <p><%- __('index-new.blocks.text-2') %></p>
+                </div>
+
+                <div class=" col-md-3">
+                    <h3 class="margin-bottom-10"><%- __('index-new.blocks.headline-3') %></h3>
+                    <p><%- __('index-new.blocks.text-3') %></p>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="margin-bottom-10"><%- __('index-new.blocks.headline-4') %></h3>
+                    <p><%- __('index-new.blocks.text-4') %></p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- CTA -->
+    <div class="section padding-top-75 padding-bottom-50 ix-cta">
+        <div class="container">
+            <div class="row blog-cta justify-content-center margin-left-0 margin-right-0 align-items-center">
+
+                <div class="col-md-1"></div>
+
+                <div class="col-md-6 margin-top-75 margin-bottom-75 text-left">
+                    <h2><%- __('index-new.cta.headline', '<mark class="color">' , '</mark>' ) %></h2>
+                    <p class="margin-bottom-0">
+                        <%= __('blog.cta.text') %>
+                    </p>
+                </div>
+
+                <div class="col-md-5">
+                    <a href="/register/" class="button button-primary"><%- __('index-new.cta.btn') %></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<script>
+    $(window).on('scroll', function () {
+        checkScrollNavbar();
+    });
+
+    function checkScrollNavbar() {
+        var scrollTop = $(this).scrollTop();
+
+        if (scrollTop == 0) {
+            $("#header").css("border-bottom", "transparent");
+        } else {
+            $("#header").css("border-bottom", "1px solid var(--border)");
+        }
+    }
+    checkScrollNavbar();
+</script>
+
+
+<script src="/js/slick.min.js"></script>
+
+<script src="/data/<%= locale %>.js"></script>
+<script src="/controller/index.js" defer></script>

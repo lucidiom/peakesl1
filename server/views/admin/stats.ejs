@@ -1,0 +1,126 @@
+    <script>
+        /* beautify preserve:start */
+        var pageData = JSON.parse(<%- JSON.stringify(JSON.stringify(data)) %>);
+    /* beautify preserve:end */
+    </script>
+
+
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.24/datatables.min.css" />
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.24/datatables.min.js"></script>
+
+
+
+    <div class="row">
+
+        <div class="col-12 margin-bottom-20 d-flex">
+            <div class="margin-right-50">
+                <h2><%= data.count_users %></h2>
+                <small>Users</small>
+            </div>
+
+            <div class="margin-right-50">
+                <h2><%= data.count_teachers %></h2>
+                <small>Teachers</small>
+            </div>
+
+            <div class="margin-right-50">
+                <h2><%= data.count_lessons_requested %></h2>
+                <small>Lessons (requested)</small>
+            </div>
+
+            <div class="margin-right-50">
+                <h2><%= data.count_lessons_completed %></h2>
+                <small>Lessons (completed)</small>
+            </div>
+
+            <div class="margin-right-50">
+                <h2><%= data.count_messages %></h2>
+                <small>Messages</small>
+            </div>
+
+            <div class="margin-right-50">
+                <h2><%= data.count_transactions %></h2>
+                <small>Transactions</small>
+            </div>
+
+            <div class="margin-right-50">
+                <h2><%= data.count_deposits %></h2>
+                <small>Deposits</small>
+            </div>
+
+            <div class="margin-right-50">
+                <h2><%= data.count_reviews %></h2>
+                <small>Reviews</small>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="col-xl-12">
+            <div class="dashboard-box">
+                <div class="headline">
+                    <h3>User</h3>
+                </div>
+                <div class="content">
+
+                    <table id="user-table" class="table table-striped" style="width:100%">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Name</th>
+                                <th>Country</th>
+                                <th>Lang</th>
+                                <th>E-Mail</th>
+                                <th>Teacher</th>
+                                <th>Verified</th>
+                                <th>Balance</th>
+                                <th>Currency</th>
+                                <th>Registered</th>
+                            </tr>
+                        </thead>
+                        <tbody id="user-table-tbody">
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Name</th>
+                                <th>Country</th>
+                                <th>Lang</th>
+                                <th>E-Mail</th>
+                                <th>Teacher</th>
+                                <th>Verified</th>
+                                <th>Balance</th>
+                                <th>Currency</th>
+                                <th>Registered</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="/data/en.js"></script>
+    <script>
+        $.each(pageData.users, function(ix, item) {
+            $('#user-table-tbody').append(`<tr>
+                            <td>${item.firstname} ${item.lastname}</td>
+                            <td>${item.country == ""?"":countryData[item.country.toUpperCase()]}</td>
+                            <td>${item.locale.toUpperCase()}</td>
+                            <td>${item.email}</td>
+                            <td>${item.visible==true?"YES":""}</td>
+                            <td>${item.verified==false?"NO":"YES"}</td>
+                            <td>${Math.round(item.balance*10)/10}</td>
+                            <td>${item.currency.toUpperCase()}</td>
+                            <td>${item.createdAt}</td>
+                        </tr>`);
+        });
+    </script>

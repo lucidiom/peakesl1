@@ -1,0 +1,33 @@
+<div class="messages-container margin-top-0">
+
+    <div class="messages-container-inner">
+        <div class="messages-inbox">
+            <ul id="message-conversation-list"></ul>
+        </div>
+
+        <div class="message-content d-none">
+            <div class="messages-headline">
+                <i class="d-block d-sm-none icon-feather-arrow-left"></i>
+                <h4 id="conversation-name"></h4>
+                <!--<a href="#" class="message-action">Melden</a>-->
+            </div>
+
+            <div class="message-content-inner" id="messages-container"></div>
+
+            <div class="message-reply">
+                <textarea cols="1" rows="1" placeholder="<%= __('messages.msg') %>" id="msg"></textarea>
+                <button class="button button-primary" id="btn-send"><i class="margin-0 icon-feather-send"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    /* beautify preserve:start */
+    var conversations = JSON.parse(<%- JSON.stringify(JSON.stringify(conversations)) %>);
+     /* beautify preserve:end */
+</script>
+
+<script src="/controller/messages.js" defer></script>

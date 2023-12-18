@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+    http://www.w3.org/1999/xhtml http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd"
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"   
+    xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+    
+    <url>
+        <loc>https://brainstr.de/</loc>
+        <priority>1.00</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/tutors/</loc>
+        <priority>0.80</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/tutors/?lang=en" />
+    </url>
+
+      <url>
+        <loc>https://brainstr.de/german-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/german-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/german-tutors/?lang=en" />
+    </url>
+
+       <url>
+        <loc>https://brainstr.de/english-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/english-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/english-tutors/?lang=en" />
+    </url>
+
+       <url>
+        <loc>https://brainstr.de/italian-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/italian-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/italian-tutors/?lang=en" />
+    </url>
+
+       <url>
+        <loc>https://brainstr.de/spanish-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/spanish-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/spanish-tutors/?lang=en" />
+    </url>
+
+       <url>
+        <loc>https://brainstr.de/russian-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/russian-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/russian-tutors/?lang=en" />
+    </url>
+
+       <url>
+        <loc>https://brainstr.de/french-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/french-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/french-tutors/?lang=en" />
+    </url>
+
+       <url>
+        <loc>https://brainstr.de/dutch-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/dutch-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/dutch-tutors/?lang=en" />
+    </url>
+
+       <url>
+        <loc>https://brainstr.de/maths-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/maths-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/maths-tutors/?lang=en" />
+    </url>
+
+       <url>
+        <loc>https://brainstr.de/latin-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/latin-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/latin-tutors/?lang=en" />
+    </url>
+
+       <url>
+        <loc>https://brainstr.de/greek-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/greek-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/greek-tutors/?lang=en" />
+    </url>
+
+       <url>
+        <loc>https://brainstr.de/chemistry-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/chemistry-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/chemistry-tutors/?lang=en" />
+    </url>
+
+      <url>
+        <loc>https://brainstr.de/geography-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/geography-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/geography-tutors/?lang=en" />
+    </url>
+
+      <url>
+        <loc>https://brainstr.de/physics-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/physics-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/physics-tutors/?lang=en" />
+    </url>
+
+      <url>
+        <loc>https://brainstr.de/biology-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/biology-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/biology-tutors/?lang=en" />
+    </url>
+
+      <url>
+        <loc>https://brainstr.de/economics-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/economics-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/economics-tutors/?lang=en" />
+    </url>
+
+      <url>
+        <loc>https://brainstr.de/music-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/music-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/music-tutors/?lang=en" />
+    </url>
+
+      <url>
+        <loc>https://brainstr.de/arts-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/arts-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/arts-tutors/?lang=en" />
+    </url>
+
+      <url>
+        <loc>https://brainstr.de/politics-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/politics-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/politics-tutors/?lang=en" />
+    </url>
+
+      <url>
+        <loc>https://brainstr.de/history-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/history-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/history-tutors/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/webdev-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/webdev-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/webdev-tutors/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/softdev-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/softdev-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/softdev-tutors/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/accounting-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/accounting-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/accounting-tutors/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/finances-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/finances-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/finances-tutors/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/consulting-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/consulting-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/consulting-tutors/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/coaching-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/coaching-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/coaching-tutors/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/writing-and-translations-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/writing-and-translations-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/writing-and-translations-tutors/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/sales-and-marketing-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/sales-and-marketing-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/sales-and-marketing-tutors/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/graphics-and-design-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/graphics-and-design-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/graphics-and-design-tutors/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/digital-marketing-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/digital-marketing-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/digital-marketing-tutors/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/education-and-training-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/education-and-training-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/education-and-training-tutors/?lang=en" />
+    </url>
+
+      <url>
+        <loc>https://brainstr.de/computer-science-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/it-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/it-tutors/?lang=en" />
+    </url>
+
+      <url>
+        <loc>https://brainstr.de/philosophy-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/philosophy-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/philosophy-tutors/?lang=en" />
+    </url>
+
+     <url>
+        <loc>https://brainstr.de/technical-drawing-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/technical-drawing-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/technical-drawing-tutors/?lang=en" />
+    </url>
+
+     <url>
+        <loc>https://brainstr.de/theater-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/theater-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/theater-tutors/?lang=en" />
+    </url>
+
+      <url>
+        <loc>https://brainstr.de/astrophysics-tutors/</loc>
+        <priority>0.75</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/astrophysics-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/astrophysics-tutors/?lang=en" />
+    </url>
+
+
+
+
+    <url>
+        <loc>https://brainstr.de/virtual-classroom/</loc>
+        <priority>0.80</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/virtual-classroom/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/virtual-classroom/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/online-tutoring/</loc>
+        <priority>0.80</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/online-tutoring/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/online-tutoring/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/online-nachhilfe/</loc>
+        <priority>0.80</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/online-nachhilfe/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/online-nachhilfe/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/online-nachhilfe-geben/</loc>
+        <priority>0.80</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/online-nachhilfe-geben/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/online-nachhilfe-geben/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/teaching-with-brainstr/</loc>
+        <priority>0.80</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/teaching-with-brainstr/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/teaching-with-brainstr/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/online-nachhilfelehrer-werden/</loc>
+        <priority>0.80</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/online-nachhilfelehrer-werden/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/online-nachhilfelehrer-werden/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/register/</loc>
+        <priority>0.80</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/register/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/register/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/terms-of-service/</loc>
+        <priority>0.60</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/terms-of-service/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://brainstr.de/terms-of-service/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/refund/</loc>
+        <priority>0.60</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/refund/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/refund/?lang=en" />
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/privacy/</loc>
+        <priority>0.60</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/privacy/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/privacy/?lang=en" />
+    </url>
+    
+    <url>
+        <loc>https://brainstr.de/imprint/</loc>
+        <priority>0.80</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/imprint/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/imprint/?lang=en" />
+    </url>
+
+
+    <url>
+        <loc>https://brainstr.de/blog/de/</loc>
+        <priority>0.80</priority>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/blog/ru/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/blog/en/" />
+    </url>
+
+   
+    <url>
+        <loc>https://brainstr.de/blog/en/online-tutoring-what-you-are-missing-out-on/</loc>
+        <priority>0.80</priority>
+          <news:news>
+            <news:publication>
+                <news:name>brainstr</news:name>
+                <news:language>en</news:language>
+            </news:publication>
+            <news:publication_date>2021-03-23</news:publication_date>
+            <news:title>Online Tutoring – Here’s What You’re Missing Out On!</news:title>
+            <news:genres>Blog</news:genres> 
+            <news:keywords>online tutoring, brainstr, benefits of online tutoring, how to find online tutor, challenges of online tutoring</news:keywords> 
+        </news:news>
+    </url>
+
+    <url>
+        <loc>https://brainstr.de/blog/de/flaechen-und-flaechenberechnung/</loc>
+        <priority>0.80</priority>
+    </url>
+
+
+    <url>
+        <loc>https://brainstr.de/blog/de/5-tipps-die-dir-das-homeschooling-erleichtern/</loc>
+        <priority>0.80</priority>
+          <news:news>
+            <news:publication>
+                <news:name>brainstr</news:name>
+                <news:language>de</news:language>
+            </news:publication>
+            <news:publication_date>2021-04-14</news:publication_date>
+            <news:title>So gelingt der Online-Unterricht - 5 Tipps, die dir das Homeschooling erleichtern</news:title>
+            <news:genres>Blog</news:genres> 
+            <news:keywords>homeschooling, online tutor, online-nachhilfe, online nachhilfe, online unterricht, eltern, schüler</news:keywords> 
+        </news:news>
+    </url>
+
+        <url>
+        <loc>https://brainstr.ru/blog/ru/who-is-the-best-tutor</loc>
+        <priority>0.80</priority>
+          <news:news>
+            <news:publication>
+                <news:name>brainstr</news:name>
+                <news:language>ru</news:language>
+            </news:publication>
+            <news:publication_date>2021-03-21</news:publication_date>
+            <news:title>Терпение, подход к ребенку и умение объяснять. Мы узнали у школьников и родителей, что самое важное в работе онлайн-репетитора.</news:title>
+            <news:genres>Blog</news:genres> 
+            <news:keywords>репетитор, репетитор онлайн, подготовка к ЕГЭ</news:keywords> 
+        </news:news>
+    </url>
+
+      <url>
+        <loc>https://brainstr.ru/blog/ru/brene-brown-for-online-tutors/</loc>
+        <priority>0.80</priority>
+          <news:news>
+            <news:publication>
+                <news:name>brainstr</news:name>
+                <news:language>ru</news:language>
+            </news:publication>
+            <news:publication_date>2021-03-23</news:publication_date>
+            <news:title>Как вести вдохновляющие онлайн-уроки, используя идеи Брене Браун</news:title>
+            <news:genres>Blog</news:genres> 
+            <news:keywords>Онлайн-репетитор, Онлайн-занятия, Правила на онлайн-занятиях, Перевернутый класс</news:keywords> 
+        </news:news>
+    </url>
+
+     <url>
+        <loc>https://brainstr.ru/blog/ru/anna-teacher-online-turkey/</loc>
+        <priority>0.80</priority>
+          <news:news>
+            <news:publication>
+                <news:name>brainstr</news:name>
+                <news:language>ru</news:language>
+            </news:publication>
+            <news:publication_date>2021-04-14</news:publication_date>
+            <news:title>Весь урок сплошной сюрприз, ор выше гор и путешествия на Марс 🚀 Как преподавательница из Уфы справляется с целым классом первоклассников из Турции.</news:title>
+            <news:genres>Blog</news:genres> 
+            <news:keywords>Онлайн-репетитор, Онлайн-занятия, Успешный урок, Идеи для учителя</news:keywords> 
+        </news:news>
+    </url>
+
+</urlset>

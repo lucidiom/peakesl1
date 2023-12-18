@@ -1,0 +1,74 @@
+<header id="header-container">
+
+    <div id="header">
+        <div class="container">
+
+            <div class="left-side">
+                <div id="logo">
+                    <a href="/"><img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/logo.webp" alt="brainstr logo"></a>
+                </div>
+
+                <nav id="navigation">
+                    <ul id="responsive">
+                        <li><a href="/tutors/">
+                                <%= __('header.tutors') %>
+                            </a></li>
+                        <li><a href="/online-tutoring/">
+                                <%= __('header.howitworks') %>
+                            </a></li>
+                        <li><a href="/become-a-tutor/">Become a Tutor</a></li>
+                        <li><a href="/social-program/">
+                                <%= __('general.socialprogram-short') %>
+                            </a></li>
+                        <li><a href="/blog/">
+                                <%= __('header.blog') %>
+                            </a></li>
+
+                        <% if(locals.user) { %>
+                            <br><br>
+                            <li class="show-mobile"><a href="/teachers/">
+                                    <%= __('header.getStarted-loggedIn') %>
+                                </a></li>
+                            <% }else{ %>
+                                <br><br>
+                                <li class="show-mobile"><a href="/login/">
+                                        <%= __('login.sign-in') %>
+                                    </a></li>
+                                <% } %>
+                    </ul>
+                </nav>
+                <div class="clearfix"></div>
+            </div>
+
+
+            <div class="right-side">
+                <% if(locals.user) { %>
+                    <a class="button button-primary header-login" href="/teachers/">
+                        <%= __('header.getStarted-loggedIn') %>
+                    </a>
+                    <% }else{ %>
+                        <a href="/login/" class="header-login-link d-none d-lg-block">
+                            <%= __('login.sign-in') %>
+                        </a>
+                        <a class="button button-primary header-login" href="/register/">
+                            <%= __('header.getStarted') %>
+                        </a>
+                        <% } %>
+
+                            <span class="mmenu-trigger">
+                                <button class="hamburger hamburger--collapse" type="button">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </span>
+
+            </div>
+            <!-- Right Side Content / End -->
+
+        </div>
+    </div>
+    <!-- Header / End -->
+
+</header>
+<div class="clearfix"></div>

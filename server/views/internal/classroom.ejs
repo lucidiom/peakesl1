@@ -1,0 +1,452 @@
+<script>
+    var lid = "<%= id %>";
+</script>
+
+
+
+<div class="classroom-row" id="classroom" style="display:none">
+
+    <div class="col-left">
+
+        <div class="titlebar">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="job-overview" id="lessonDetails">
+                        <div class="job-overview-inner classroom-details">
+                            <h3 class="margin-bottom-10" id="ldi-details-teacher"></h3>
+
+                            <ul class="margin-bottom-20">
+                                <li>
+                                    <i class="icon-line-awesome-calendar-o"></i>
+                                    <span id="ldi-details-date"></span>
+                                </li>
+                                <li>
+                                    <i class="icon-line-awesome-clock-o"></i>
+                                    <span id="ldi-details-duration"></span>
+                                </li>
+                                <li>
+                                    <i class="icon-material-outline-school"></i>
+                                    <span id="ldi-details-subject"></span>
+                                </li>
+
+                                <li class="" id="status-indicator"></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="mainscreen">
+
+            <div class="video-topbar">
+
+                <div class="teacher-profile">
+                    <div id="teacher-profile-image" style="background-image:url('')">
+                    </div>
+                    <small id="teacher-profile-role"></small> <br>
+                    <p id="teacher-profile-name"></p>
+                </div>
+
+
+                <div class="lesson-counter">
+                    <span>15:36</span>
+                </div>
+
+            </div>
+
+
+            <div class="video-branding noselect">
+                <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/logo.png" alt="" />
+            </div>
+
+
+            <div class="maincontent">
+
+
+
+
+                <div id="content-whiteboard">
+                    <div class="whiteboard-controls noselect">
+
+                        <div id="c-whiteboard-controls">
+                            <div class="whiteboard-control" id="video-control-whiteboard-color">
+                                <div id="colorpicker-indicator"></div>
+                            </div>
+
+                            <div class="d-inline-block margin-right-10"></div>
+
+                            <div class="whiteboard-control margin-right-10" id="video-control-whiteboard-delete-item">
+                                <i class="icon-feather-x"></i>
+                            </div>
+
+                            <div class="whiteboard-control active" id="video-control-whiteboard-drawing">
+                                <i class="icon-feather-edit-2"></i>
+                            </div>
+
+                            <div id="whiteboard-controls-drawing" class="d-inline-block margin-left-10">
+                                <input class="input" id="whiteboard-controls-brushwidth" type="number" value="2" max="100" min="1" step="1" />
+                            </div>
+
+
+                            <div class="whiteboard-control" id="video-control-whiteboard-text">
+                                <i class="icon-feather-type"></i>
+                            </div>
+                            <div id="whiteboard-controls-text" class="d-none">
+                                <div id="video-control-whiteboard-text-fontSize" class="d-inline-block margin-right-10">
+                                    <input class="input" id="whiteboard-controls-fontSize" type="number" value="22" max="100" min="1" step="1" />
+                                </div>
+
+                                <div class="whiteboard-control" id="video-control-whiteboard-text-bold">
+                                    <i class="icon-feather-bold"></i>
+                                </div>
+
+                                <div class="whiteboard-control" id="video-control-whiteboard-text-italic">
+                                    <i class="icon-feather-italic"></i>
+                                </div>
+
+                                <div class="whiteboard-control" id="video-control-whiteboard-text-underline">
+                                    <i class="icon-feather-underline"></i>
+                                </div>
+
+
+                                <div class="whiteboard-control" id="video-control-whiteboard-text-align-left">
+                                    <i class="icon-feather-align-left"></i>
+
+                                </div>
+                                <div class="whiteboard-control" id="video-control-whiteboard-text-align-center">
+                                    <i class="icon-feather-align-center"></i>
+                                </div>
+                                <div class="whiteboard-control" id="video-control-whiteboard-text-align-right">
+                                    <i class="icon-feather-align-right"></i>
+                                </div>
+                            </div>
+
+                            <!--<div class="whiteboard-control" id="video-control-whiteboard-unlock" title="<%= __('classroom.student-access') %>" data-tippy-placement="top" onclick="">
+                             <i class="icon-feather-image"></i>
+                         </div>-->
+
+                            <div class="d-inline-block margin-right-10"></div>
+
+                            <div id="whiteboard-controls-forms" class="d-inline-block">
+                                <div class="whiteboard-control" id="video-control-whiteboard-form-square">
+                                    <i class="icon-feather-square"></i>
+                                </div>
+                                <div class="whiteboard-control" id="video-control-whiteboard-form-triangle">
+                                    <i class="icon-feather-triangle"></i>
+                                </div>
+                                <div class="whiteboard-control" id="video-control-whiteboard-form-circle">
+                                    <i class="icon-feather-circle"></i>
+                                </div>
+                            </div>
+
+
+
+                            <div class="d-inline-block margin-right-10"></div>
+
+                            <div class="whiteboard-control" id="video-control-whiteboard-undo" title="<%= __('classroom.undo') %>" data-tippy-placement="top" onclick="whiteboard_canvas.undo();">
+                                <i class="icon-feather-arrow-left"></i>
+                            </div>
+                            <div class="whiteboard-control" id="video-control-whiteboard-redo" title="<%= __('classroom.redo') %>" data-tippy-placement="top" onclick="whiteboard_canvas.redo();">
+                                <i class="icon-feather-arrow-right"></i>
+                            </div>
+
+                            <div class="d-inline-block margin-right-10"></div>
+
+                            <div class="whiteboard-control" id="video-control-whiteboard-unlock" title="<%= __('classroom.student-access') %>" data-tippy-placement="top" onclick="whiteboardToggleStudentRights();">
+                                <i class="icon-feather-unlock"></i>
+                            </div>
+
+                            <div class="whiteboard-control" id="video-control-whiteboard-download" title="<%= __('classroom.download') %>" data-tippy-placement="top" onclick="downloadWhiteboard();">
+                                <i class="icon-feather-download"></i>
+                            </div>
+
+                            <div class="d-inline-block margin-right-10"></div>
+
+                            <div class="whiteboard-control" id="video-control-whiteboard-delete" title="<%= __('classroom.delete') %>" data-tippy-placement="top" onclick="whiteBoardDelete();">
+                                <i class="icon-feather-trash-2"></i>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div id="whiteboard">
+                        <div id="c-whiteboard-protection"></div>
+                        <div id="c-whiteboard-canvas-container">
+                            <canvas id="c-whiteboard" crossorigin="anonymous"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="content-screensharing">
+                    <div id="screensharing"></div>
+                </div>
+
+
+                <div id="content-video">
+                    <div id="remote-media"></div>
+                </div>
+            </div>
+
+
+            <div class="video-controls noselect">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="video-control" id="video-control-screensharing" title="<%= __('classroom.screen-share') %>" data-tippy-placement="top">
+                            <i class="icon-feather-cast"></i>
+                        </div>
+                        <div class="video-control" id="video-control-whiteboard" title="<%= __('classroom.whiteboard') %>" data-tippy-placement="top">
+                            <i class="icon-feather-edit"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-6 center-block">
+                        <!--
+            <div class="video-control" id="video-control-volume">
+              <i class="icon-feather-volume-2" id="video-control-volume-btn"></i>
+              <div class="volumeslide-container">
+                <input type="range" min="0" max="100" value="50" class="volumeslider" id="video-control-volume-slider">
+              </div>
+            </div>
+            -->
+                        <div class="video-control" id="video-control-microphone" title="<%= __('classroom.microphone') %>" data-tippy-placement="top">
+                            <i class="icon-feather-mic-off"></i>
+                        </div>
+                        <div class="video-control" id="video-control-video" title="<%= __('classroom.camera') %>" data-tippy-placement="top">
+                            <i class="icon-feather-video-off"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="video-control" id="video-control-fullscreen" title="<%= __('classroom.fullscreen') %>" data-tippy-placement="top">
+                            <i class="icon-feather-maximize-2"></i>
+                        </div>
+                        <div class="video-control" id="video-control-chat" title="<%= __('classroom.chat') %>" data-tippy-placement="top">
+                            <i class="icon-feather-message-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="col-right">
+
+        <div class="messages-container margin-top-0">
+            <div class="messages-container-inner">
+
+                <div class="message-content">
+                    <div class="messages-header">
+
+                        <div class="local-media-container">
+                            <div id="local-media"></div>
+                            <canvas id="local-canvas"></canvas>
+                        </div>
+
+                    </div>
+
+                    <div class="message-content-inner" id="chat-container"></div>
+
+                    <div class="message-reply">
+                        <div id="typing-indicator">
+                            <div>
+                                <div class="ticontainer">
+                                    <div class="tiblock">
+                                        <div class="tidot"></div>
+                                        <div class="tidot"></div>
+                                        <div class="tidot"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span>Leon is typing</span>
+                        </div>
+
+                        <input placeholder="<%= __('classroom.msgplaceholder') %>" id="chat-msg" type="text">
+                        <button class="button ripple-effect" id="chat-submit"> <i class="icon-feather-send"></i> </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div id="login">
+    <div class="legal">
+        <a href="/lessons/" class="d-flex">
+            <i class="icon-material-outline-arrow-back margin-right-10" style="margin-top:4px"></i>
+            <span>
+                <%= __('classroom.leave') %>
+            </span>
+        </a>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-12" style="text-align: center;">
+            <a href="/" target="_blank"><img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/logo.webp" alt="brainstr Logo" height="20px"></a>
+            <h1 class="subpage text-center" style="font-size: 24px; margin-top: 8px;">
+                <%= __('classroom.headline') %>
+            </h1>
+        </div>
+
+        <div class="col-md-4">
+            <div class="preview-media-container">
+                <div id="preview-media">
+
+                    <canvas id="preview-canvas" width="451" height="255" hidden></canvas>
+                </div>
+            </div>
+
+            <br>
+
+
+            <div id="login-controls">
+                <div class="d-flex justify-content-center">
+                    <div class="switch-container" style="margin-left:-50px">
+                        <label class="switch">
+                            <i class="icon-feather-video"></i>
+                            <input type="checkbox" onchange="toggleVideo();" checked>
+                            <span class="switch-button margin-left-30"></span>
+                        </label>
+                    </div>
+
+                    <div class="switch-container margin-left-80">
+                        <label class="switch">
+                            <i class="icon-feather-mic"></i>
+                            <input type="checkbox" onchange="toggleAudio();" checked>
+                            <span class="switch-button margin-left-30"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="d-flex justify-content-center">
+                    <button href="#" class="button button-primary" id="cls-upcoming-countdown" onclick="connect();"></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-12 margin-top-75">
+            <div class="d-flex justify-content-center">
+                <ul class="preview-items" style="color: var(--dark-blue);">
+                    <li class="legal">
+                        <% if(role=="student" ){ %>
+                            <a href="/teacher/<%= otherdata._id %>" target="_blank">
+                                <img src="/profilepicture/<%= otherdata._id %>" height="30px" />
+                                <span>
+                                    <%= otherdata.firstname %>
+                                        <%= otherdata.lastname %>
+                                </span>
+                            </a>
+                            <% }else{ %>
+                                <img src="/profilepicture/<%= otherdata._id %>" height="30px" />
+                                <span>
+                                    <%= otherdata.firstname %>
+                                        <%= otherdata.lastname %>
+                                </span>
+                                <% } %>
+                    </li>
+                    <li>
+                        <i class="icon-line-awesome-calendar-o"></i>
+                        <span id="cls-upcoming-date"></span>
+                    </li>
+                    <li>
+                        <i class="icon-line-awesome-clock-o"></i>
+                        <span id="cls-upcoming-duration"></span>
+                    </li>
+                    <li>
+                        <i class="icon-material-outline-school"></i>
+                        <span>
+                            <%= lesson.subject %>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <br>
+            <div class="d-flex justify-content-center">
+                <small>
+                    <%= __('classroom.connect-note') %>
+                </small>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="content-nolessonscheduled">
+        <div class="row">
+
+
+            <div class="col-md-4"> </div>
+
+            <div class="col-md-4 vcenter">
+
+                <div class="freelancer box-nohover-nolink" style="width: 100%" onclick="openTeachers();">
+                    <div class="freelancer-overview">
+                        <div class="freelancer-overview-inner">
+                            <div class="freelancer-name">
+                                <h4 id="cls-upcoming-teachername">
+                                    <%= __('classroom.no-lesson-booked') %>
+                                </h4>
+                                <span><a id="cls-upcoming-schedulelink-2" href="./teachers" target="_blank">
+                                        <%= __('classroom.no-lesson-booked-cta') %>
+                                            <i class="icon-line-awesome-long-arrow-right"></i>
+                                    </a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<script src="./data/<%= locale %>.js"></script>
+
+<script src="./js/pickr.min.js"></script>
+
+<!--<script src="./js/p5.min.js"></script>
+ <script src="./js/p5.dom.min.js"></script>
+ <script src="./rendering/classroom/sketch.js"></script>-->
+
+<script src="//sdk.twilio.com/js/video/releases/2.13.1/twilio-video.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0"></script>
+
+<script src="./js/fabric.min.js"></script>
+<script src="./js/fabric.history.js"></script>
+
+
+<script src="./controller/classroom_whiteboard.js" defer></script>
+<script src="./controller/classroom.js" defer></script>

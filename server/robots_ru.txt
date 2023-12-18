@@ -1,0 +1,4 @@
+User-agent: *
+
+Sitemap: https://brainstr.ru/sitemap.xml
+Sitemap: https://www.brainstr.ru/sitemap.xml

@@ -1,0 +1,108 @@
+<div class="container margin-top-50">
+    <div class="row justify-content-center">
+
+        <div class="col-xl-10 col-lg-10">
+            <div class="blog-post single-post">
+
+                <div class="blog-post-thumbnail">
+                    <div class="blog-post-thumbnail-inner" style="position:relative">
+                        <a href="#" class="button gray" id="title-upload-btn">Upload Image</a>
+                        <img src="<%- post.thumbnail %>" alt="">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 margin-top-30">
+                        <div class="blog-post-content">
+
+                            <input type="text" value="<%- post.headline %>" id="post-headline" class="with-border">
+
+                            <div id="post-content-field">
+                                <%- post.content %>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-xl-10 col-lg-10">
+            <div class="blog-post single-post">
+                <div class="blog-post-content">
+                    <div class="row margin-top-30 padding-bottom-20">
+
+                        <div class="col-md-12">
+                            <strong>URL</strong>
+                            <input type="text" value="<%= post.url %>" class="with-border" />
+                        </div>
+
+                        <div class="col-md-12">
+                            <strong>Meta title</strong>
+                            <input type="text" value="<%= post.meta.title %>" class="with-border" />
+                        </div>
+                        <div class="col-md-12">
+                            <strong>Meta Description</strong>
+                            <textarea name="" id="" cols="30" rows="4" class="with-border"><%= post.meta.description %></textarea>
+                        </div>
+
+
+                        <div class="col-md-3">
+                            <strong>Language</strong>
+                            <select class="selectpicker language-switcher" data-selected-text-format="count" data-size="5" id="blog-language-picker">
+                                <option value="de" <% if(post.language=="de" ){ %> selected <% } %> data-content="Deutsch">
+                                </option>
+                                <option value="en" <% if(post.language !="de" && post.language !="ru" ){ %> selected <% } %> data-content="English">
+                                </option>
+                                <option value="ru" <% if(post.language=="ru" ){ %> selected <% } %> data-content="Русский">
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <strong>Readtime</strong>
+                            <input type="number" value="<%= post.readtime %>" class="with-border" />
+                        </div>
+                        <div class="col-md-5">
+                            <strong>Cateogry</strong>
+                            <input type="number" value="<%= post.category %>" class="with-border" />
+                        </div>
+                        <div class="col-md-3 margin-top-10">
+                            <div class="checkbox margin-top-10 d-block">
+                                <input type="checkbox" value="featured" id="post-featured">
+                                <label for="post-featured"><span class="checkbox-icon"></span>&nbsp;Featured Post</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 margin-top-10">
+                            <div class="checkbox margin-top-10 d-block">
+                                <input type="checkbox" value="featured" id="post-public">
+                                <label for="post-public"><span class="checkbox-icon"></span>&nbsp;Publish Post</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-xl-10 col-lg-10 margin-bottom-50 justify-content-end">
+            <button class="button button-primary btn-right">Save Article</button>
+            <a class="button gray btn-right margin-right-20" target="_blank" href="preview">Preview</a>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+
+
+<script>
+    $('head').append('<link rel="stylesheet" type="text/css" href="/css/summernote-lite.min.css">');
+</script>
+
+<script src="/js/summernote-lite.min.js"></script>
+<script src="/controller/blog-post-edit.js" defer></script>

@@ -1,0 +1,243 @@
+<script src="https://js.stripe.com/v3/"></script>
+
+
+<div class="ix" style="margin-top: -40px;">
+
+    <div class="ix-head" style="background-image: url('https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/become-a-teacher-header.webp');
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 50px;
+    width: 100vw;
+    padding: 0px 25px 50px 25px;
+    position: relative;
+    max-height: 800px;
+    margin-bottom: 0px;">
+
+        <div style="background-image: none;background-color: transparent; background: linear-gradient(90deg, transparent 25%, #000 140%); position: absolute;top:0;left:0;width:100%; height: 100%;z-index:0;"></div>
+
+        <div class="container margin-top-30 margin-bottom-30" style="z-index:2;padding: 0 !important; padding-top: 75px !important;background-image: none !important;background-color: transparent !important;">
+            <div class="row align-items-center">
+                <div class="col-md-6" id="infobox">
+                </div>
+
+                <div class="col-md-1"> </div>
+
+                <div class="col-md-5" id="signup">
+                    <div style="background-color: #fff;border-radius: 5px;box-shadow: var(--shadow);padding:40px;border: solid 1px var(--border);">
+
+                        <div id="registration-form">
+                            <h1 style="font-weight: bold;font-size: 28px;margin-bottom: 10px;">Teach online from home</h1>
+                            <h2 style="margin-bottom:30px;">Earn money on your own schedule</h2>
+
+
+                            <form action="post" id="signup-form">
+                                <div class="notification error" id="login-notification">
+                                    <p>...</p>
+                                    <a class="close"></a>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input class="border no-shadow" type="text" placeholder="<%= __('general.first-name') %>" id="name">
+                                    </div>
+                                    <div class="col-6">
+                                        <input class="border no-shadow" type="text" placeholder="<%= __('general.last-name') %>" id="surname">
+                                    </div>
+                                </div>
+                                <input class="border no-shadow" type="email" placeholder="<%= __('general.email') %>" id="emailaddress">
+                                <input class="border no-shadow" type="password" placeholder="<%= __('general.password') %>" id="password">
+
+                                <small><b>0% commission</b>, 20€/month flat fee.</small>
+                                <button id="btn-submit" class="button button-primary button-block margin-top-10 g-recaptcha" form="signup-form" data-sitekey="<%= gcaptcha_key %>" data-callback='onClickRegister' data-action='signup'>Let's get started</button>
+
+                            </form>
+
+                            <div style="display:none;" id="retry-payment">
+                                <p>Enjoy commission free teaching on brainstr. Thousands of students are waiting for you.</p>
+                                <button id="btn-pay" onClick="pay();" class="button button-primary button-block margin-top-10">Subscribe and start earning</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section padding-top-75 padding-bottom-70 index-highlights">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4" style="padding-left:30px;padding-right:30px">
+                    <div class="block index-feature margin-top-10 text-center">
+                        <h2 style="line-height:1.4; font-size: 22px; text-align: center !important;margin-bottom:0">Set your own rate</h2>
+                        <p style="font-size:15px;color: #7b7b7b; line-height: 1.5;">Choose your hourly rate and change it anytime. On average, English tutors charge $15-25 per hour.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" style="padding-left:30px;padding-right:30px">
+                    <div class="block index-feature margin-top-10 text-center">
+                        <h2 style="line-height:1.4; font-size: 22px; text-align: center !important;margin-bottom:0">Teach anywhere, anytime</h2>
+                        <p style="font-size:15px;color: #7b7b7b; line-height: 1.5;">Decide when and how many hours you want to teach. No minimum time commitment or fixed schedule. Be your own boss!</p>
+                    </div>
+                </div>
+                <div class="col-md-4" style="padding-left:30px;padding-right:30px">
+                    <div class="block index-feature margin-top-10 text-center">
+                        <h2 style="line-height:1.4; font-size: 22px; text-align: center !important;margin-bottom:0">Commission Free</h2>
+                        <p style="font-size:15px;color: #7b7b7b; line-height: 1.5;">No 33% commission with us. You receive the full amount of your lesson without giving away a single cent.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights gray">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 col-sm-12 align-self-center">
+                    <h2 class="margin-bottom-25">Teach Students from <b> over 150 countries</b></h2>
+                    <p class="margin-bottom-20">
+                        <b>Thousands of students</b> are waiting to book a lesson with you. Join brainstr today and <b>start teaching & earning</b>.
+                    </p>
+                    <ul style="list-style:none;padding:0;margin:0">
+                        <li>✅ Steady stream of new students</li>
+                        <li>✅ Smart calendar</li>
+                        <li>✅ Interactive classroom</li>
+                        <li>✅ Convenient payment methods</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-7 col-sm-12">
+                    <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/brainstr-teacher-profiles-2_<%= locale %>.webp" alt="brainstr teacher profiles" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 col-sm-12 align-self-center">
+                    <blockquote style="font-size: 30px;line-height:1.5;border-left: 2px solid var(--primary);">brainstr allowed me to make a living without leaving home!</blockquote>
+                    <p class="margin-top-40"><b>Jenny S.</b> teaches English on brainstr so she can spend more quality time.</p>
+                </div>
+
+                <div class="col-md-7 col-sm-12">
+                    <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/teacher.webp" alt="brainstr teacher profiles" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section padding-top-20 padding-bottom-100 index-highlights">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('brainstr-as-tutor.boxes.1.headline') %></h2>
+                        <p><%- __('brainstr-as-tutor.boxes.1.text') %></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('brainstr-as-tutor.boxes.2.headline') %></h2>
+                        <p><%- __('brainstr-as-tutor.boxes.2.text') %></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('brainstr-as-tutor.boxes.3.headline') %></h2>
+                        <p><%- __('brainstr-as-tutor.boxes.3.text') %></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-20">
+                <div class="col-md-4">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('brainstr-as-tutor.boxes.6.headline') %></h2>
+                        <p><%- __('brainstr-as-tutor.boxes.6.text') %></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('brainstr-as-tutor.boxes.7.headline') %></h2>
+                        <p><%- __('brainstr-as-tutor.boxes.7.text') %></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="block index-feature margin-top-25">
+                        <h2><%- __('brainstr-as-tutor.boxes.8.headline') %></h2>
+                        <p><%- __('brainstr-as-tutor.boxes.8.text') %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights gray">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-sm-12">
+                    <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/brainstr-teacher-timetable_<%= locale %>.webp" alt="brainstr teacher timetable" loading="lazy">
+                </div>
+
+                <div class="col-md-5 col-sm-12 align-self-center">
+                    <h2 class="margin-bottom-25"><%- __('brainstr-as-tutor.slides.3.headline') %></h2>
+                    <p class="margin-bottom-20">
+                        <%- __('brainstr-as-tutor.slides.3.text') %>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 col-sm-12 align-self-center">
+                    <h2 class="margin-bottom-25"><%- __('brainstr-as-tutor.slides.1.headline') %></h2>
+                    <p class="margin-bottom-20">
+                        <%- __('brainstr-as-tutor.slides.1.text') %>
+                    </p>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/brainstr-classroom-interactive_<%= locale %>.webp" alt="brainstr interactive classroom" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section padding-top-100 padding-bottom-90 index-highlights landing-last-cta">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h2 class="margin-bottom-25"><b>Get paid</b> to teach online</h2>
+                    <p>Connect with thousands of learners around the world and teach from your living room</p>
+                    <a href="#signup" class="button button-primary margin-top-10">Get started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $('.right-side').hide();
+    </script>
+
+    <script src="/js/slick.min.js"></script>
+
+    <script src="/data/<%= locale %>.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=<%= gcaptcha_key %>"></script>
+    <script src="/controller/become-a-teacher.js" defer></script>

@@ -1,0 +1,97 @@
+<div class="half-split">
+
+    <div class="auth-left" style="background-image: url('https://images.pexels.com/photos/4226256/pexels-photo-4226256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+        <!--<div class="darkener"></div>-->
+
+        <div class="wrapper vh-100">
+            <div class="row align-items-center h-100 no-gutters">
+                <div class="col-md-8 mx-auto" style="margin-top:-40px">
+                    <!--<a href="/">
+                            <img src="/images/logo-white.webp" alt="brainstr Logo" style="height: 25px;margin-bottom: 35px;">
+                        </a>
+                        <h1>Social Online Tutoring</h1>
+                        <p>We belive at Katyon Technologies that through auctions we can offer you our products at the best market prices, adjusted specifically to your needs.</p>
+                        -->
+                </div>
+            </div>
+
+            <p id="copyright" class="mt-5 mb-3" style="font-size: 12px;color:#fff!important;">
+                © 2023 <b>brainstr</b> &nbsp; &nbsp;
+                <a href="/" style="color:#fff!important;"><%- __('header.start') %></a>
+                &nbsp;
+                <a href="/social-program/" style="color:#fff!important;"><%- __('general.socialprogram-short') %></a>
+                &nbsp;
+                <a href="mailto:support@brainstr.de" style="color:#fff!important;"><%- __('header.support-ctr') %></a>
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <div class="wrapper vh-100">
+            <div class="row align-items-center h-100 no-gutters" style="justify-content: center;align-items: center !important;width: 100%;">
+
+                <div class="col-md-8 col-10 mx-auto">
+                    <a href="/">
+                        <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/logo.webp" alt="brainstr Logo" style="height: 25px;margin-bottom: 35px;">
+                    </a>
+
+                    <h1 class="h6 mb-3">
+                        Ready to become a brainstr Student?
+                    </h1>
+                    <p>
+                        <span class="legal">
+                            <%= __('register.already-signed-text') %>
+                                <a href="/login/">
+                                    <%= __('register.already-signed-link') %>
+                                </a>
+                        </span>
+
+                        <span class="legal margin-top-10 block">Want to teach online? <a href="/become-a-tutor/">Click here to sign up as a Tutor</a>
+                    </p>
+
+                    <br>
+
+                    <div class="notification error" id="login-notification">
+                        <p>...</p>
+                        <a class="close"></a>
+                    </div>
+
+
+                    <form method="post" id="login-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="input-text with-border" name="name" id="name" placeholder="<%= __('general.first-name') %>" required />
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="text" class="input-text with-border" name="surname" id="surname" placeholder="<%= __('general.last-name') %>" required />
+                            </div>
+                        </div>
+
+                        <input type="text" class="input-text with-border" name="emailaddress" id="emailaddress" placeholder="<%= __('general.email') %>" required />
+
+                        <input type="password" class="input-text with-border" name="password" id="password" placeholder="<%= __('general.password') %>" required />
+
+                        <div class="checkbox" style="margin-top:10px;margin-bottom:5px;">
+                            <input type="checkbox" id="terms">
+                            <label class="legal" for="terms" style="font-weight:normal"><span class="checkbox-icon"></span><%- __('register.accept-terms', '<a href="/terms-of-service/" target="_blank">' + __('general.terms') + '</a>' , ' <a href="/privacy/" target="_blank">' + __('general.privacy') + '</a>' ) %></label>
+                        </div>
+                    </form>
+
+                    <button class="button button-primary full-width margin-top-10 g-recaptcha" type="button" form="login-form" id="register-btn" data-sitekey="<%= gcaptcha_key %>" data-callback='onClickRegister' data-action='signup'>
+                        <span id="loader" style="display:none" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        &nbsp; <%= __('register.button') %>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<script src="https://www.google.com/recaptcha/api.js?render=<%= gcaptcha_key %>"></script>
+<script src="/controller/register.js"></script>

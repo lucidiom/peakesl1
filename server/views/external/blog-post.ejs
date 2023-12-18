@@ -1,0 +1,197 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+<div class="container margin-top-50">
+    <div class="row justify-content-center">
+
+        <div class="col-xl-10 col-lg-10 blog-row">
+            <div class="blog-post single-post">
+
+                <div class="blog-post-thumbnail">
+                    <div class="blog-post-thumbnail-inner">
+                        <span class="blog-item-tag"><%- post.category %></span>
+                        <img src="<%- post.thumbnail %>" alt="">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-10 col-md-10 col-sm-12 margin-top-30">
+                        <div class="blog-post-content">
+                            <h1 class="margin-bottom-10"><%- post.headline %></h1>
+
+                            <% if(post.knowledgebase==false) { %>
+                                <div class="blog-post-info-list margin-bottom-20">
+                                    <a href="javascript:void(0);" class="blog-post-info">
+                                        <%= __('blog.minread', post.readtime) %>
+                                    </a>
+                                    <a href="javascript:void(0);" class="blog-post-info">
+                                        <%= __('blog.written', post.author) %>
+                                    </a>
+                                </div>
+                                <% } %>
+
+
+                                    <%- post.content %>
+
+
+
+                                        <div class="blog-helpful margin-top-50">
+                                            <span>
+                                                <%= __('blog.helpfull-text') %>
+                                            </span>
+                                            <button id="helpful-yes" class="button button-outline-dark margin-left-20 margin-right-10">
+                                                <%= __('general.yes') %>
+                                            </button>
+                                            <button id="helpful-no" class="button button-outline-dark">
+                                                <%= __('general.no') %>
+                                            </button>
+                                        </div>
+
+
+                                        <% if(post.language=="ru" ){ %>
+                                            <div class="share-container margin-top-50">
+                                                <h3>
+                                                    <%= __('blog.share') %>
+                                                </h3>
+                                                <ul>
+                                                    <li id="share-fb"><a href="javascript:void(0);"><i class="icon-brand-facebook-f"></i></a></li>
+                                                    <li id="share-ok"><a href="javascript:void(0);"><i class="icon-brand-odnoklassniki"></i></a></li>
+                                                    <li id="share-vk"><a href="javascript:void(0);"><i class="icon-brand-vk"></i></a></li>
+                                                    <li id="share-telegram"><a href="javascript:void(0);"><i class="icon-brand-telegram-plane"></i></a></li>
+                                                    <li id="share-em"><a href="javascript:void(0);"><i class="icon-feather-mail"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <% } else { %>
+                                                <div class="share-container margin-top-50">
+                                                    <h3>
+                                                        <%= __('blog.share') %>
+                                                    </h3>
+                                                    <ul>
+                                                        <li id="share-fb"><a href="javascript:void(0);"><i class="icon-brand-facebook-f"></i></a></li>
+                                                        <li id="share-tw"><a href="javascript:void(0);"><i class="icon-brand-twitter"></i></a></li>
+                                                        <li id="share-li"><a href="javascript:void(0);"><i class="icon-brand-linkedin-in"></i></a></li>
+                                                        <li id="share-em"><a href="javascript:void(0);"><i class="icon-feather-mail"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <% } %>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="row margin-top-50 justify-content-center margin-bottom-50">
+                <% if(locals.relatedPosts[0]) { %>
+                    <div class="col-xl-4">
+                        <a href="../<%- relatedPosts[0].url %>" class="blog-compact-item-container">
+                            <div class="blog-compact-item">
+                                <img src="<%- relatedPosts[0].thumbnail %>" alt="<%- relatedPosts[0].headline %>">
+                                <span class="blog-item-tag"><%- relatedPosts[0].category %></span>
+                                <div class="blog-compact-item-content">
+                                    <ul class="blog-post-tags">
+                                        <li id="related-0-date"></li>
+                                    </ul>
+                                    <h3><%- relatedPosts[0].headline %></h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <% } %>
+
+
+                        <% if(locals.relatedPosts[1]) { %>
+                            <div class="col-xl-4">
+                                <a href="../<%- relatedPosts[1].url %>" class="blog-compact-item-container">
+                                    <div class="blog-compact-item">
+                                        <img src="<%- relatedPosts[1].thumbnail %>" alt="<%- relatedPosts[1].headline %>">
+                                        <span class="blog-item-tag"><%- relatedPosts[1].category %></span>
+                                        <div class="blog-compact-item-content">
+                                            <ul class="blog-post-tags">
+                                                <li id="related-1-date"></li>
+                                            </ul>
+                                            <h3><%- relatedPosts[1].headline %></h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <% } %>
+
+
+                                <% if(locals.relatedPosts[2]) { %>
+                                    <div class="col-xl-4">
+                                        <a href="../<%- relatedPosts[2].url %>" class="blog-compact-item-container">
+                                            <div class="blog-compact-item">
+                                                <img src="<%- relatedPosts[2].thumbnail %>" alt="<%- relatedPosts[2].headline %>">
+                                                <span class="blog-item-tag"><%- relatedPosts[2].category %></span>
+                                                <div class="blog-compact-item-content">
+                                                    <ul class="blog-post-tags">
+                                                        <li id="related-2-date"></li>
+                                                    </ul>
+                                                    <h3><%- relatedPosts[2].headline %></h3>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <% } %>
+
+
+            </div>
+
+
+
+           
+
+
+            <div class="row margin-top-20 blog-cta justify-content-center margin-left-0 margin-right-0">
+                <div class="col-xl-10 margin-top-75 margin-bottom-75">
+                    <h2>
+                        <%= __('blog.cta.title') %>
+                    </h2>
+                    <p>
+                        <%= __('blog.cta.text') %>
+                    </p>
+                    <a href="/register/" class="button button-primary">
+                        <%= __('blog.cta.btn') %>
+                    </a>
+                    <br>
+                    <small>
+                        <%= __('blog.cta.or') %> <a href="/online-tutoring/">
+                                <%= __('blog.cta.learn-more') %>
+                            </a>
+                    </small>
+                </div>
+            </div>
+
+
+
+            <br><br><br>
+        </div>
+
+
+    </div>
+</div>
+
+
+<% if(post.cta.active) { %>
+    <div class="sticky-information" style="height: auto;">
+        <b class="d-block" style="font-size: 11px;color: var(--primary-hover);">
+            <%= post.cta.subheadline %>
+        </b>
+        <h3>
+            <%= post.cta.headline %>
+        </h3>
+        <a class="button button-primary button-block margin-top-20" href="<%= post.cta.link %>" target="_blank">
+            <%= post.cta.btn %>
+        </a>
+
+        <button id="cta-close">x</button>
+    </div>
+    <% } %>
+
+
+
+        <script src="/controller/blog-post.js" defer></script>

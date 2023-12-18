@@ -1,0 +1,118 @@
+<script>
+    /* beautify preserve:start */
+    var lesson = JSON.parse(<%- JSON.stringify(JSON.stringify(lesson)) %>);
+    var otherdata = JSON.parse(<%- JSON.stringify(JSON.stringify(otherdata)) %>);
+    /* beautify preserve:end */
+</script>
+
+
+
+<div class="dashboard-headline">
+    <h3 class="pagetitle"><a href="/lessons"><i class="icon-line-awesome-long-arrow-left"></i>
+            <%= __('lesson.back') %></a> <%= __('lesson.details') %></h3>
+</div>
+
+
+
+<div class="row">
+
+    <!-- Content -->
+    <div class="col-xl-8 col-lg-8 content-right-offset">
+
+        <div class="notification error margin-bottom-40">
+            <p></p>
+        </div>
+
+        <div class="single-page-section">
+            <div class="timeline" id="ldi-timeline">
+
+                <!--<div class="timeline-item">
+                        <div class="timeline-item-leftbar">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-item-content timeline-lastitem">
+                            <p>Leon hat dir eine Anfrage für Unterricht geschickt.</p>
+                            <span>12. April 2020 - 07:41 Uhr</span>
+
+                            <div class="margin-top-10">
+                                <a class="button button-green margin-right-10"> Anfrage annehmen </a>
+                                <a class="button gray margin-right-10">Neuen Termin vorschlagen </a>
+                                <a class="button button-red"> Anfrage ablehnen </a>
+                            </div>
+                        </div>
+                    </div>-->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Sidebar -->
+    <div class="col-xl-4 col-lg-4">
+        <div class="sidebar-container">
+
+            <div class="sidebar-widget">
+                <div class="freelancer" style="width:100%">
+                    <a id="ldi-otherlink" href="#">
+                        <div class="freelancer-overview">
+                            <div class="freelancer-overview-inner">
+                                <div class="freelancer-avatar">
+                                    <img id="ldi-otherimage" src="" alt="">
+                                </div>
+                                <div class="freelancer-name">
+                                    <h4 id="ldi-othername"></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="sidebar-widget">
+                <div class="job-overview">
+                    <div class="job-overview-headline"><%= __('general.details') %></div>
+                    <div class="job-overview-inner">
+                        <ul>
+                            <li>
+                                <i class="icon-line-awesome-calendar-o"></i>
+                                <span id="ldi-details-date"></span>
+                            </li>
+                            <li>
+                                <i class="icon-line-awesome-clock-o"></i>
+                                <span id="ldi-details-duration"></span>
+                            </li>
+                            <li>
+                                <i class="icon-material-outline-school"></i>
+                                <span id="ldi-details-subject"></span>
+                            </li>
+                            <li>
+                                <i class="icon-material-outline-local-atm"></i>
+                                <span id="ldi-details-points"></span>
+                            </li>
+                            <li>
+                                <br>
+                                <h5><%= __('general.status') %></h5>
+                                <span id="ldi-details-status"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <span id="ldi-id"></span>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<script src="./data/<%= locale %>.js"></script>
+<script src="/js/pagination.min.js"></script>
+<script src="/controller/lesson.js" defer></script>

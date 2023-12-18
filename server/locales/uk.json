@@ -1,0 +1,675 @@
+{
+    "name": "brainstr",
+    "title": {
+        "index": "brainstr - find your online tutor for free",
+        "login": "Login - brainstr",
+        "reset": "Reset your password - brainstr",
+        "register": "Become a brainstr - brainstr",
+        "imprint": "Imprint - brainstr",
+        "privacy": "Privacy Policy - brainstr",
+        "refund": "Refund Policy - brainstr",
+        "terms": "Terms of Service - brainstr",
+        "teachers": "Online %s tutors - brainstr",
+        "teachers-subject": "Online %s tutors",
+        "teacher": "Teacher Profile - brainstr",
+        "lesson": "Lesson Details - brainstr",
+        "lessons": "My lessons - brainstr",
+        "classroom": "Classroom - brainstr",
+        "registerTeacher": "Become a Teacher - brainstr",
+        "settingsTeacher": "Teacher settings - brainstr",
+        "balance": "Account Balance - brainstr",
+        "messages": "Messages - brainstr",
+        "blog": "Blog - brainstr",
+        "virtual_classroom": "Virtual Classroom - brainstr",
+        "how_it_works_student": "Online Tutoring with brainstr - brainstr",
+        "how_it_works_tutor": "Become a Tutor at brainstr - brainstr",
+        "book": "Book a lesson - brainstr"
+    },
+    "general": {
+        "yes": "Yes",
+        "no": "No",
+        "language": "Language",
+        "languages": "Languages",
+        "subject": "Subject",
+        "subjects": "Subjects",
+        "level": "Level",
+        "location": "Location",
+        "rate": "Rate",
+        "sign-in": "Sign In",
+        "sign-out": "Sign Out",
+        "password": "Password",
+        "email": "Email address",
+        "first-name": "First name",
+        "last-name": "Last name",
+        "name": "Name",
+        "terms": "Terms of Service",
+        "privacy": "Privacy Policy",
+        "apply": "Apply",
+        "reset": "Reset",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "save": "Save",
+        "save-settings": "Save settings",
+        "length": "Length",
+        "time": "Time",
+        "date": "Date",
+        "price": "Price",
+        "continue": "Continue",
+        "minutes": "minutes",
+        "refund-policy": "Refund Policy",
+        "general": "General",
+        "availability": "Availability",
+        "available": "Available for tutoring",
+        "not-available": "Not available for tutoring",
+        "limited-available": "Only for current students",
+        "send": "Send",
+        "timeline": "Timeline",
+        "status": "Status",
+        "details": "Details",
+        "points": "Amount",
+        "transaction": "Transaction",
+        "transactions": "Transactions",
+        "close": "Close",
+        "readmore": "Read more",
+        "free": "Free",
+        "total": "Total",
+        "weekdays": {
+            "short": {
+                "monday": "Mo.",
+                "tuesday": "Tu.",
+                "wednesday": "We.",
+                "thursday": "Th.",
+                "friday": "Fr.",
+                "saturday": "Sa.",
+                "sunday": "Su."
+            },
+            "long": {
+                "monday": "Monday",
+                "tuesday": "Tuesday",
+                "wednesday": "Wednesday",
+                "thursday": "Thursday",
+                "friday": "Friday",
+                "saturday": "Saturday",
+                "sunday": "Sunday"
+            }
+        },
+        "subject-levels": {
+            "basic": "Basic",
+            "intermediate": "Intermediate",
+            "advanced": "Advanced",
+            "expert": "Expert"
+        },
+        "language-levels": {
+            "beginner": "Beginner",
+            "intermediate": "Intermediate",
+            "advanced": "Advanced",
+            "expert": "Expert",
+            "native": "Native"
+        },
+        "description": "Description",
+        "my-profile": "My Profile",
+        "404": "Let's go back to brainstr",
+        "learn-more": "Learn more",
+        "star": "Star",
+        "stars": "Stars",
+        "specialOffer": "Free First Lesson",
+        "specialOfferBook": "Book now",
+        "specialOfferExplore": "Explore Tutors",
+        "countdown": "Get your first lesson now <b>for free</b>"
+    },
+    "header": {
+        "start": "Home",
+        "becomeStudent": "Become a Student",
+        "becomeTeacher": "Become a Tutor",
+        "support": "Support",
+        "getStarted": "Start for free",
+        "getStarted-loggedIn": "Dashboard",
+        "virtual-classroom": "Virtual Classroom",
+        "toBrainstr": "View brainstr",
+        "quicklinks": "Quicklinks",
+        "social": "Social Media",
+        "further": "Further links",
+        "support-ctr": "Support Centre",
+        "contact": "Contact",
+        "ig": "Instagram",
+        "fb": "Facebook",
+        "legal": "Legal",
+        "refund": "Refund",
+        "terms": "Terms of Service",
+        "privacy": "Privacy Policy",
+        "imprint": "Imprint",
+        "tutors": "Tutors",
+        "findTeacher": "Find your Tutor",
+        "lessons": "My Lessons",
+        "freePoints": "Balance: %s€",
+        "blockedPoints": "Locked: %s€",
+        "balance.error": "Balance: Error!",
+        "profile": "My Profile",
+        "teacherSettings": "Settings",
+        "settings": "Settings",
+        "teacher-subheadline": "Tutor",
+        "notifications": {
+            "headline": "Notifications",
+            "readAll": "Mark all as read"
+        },
+        "blog": "Blog",
+        "howitworks": "How it works"
+    },
+    "footer": {
+        "description": "Find the perfect online tutor for you, worldwide within seconds. Or become a teacher yourself and earn money.",
+        "sign-up": "Sign up for free",
+        "links": {
+            "english": "English Tutoring",
+            "german": "German Tutoring",
+            "french": "French Tutoring",
+            "maths": "Maths Tutoring",
+            "physics": "Physics Tutoring",
+            "italian": "Italian Tutoring",
+            "dutch": "Dutch Tutoring",
+            "greek": "Greek Tutoring",
+            "chemistry": "Chemistry Tutoring",
+            "latin": "Latin Tutoring",
+            "economics": "Economics Tutoring",
+            "music": "Music Tutoring",
+            "arts": "Arts Tutoring",
+            "biology": "Biology Tutoring",
+            "computerscience": "Computer Science Tutoring",
+            "inenglish": "Tutoring in English",
+            "ingerman": "Tutoring in German",
+            "inrussian": "Tutoring in Russian",
+            "inspanish": "Tutoring in Spanish",
+            "infrench": "Tutoring in French"
+        }
+    },
+    "index": {
+        "headline": "Find your perfect online tutor",
+        "textbox-placeholder": "Subject, you want to improve in",
+        "cta-btn": "Search for Tutors",
+        "slider": {
+            "1": "Someone who meets %syour requirements.%d",
+            "2": "Online lesson. %sSecure%d online payment.",
+            "3": "%sStudent-to-Student%d Tutoring."
+        },
+        "highlights": {
+            "1-headline": "Inspiring teachers",
+            "1-text": "All teachers are students or recent graduates from leading World Universities and schools. They are full of energy and know what are the student's challenges.",
+            "2-headline": "Interactive lessons",
+            "2-text": "brainstr provides you engaging and interesting lessons. Interactive tools will make your tutoring sessions educational and enjoyable.",
+            "3-headline": "Worldwide Community",
+            "3-text": "Want to learn a language with a native speaker? Or learn a new subject which you don't have at school? With brainstr you can connect with teachers from anywhere.",
+            "4-headline": "Learn from anywhere",
+            "4-text": "All our lessons are online - study from any place on the world, at any time you want."
+        },
+        "banner-1": {
+            "headline": "Homeschooling just became cool",
+            "text": "Get the education you deserve. With interactive lessons and teachers, who are highly motivated and care about your progress and success. brainstr is providing you with all the tools you need to become a rockstar from your living room.",
+            "button": "Start now for free"
+        },
+        "banner-2": {
+            "headline": "Start growing beyond yourself",
+            "text": "You don't need to waste time with mediocre teachers and laggy video chats. brainstr gives you everything you need so you can concentrate on changing your education for the better, start growing and exceed your goals. What are you waiting for?",
+            "button": "Start now for free"
+        },
+        "banner-3": {
+            "headline": "Your life. Your education. Your schedule.",
+            "text": "Education should be a significant part of your live, but you have a lot more going on. We understand that! That's why you decide when and for how long you spent time studying on brainstr so your have the perfect live-work balance.",
+            "button": "Start now for free"
+        },
+        "cta-1": {
+            "headline": "Teach and Study - that's brainstr",
+            "text": "With brainstr you can find the perfect tutor for online lessons for you. However, you can become a teacher yourself and start earning money from home teaching students.",
+            "btn-left": "Register as Student",
+            "btn-right": "Register as a Teacher"
+        }
+    },
+    "index-new": {
+        "head": {
+            "subheadline": "👋 Interactive platform where students teach students",
+            "headline": "What do you<br>want to learn?",
+            "btn-text": "Find Tutor",
+            "subtext": "Tutors all <b>around the world</b>. Lessons <b>start at 340 ₽</b>.",
+            "link-tutors": "Browse all Tutors"
+        },
+        "shortinfo": {
+            "1-headline": "Customized Learning",
+            "1-text": "Choose from a variety of teachers for your 1-on-1 lesson and discuss and learn exactly the topic, you need help with.",
+            "2-headline": "Pay safely and per lesson",
+            "2-text": "We implemented a secure payment flow to protect your money - and you keep in budget by paying only by lessons.",
+            "3-headline": "COVID-19 safe",
+            "3-text": "Safe distance learning - without mask and risks. Great education despite the pandemic with brainstr."
+        },
+        "blocks": {
+            "headline-1": "Responsible and proactive tutors",
+            "text-1": "Brainstrs’ tutors are students of leading world universities and best high school students.  They love to study, pass exams with a high score and are engaged in social activities.",
+            "headline-2": "Peer-to-peer learning",
+            "text-2": "Our tutors have coped with the difficulties of study and admission on their own.  They speak the same language as students, can clearly explain the material and, by their example, inspire to learn.",
+            "headline-3": "Brainstr checks the quality of all lessons",
+            "text-3": "We conduct interviews with each tutor on brainstr, check grades and take feedback from their teachers.  If you don't like the lesson - we can refund your money.",
+            "headline-4": "Students can become tutors",
+            "text-4": "We aim to teach in a way that our students can become tutors themselves and earn money for their development.<br><br>We invite the best students to our team and conduct online tutoring training."
+        },
+        "team": {
+            "headline": "Meet our %steam of tutors%s",
+            "btn": "Book lesson now",
+            "all-link": "Browse all Tutors"
+        },
+        "howto": {
+            "headline": "As easy as %s1-2-3%s",
+            "step1": "Sign up and choose a tutor based on your goals",
+            "step2": "Deposit money to your account and choose a convenient time",
+            "step3": "The tutor meets with the student in the brainstr virtual and interactive classroom and conducts the lesso at the choosen time",
+            "btn": "Find your tutor now"
+        },
+        "whattutorsprovide": {
+            "headline": "What do %stutors help%s with?",
+            "1": "📚 Homework for school subjects",
+            "2": "📘 Prepare for exams and tests",
+            "3": "👩‍💻 Explain a difficult topic if the child missed something",
+            "4": "👩🏼‍🎨 Help to master a subject that is not in school: for example, a new language or advanced coding",
+            "5": "🧑🏻‍💼 Share the experience of entering a good university",
+            "btn": "Find your tutor now"
+        },
+        "qa": {
+            "headline-1": "%sHow much%s I need to pay?",
+            "text-1": "You pay the cost of the lesson which is defined by tutors and 20% commission for Brainstr services. The final cost of the lesson is indicated on tutor profile and usually around 6-15 euros."
+        },
+        "principals": {
+            "headline": "Our %sprincipals%s",
+            "headline-1": "Teach and learn",
+            "text-1": "We believe in the power of peer-to-peer learning, when the teacher is in the same position as the students.  There is no place for instructions, orders and punishments and both student and teacher are learning. Our tutors are constantly developing and advancing their knowledge while working with students.",
+            "headline-2": "Every student is unique and has potential to grow",
+            "text-2": "Different people learn in different ways and individual work with our tutors helps to find the best way and pace of learning for each student.",
+            "headline-3": "Care about results and long-term goals",
+            "text-3": "It is important for us to help children and parents get a quality education and have more opportunities for a stable future.  Our tutors not only fix high-level issue with knowledge, but also share with students tips how to learn better, so they can become tutors themselves - and earn money for better education"
+        },
+        "cta": {
+            "headline": "Schedule your %sfree lesson%s today!",
+            "text": "",
+            "btn": "Register now"
+        },
+        "explore-tutors": "Explore our Tutors",
+        "about-virtual-classroom": "More about brainstr Virtual Classroom"
+    },
+    "imprint": {
+        "headline": "Imprint",
+        "represented": "Represented by",
+        "contact": "Contact",
+        "vat": "VAT-ID",
+        "disclaimer-headline": "Disclaimer",
+        "disclaimer": "The information provided by brainstr (\"we\", \"us\" or \"our\") on brainstr.de (the \"Site\") is for general information purpose only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, epxress or implied, regarding the accuracy, aedequacy, validity, reliability, availability or completeness of any information on the Site. UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK."
+    },
+    "privacy": {
+        "headline": "Privacy Policy"
+    },
+    "terms": {
+        "headline": "Terms Of Service"
+    },
+    "login": {
+        "headline": "Welcome back!",
+        "no-account-notice": "Not a brainstr yet?",
+        "no-account-link": "Register and get started for free today!",
+        "reset-password": "Reset Password",
+        "sign-in": "Sign In",
+        "failed-auth": "E-Mail or password incorrect!"
+    },
+    "register": {
+        "headline": "Ready to become a brainstr?",
+        "already-signed-text": "Already have an account?",
+        "already-signed-link": "Sign in!",
+        "password-repeat": "Repeat password",
+        "accept-terms": "With registering you accept our %s and %s.",
+        "button": "Create Account",
+        "advantages": {
+            "headline": "Try it out!",
+            "subheadline": "Get your first lesson for free",
+            "1": "Tutors from around the world",
+            "2": "You choose time & date",
+            "3": "Virtual Online Classroom",
+            "4": "Secure online payment",
+            "5": "brainstr Support Team"
+        }
+    },
+    "reset-password": {
+        "headline": "Password forgotten?",
+        "remember-text": "You remember it again?",
+        "remember-link": "Sign In now!",
+        "text": "You will receive an email with a link to reset your password.",
+        "button": "Reset password",
+        "set-headline": "Set a new password",
+        "set-btn": "Set password"
+    },
+    "teachers": {
+        "filter-subject": "I want to learn",
+        "filter-language": "Tutor speaks",
+        "filter-location": "Tutor is from",
+        "infotext": "Online %s tutors available. Have you ever been bored in your class in school? Or feeling like the pace is too fast and you wish teachers could explain more details and show more examples? Or your classmates do not want to study and it is hard to find someone to learn from? Every person who’s in the process of learning %s has a specific goal in mind. If classes are boring in school and it is hard to prepare for exams with formal education, someone who understands your challenge and can clearly explain the subject is probably exactly what you need. Private tutors on our platform are students who study know how to be more successful in school and they can help you to reach your goals with 15 euro or less per class. Learn subjects at your own pace, get your questions answered when you need them. Our teachers are highly motivated, energetic, and attentive - they can help you to identify what you are good at and what are the white spots. The best part that private tutors here are just like you - students themselves, that's why they can quickly identify your challenges and explain %s interactively and clearly. Choose a tutor and schedule a trial class to start preparing for exams and improving your %s today and find the inspiring person to learn from!"
+    },
+    "teacher": {
+        "about": "About me",
+        "book-headline": "Book lesson",
+        "book-btn": "Book now",
+        "book-success-headline": "All done!",
+        "book-success-text": "Your lesson request has been sent.",
+        "back-to-entry": "Back to entry",
+        "book-note": "The price will be blocked after booking but only transfered after the lesson.",
+        "book-terms": "Clicking 'Book now' you accept our",
+        "verified": {
+            "text": "Verified",
+            "tooltip": "This tutor is verified by brainstr"
+        },
+        "toclassroom": "Join classroom",
+        "feedback": "Students' feedback",
+        "ccontactMe": "Send Message"
+    },
+    "booking": {
+        "booking": {
+            "headline": "Secure Checkout",
+            "subheadline": "Payment method",
+            "safety": "It’s safe to pay on brainstr. All transactions are protected by SSL encryption and brainstr buyer protection service.",
+            "pm-balance": "Pay with available %sbrainstr balance%s",
+            "pm-card": "Pay via %s online payment %s Credit card, SEPA Debit, Apple & Google Pay"
+        },
+        "confirmation": {
+            "headline": "Congratulations 🚀",
+            "text": "You scheduled your lesson and got the first step to improve yourself. Make sure to go to brainstr 10 minutes before your lesson starts. You will see an invitation on the website to join our virtual classroom, where your lesson will take place.",
+            "text2": "Please feel free to reach out to us any time you have a question at",
+            "btn": "Continue to brainstr"
+        },
+        "guarantee": {
+            "headline": "Learn with 100% satisfaction guarantee",
+            "text": "If your lesson does not take place, or you are not satisfied with the tutor, we will provide you with a free replacement to another tutor of your choice or offer you a full refund."
+        },
+        "sidebar": {
+            "advantages-headline": "Your brainstr advantages",
+            "advantages-1": "Virtual Classroom",
+            "advantages-2": "Secure Payment",
+            "advantages-3": "brainstr Support",
+            "processing-fee": "Processing Fee",
+            "processing-fee-tooltip": "Processing fees are charged by third party payment providers in order to transfer the funds from your account to our escrow and ultimately to the tutor after the lesson is completed.",
+            "lesson-cancellation": "Lesson cancellation",
+            "lesson-cancellation-tooltip": "You may cancel the lesson for free up to 24 hours before the start time. The tutor may charge the full lesson price after this time.",
+            "ssl-protection": "SSL Secure Payment"
+        }
+    },
+    "teacherSettings": {
+        "headline": "Teacher Settings",
+        "challenge-headline": "Are you sure?",
+        "challenge-del-subject-text": "Are you sure you want to delete this subject?",
+        "add-subject": "Add subject",
+        "add-language": "Add language",
+        "edit-timetable-entry": "Edit timetable entry",
+        "add-timetable-entry": "Add timetable entry",
+        "upload-picture": "Upload profile picture",
+        "description-info": "Introduce yourself and tell your students what they can expect from you as a teacher.",
+        "my-timetable": "My timetable",
+        "my-subjects": "My subjects",
+        "select-weekday": "Select weekday",
+        "select-level": "Select level"
+    },
+    "lessons": {
+        "my-lessons": "My lessons",
+        "teacher-lessons": "Lessons as Teacher",
+        "student-lessons": "Lessons as Student",
+        "start-dispute-headline": "Start a dispute",
+        "start-dispute-text": "We will clarify the situation and decide what's going to happen. Please give us more details about your case so we can process your request quickly.",
+        "start-dispute-textarea-placeholder": "Write something why you dispute this lesson..."
+    },
+    "lesson": {
+        "back": "Back to Overview",
+        "details": "Lesson details"
+    },
+    "classroom": {
+        "headline": "Virtual Classroom",
+        "your-lesson": "Your lesson",
+        "connect-note": "You can connect to the classroom 5 minutes before your lesson starts.",
+        "no-lesson-booked": "You haven't booked a lesson yet.",
+        "no-lesson-booked-cta": "Find your perfect teacher now!",
+        "chat": "Chat",
+        "leave": "Leave classroom",
+        "color": "Color",
+        "brush-thickness": "Brush Thickness",
+        "student-access": "Student access",
+        "download": "Download",
+        "delete": "Delete all",
+        "screen-share": "Screen Sharing",
+        "whiteboard": "Whiteboard",
+        "microphone": "Microphone",
+        "camera": "Camera",
+        "fullscreen": "Fullscreen",
+        "msgplaceholder": "Write your message",
+        "redo": "Redo",
+        "undo": "Undo"
+    },
+    "balance": {
+        "headline": "My balance",
+        "action": "Action",
+        "payout-request": "Payout request",
+        "payout-note": "Please contact our Support Team %s in order to request your payout. We will be happy to process your request.",
+        "available": "Available Balance",
+        "payout-btn": "Request Payout",
+        "blocked": "Locked Balance",
+        "available-note": "The amount of balance available to use.",
+        "blocked-note": "The amount of balance reserved for pending lesson requests.",
+        "buy-points": "Top up your brainstr balance",
+        "buy-note": "Deposit money in order to take lessons and start improving your skills and growth.",
+        "buy-btn": "Buy brainstr credit",
+        "footnote-1": "Your final payment will be made in EUR.",
+        "footnote-2": "All currency conversions are estimates, may vary and are not binding.",
+        "footnote-3": "All sales are final, purchases may be refunded for brainstr balance only.",
+        "payout": {
+            "method": "Payout method",
+            "sepa": "SEPA Wire Transfer",
+            "paypal": "PayPal (Non-EU only)",
+            "iban": "IBAN",
+            "bic": "BIC",
+            "paypal-mail": "Paypal E-Mail",
+            "send": "Send payout request"
+        }
+    },
+    "mail": {
+        "subjects": {
+            "deposit-success": "You deposit was successful",
+            "lessonRequest": "New lesson request received",
+            "teacherLessonAccept": "Your lesson is now scheduled",
+            "teacherLessonRejected": "Your lesson request was rejected",
+            "teacherLessonCanceled": "Your lesson was cancelled",
+            "teacherLessonCompleted": "You completed a lesson 🎉",
+            "mail-welcome": "Welcome to brainstr %s 🚀",
+            "mail-confirmation": "Verify your email address",
+            "password-reset": "Reset your password"
+        }
+    },
+    "blog": {
+        "headline": "Blog",
+        "recent": "Recent Posts",
+        "written": "Written by %s",
+        "minread": "%s min read",
+        "share": "Don't forget to share this post!",
+        "cta": {
+            "title": "Become a brainstr today!",
+            "text": "With brainstr you will find your highly motivated online tutor to improve your skills and get you ready for life. Furthermore, you can start teaching on brainstr and earn money from home.",
+            "btn": "Start for free",
+            "or": "or",
+            "learn-more": "learn more"
+        },
+        "helpfull-text": "Was this article helpful?"
+    },
+    "brainstr-as-tutor": {
+        "headline": "Become a Tutor with brainstr",
+        "subheadline": "Teach online and earn money.<br>brainstr provides everything you need to get you started within minutes.",
+        "cta-btn": "Start teaching now",
+        "boxes": {
+            "1": {
+                "headline": "Start Today",
+                "text": "Register for free, fill out your tutor profile and you are ready to have your first online lesson."
+            },
+            "2": {
+                "headline": "Work from Home",
+                "text": "All you need for brainstr is a device connected to the internet with a webcam and microphone."
+            },
+            "3": {
+                "headline": "Your timetable",
+                "text": "Be your own boss and decide when you want to teach on brainstr. Take breaks when you need them."
+            },
+            "4": {
+                "headline": "Low Commission",
+                "text": "We offer you very competetive commission rates in the industry of as low as 20%."
+            },
+            "5": {
+                "headline": "No monthly costs",
+                "text": "We don't charge you for any services on brainstr except a commission per completed lesson."
+            },
+            "6": {
+                "headline": "Worldwide Students",
+                "text": "Our students come from every nation on the world. Be ready for interesting students and new experiences."
+            },
+            "7": {
+                "headline": "Interactive Tools",
+                "text": "brainstr provides you with the tools for awesome lessons - interactive, fun and engaging."
+            },
+            "8": {
+                "headline": "Inspired Team",
+                "text": "Our team is working super hard to make brainstr better every single day. Tell us what you like or dislike!"
+            }
+        },
+        "slides": {
+            "1": {
+                "headline": "Have <b>awesome lessons</b> with brainstr",
+                "text": "Our interactive virtual classroom on brainstr helps you in every way creating interesting and <b>interactive lessons</b> to keep your <b>students engaged and happy</b>. The platform is super simple to use and works on every device."
+            },
+            "2": {
+                "headline": "<b>Customize</b> your profile",
+                "text": "With our customizable profiles you have the advantage to stand out of the crowd and <b>attract more students</b> to your profile. Our Interface is designed for <b>high conversion</b> rates so you can be sure that you won't wait long for your first lessons and students."
+            },
+            "3": {
+                "headline": "<b>Adjustable</b> timetable",
+                "text": "Enter your weekly timetable to <b>plan ahead</b>. Your students will only be able to book lessons within your specified times. You can change your timetable at any time."
+            },
+            "4": {
+                "headline": "Pricing is <b>up to you</b>",
+                "text": "Pricing of your lessons on brainstr is up to you and super flexibel. <b>Decide for each subject and time interval</b>, how much you want to charge your students. And of course, you can always change it afterwards with just a few clicks."
+            },
+            "5": {
+                "headline": "<b>Get paid</b> at your will",
+                "text": "Payouts can be done <b>as often as you like</b> during a month.<br>We will send you your money depending on your location and currency either via SEPA wire transfer, PayPal or Bank Transfer (Russia).<br>The payout threshold is as little as 20€ (<span data-currency-converted='20'></span>)."
+            }
+        }
+    },
+    "virtual-classroom": {
+        "headline": "Virtual Classroom",
+        "subheadline": "The simplest way to take online tutoring lessons.<br>Fully integrated, no setup required. Works on every device.",
+        "boxes": {
+            "1": {
+                "headline": "Works in every modern browser",
+                "text": "Join with one click via brainstr the virtual classroom - no installation needed."
+            },
+            "2": {
+                "headline": "Whiteboard & Screen Share",
+                "text": "Interactive lessons with a shared virtual witheboard or screen sharing for engaging lessons."
+            },
+            "3": {
+                "headline": "High Quality Audo & Video",
+                "text": "Newest technology with high quality video and audio makes every lesson on brainstr like it was in person."
+            },
+            "4": {
+                "headline": "Automated Lesson Management",
+                "text": "Lessons monitoring for completion or no shows gives you a maximum of safety and a fast refund if needed."
+            }
+        },
+        "slides": {
+            "1": {
+                "headline": "Have <b>engaging</b> lessons with brainstr",
+                "text": "Brainstr's virtuell classroom is way more than just a video chat. Have awesome lessons with our interactive whiteboard, where student and teacher can work out concepts together just <b>like standing next to each other</b>.",
+                "btn": "Book your first lesson"
+            }
+        },
+        "features": {
+            "1": {
+                "headline": "Excellent Tutors",
+                "text": "Highly motivated and educated tutors are waiting on brainstr. Student-to-Student tutoring for your personal growth."
+            },
+            "2": {
+                "headline": "COVID-19 safe",
+                "text": "Safe distance learning - without mask and risks. Great education despite circumstances with brainstr."
+            },
+            "3": {
+                "headline": "Data Protection",
+                "text": "All tutoring lessons on brainstr are end-to-end encrypted. Highest data protection standards are applied."
+            }
+        }
+    },
+    "brainstr-as-student": {
+        "headline": "Online Tutoring with brainstr",
+        "text": "Take online lessons with tutors all over the world.<br>Get help with homework, prepare for exams, learn a new language and much more with brainstr.",
+        "cta-btn": "Sign up for free",
+        "blocks": {
+            "1": {
+                "headline": "Quick Setup",
+                "text": "Sign up, top up your balance and you can book your first lesson. Start now in only 2 minutes."
+            },
+            "2": {
+                "headline": "Take lessons anytime",
+                "text": "As long as you have your laptop and an internet connection, you can take a lesson on brainstr."
+            },
+            "3": {
+                "headline": "International Community",
+                "text": "We have tutors all around the world, speaking any language you can think of. Explore them now."
+            },
+            "4": {
+                "headline": "No Lesson Fees",
+                "text": "We love providing education opportunity to you. That's why we won't charge you fees for lessons."
+            },
+            "5": {
+                "headline": "General Tutoring",
+                "text": "You want to learn a complete new subject? Or just want to improve your general skills in a known one?"
+            },
+            "6": {
+                "headline": "Homework Assistance",
+                "text": "Help from parents is nice, but with brainstr you can get real help for your homework."
+            },
+            "7": {
+                "headline": "Learn with native speakers",
+                "text": "No other way is more effective to learn a foreign language. Let's start speaking to native speakers."
+            },
+            "8": {
+                "headline": "Exam Preperation",
+                "text": "Don't worry about exams anymore! Brainstr tutors will prepare you perfectly for those."
+            }
+        },
+        "slides": {
+            "1": {
+                "headline": "Virtual Classroom for <b>engaging lessons</b>",
+                "text": "All lessons on brainstr are done in the integrated virtual classroom, which provides you with <b>everything you need for an awesome tutoring lesson</b>. Works in every browser, no download needed."
+            },
+            "2": {
+                "headline": "Find <b>your perfect</b> Tutor",
+                "text": "Finding a tutor is now as simple as signing up for brainstr. You can define with our filters <b>your requirements</b> and you get immediately shown <b>suited tutors</b> who will be happy to have a first lesson with you."
+            },
+            "3": {
+                "headline": "<b>Easy & secure</b> lesson booking",
+                "text": "Top up your brainstr balance with one of our many secure payment options. Therafter you can book lessons with <b>just a few clicks</b>. It's never been easier to book tutoring lessons."
+            },
+            "4": {
+                "headline": "<b>Become a tutor</b> yourself",
+                "text": "Register as tutor, start <b>teaching students and earn money</b> for every lesson you hold. We have all the tools and education on brainstr for you ready to get started."
+            },
+            "5": {
+                "headline": "Dispute & <b>Resolution Centre</b>",
+                "text": "In case at anytime something went not as planned - we're here for you! All lessons on brainstr are part of our Dispute & Resolution Policy. We will handle your case and clarify the situation.",
+                "btn": "Book your first lesson now"
+            }
+        }
+    },
+    "settings": {
+        "btn-save": "Save changes",
+        "btn-set-pw": "Set password",
+        "change-pw": "Change Password",
+        "c-pw": "Current Password",
+        "n-pw": "New Password",
+        "n-pw-repeat": "Repeat Password"
+    },
+    "messages": {
+        "send": "Send",
+        "msg": "Message"
+    }
+}

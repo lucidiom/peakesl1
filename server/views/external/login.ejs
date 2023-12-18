@@ -1,0 +1,152 @@
+<div class="half-split">
+
+    <div class="auth-left">
+        <!--<div class="darkener"></div>-->
+
+        <div class="wrapper vh-100">
+            <div class="row align-items-center h-100 no-gutters">
+                <div class="col-md-8 mx-auto" style="margin-top:-40px">
+                    <!--<a href="/">
+                            <img src="/images/logo-white.webp" alt="brainstr Logo" style="height: 25px;margin-bottom: 35px;">
+                        </a>
+                        <h1>Social Online Tutoring</h1>
+                        <p>We belive at Katyon Technologies that through auctions we can offer you our products at the best market prices, adjusted specifically to your needs.</p>
+                        -->
+                </div>
+            </div>
+
+            <p id="copyright" class="mt-5 mb-3" style="font-size: 12px;">
+                © 2023 <b>brainstr</b> &nbsp; &nbsp;
+                <a href="/"><%- __('header.start') %></a>
+                &nbsp;
+                <a href="/social-program/"><%- __('general.socialprogram-short') %></a>
+                &nbsp;
+                <a href="mailto:support@brainstr.de"><%- __('header.support-ctr') %></a>
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <div class="wrapper vh-100">
+            <div class="row align-items-center h-100 no-gutters" style="justify-content: center;align-items: center !important;width: 100%;">
+
+                <div class="col-md-8 col-10 mx-auto">
+                    <a href="/">
+                        <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/logo.webp" alt="brainstr Logo" style="height: 25px;margin-bottom: 35px;">
+                    </a>
+
+                    <h1 class="h6 mb-3">
+                        <%= __('login.headline') %>
+                    </h1>
+                    <p>
+                        <span class="legal">
+                            <%= __('login.no-account-notice') %>
+                                <a href="#" onclick="redirectToRegistration();">
+                                    <%= __('login.no-account-link') %>
+                                </a>
+                        </span>
+                    </p>
+
+                    <br>
+
+                    <div class="notification error display" id="login-notification" <%if (locals.errmsg) { %> style="display:block;" <% } %>>
+                            <p>
+                                <%if (locals.errmsg) { %>
+                                    <%= __('login.failed-auth') %>
+                                        <% } %>
+                            </p>
+                            <a class="close"></a>
+                    </div>
+
+                    <form method="post" action="/login" id="login-form">
+                        <input type="hidden" name="redirect" id="redirect" value="" />
+                        <input type="hidden" name="g-recaptcha" id="g-recaptcha" value="" />
+
+                        <label for="username">
+                            <%= __('general.email') %>
+                        </label>
+                        <input type="text" placeholder="<%= __('general.email') %>" class="input-text with-border" id="username" name="username" required />
+
+                        <label for="password">
+                            <%= __('general.password') %>
+                        </label>
+                        <input type="password" placeholder="<%= __('general.password') %>" class="input-text with-border" id="password" name="password" required />
+                    </form>
+
+                    <button class="button full-width button-sliding-icon margin-top-10 g-recaptcha" data-sitekey="<%= gcaptcha_key %>" data-callback='onLoginClick' data-action='signin' type="submit" form="login-form" id="login-btn">
+                        <%= __('general.sign-in') %> <i class="icon-material-outline-arrow-right-alt"></i>
+                    </button>
+
+
+                    <br> <br>
+                    <p>
+                        <span class="legal"><a style="font-weight: normal !important;color: #666 !important;" href="/reset-password/" class="forgot-password">
+                                <%= __('login.reset-password') %>
+                            </a></span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!--
+<div class="container margin-top-75">
+    <div class="row">
+
+        <div class="col-lg-5 align-self-center">
+            <div class="login-register-page">
+                <div class="welcome-text">
+                    <h3><%= __('login.headline') %></h3>
+                    <span class="legal"><%= __('login.no-account-notice') %>
+                        <a href="#" onclick="redirectToRegistration();"><%= __('login.no-account-link') %></a></span>
+                </div>
+
+                <div class="notification error display" id="login-notification" <%if (locals.errmsg) { %> style="display:block;" <% } %>>
+                    <p><%if (locals.errmsg) { %> <%= __('login.failed-auth') %> <% } %></p>
+                    <a class="close"></a>
+                </div>
+
+                <form method="post" action="/login" id="login-form">
+                    <input type="hidden" name="redirect" id="redirect" value="" />
+                    <input type="hidden" name="g-recaptcha" id="g-recaptcha" value="" />
+
+                    <input type="text" class="input-text with-border" id="username" name="username" placeholder="<%= __('general.email') %>" required />
+                    <input type="password" class="input-text with-border" id="password" name="password" placeholder="<%= __('general.password') %>" required />
+
+                    <span class="legal"><a href="/reset-password/" class="forgot-password"><%= __('login.reset-password') %></a></span>
+                </form>
+
+                <button class="button full-width button-sliding-icon ripple-effect margin-top-10 g-recaptcha" data-sitekey="<%= gcaptcha_key %>" data-callback='onLoginClick' data-action='signin' type="submit" form="login-form" id="login-btn">
+                    <%= __('general.sign-in') %> <i class="icon-material-outline-arrow-right-alt"></i>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="col-lg-1 d-none d-lg-block"></div>
+
+        <div class="col-lg-5 d-none d-lg-block align-self-center text-center">
+            <img src="images/brainstr-teacher-profiles-2_en.webp" alt="brainstr find your perfect tutor">
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<div class="margin-top-100"></div>
+<br /><br /><br />
+-->
+
+
+
+<script src="https://www.google.com/recaptcha/api.js?render=<%= gcaptcha_key %>"></script>
+<script src="./controller/login.js" defer></script>

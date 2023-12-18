@@ -1,0 +1,604 @@
+<div class="dashboard-headline">
+    <h3>
+        <%= __('teacherSettings.headline') %>
+    </h3>
+</div>
+
+
+<div id="notcont-general"></div>
+
+<div id="notcont"></div>
+
+
+<button id="save-btn" class="button button-primary big margin-top-10" style="width:100%;text-align:center;">
+    <%= __('general.save-settings') %>
+</button>
+<br><br>
+
+
+
+
+<a class="popup-with-zoom-anim" href="#small-dialog" id="subjectdelete-dialog-link"></a>
+<div id="small-dialog" class="zoom-anim-dialog dialog-with-tabs mfp-hide">
+    <div class="sign-in-form">
+        <div class="popup-tabs-container">
+            <div class="popup-tab-content" id="tab">
+                <div class="welcome-text margin-top-20 margin-bottom-0">
+                    <h3>
+                        <%= __('teacherSettings.challenge-headline') %>
+                    </h3>
+                    <p>
+                        <%= __('teacherSettings.challenge-del-subject-text') %>
+                    </p>
+
+                    <input type="hidden" id="deletesubject-dialog-id" val="-1" />
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="button gray full-width ripple-effect-dark" type="submit" form="add-note" style="width: 30px;" onclick="$.magnificPopup.close();">
+                                <%= __('general.cancel') %>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button onclick="deleteSubject();" class="button red full-width button-sliding-icon" type="submit" form="add-note" style="width:
+                                            30px;">
+                                <%= __('general.delete') %> <i class="icon-material-outline-delete"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a class="popup-with-zoom-anim" href="#small-dialog-2" id="newsubject-dialog-link"></a>
+<div id="small-dialog-2" class="zoom-anim-dialog dialog-with-tabs mfp-hide">
+    <div class="sign-in-form">
+        <div class="popup-tabs-container">
+            <div class="popup-tab-content" id="tab">
+                <div class="welcome-text margin-top-20 margin-bottom-0">
+                    <h3>
+                        <%= __('teacherSettings.add-subject') %>
+                    </h3>
+                    <br>
+
+                    <div id="newsubject-not"></div>
+
+                    <div class="submit-field">
+                        <div id="ts-subject-list-picker-container"></div>
+                    </div>
+
+
+                    <div class="submit-field">
+                        <select class="selectpicker" id="newsubjectdialog-level" title="<%= __('teacherSettings.select-level') %>" data-dropup-auto="false" data-live-search="false" data-size="3">
+                            <option value="1">
+                                <%= __('general.subject-levels.basic') %>
+                            </option>
+                            <option value="2">
+                                <%= __('general.subject-levels.intermediate') %>
+                            </option>
+                            <option value="3">
+                                <%= __('general.subject-levels.advanced') %>
+                            </option>
+                            <option value="4">
+                                <%= __('general.subject-levels.expert') %>
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="button gray full-width" type="submit" form="add-note" style="width: 30px;" onclick="$.magnificPopup.close();">
+                                <%= __('general.cancel') %>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button onclick="addNewSubject();" class="button full-width button-sliding-icon ripple-effect" type="submit" form="add-note" style="width:
+                                            30px;">
+                                <%= __('teacherSettings.add-subject') %> <i class="icon-material-outline-add"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a class="popup-with-zoom-anim" href="#small-dialog-3" id="showdialog-addlanguage"></a>
+<div id="small-dialog-3" class="zoom-anim-dialog dialog-with-tabs mfp-hide">
+    <div class="sign-in-form">
+        <div class="popup-tabs-container">
+            <div class="popup-tab-content" id="tab">
+                <div class="welcome-text margin-top-20 margin-bottom-0">
+                    <h3>
+                        <%= __('teacherSettings.add-language') %>
+                    </h3>
+                    <br>
+
+                    <div id="newlanguage-not"></div>
+
+                    <div class="submit-field">
+                        <div id="dialog-addlanguage-languagecontainer"></div>
+                    </div>
+
+                    <div class="submit-field" id="dialog-addlanguage-levelcontainer"></div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="button gray full-width" type="submit" form="add-note" style="width: 30px;" onclick="$.magnificPopup.close();">
+                                <%= __('general.cancel') %>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button onclick="addLanguage();" class="button full-width button-sliding-icon" type="submit" form="add-note" style="width:
+                                            30px;">
+                                <%= __('teacherSettings.add-language') %> <i class="icon-material-outline-add"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<a class="popup-with-zoom-anim" href="#small-dialog-4" id="showdialog-edittimetableitem"></a>
+<div id="small-dialog-4" class="zoom-anim-dialog dialog-with-tabs mfp-hide">
+    <div class="sign-in-form">
+        <div class="popup-tabs-container">
+            <div class="popup-tab-content" id="tab">
+                <div class="welcome-text margin-top-20 margin-bottom-0">
+                    <h3>
+                        <%= __('teacherSettings.edit-timetable-entry') %>
+                    </h3>
+                    <br>
+
+                    <input type="hidden" val="-1" id="edittimetable-day" />
+                    <input type="hidden" val="-1" id="edittimetable-id" />
+
+
+                    <div id="edittimetable-not"></div>
+
+                    <div class="submit-field">
+                        <br><br>
+                        <input id="edittimetable-sliderstart" />
+                        <br>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <button class="button gray full-width ripple-effect-dark" type="submit" form="add-note" style="width: 30px;" onclick="deleteTimetableItem();"><i class="icon-material-outline-delete"></i></button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="button gray full-width ripple-effect-dark" type="submit" form="add-note" style="width: 30px;" onclick="$.magnificPopup.close();">
+                                <%= __('general.cancel') %>
+                            </button>
+                        </div>
+                        <div class="col-md-5">
+                            <button onclick="updateTimetableItem();" class="button full-width" type="submit" form="add-note" style="width:
+                                            30px;">
+                                <%= __('general.save') %>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="small-dialog-1" class="zoom-anim-dialog dialog-with-tabs mfp-hide">
+    <div class="sign-in-form">
+        <div class="popup-tabs-container">
+            <div class="popup-tab-content" id="tab">
+                <div class="welcome-text margin-top-20 margin-bottom-0">
+                    <h3>
+                        <%= __('teacherSettings.add-timetable-entry') %>
+                    </h3>
+                    <br>
+
+                    <div id="addtimetable-not"></div>
+
+                    <div class="submit-field">
+                        <select class="selectpicker" id="dialog-newtimetable-weekday" title="<%= __('teacherSettings.select-weekday') %>" data-live-search="false" data-size="5">
+                            <option value="monday">
+                                <%= __('general.weekdays.long.monday') %>
+                            </option>
+                            <option value="tuesday">
+                                <%= __('general.weekdays.long.tuesday') %>
+                            </option>
+                            <option value="wednesday">
+                                <%= __('general.weekdays.long.wednesday') %>
+                            </option>
+                            <option value="thursday">
+                                <%= __('general.weekdays.long.thursday') %>
+                            </option>
+                            <option value="friday">
+                                <%= __('general.weekdays.long.friday') %>
+                            </option>
+                            <option value="saturday">
+                                <%= __('general.weekdays.long.saturday') %>
+                            </option>
+                            <option value="sunday">
+                                <%= __('general.weekdays.long.sunday') %>
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="submit-field">
+                        <br><br>
+                        <input id="newtimetable-slider" />
+                        <br>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="button gray full-width ripple-effect-dark" type="submit" form="add-note" style="width: 30px;" onclick="$.magnificPopup.close();">
+                                <%= __('general.cancel') %>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button onclick="addTimetableItem();" class="button full-width" type="submit" form="add-note" style="width:
+                                            30px;">
+                                <%= __('general.save') %>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+
+
+    <!-- Dashboard Box -->
+    <div class="col-xl-12">
+        <div class="dashboard-box margin-top-0">
+
+            <!-- Headline -->
+            <div class="headline">
+                <h3><i class="icon-material-outline-account-circle"></i>
+                    <%= __('general.general') %>
+                </h3>
+            </div>
+
+            <div class="content with-padding padding-bottom-0">
+
+                <div class="row">
+
+                    <div class="col-auto">
+                        <div class="avatar-wrapper" data-tippy-placement="bottom" title="<%= __('teacherSettings.upload-picture') %>">
+                            <img class="profile-pic" src="/profilepicture/<%= user._id %>" id="ts-image" alt="" />
+                            <div class="upload-button"></div>
+                            <input class="file-upload" type="file" accept="image/*" id="ts-pp-upload" />
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="row">
+
+                            <div class="col-xl-3">
+                                <div class="submit-field">
+                                    <h5>
+                                        <%= __('general.first-name') %>
+                                    </h5>
+                                    <input type="text" class="with-border" value="<%= user.firstname %>" id="ts-name">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3">
+                                <div class="submit-field">
+                                    <h5>
+                                        <%= __('general.last-name') %>
+                                    </h5>
+                                    <input type="text" class="with-border" value="<%= user.lastname %>" id="ts-lastname">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="submit-field">
+                                    <h5>
+                                        <%= __('general.email') %>
+                                    </h5>
+                                    <input type="text" class="with-border" value="<%= user.email %>" id="ts-mail" disabled>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12">
+                                <div class="submit-field">
+                                    <h5>
+                                        <%= __('general.availability') %>
+                                    </h5>
+                                    <div class="account-type">
+                                        <div>
+                                            <input type="radio" name="avail-rb" class="account-type-radio" id="ts-avail-2" />
+                                            <label for="ts-avail-2" class="ripple-effect-dark"><i class="icon-material-outline-thumb-up"></i>
+                                                <%= __('general.available') %>
+                                            </label>
+                                        </div>
+                                        <div style="display:none">
+                                            <input type="radio" name="avail-rb" class="account-type-radio caution" id="ts-avail-1" />
+                                            <label for="ts-avail-1" class="ripple-effect-dark"><i class="icon-material-outline-lock"></i>
+                                                <%= __('general.limited-available') %>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="avail-rb" class="account-type-radio warning" id="ts-avail-0" />
+                                            <label for="ts-avail-0" class="ripple-effect-dark"><i class="icon-material-outline-thumb-down"></i>
+                                                <%= __('general.not-available') %>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-12">
+                                <div class="submit-field">
+                                    <h5>
+                                        <%= __('teacherSettings.social-program-headline') %>
+                                    </h5>
+                                    <p class="legal">
+                                        <%= __('teacherSettings.social-program-text') %> <a href="/social-program/">
+                                                <%= __('general.learn-more') %>
+                                            </a>
+                                    </p>
+                                    <div class="checkbox ts-freeteaching-checkbox">
+                                        <input type="checkbox" id="socialteacher">
+                                        <label for="socialteacher"><span class="checkbox-icon"></span>
+                                            <%= __('teacherSettings.social-program-optin') %>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div> <!-- Dashboard Box -->
+
+
+
+    <div class="col-xl-12">
+        <div class="dashboard-box">
+
+            <!-- Headline -->
+            <div class="headline">
+                <h3><i class="icon-material-outline-face"></i>
+                    <%= __('general.my-profile') %>
+                </h3>
+            </div>
+
+            <div class="content">
+                <ul class="fields-ul">
+                    <li>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="submit-field">
+                                    <h5>
+                                        <%= __('general.description') %>
+                                            <i class="help-icon" data-tippy-placement="right" title="<%= __('teacherSettings.description-info') %>"></i>
+                                    </h5>
+                                    <textarea cols="30" rows="5" class="with-border" id="ts-description"><%= user.description %></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12">
+                                <br>
+                                <div class="submit-field">
+                                    <h5>
+                                        <%= __('general.languages') %>
+                                    </h5>
+
+                                    <div id="languageContainer">
+                                    </div>
+
+                                    <br>
+                                    <a onclick="openAddLanguageDialog();" class="button button-primary
+                                                    ripple-effect">
+                                        <%= __('teacherSettings.add-language') %>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+
+                            <div class="col-xl-4">
+                                <div class="submit-field">
+                                    <h5>
+                                        <%= __('general.location') %>
+                                    </h5>
+                                    <div id="ts-country-picker-container">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="row">
+                    
+                            <div class="col-xl-12">
+                                <div class="submit-field">
+                                    <h5>
+                                        Video Introduction
+                                    </h5>
+                                    <p>Introduce yourself to new students in form of a video. Upload your video on YouTube and link it to your brainstr profile. You can set the video on YouTube to "not-listed" if you want to hide it there.</p>
+                                
+                                    <div class="submit-field">
+                                        <h5>
+                                            YouTube Video Link
+                                        </h5>
+                                        <input type="text" class="with-border" placeholder="https://www.youtube.com/watch?v=XXX" value="https://www.youtube.com/watch?v=<%= user.video_id %>" id="ts-video">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Dashboard Box -->
+    <div class="col-xl-12">
+        <div id="test1" class="dashboard-box">
+
+            <!-- Headline -->
+            <div class="headline">
+                <h3><i class="icon-material-outline-school"></i>
+                    <%= __('teacherSettings.my-timetable') %>
+                </h3>
+            </div>
+
+            <div class="content with-padding">
+                <a href="#small-dialog-1" class="button button-primary popup-with-zoom-anim">
+                    <%= __('teacherSettings.add-timetable-entry') %>
+                </a>
+                <br><br>
+                <div class="row timetable">
+
+                    <div class="timetable-axis-x">
+                        <div class="timetable-axis-x-clearfix">
+                        </div>
+
+                        <div class="timetable-axis-x-container">
+                            <div class="timetable-axis-x-text">
+                                03:00
+                                <div class="timetable-axis-x-seperator">
+                                </div>
+                            </div>
+                            <div class="timetable-axis-x-text">
+                                09:00
+                                <div class="timetable-axis-x-seperator">
+                                </div>
+                            </div>
+                            <div class="timetable-axis-x-text">
+                                15:00
+                                <div class="timetable-axis-x-seperator">
+                                </div>
+                            </div>
+                            <div class="timetable-axis-x-text">
+                                21:00
+                                <div class="timetable-axis-x-seperator">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timetable-row">
+                        <span>
+                            <%= __('general.weekdays.short.monday') %>
+                        </span>
+                        <div class="timetable-row-item-container" id="timetable-monday-items">
+                        </div>
+                    </div>
+
+                    <div class="timetable-row">
+                        <span>
+                            <%= __('general.weekdays.short.tuesday') %>
+                        </span>
+                        <div class="timetable-row-item-container" id="timetable-tuesday-items">
+                        </div>
+                    </div>
+
+                    <div class="timetable-row">
+                        <span>
+                            <%= __('general.weekdays.short.wednesday') %>
+                        </span>
+                        <div class="timetable-row-item-container" id="timetable-wednesday-items">
+                        </div>
+                    </div>
+
+                    <div class="timetable-row">
+                        <span>
+                            <%= __('general.weekdays.short.thursday') %>
+                        </span>
+                        <div class="timetable-row-item-container" id="timetable-thursday-items">
+                        </div>
+                    </div>
+
+                    <div class="timetable-row">
+                        <span>
+                            <%= __('general.weekdays.short.friday') %>
+                        </span>
+                        <div class="timetable-row-item-container" id="timetable-friday-items">
+                        </div>
+                    </div>
+
+                    <div class="timetable-row">
+                        <span>
+                            <%= __('general.weekdays.short.saturday') %>
+                        </span>
+                        <div class="timetable-row-item-container" id="timetable-saturday-items">
+                        </div>
+                    </div>
+
+                    <div class="timetable-row">
+                        <span>
+                            <%= __('general.weekdays.short.sunday') %>
+                        </span>
+                        <div class="timetable-row-item-container" id="timetable-sunday-items">
+                        </div>
+                    </div>
+
+                </div>
+                <span id="timetable-info"></span>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="col-xl-12 margin-top-100">
+        <h3>
+            <%= __('teacherSettings.my-subjects') %>
+        </h3><br>
+        <a href="#small-dialog-2" class="popup-with-zoom-anim button button-primary" style="width:300px;text-align:center;">
+            <%= __('teacherSettings.add-subject') %>
+        </a>
+    </div>
+
+
+    <div id="subject-container"></div>
+
+
+
+    <div class="col-xl-12 margin-top-30">
+        <button id="save-btn-2" class="button button-primary big margin-top-10" style="width:100%;text-align:center;">
+            <%= __('general.save-settings') %>
+        </button>
+        <br><br>
+    </div>
+
+
+</div>
+
+
+
+
+<script src="/data/<%= locale %>.js"></script>
+
+<script src="/js/timetable.js"></script>
+<script src="/controller/settings_teacher.js" defer></script>

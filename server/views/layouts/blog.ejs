@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>">
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <% if(locals.meta) { %>
+        <meta property="og:site_name" content="brainstr">
+        <meta name="twitter:site" content="@brainstr3">
+
+        <meta property="og:title" content="<%= title %>">
+        <meta property="og:description" content="<%= meta.description %>">
+        <meta name="twitter:image" content="<%= meta.image %>">
+        <meta property="og:url" content="<%= meta.url %>">
+        <meta property="og:image" content="<%= meta.image %>">
+
+        <meta name="twitter:title" content="<%= title %>">
+        <meta name="twitter:description" content="<%= meta.description %>">
+        <meta name="twitter:image" content="<%= meta.image %>">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <meta property="og:site_name" content="brainstr">
+
+        <meta name="title" content="<%= title %>">
+        <meta name="description" content="<%= meta.description %>">
+        <meta name="keywords" content="<%= meta.keywords %>">
+        <% } %>
+
+            <link rel="icon" type="image/png" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/favicon.png">
+            <link rel="apple-touch-icon" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/apple-touch-icon.png" />
+
+            <link rel="preload" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/fonts/Material-Icons.ttf?e8u1sb" as="font" crossorigin="anonymous" />
+            <link rel="preload" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/fonts/Feather-Icons.ttf?7ncawf" as="font" crossorigin="anonymous" />
+            <link rel="preload" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/fonts/Line-Awesome.ttf?15lwq9" as="font" crossorigin="anonymous" />
+
+            <link rel="preload" href="/css/bootstrap-grid.css" as="style">
+            <link rel="preload" href="/css/style.css" as="style" />
+            <link rel="preload" href="/css/icons.css" as="style">
+
+            <link rel="stylesheet" href="/css/bootstrap-grid.css">
+            <link rel="stylesheet" href="/css/style.css">
+            <link rel="stylesheet" href="/css/icons.css">
+
+            <% if(env=="production" ){ %>
+                <script>
+                    !function (w, d, t) {
+                        w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || []; ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"], ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }; for (var i = 0; i < ttq.methods.length; i++)ttq.setAndDefer(ttq, ttq.methods[i]); ttq.instance = function (t) { for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)ttq.setAndDefer(e, ttq.methods[n]); return e }, ttq.load = function (e, n) { var i = "https://analytics.tiktok.com/i18n/pixel/events.js"; ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = i, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {}; var o = document.createElement("script"); o.type = "text/javascript", o.async = !0, o.src = i + "?sdkid=" + e + "&lib=" + t; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(o, a) };
+
+                        ttq.load('CFIVTSRC77U6J4U08L90');
+                        ttq.page();
+                    }(window, document, 'ttq');
+                </script>
+
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSPXSHZKKE"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+
+                    function gtag() { dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-GSPXSHZKKE');
+                </script>
+                <% } %>
+
+                    <script>
+                        var i18n_locale = "<%= locale %>";
+                    </script>
+
+                    <% if (locals.user) { %>
+                        <script>
+                            /* beautify preserve:start */
+                            var uData = JSON.parse(<%- JSON.stringify(JSON.stringify(user)) %>);
+                            /* beautify preserve:end */
+                        </script>
+                        <% } %>
+
+                            <script>
+                                /* beautify preserve:start */
+                                var posts = JSON.parse(<%- JSON.stringify(JSON.stringify(posts)) %>);
+                                var featuredPosts = JSON.parse(<%- JSON.stringify(JSON.stringify(featuredPosts)) %>);
+                                var EXCHANGE_RATES = JSON.parse(<%- JSON.stringify(JSON.stringify(exchangeRates)) %>);
+                                /* beautify preserve:end */
+                            </script>
+</head>
+
+<body class="white">
+    <script src="/i18n/<%= locale %>.js"></script>
+
+    <script src="/config.js"></script>
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/i18n/bundle.js"></script>
+
+    <script src="/js/moment.js"></script>
+    <script src="/js/moment-locales/<%= locale %>.js"></script>
+
+    <script src="/js/socket.io.min.js"></script>
+
+    <script src="/js/i18n/init.js"></script>
+
+
+
+
+
+    <div id="wrapper">
+        <%- include('../external/partials/header'); %>
+
+            <!-- SPECIAL OFFER COUNTDOWN -->
+            <div class="nav-notification nav-notification-countdown">
+                <div class="container">
+                    <span>
+                        <%- __('general.countdown', '<b><div class="d-inline" data-currency-converted="1"></div></b>' ) %>
+                            <!-- - <b id="countdown"></b>-->
+                            &nbsp; - <a href="/teachers/" style="text-decoration: underline;margin:0 !important;"><%- __('general.specialOfferExplore') %></a>
+                    </span>
+                </div>
+                <script>
+                    var ctd_time = moment.utc('<%- specialOfferExpires %>', "YYYY-MM-DD HH:mm:ss");
+                    var ctd_active = false;
+                    var ctd_interval = setInterval(function () {
+                        var ctd_now = moment();
+                        if (ctd_now.isBefore(ctd_time)) {
+                            ctd_active = true;
+                            $(".nav-notification-countdown").show();
+                            var ctd_to = moment.utc(ctd_time.diff(ctd_now));
+                            var ctd_to_days = ctd_time.diff(ctd_now, "days");
+
+                            if (ctd_to_days == 0) {
+                                //$("#countdown").text(ctd_to.format("HH:mm:ss"));
+                            } else {
+                                var ctd_txt_dys = ctd_to_days == 1 ? $.i18n('_bstr.general.day') : $.i18n('_bstr.general.days');
+                                //$("#countdown").text(ctd_to_days + " " + ctd_txt_dys + " " + ctd_to.format("HH:mm:ss"));
+                            }
+                        } else {
+                            ctd_active = false;
+                            $(".nav-notification-countdown").hide();
+                            clearInterval(ctd_interval);
+                        }
+                    }, 0);
+                </script>
+            </div>
+
+            <%- body %>
+    </div>
+
+    <%- include('../external/partials/footer'); %>
+
+
+
+
+        <script src="/controller/init.js"></script>
+
+        <script src="/js/slick.min.js"></script>
+        <script src="/controller/blog.js"></script>
+
+        <script src="/js/mmenu.min.js"></script>
+        <script src="/js/tippy.all.min.js"></script>
+        <script src="/js/simplebar.min.js"></script>
+        <script src="/js/bootstrap-slider.min.js"></script>
+        <script src="/js/bootstrap-select.min.js"></script>
+        <script src="/js/snackbar.js"></script>
+        <script src="/js/magnific-popup.min.js"></script>
+
+        <script src="/js/custom.js"></script>
+</body>
+
+</html>

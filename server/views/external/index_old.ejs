@@ -1,0 +1,353 @@
+<div class="intro-banner">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="banner-headline margin-top-30">
+                    <h1>
+                        <strong>
+                            <%= __('index.headline') %>
+                        </strong>
+                        <br>
+                        <ul id="indexSlider">
+                            <ul id="textSlider">
+                                <li class="adj">
+                                    <%= __('index.slider.1') %>
+                                </li>
+                                <li class="adj">
+                                    <%= __('index.slider.2') %>
+                                </li>
+                                <li class="adj">
+                                    <%= __('index.slider.3') %>
+                                </li>
+                            </ul>
+                        </ul>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="intro-banner-search-form margin-top-20 margin-bottom-20">
+                    <div class="intro-search-field with-autocomplete">
+                        <input id="autocomplete-input" type="text" placeholder="<%= __('index.textbox-placeholder') %>">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="intro-search-button">
+                    <a class="button button-primary" href="javascript:void(0)" onclick="register()">
+                        <%= __('index.cta-btn') %>
+                    </a>
+                    <div class="legal margin-left-25">
+                        <a href="/online-tutoring/">
+                            <%= __('general.learn-more') %>
+                        </a>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-image-container" style="background-image: url('https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/home-background.webp');"></div>
+</div>
+
+
+
+<div class="section padding-top-75 padding-bottom-75 index-highlights">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3">
+                <i class="icon-line-awesome-lightbulb-o"></i>
+                <h3>
+                    <%= __('index.highlights.1-headline') %>
+                </h3>
+                <p>
+                    <%= __('index.highlights.1-text') %>
+                </p>
+            </div>
+
+            <div class="col-md-3">
+                <i class="icon-line-awesome-graduation-cap"></i>
+                <h3>
+                    <%= __('index.highlights.2-headline') %>
+                </h3>
+                <p>
+                    <%= __('index.highlights.2-text') %>
+                </p>
+            </div>
+
+            <div class="col-md-3">
+                <i class="icon-line-awesome-users"></i>
+                <h3>
+                    <%= __('index.highlights.3-headline') %>
+                </h3>
+                <p>
+                    <%= __('index.highlights.3-text') %>
+                </p>
+            </div>
+
+            <div class="col-md-3">
+                <i class="icon-line-awesome-globe"></i>
+                <h3>
+                    <%= __('index.highlights.4-headline') %>
+                </h3>
+                <p>
+                    <%= __('index.highlights.4-text') %>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="section padding-top-50 padding-bottom-50 index-highlights gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/brainstr-video.webp" alt="brainstr video chat" loading="lazy">
+            </div>
+            <div class="col-md-6 vert-center">
+                <div class="block index-feature">
+                    <h2>
+                        <%= __('index.banner-1.headline') %>
+                    </h2>
+                    <p>
+                        <%= __('index.banner-1.text') %>
+                    </p>
+                    <a href="/register" class="button button-primary">
+                        <%= __('index.banner-1.button') %>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section padding-top-50 padding-bottom-50 index-highlights">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 vert-center">
+                <div class="block index-feature">
+                    <h2>
+                        <%= __('index.banner-2.headline') %>
+                    </h2>
+                    <p>
+                        <%= __('index.banner-2.text') %>
+                    </p>
+                    <a href="/register" class="button button-primary">
+                        <%= __('index.banner-2.button') %>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/brainstr-learning.webp" alt="brainstr start your growth" loading="lazy">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section padding-top-50 padding-bottom-50 index-highlights gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/brainstr-schedule.webp" alt="brainstr schedule yourself" loading="lazy">
+            </div>
+            <div class="col-md-6 vert-center">
+                <div class="block index-feature">
+                    <h2>
+                        <%= __('index.banner-3.headline') %>
+                    </h2>
+                    <p>
+                        <%= __('index.banner-3.text') %>
+                    </p>
+                    <a href="/register" class="button button-primary">
+                        <%= __('index.banner-3.button') %>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Features Teachers -->
+<div class="section padding-top-75 padding-bottom-75 full-width-carousel-fix">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="default-slick-carousel freelancers-container freelancers-grid-layout" id="topbrainstrs">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Features Teachers / End-->
+
+
+
+<!--
+<div class="section padding-top-65 padding-bottom-65">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-12">
+                <div class="section-headline centered margin-top-0 margin-bottom-5">
+                    <h3><%= __('index.student-howto.headline') %></h3>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-4">
+                <div class="icon-box with-line">
+                    <div class="icon-box-circle">
+                        <div class="icon-box-circle-inner">
+                            <i class="icon-line-awesome-user"></i>
+                            <div class="icon-box-check"><i class="icon-material-outline-check"></i></div>
+                        </div>
+                    </div>
+                    <h3><%= __('index.student-howto.step1.headline') %></h3>
+                    <p><%= __('index.student-howto.step1.text') %></p>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-4">
+                <div class="icon-box with-line">
+                    <div class="icon-box-circle">
+                        <div class="icon-box-circle-inner">
+                            <i class="icon-line-awesome-search"></i>
+                            <div class="icon-box-check"><i class="icon-material-outline-check"></i></div>
+                        </div>
+                    </div>
+                    <h3><%= __('index.student-howto.step2.headline') %></h3>
+                    <p><%= __('index.student-howto.step2.text') %></p>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-4">
+                <div class="icon-box">
+                    <div class="icon-box-circle">
+                        <div class="icon-box-circle-inner">
+                            <i class="icon-line-awesome-hand-peace-o"></i>
+                            <div class="icon-box-check"><i class="icon-material-outline-check"></i></div>
+                        </div>
+                    </div>
+                    <h3><%= __('index.student-howto.step3.headline') %></h3>
+                    <p><%= __('index.student-howto.step3.text') %></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+-->
+
+
+
+
+<div class="photo-section" data-background-image="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/section-background.webp" style="margin-bottom: -20px !important;">
+    <div class="text-content white-font">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-sm-12">
+                    <h2>
+                        <%= __('index.cta-1.headline') %>
+                    </h2>
+                    <p>
+                        <%= __('index.cta-1.text') %>
+                    </p>
+                    <a href="/register" class="button big margin-top-20">
+                        <%= __('index.cta-1.btn-left') %>
+                    </a> &nbsp; &nbsp; &nbsp;
+                    <a href="/register" class="button big margin-top-20">
+                        <%= __('index.cta-1.btn-right') %>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- 
+<div class="section padding-top-65 padding-bottom-65">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-12">
+                <div class="section-headline centered margin-top-0 margin-bottom-5">
+                    <h3><%= __('index.teacher-howto.headline') %></h3>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-4">
+                <div class="icon-box with-line">
+                    <div class="icon-box-circle">
+                        <div class="icon-box-circle-inner">
+                            <i class="icon-line-awesome-user"></i>
+                            <div class="icon-box-check"><i class="icon-material-outline-check"></i></div>
+                        </div>
+                    </div>
+                    <h3><%= __('index.teacher-howto.step1.headline') %></h3>
+                    <p><%= __('index.teacher-howto.step1.text') %></p>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-4">
+                <div class="icon-box with-line">
+                    <div class="icon-box-circle">
+                        <div class="icon-box-circle-inner">
+                            <i class="icon-line-awesome-search"></i>
+                            <div class="icon-box-check"><i class="icon-material-outline-check"></i></div>
+                        </div>
+                    </div>
+                    <h3><%= __('index.teacher-howto.step2.headline') %></h3>
+                    <p><%= __('index.teacher-howto.step2.text') %></p>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-4">
+                <div class="icon-box">
+                    <div class="icon-box-circle">
+                        <div class="icon-box-circle-inner">
+                            <i class="icon-line-awesome-hand-peace-o"></i>
+                            <div class="icon-box-check"><i class="icon-material-outline-check"></i></div>
+                        </div>
+                    </div>
+                    <h3><%= __('index.teacher-howto.step3.headline') %></h3>
+                    <p><%= __('index.teacher-howto.step3.text') %></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+-->
+
+
+
+<script src="/js/slick.min.js"></script>
+
+<script src="/data/<%= locale %>.js"></script>
+<script src="/controller/index.js" defer></script>

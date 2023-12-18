@@ -1,0 +1,322 @@
+<script>
+    /* beautify preserve:start */
+    var teacherData = JSON.parse(<%- JSON.stringify(JSON.stringify(teacher)) %>);
+    var bookedTimes = JSON.parse(<%- JSON.stringify(JSON.stringify(bookedTimes)) %>);
+    var reviews = JSON.parse(<%- JSON.stringify(JSON.stringify(reviews)) %>);
+    /* beautify preserve:end */
+</script>
+
+<div class="single-page-header freelancer-header" data-background-image="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/section-teacher.webp" style="z-index:100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="single-page-header-inner">
+                    <div class="left-side">
+                        <div class="header-image freelancer-avatar"><img id="ti-image" src="/profilepicture/<%= teacher._id %>" alt="">
+                        </div>
+                        <div class="header-details">
+                            <h3 id="ti-name">
+                                <%= teacher.firstname %>
+                                    <%= teacher.lastname %>
+                            </h3>
+                            <h5 id="ti-registereddate"></h5>
+                            <ul>
+                                <li id="ti-type"></li>
+                                <li id="ti-rating"></li>
+                                <li id="ti-location"></li>
+
+
+                                <li id="ti-verified">
+                                    <div class="verified-badge-with-title" data-tippy-placement="top" title="<%= __('teacher.verified.tooltip') %>">
+                                        <%= __('teacher.verified.text') %>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!--
+                    <div class="right-side">
+                        <a href="#" class="button button-primary button-toclassroom"><%= __('teacher.toclassroom') %> <i
+                                class="icon-material-outline-arrow-right-alt"></i></a>
+                    </div>
+                    -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+
+        <!-- Content -->
+        <div class="col-xl-8 col-lg-8 content-right-offset">
+
+            <!-- Description -->
+            <div class="single-page-section">
+                <h3 class="margin-bottom-25">
+                    <%= __('teacher.about') %>
+                </h3>
+                <p id="ti-description"></p>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="single-page-section">
+                <h3>
+                    <%= __('general.languages') %>
+                </h3>
+                <div class="task-tags" id="ti-languages">
+                </div>
+            </div>
+
+
+            <div class="single-page-section">
+                <h3 class="margin-bottom-25">
+                    <%= __('general.subjects') %>
+                </h3>
+                <div class="listings-container grid-layout" id="ti-subjects">
+                </div>
+            </div>
+
+            <div class="single-page-section">
+                <h3 class="margin-bottom-25">
+                    <%= __('general.availability') %>
+                </h3>
+                <div class="row timetable" id="teacher-timetable">
+
+                    <div class="timetable-axis-x">
+                        <div class="timetable-axis-x-clearfix"> </div>
+
+                        <div class="timetable-axis-x-container">
+                            <div class="timetable-axis-x-text">
+                                03:00<div class="timetable-axis-x-seperator"></div>
+                            </div>
+                            <div class="timetable-axis-x-text">
+                                09:00<div class="timetable-axis-x-seperator"></div>
+                            </div>
+                            <div class="timetable-axis-x-text">
+                                15:00<div class="timetable-axis-x-seperator"></div>
+                            </div>
+                            <div class="timetable-axis-x-text">
+                                21:00<div class="timetable-axis-x-seperator"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timetable-row">
+                        <span>
+                            <%= __('general.weekdays.short.monday') %>
+                        </span>
+                        <div class="timetable-row-item-container" id="timetable-monday-items"></div>
+                    </div>
+
+                    <div class="timetable-row">
+                        <span>
+                            <%= __('general.weekdays.short.tuesday') %>
+                        </span>
+                        <div class="timetable-row-item-container" id="timetable-tuesday-items"></div>
+                    </div>
+
+                    <div class="timetable-row">
+                        <span>
+                            <%= __('general.weekdays.short.wednesday') %>
+                        </span>
+                        <div class="timetable-row-item-container" id="timetable-wednesday-items"></div>
+                    </div>
+
+                    <div class="timetable-row">
+                        <span>
+                            <%= __('general.weekdays.short.thursday') %>
+                        </span>
+                        <div class="timetable-row-item-container" id="timetable-thursday-items"></div>
+                    </div>
+
+                    <div class="timetable-row">
+                        <span>
+                            <%= __('general.weekdays.short.friday') %>
+                        </span>
+                        <div class="timetable-row-item-container" id="timetable-friday-items"></div>
+                    </div>
+
+                    <div class="timetable-row">
+                        <span>
+                            <%= __('general.weekdays.short.saturday') %>
+                        </span>
+                        <div class="timetable-row-item-container" id="timetable-saturday-items"></div>
+                    </div>
+
+                    <div class="timetable-row">
+                        <span>
+                            <%= __('general.weekdays.short.sunday') %>
+                        </span>
+                        <div class="timetable-row-item-container" id="timetable-sunday-items"></div>
+                    </div>
+
+                </div>
+                <span id="timetable-info"></span>
+                <br>
+            </div>
+
+
+
+            <div class="single-page-section boxed-list margin-bottom-100">
+                <h3 id="ti-reviews-headline">
+                    <%= __('teacher.feedback') %>
+                </h3>
+                <ul class="boxed-list-ul" id="ti-reviews"></ul>
+            </div>
+        </div>
+
+
+        <!-- Sidebar -->
+        <div class="col-xl-4 col-lg-4">
+            <div class="sidebar-container" id="ti-sidebar">
+
+                <div class="countdown margin-bottom-35" id="ti-availability"></div>
+
+                <div class="sidebar-widget" id="ti-bookingpanel">
+                    <div class="bidding-widget">
+                        <div class="bidding-headline">
+                            <h3>
+                                <%= __('teacher.book-headline') %>
+                            </h3>
+                        </div>
+                        <div class="bidding-inner" id="panel-booking">
+
+                            <div class="bidding-fields">
+                                <div class="bidding-field" id="ti-subjectselect-container"></div>
+                            </div>
+
+
+                            <!-- Headline -->
+                            <!--<span class="bidding-detail">Dauer</strong></span>-->
+
+                            <!-- Price Slider -->
+                            <div class="bidding-value margin-top-40">
+                                <div><span id="biddingVal"></span>
+                                    <%= __('general.minutes') %>
+                                </div> <mark id="ti-booking-price" class="color"></mark>
+                            </div>
+                            <input id="ti-booking-slider" type="text" value="" />
+
+
+                            <div class="bidding-fields margin-top-40">
+                                <div class="bidding-field" id="ti-dateselect-container">
+                                    <div></div>
+                                </div>
+                            </div>
+
+                            <div class="bidding-fields margin-top-40">
+                                <div class="bidding-field" id="ti-timeselect-container">
+                                </div>
+                            </div>
+
+                            <button id="continue-booking-btn" class="button ripple-effect button-sliding-icon full-width margin-top-30"><span>
+                                    <%= __('general.continue') %>
+                                        <i class="icon-material-outline-arrow-right-alt"></i>
+                                </span></button>
+
+                        </div>
+
+
+                        <div class="bidding-inner" id="panel-booking-confirmation">
+
+                            <div class="bidding-fields margin-top-20">
+                                <ul class="widget-ul">
+                                    <li>
+                                        <%= __('general.subject') %> <span id="ti-confirmation-subject"></span>
+                                    </li>
+                                    <li>
+                                        <%= __('general.length') %> <span id="ti-confirmation-tf"></span>
+                                    </li>
+                                    <li>
+                                        <%= __('general.date') %> <span id="ti-confirmation-date"></span>
+                                    </li>
+                                    <li>
+                                        <%= __('general.time') %> <span id="ti-confirmation-time"></span>
+                                    </li>
+                                    <li class="total">
+                                        <%= __('general.price') %> <span id="ti-confirmation-price"></span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="bidding-fields margin-top-50">
+                                <p class="booking-note">
+                                    <%= __('teacher.book-note') %>
+                                </p>
+                                <!--<p class="booking-note"><%= __('teacher.book-terms') %> <a
+                                        href="/refund"><%= __('general.refund-policy') %></a>.</p>-->
+                            </div>
+
+                            <button id="send-booking" class="button button-green ripple-effect button-sliding-icon full-width
+                                margin-top-20"><span>
+                                    <%= __('teacher.book-btn') %> <i class="icon-material-outline-check"></i>
+                                </span></button>
+
+                            <div class="booking-back margin-top-15"><a onclick="backToEntry()">
+                                    <%= __('teacher.back-to-entry') %>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <!--
+                        <div class="bidding-signup">Unsicher? <a href="#sign-in-dialog"
+                                class="register-tab sign-in popup-with-zoom-anim">Hier gibts Hilfe!</a></div>
+                        -->
+                    </div>
+                </div>
+
+
+                <div class="sidebar-widget success" id="ti-bookingresult">
+                    <div class="bidding-widget">
+                        <i class="icon-feather-check" id="ti-bookingresult-icon"></i>
+                        <h2 id="ti-bookingresult-headline">
+                            <%= __('teacher.book-success-headline') %>
+                        </h2>
+                        <span id="ti-bookingresult-text">
+                            <%= __('teacher.book-success-text') %>
+                        </span>
+                    </div>
+                </div>
+
+
+                <!-- Sidebar Widget -->
+                <!--
+                <div class="sidebar-widget">
+                    <h3>Share</h3>
+                    <div class="copy-url">
+                        <input id="copy-url" type="text" value="" class="with-border">
+                        <button class="copy-url-button ripple-effect" data-clipboard-target="#copy-url"
+                            title="In Zwischenablage kopieren" data-tippy-placement="top"><i
+                                class="icon-material-outline-file-copy"></i></button>
+                    </div>
+                </div>
+                -->
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="./data/<%= locale %>.js"></script>
+<script>
+    $('head').append('<link rel="stylesheet" type="text/css" href="/css/bootstrap-datepicker3.min.css">');
+</script>
+<script src="/js/bootstrap-datepicker.min.js"></script>
+<script src="/js/datepicker-locales/bootstrap-datepicker.<%= locale %>.min.js"></script>
+<script src="/controller/teacher.js" defer></script>

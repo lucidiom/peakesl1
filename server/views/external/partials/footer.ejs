@@ -1,0 +1,247 @@
+<div id="footer" class="index-footer" style="background-color:transparent;color:#6e7277">
+
+
+    <div class="footer-upper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>
+                        <%= __('footer.headline-language') %>
+                    </h3>
+                    <ul>
+                        <li><a href="/english-tutors/">
+                                <%= __('footer.links.english') %>
+                            </a></li>
+                        <li><a href="/german-tutors/">
+                                <%= __('footer.links.german') %>
+                            </a></li>
+                        <li><a href="/french-tutors/">
+                                <%= __('footer.links.french') %>
+                            </a></li>
+                        <li><a href="/italian-tutors/">
+                                <%= __('footer.links.italian') %>
+                            </a></li>
+                        <li><a href="/dutch-tutors/">
+                                <%= __('footer.links.dutch') %>
+                            </a></li>
+                        <li><a href="/latin-tutors/">
+                                <%= __('footer.links.latin') %>
+                            </a></li>
+                        <li><a href="/greek-tutors/">
+                                <%= __('footer.links.greek') %>
+                            </a></li>
+                        <li><a href="/ukrainian-tutors/">
+                                <%= __('footer.links.ukrainian') %>
+                            </a></li>
+                        <li><a href="/swedish-tutors/">
+                                <%= __('footer.links.swedish') %>
+                            </a></li>
+                        <li><a href="/chinese-tutors/">
+                                <%= __('footer.links.chinese') %>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>
+                        <%= __('footer.headline-subject') %>
+                    </h3>
+                    <ul>
+                        <li><a href="/maths-tutors/">
+                                <%= __('footer.links.maths') %>
+                            </a></li>
+                        <li><a href="/physics-tutors/">
+                                <%= __('footer.links.physics') %>
+                            </a></li>
+                        <li><a href="/chemistry-tutors/">
+                                <%= __('footer.links.chemistry') %>
+                            </a></li>
+                        <li><a href="/it-tutors/">
+                                <%= __('footer.links.computerscience') %>
+                            </a></li>
+                        <li><a href="/biology-tutors/">
+                                <%= __('footer.links.biology') %>
+                            </a></li>
+                        <li><a href="/economics-tutors/">
+                                <%= __('footer.links.economics') %>
+                            </a></li>
+                        <li><a href="/digital-marketing-tutors/">
+                                <%= __('footer.links.digital-marketing') %>
+                            </a></li>
+                        <li><a href="/webdev-tutors/">
+                                <%= __('footer.links.webdevelopment') %>
+                            </a></li>
+                        <li><a href="/education-and-training-tutors/">
+                                <%= __('footer.links.education') %>
+                            </a></li>
+                        <li><a href="/finances-tutors/">
+                                <%= __('footer.links.finances') %>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>
+                        <%= __('footer.headline-teaching') %>
+                    </h3>
+                    <ul>
+                        <li><a href="/become-a-tutor/">
+                                <%= __('header.becomeTeacher') %>
+                            </a></li>
+                    </ul>
+
+                    <br>
+
+                    <h3>
+                        <%= __('footer.headline-more') %>
+                    </h3>
+                    <ul>
+                        <li><a href="/register/">
+                                <%= __('footer.sign-up') %>
+                            </a></li>
+                        <li><a href="/online-tutoring/">
+                                <%= __('header.howitworks') %>
+                            </a></li>
+                        <li><a href="/virtual-classroom/">
+                                <%= __('header.virtual-classroom') %>
+                            </a></li>
+                        <li><a href="/social-program/">
+                                <%= __('general.socialprogram') %>
+                            </a></li>
+                        <li><a href="/blog/<%= locale %>/">
+                                <%= __('header.blog') %>
+                            </a></li>
+                        <li><a href="https://brainstr.freshdesk.com/" target="_blank">
+                                <%= __('header.support-ctr') %>
+                            </a></li>
+                    </ul>
+
+                    <br>
+
+
+                </div>
+                <div class="col-md-3">
+                    <select class="selectpicker language-switcher" data-selected-text-format="count" data-size="5" id="i18-language-picker">
+                        <option value="en" <% if(locale !="de" && locale !="ru" && locale !="uk" ){ %> selected <% } %> data-content="<img src='data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxMiA1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjM0MS4zMzciIHk9Ijg1LjMzMyIgZmlsbD0iI2YwZjBmMCIvPjxwb2x5Z29uIGZpbGw9IiNkODAwMjciIHBvaW50cz0iMjg4IDg1LjMzIDIyNCA4NS4zMyAyMjQgMjIzLjk5NiAwIDIyMy45OTYgMCAyODcuOTk2IDIyNCAyODcuOTk2IDIyNCA0MjYuNjYyIDI4OCA0MjYuNjYyIDI4OCAyODcuOTk2IDUxMiAyODcuOTk2IDUxMiAyMjMuOTk2IDI4OCAyMjMuOTk2Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSIzOTMuNzg1IDMxNS4zNTggNTEyIDM4MS4wMzQgNTEyIDMxNS4zNTgiLz48cG9seWdvbiBmaWxsPSIjMDA1MmI0IiBwb2ludHM9IjMxMS42NTIgMzE1LjM1OCA1MTIgNDI2LjY2MiA1MTIgMzk1LjE4OCAzNjguMzA3IDMxNS4zNTgiLz48cG9seWdvbiBmaWxsPSIjMDA1MmI0IiBwb2ludHM9IjQ1OC42MzQgNDI2LjY2MiAzMTEuNjUyIDM0NC45OTggMzExLjY1MiA0MjYuNjYyIi8+PHBvbHlnb24gZmlsbD0iI2YwZjBmMCIgcG9pbnRzPSIzMTEuNjUyIDMxNS4zNTggNTEyIDQyNi42NjIgNTEyIDM5NS4xODggMzY4LjMwNyAzMTUuMzU4Ii8+PHBvbHlnb24gZmlsbD0iI2Q4MDAyNyIgcG9pbnRzPSIzMTEuNjUyIDMxNS4zNTggNTEyIDQyNi42NjIgNTEyIDM5NS4xODggMzY4LjMwNyAzMTUuMzU4Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSI5MC4zNDEgMzE1LjM1NiAwIDM2NS41NDYgMCAzMTUuMzU2Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSIyMDAuMzQ4IDMyOS41MSAyMDAuMzQ4IDQyNi42NjEgMjUuNDkxIDQyNi42NjEiLz48cG9seWdvbiBmaWxsPSIjZDgwMDI3IiBwb2ludHM9IjE0My42OTMgMzE1LjM1OCAwIDM5NS4xODggMCA0MjYuNjYyIDAgNDI2LjY2MiAyMDAuMzQ4IDMxNS4zNTgiLz48cG9seWdvbiBmaWxsPSIjMDA1MmI0IiBwb2ludHM9IjExOC4yMTUgMTk2LjYzNCAwIDEzMC45NTggMCAxOTYuNjM0Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSIyMDAuMzQ4IDE5Ni42MzQgMCA4NS4zMyAwIDExNi44MDQgMTQzLjY5MyAxOTYuNjM0Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSI1My4zNjYgODUuMzMgMjAwLjM0OCAxNjYuOTk0IDIwMC4zNDggODUuMzMiLz48cG9seWdvbiBmaWxsPSIjZjBmMGYwIiBwb2ludHM9IjIwMC4zNDggMTk2LjYzNCAwIDg1LjMzIDAgMTE2LjgwNCAxNDMuNjkzIDE5Ni42MzQiLz48cG9seWdvbiBmaWxsPSIjZDgwMDI3IiBwb2ludHM9IjIwMC4zNDggMTk2LjYzNCAwIDg1LjMzIDAgMTE2LjgwNCAxNDMuNjkzIDE5Ni42MzQiLz48cG9seWdvbiBmaWxsPSIjMDA1MmI0IiBwb2ludHM9IjQyMS42NTkgMTk2LjYzNiA1MTIgMTQ2LjQ0NiA1MTIgMTk2LjYzNiIvPjxwb2x5Z29uIGZpbGw9IiMwMDUyYjQiIHBvaW50cz0iMzExLjY1MiAxODIuNDgyIDMxMS42NTIgODUuMzMxIDQ4Ni41MDkgODUuMzMxIi8+PHBvbHlnb24gZmlsbD0iI2Q4MDAyNyIgcG9pbnRzPSIzNjguMzA3IDE5Ni42MzQgNTEyIDExNi44MDQgNTEyIDg1LjMzIDUxMiA4NS4zMyAzMTEuNjUyIDE5Ni42MzQiLz48L3N2Zz4=' alt='English' height='19px' class='lp-flag' loading='lazy'> English">
+                        </option>
+                        <option value="de" <% if(locale=="de" ){ %> selected <% } %> data-content="<img src='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFz/2wBDAQQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFz/wAARCAAqAEADASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAcCBQH/xAAlEAABAgILAQEAAAAAAAAAAAABAAIDUQUREhYXVFWjpNLiITL/xAAYAQEBAQEBAAAAAAAAAAAAAAAABwEDBf/EACURAAACCQUBAQAAAAAAAAAAAAABAgMEBREVVKPRFBZVkpTSUf/aAAwDAQACEQMRAD8AiL4sWI98SJFe57nEucSSST9JJK8tOmV3bs03kdyH2S7NN5Hch9l31bLVKe5D1JA/eEb/ADLMDhWnTKWnTK7t2abyO5D7Jdmm8juQ+yaxlqlPcgkD94Rv8yzA4Vp0ylp0yu7dmm8juQ+yXZpvI7kPsmsZapT3IJA/eEb/ADLMDhWnTK9ZFiw3siQ4r2va4FrgSCCPoIIXcuzTeR3IfZLs03kdyH2TVstUp7kEgfvCN/mWYFWRVjC8a5xfaYXjXOL7UunzqqraeBft0uKutLPkSdFWMLxrnF9pheNc4vtJ86qq2ngN0uKutLPkSdFWMLxrnF9pheNc4vtJ86qq2ngN0uKutLPkSdFWMLxrnF9pheNc4vtJ86qq2ngN0uKutLPkVpFt/wC3iRSoSU5SRgZlER+Iwi3UJJUJLIBEYRbqEkqEkgERhFuoSRn7YJlaSMTIv0wiP//Z' alt='Deutsch' height='12px' class='lp-flag' loading='lazy'> Deutsch">
+                        </option>
+                        <option value="uk" <% if(locale=="uk" ){ %> selected <% } %> data-content="<img src='data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxMiA1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjM0MS4zMjYiIHk9Ijg1LjMzNyIgZmlsbD0iI2ZmZGE0NCIvPjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iMTcwLjY2MyIgeT0iODUuMzM3IiBmaWxsPSIjMzM4YWYzIi8+PC9zdmc+' alt='Українською' height='18px' class='lp-flag' loading='lazy'> Українською">
+                        </option>
+                        <option value="ru" <% if(locale=="ru" ){ %> selected <% } %> data-content="<img src='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFz/2wBDAQQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFz/wAARCAAqAEADASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAMGBwQI/8QAIxAAAgACCwEAAAAAAAAAAAAAAAECBAcRFhdRVFajpNPiA//EABoBAQACAwEAAAAAAAAAAAAAAAABBgIEBwj/xAAmEQAAAwUJAQEAAAAAAAAAAAAAAQIDBhZUowQRExRSVZPR0hIx/9oADAMBAAIRAxEAPwD3UDLL6qM9S8Oa6xfVRnqXhzXWbeQt0k341dDDERrIamDLL6qM9S8Oa6xfVRnqXhzXWMhbpJvxq6DERrIamDLL6qM9S8Oa6xfVRnqXhzXWMhbpJvxq6DERrIamDLL6qM9S8Oa6xfVRnqXhzXWMhbpJvxq6DERrIeBgXOySz+16Fkln9r0WmLHfn6TXyLBAD27TXY+xTAXOySz+16Fkln9r0Isd+fpNfIQA9u012PsUwFzsks/tehZJZ/a9CLHfn6TXyEAPbtNdj7FMBc7JLP7XoWSWf2vQix35+k18hAD27TXY+xcwd07BBBOzUEECUK+v0SSVSVTOapYHGR6SSv6Iju/SIxECWpYCpYATeIgS1LAVLABeIgS1LA6ZKCCOdlYI4E4X9fmmmq062BCl/KTO78K8f//Z' alt='Русский' height='12px' class='lp-flag' oading='lazy'> Русский">
+                        </option>
+                    </select>
+
+                    <br>
+
+                    <select class="selectpicker currency-switcher show-tick dropup" data-dropup-auto="false" data-size="5" id="i18-currency-picker">
+
+                        <% if(locals.user){ %>
+                            <option value="aud" <% if(user.currency=="aud" ){ %> selected <% } %>>AUD $</option>
+                            <option value="cad" <% if(user.currency=="cad" ){ %> selected <% } %>>CAD $</option>
+                            <option value="chf" <% if(user.currency=="chf" ){ %> selected <% } %>>CHF fr</option>
+                            <option value="cny" <% if(user.currency=="cny" ){ %> selected <% } %>>CNY CN¥</option>
+                            <option value="czk" <% if(user.currency=="czk" ){ %> selected <% } %>>CZK Kč</option>
+                            <option value="dkk" <% if(user.currency=="dkk" ){ %> selected <% } %>>DKK kr</option>
+                            <option value="eur" <% if(user.currency=="eur" ){ %> selected <% } %>>EUR €</option>
+                            <option value="gbp" <% if(user.currency=="gbp" ){ %> selected <% } %>>GBP £</option>
+                            <option value="hkd" <% if(user.currency=="hkd" ){ %> selected <% } %>>HKD HK$</option>
+                            <option value="jpy" <% if(user.currency=="jpy" ){ %> selected <% } %>>JPY ¥</option>
+                            <option value="nok" <% if(user.currency=="nok" ){ %> selected <% } %>>NOK kr</option>
+                            <option value="nzd" <% if(user.currency=="nzd" ){ %> selected <% } %>>NZD $</option>
+                            <option value="rub" <% if(user.currency=="rub" ){ %> selected <% } %>>RUB ₽</option>
+                            <option value="sek" <% if(user.currency=="sek" ){ %> selected <% } %>>SEK kr</option>
+                            <option value="uah" <% if(user.currency=="uah" ){ %> selected <% } %>>UAH ₴</option>
+                            <option value="usd" <% if(user.currency=="usd" ){ %> selected <% } %>>USD $</option>
+                            <option value="zar" <% if(user.currency=="zar" ){ %> selected <% } %>>ZAR R</option>
+                            <% }else{ %>
+                                <option value="aud">AUD $</option>
+                                <option value="cad">CAD $</option>
+                                <option value="chf">CHF fr</option>
+                                <option value="cny">CNY CN¥</option>
+                                <option value="czk">CZK Kč</option>
+                                <option value="dkk">DKK kr</option>
+                                <option value="eur">EUR €</option>
+                                <option value="gbp">GBP £</option>
+                                <option value="hkd">HKD HK$</option>
+                                <option value="jpy">JPY ¥</option>
+                                <option value="nok">NOK kr</option>
+                                <option value="nzd">NZD $</option>
+                                <option value="rub">RUB ₽</option>
+                                <option value="sek">SEK kr</option>
+                                <option value="usd">UAH ₴</option>
+                                <option value="usd">USD $</option>
+                                <option value="zar">ZAR R</option>
+                                <% } %>
+                    </select>
+
+                    <br> <br>
+
+                    <div class="col-sm-12 footer-soc margin-bottom-20">
+                        <a href="https://www.instagram.com/brainstr_de/" target="_blank">
+                            <i class="icon-feather-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/brainstrde" target="_blank">
+                            <i class="icon-feather-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/brainstr3" target="_blank">
+                            <i class="icon-feather-twitter"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lower-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <ul>
+                        <!--<li><a href="#">Carrers</a></li>
+                        <li><a href="#">Press</a></li>-->
+                        <li><a href="/refund/">
+                                <%= __('header.refund') %>
+                            </a></li>
+                        <li><a href="/terms-of-service/">
+                                <%= __('header.terms') %>
+                            </a></li>
+                        <li><a href="/privacy/">
+                                <%= __('header.privacy') %>
+                            </a></li>
+                        <li><a href="/imprint/">
+                                <%= __('header.imprint') %>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <span>© 2023 brainstr</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="/controller/popupAuth.js" defer></script>
+
+
+
+
+<% if(env=="production" ){ %>
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = { hjid: 2298092, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <% } %>

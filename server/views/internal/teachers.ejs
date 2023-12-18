@@ -1,0 +1,62 @@
+<% if(locals.data){ %>
+<h1 class="intpage margin-bottom-10"><%- __('title.teachers-subject', '<mark class="color" id="h-subject">' + data.subject + '</mark>') %></h1>
+<% } else { %>
+<h1 class="intpage margin-bottom-10"><%- __('title.teachers-subject', '') %></h1>
+<% } %>
+
+<div class="readmore">
+    <% if(locals.data){ %>
+    <p><%- __('teachers.infotext', '<b>' + data.subject + '</b>', '<b>' + data.subject + '</b>', '<b>' + data.subject + '</b>', '<b>' + data.subject + '</b>') %></p>
+    <% } else { %>
+    <p><%- __('teachers.infotext', '', '', '', '') %></p>
+    <% } %>
+    <a href="#" class="readmore-btn">+ <%= __('general.readmore') %></a>
+</div>
+
+
+<div class="row margin-top-30 margin-bottom-20 teachers-filter">
+    <div class="col-lg-3 col-md-4 padding-right-0">
+        <!-- Subject -->
+        <span class="filter-headline"><%= __('teachers.filter-subject') %></span>
+        <div id="filter-container-subjects"></div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 padding-right-0 padding-left-0 filter-borders">
+        <span class="filter-headline"><%= __('teachers.filter-language') %></span>
+        <div id="filter-container-languages"></div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 padding-left-0">
+        <span class="filter-headline"><%= __('teachers.filter-location') %></span>
+        <div id="filter-container-location"></div>
+    </div>
+
+</div>
+
+
+
+<div class="row">
+    <div class="col-md-12">
+
+        <!--<div class="notify-box margin-top-15">
+              <div class="switch-container">
+                  <span class="switch-text">Wir haben 23 passende Lehrer für dich gefunden.</span>
+              </div>
+
+              <div class="sort-by">
+                  <span>Sortieren:</span>
+                  <select class="selectpicker hide-tick">
+                      <option>Relevance</option>
+                  </select>
+              </div>
+          </div>-->
+
+        <div class="freelancers-container freelancers-list-layout -disabled-freelancers-grid-layout margin-top-20" id="teachers-container"></div>
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+<script src="/data/<%= locale %>.js"></script>
+<script src="/controller/teachers.js" defer></script>

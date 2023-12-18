@@ -1,0 +1,763 @@
+{
+  "balance": {
+    "action": "Aktion",
+    "available": "Verfügbares Guthaben",
+    "available-note": "Die Höhe des verfügbaren Guthabens.",
+    "blocked": "Geblocktes Guthaben",
+    "blocked-note": "Wenn du eine Lektion buchst, wird der Preis von deinem Guthaben geblockt, bis diese abgeschlossen oder erstattet wurde.",
+    "buy-btn": "brainstr Guthaben kaufen",
+    "buy-note": "Lade dein brainstr Guthaben auf um Lektionen zu buchen und deine Fähigkeiten sofort zu verbessern.",
+    "buy-points": "brainstr Guthaben aufladen",
+    "footnote-1": "Die endgültige Zahlung wird in EUR geleistet.",
+    "footnote-2": "Alle Währungsumrechnungen sind Schätzungen, können variieren und sind nicht bindend.",
+    "footnote-3": "Alle Verkäufe sind endgültig. Käufe können nur als brainstr Guthaben zurückerstattet werden.",
+    "headline": "Kontoübersicht",
+    "payout": {
+      "bic": "BIC",
+      "iban": "IBAN",
+      "method": "Auszahlungsmittel",
+      "paypal": "PayPal (nur Nicht-EU)",
+      "paypal-mail": "Paypal E-Mail",
+      "send": "Auszahlungsanfrage senden",
+      "sepa": "SEPA-Überweisung"
+    },
+    "payout-btn": "Auszahlung beantragen",
+    "payout-note": "Bitte kontaktiere unser Support Team %s um eine Auszahlung zu beantragen. Wir bearbeiten deine Anfrage gerne.",
+    "payout-request": "Auszahlungsantrag"
+  },
+  "banner": {
+    "text": "Kostenlose Bildung mit dem brainstr Social Program (keine Anforderungen)"
+  },
+  "blog": {
+    "cta": {
+      "btn": "Jetzt kostenlos starten",
+      "learn-more": "mehr erfahren",
+      "or": "oder",
+      "text": "Mit brainstr findest du hochmotivierte Online-Tutoren, um deine Fähigkeiten zu verbessern. Außerdem kannst du selbst anfangen zu unterrichten und Geld von zuhause aus verdienen.",
+      "title": "Werde noch heute ein brainstr!"
+    },
+    "headline": "Blog",
+    "helpfull-text": "War dieser Beitrag hilfreich?",
+    "minread": "%s min Lesezeit",
+    "recent": "Aktuelle Beiträge",
+    "share": "Vergiss nicht, diesen Beitrag zu teilen!",
+    "written": "Von %s"
+  },
+  "booking": {
+    "booking": {
+      "headline": "Sicherer Bezahlvorgang",
+      "pm-balance": "Bezahlen mit verfügbarem %s brainstr Guthaben %s",
+      "pm-card": "Bezahlen mit %s Online-Zahlung %s Kreditkarte, SEPA-Lastschrift, Apple & Google Pay",
+      "pm-sp": "Buche über das %s brainstr Social Program %s Erfahre mehr %s darüber, wie wir kostenlose Lektionen anbieten können.",
+      "safety": "Es ist sicher, auf brainstr zu bezahlen. Alle Transaktionen sind durch SSL-Verschlüsselung und einen den brainstr Käuferschutz abgesichert.",
+      "socialprogram-tooltip": "Wir verwenden Spenden, um Kindern und Menschen ohne finanzielle Möglichkeiten kostenlosen Unterricht und Bildung zu bieten.",
+      "subheadline": "Zahlungsmethode"
+    },
+    "confirmation": {
+      "btn": "Weiter zu brainstr",
+      "headline": "Glückwunsch 🚀",
+      "text": "Deine Lektion ist geplant und du hast den ersten Schritt gemacht, um deine Leistungen zu verbessern. Vergewisser dich, dass du 10 Minuten vor Lektionsbeginn auf die brainstr Seite gehst. Auf brainstr siehst du dann eine Einladung, dass virtuelle Klassenzimmer zu betreten, in dem du deinen Tutor triffst und die Lektion stattfindet.",
+      "text2": "Du kannst dich jederzeit mit Fragen an uns wenden. Schreibe uns an"
+    },
+    "guarantee": {
+      "headline": "Lerne mit 100% Zufriedenheitsgarantie",
+      "text": "Falls deine Lektion nicht stattfindet, order du nicht mit deinem Tutor zufrieden bist, stellen wir dir einen neuen Tutor deiner Wahl zur Verfügung oder erstatten dir den vollen Preis."
+    },
+    "sidebar": {
+      "advantages-1": "Virtuelles Klassenzimmer",
+      "advantages-2": "Sichere Zahlung",
+      "advantages-3": "brainstr Support",
+      "advantages-headline": "Deine brainstr Vorteile",
+      "lesson-cancellation": "Lektion stornieren",
+      "lesson-cancellation-tooltip": "Du kannst deine Lektion jederzeit bis 24 Stunden vorher kostenfrei stornieren. Danach kann der Tutor den vollen Preis von dir verlangen.",
+      "processing-fee": "Bearbeitungsgebühr",
+      "processing-fee-tooltip": "Bearbeitungsgebühren werden von Drittanbietern erhoben, um das Geld nach Abschluss der Lektion von deinem Konto auf unser Treuhandkonto und letztendlich an den Tutor zu überweisen.",
+      "ssl-protection": "SSL verschlüsselte Zahlung"
+    }
+  },
+  "brainstr-as-student": {
+    "blocks": {
+      "1": {
+        "headline": "Schnelle Einrichtung",
+        "text": "Melde dich an, lade dein Guthaben auf und buche deine erste Lektion. Beginne jetzt in nur 2 Minuten."
+      },
+      "2": {
+        "headline": "Nimm jederzeit Nachhilfe",
+        "text": "Solange du deinen Laptop und eine Internetverbindugn hast, kannst du Lektionen auf brainstr absolvieren."
+      },
+      "3": {
+        "headline": "Internationale Community",
+        "text": "Wir haben Tutoren aus der ganzen Welt, die jede erdenkliche Sprache sprechen. Jetzt erkunden."
+      },
+      "4": {
+        "headline": "Keine Unterrichtsgebühren",
+        "text": "Bildungschance zu kreieren ist unsere Vision, deshalb berechnen wir dir keine Gebühren für Lektionen."
+      },
+      "5": {
+        "headline": "Allgemeine Nachhilfe",
+        "text": "Du möchtest ein komplett neues Fach erlernen? Oder deine Fähigkeiten in einem schon bekannten Themengebiet verbessern?"
+      },
+      "6": {
+        "headline": "Hausaufgaben-Hilfe",
+        "text": "Hilfe von deinen Eltern ist nett, aber mit brainstr erhälst du auch nützliche Hilfe für deine Hausaufgaben."
+      },
+      "7": {
+        "headline": "Lernen mit Muttersprachlern",
+        "text": "Kein anderer Weg ist effizienter, eine Sprache zu lernen. Beginne jetzt mit einem Muttersprachler."
+      },
+      "8": {
+        "headline": "Prüfungsvorbereitung",
+        "text": "Keine Sorge mehr vor Prüfungen! Brainstr Tutoren bereiten dich optimal auf diese vor."
+      }
+    },
+    "cta-btn": "Kostenlos registrieren",
+    "headline": "Online-Nachhilfe mit brainstr",
+    "slides": {
+      "1": {
+        "headline": "Virtuelles Klassenzimmer für <b>motivierende Lektionen</b>",
+        "text": "Alle Lektionen auf brainstr werden im virtuellen Klassenzimmer gehalten, welches <b>alle Tools für großartige Online-Nachhilfe</b> bereitstellt. Funktioniert in jedem Browser, ganz ohne Download."
+      },
+      "2": {
+        "headline": "Finde <b>deinen perfekten</b> Tutor",
+        "text": "Um einen Online-Tutor zu finden musst du dich nur noch bei brainstr anmelden. Finde mit Hilfe unserer Filtern Tutoren, die genau zu <b>deinen persönlichen Anforderungen</b> passen. Sie warten bereits auf deine erste Lektions-Anfrage."
+      },
+      "3": {
+        "headline": "<b>Einfach & sicher</b> Lektionen buchen",
+        "text": "Lade dein brainstr Guthaben mit einer unserer sicheren Zahlungsmethoden auf. Danach kannst du direkt <b>mit nur wenigen Klicks</b> eine Lektion buchen. Es war nie einfacher, Online-Nachhilfe zu nehmen."
+      },
+      "4": {
+        "headline": "Werde <b>selbst Tutor</b>",
+        "text": "Registriere dich als Tutor, <b>unterrichte Schüler und verdiene Geld</b> für jede Lektion, die du hälst. Wir haben alle Tools und Ressourcen für dich auf brainstr, die du benötigst."
+      },
+      "5": {
+        "btn": "Buche jetzt deine erste Lektion",
+        "headline": "Support & <b>Streitlösungsteam</b>",
+        "text": "Falls etwas mal nicht wie geplant läuft sind wir für dich da! Alle Lektionen auf brainstr sind Teil unserer Streitschlichtungs- & Widerrufrichtlinien. Wir werden uns um deinen persönlichen Fall kümmern und die Situation klären."
+      }
+    },
+    "text": "Nimm Online-Nachhilfe mit Tutoren aus der ganzen Welt<br>Ob Hilfe bei den Hausaufgaben, Prüfungsvorbereitung, eine neue Sprache lernen oder vieles mehr mit brainstr."
+  },
+  "brainstr-as-tutor": {
+    "boxes": {
+      "1": {
+        "headline": "Jetzt loslegen",
+        "text": "Registriere dich kostenlos, fülle dein Tutorenprofil aus und du bist bereit für deine erste Online-Lektion."
+      },
+      "2": {
+        "headline": "Arbeite von Zuhause",
+        "text": "Alles, was du für brainstr brauchst, ist ein mit dem Internet verbundenes Gerät mit Webcam und Mikrofon."
+      },
+      "3": {
+        "headline": "Dein Stundenplan",
+        "text": "Sei dein eigener Chef und entscheide, wann du auf brainstr unterrichtest. Nehme Pausen, wann du sie brauchst."
+      },
+      "4": {
+        "headline": "Niedrige Kommission",
+        "text": "Wir bieten dir sehr wettbewerbsfähige Provisionssätze von nur 20%."
+      },
+      "5": {
+        "headline": "Keine monatliche Kosten",
+        "text": "Es gibt keine Gebühren für brainstr Leistungen außer einer Provision für abgeschlossene Lektionen. "
+      },
+      "6": {
+        "headline": "Weltweite Schüler",
+        "text": "Unsere Schüler kommen aus allen Nationen der Welt. Bist du bereit für interessante Lektionen und neue Erfahrungen?"
+      },
+      "7": {
+        "headline": "Interaktive Tools",
+        "text": "brainstr bietet dir alle Tools für großartige Lektionen - interaktiv, unterhaltsam und motivierend."
+      },
+      "8": {
+        "headline": "Inspiriertes Team",
+        "text": "Unser Team arbeitet sehr hart daran, brainstr jeden Tag besser zu machen. Teil uns dein Feedback mit!"
+      }
+    },
+    "cta-btn": "Jetzt anfangen zu unterrichten",
+    "headline": "Werde ein Tutor mit Brainstr",
+    "slides": {
+      "1": {
+        "headline": "Habe <b>großartige Lektionen</b> mit brainstr",
+        "text": "Unser interaktives, virtuelles Klassenzimmer auf brainstr hilft dir, <b>abwechslungsreiche und spannende Lektionen</b> zu halten, um deinen Schüler <b>bestmöglichst zu helfen und zu motivieren</b>. Die Oberfläche ist einfach gehalten und funktioniert auf jedem Endgerät."
+      },
+      "2": {
+        "headline": "<b>Passe dein</b> Profil an",
+        "text": "Mit deinem anpassbaren persönlichen Profil hast du den Vorteil, dich von der Masse abzuheben und <b>mehr Schüler auf dich aufmerksam</b> zu machen. Brainstr ist darauf ausgelegt, dir eine <b>hohe Conversion Rate</b> zu bringen, sodass du nicht lange auf deine ersten Anfragen warten wirst."
+      },
+      "3": {
+        "headline": "<b>Flexibler</b> Stundenplan",
+        "text": "Gib deinen Wochenplan ein, um voraus zu sein. Deine Schüler können ausschließlich in <b>deinen angegebenen Zeiten</b> Nachhilfestunden buchen. Du kannst deine Angaben jederzeit ändern."
+      },
+      "4": {
+        "headline": "Deine <b>Preisgestaltung</b>",
+        "text": "Die Preisgestaltung deiner Lektionen liegt bei dir und ist flexibel.<b> Entscheide für jedes Fach und Zeitinterval</b>, wie viel deine Schüler zahlen. Natürlich kannst du deine Preise jederzeit mit nur wenigen Klicks anpassen."
+      },
+      "5": {
+        "headline": "<b>Auzahlungen</b> auf deinen Wunsch",
+        "text": "Auszahlungen können <b>so oft</b> in einem Monat vorgenommen werden, <b>wie du möchtest</b>.<br> Wir senden dir dein Guthaben je nach Land und Währung entweder per SEPA-Überweisung, PayPal oder Banküberweisung (Russland) zu.<br>Die Mindestbetrag für Auszahlungen liegt bei nur 20€ (<span data-currency-converted='20'></span>)."
+      }
+    },
+    "subheadline": "Unterrichte online und verdiene Geld.<br>brainstr biete alles, was du brauchst, um innerhalb weniger Minuten loszulegen."
+  },
+  "classroom": {
+    "brush-thickness": "Pinseldicke",
+    "camera": "Kamera",
+    "chat": "Chat",
+    "color": "Farbe",
+    "connect-note": "Du kannst ab 5 Minuten vor der Lektion das Klassenzimmer betreten.",
+    "delete": "Alles löschen",
+    "download": "Herunterladen",
+    "fullscreen": "Vollbild",
+    "headline": "Virtuelles Klassenzimmer",
+    "leave": "Klassenzimmer verlassen",
+    "microphone": "Mikrofon",
+    "msgplaceholder": "Schreibe deine Nachricht",
+    "no-lesson-booked": "Du hast noch keine Unterrichtsstunde gebucht.",
+    "no-lesson-booked-cta": "Finde jetzt deinen perfekten Tutor!",
+    "redo": "Wiederholen",
+    "screen-share": "Bildschirmübertragung",
+    "student-access": "Schüler freigeben",
+    "undo": "Rückgängig",
+    "whiteboard": "Whiteboard",
+    "your-lesson": "Deine Lektion"
+  },
+  "footer": {
+    "description": "Finde deinen perfekten online Nachhilfelehrer, weltweit innerhalb Sekunden. Oder werde selbst Tutor und verdiene Geld.",
+    "headline-language": "Lerne eine Sprache",
+    "headline-more": "Mehr",
+    "headline-subject": "Lerne ein Fach",
+    "headline-teaching": "Unterrichten",
+    "links": {
+      "arts": "Kunst Nachhilfe",
+      "biology": "Biologie Nachhilfe",
+      "chemistry": "Chemie Nachhilfe",
+      "chinese": "Chinesisch Nachhilfe",
+      "computerscience": "Informatik Nachhilfe",
+      "digital-marketing": "Digitales Marketing Nachhilfe",
+      "dutch": "Niederländisch Nachhilfe",
+      "economics": "Ökonomie Nachhilfe",
+      "education": "Bildung & Training Nachhilfe",
+      "english": "Englisch Nachhilfe",
+      "finances": "Finanzen Nachhilfe",
+      "french": "Französisch Nachhilfe",
+      "german": "Deutsch Nachhilfe",
+      "greek": "Griechisch Nachhilfe",
+      "italian": "Italienisch Nachhilfe",
+      "latin": "Latein Nachhilfe",
+      "maths": "Mathe Nachhilfe",
+      "music": "Musik Nachhilfe",
+      "physics": "Physik Nachhilfe",
+      "swedish": "Schwedisch Nachhilfe",
+      "ukrainian": "Ukrainisch Nachhilfe",
+      "webdevelopment": "Webentwicklung Nachhilfe"
+    },
+    "sign-up": "Kostenlos registrieren"
+  },
+  "general": {
+    "404": "Zurück zu brainstr",
+    "apply": "Anwenden",
+    "availability": "Verfügbarkeit",
+    "available": "Verfügbar für Schüler",
+    "cancel": "Abbrechen",
+    "close": "Schließen",
+    "continue": "Weiter",
+    "countdown": "Buche deine erste Lektion <b>kostenlos</b>",
+    "date": "Datum",
+    "delete": "Löschen",
+    "description": "Beschreibung",
+    "details": "Details",
+    "email": "E-Mail Adresse",
+    "first-name": "Vorname",
+    "free": "Kostenlos",
+    "general": "Allgemein",
+    "language": "Sprache",
+    "language-levels": {
+      "advanced": "Fortgeschritten",
+      "beginner": "Anfänger",
+      "expert": "Experte",
+      "intermediate": "Mittelstufe",
+      "native": "Muttersprache"
+    },
+    "languages": "Sprachen",
+    "last-name": "Nachname",
+    "learn-more": "Mehr erfahren",
+    "length": "Länge",
+    "level": "Niveau",
+    "limited-available": "Nur für bisherige Schüler",
+    "location": "Standort",
+    "minutes": "Minuten",
+    "my-profile": "Mein Profil",
+    "name": "Name",
+    "no": "Nein",
+    "not-available": "Nicht verfügbar für Schüler",
+    "password": "Passwort",
+    "points": "Betrag",
+    "price": "Preis",
+    "privacy": "Datenschutzerklärung",
+    "rate": "Preis",
+    "readmore": "Mehr erfahren",
+    "refund-policy": "Widerrufsbedingungen",
+    "reset": "Zurücksetzen",
+    "save": "Speichern",
+    "save-settings": "Einstellungen speichern",
+    "send": "Senden",
+    "sign-in": "Anmelden",
+    "sign-out": "Abmelden",
+    "socialprogram": "brainstr Social Program",
+    "socialprogram-short": "Social Program",
+    "specialOffer": "Erste Stunde kostenlos",
+    "specialOfferBook": "Jetzt buchen",
+    "specialOfferExplore": "Tutoren entdecken",
+    "star": "Stern",
+    "stars": "Sterne",
+    "status": "Status",
+    "subject": "Fach",
+    "subject-levels": {
+      "advanced": "Fortgeschritten",
+      "basic": "Grundlegend",
+      "expert": "Experte",
+      "intermediate": "Mittelstufe"
+    },
+    "subjects": "Fächer",
+    "terms": "Nutzungsbedingungen",
+    "time": "Zeit",
+    "timeline": "Chronik",
+    "total": "Gesamt",
+    "transaction": "Transaktion",
+    "transactions": "Transaktionen",
+    "weekdays": {
+      "long": {
+        "friday": "Freitag",
+        "monday": "Montag",
+        "saturday": "Samstag",
+        "sunday": "Sonntag",
+        "thursday": "Donnerstag",
+        "tuesday": "Dienstag",
+        "wednesday": "Mittwoch"
+      },
+      "short": {
+        "friday": "Fr.",
+        "monday": "Mo.",
+        "saturday": "Sa.",
+        "sunday": "So.",
+        "thursday": "Do.",
+        "tuesday": "Di.",
+        "wednesday": "Mi."
+      }
+    },
+    "yes": "Ja"
+  },
+  "header": {
+    "balance.error": "Kontostand: Fehler!",
+    "becomeStudent": "Werde Schüler",
+    "becomeTeacher": "Werde Tutor",
+    "blockedPoints": "Geblockt: %s€",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "fb": "Facebook",
+    "findTeacher": "Finde deinen Tutor",
+    "freePoints": "Kontostand: %s€",
+    "further": "Weitere Links",
+    "getStarted": "Jetzt kostenlos starten",
+    "getStarted-loggedIn": "Dashboard",
+    "howitworks": "So funktioniert's",
+    "ig": "Instagram",
+    "imprint": "Impressum",
+    "legal": "Rechtliches",
+    "lessons": "Meine Lektionen",
+    "notifications": {
+      "headline": "Benachrichtigungen",
+      "readAll": "Alle als gelesen markieren"
+    },
+    "privacy": "Datenschutzerklärung",
+    "profile": "Mein Profil",
+    "quicklinks": "Quicklinks",
+    "refund": "Rückerstattung",
+    "settings": "Einstellungen",
+    "social": "Sozialen Medien",
+    "start": "Start",
+    "support": "Support",
+    "support-ctr": "Support Center",
+    "teacher-subheadline": "Tutor",
+    "teacherSettings": "Einstellungen",
+    "terms": "Nutzungsbedingungen",
+    "toBrainstr": "Zu brainstr",
+    "tutors": "Tutoren",
+    "virtual-classroom": "Virtuelles Klassenzimmer"
+  },
+  "imprint": {
+    "contact": "Kontakt",
+    "disclaimer": "Die von brainstr („wir“, „uns“ oder „unser“) auf brainstr.de (die „Website“) bereitgestellten Informationen dienen nur allgemeinen Informationszwecken. Alle Informationen auf der Website werden in gutem Glauben zur Verfügung gestellt, jedoch geben wir keine Zusicherung oder Garantie jeglicher Art, oder implizit, in Bezug auf die Richtigkeit, Ädlichkeit, Gültigkeit, Zuverlässigkeit, Verfügbarkeit oder Vollständigkeit von Informationen auf der Website ab. IN KEINEM FALL HAFTEN WIR IHNEN GEGENÜBER FÜR VERLUSTE ODER SCHÄDEN JEGLICHER ART, DIE DURCH DIE NUTZUNG DER WEBSITE ODER DURCH DAS VERTRAUEN AUF DIE AUF DER WEBSITE BEREITGESTELLTEN INFORMATIONEN ENTSTEHEN. IHRE NUTZUNG DER WEBSITE UND IHRE ABHÄNGIGKEIT VON INFORMATIONEN AUF DER WEBSITE ERFOLGT AUSSCHLIESSLICH AUF IHR EIGENES RISIKO.",
+    "disclaimer-headline": "Haftungsausschluss",
+    "headline": "Impressum",
+    "represented": "Vertreten durch",
+    "vat": "Umsatzsteuer-Id"
+  },
+  "index": {
+    "banner-1": {
+      "button": "Starte jetzt kostenlos",
+      "headline": "Homeschooling sinnvoll erweitern",
+      "text": "Mit brainstr kannst du endlich deinen Schulaltag auch mit Nachhilfe erweitern. Verbinde dich mit Tutoren aus der ganzen Welt, erhalte Hilfe für Hausaufgaben oder Prüfungsvorbereitungen, lerne eine Sprache mit einem Muttersprachler oder entdecke ganz neue Fächer für dich."
+    },
+    "banner-2": {
+      "button": "Starte jetzt kostenlos",
+      "headline": "Individuelle Förderung für dein persönliches Wachstum",
+      "text": "Individuelle Bildung für dich, auch in Zeiten von Corona. Unsere Tutoren können in Lektionen ganz auf deine Bedürfnisse, Fähigkeiten und Lücken eingehen. Nachhilfe ist vor allem jetzt die optimale Ergänzung zum Lernen in der Schule."
+    },
+    "banner-3": {
+      "button": "Starte jetzt kostenlos",
+      "headline": "Tutoren. Klassenzimmer. Zahlung.",
+      "text": "Von der Suche nach einem Tutor, zur Buchung einer Lektion, Zahlung und dem Unterricht selbst. Auf brainstr hast du alles in einer Platform. Und dabei genießt du die Vorteile von sicherer Zahlung, Qualitätskontrollen der Tutoren und ständig neuen coolen Funktionen."
+    },
+    "cta-1": {
+      "btn-left": "Als Schüler registrieren",
+      "btn-right": "Als Lehrer registrieren",
+      "headline": "Lehren und Lernen - das ist brainstr",
+      "text": "Mit brainstr findest du deinen perfekten online Nachhilfelehrer. Außerdem kannst du selbst als Tutor Schüler unterrichten und Geld von zuhause aus verdienen."
+    },
+    "cta-btn": "Nach Tutoren suchen",
+    "headline": "Finde deinen perfekten Online-Nachhilfelehrer",
+    "highlights": {
+      "1-headline": "Inspirierende Tutoren",
+      "1-text": "Alle Tutoren sind selbst Schüler oder haben vor kurzem ihr Studium abgeschlossen. Sie sind voller Energie und Motivation und wissen genau, wo deine Herausforderungen liegen.",
+      "2-headline": "Interaktive Lektionen",
+      "2-text": "brainstr bietet dir aufregende und interesante Lektionen. Unser interaktives Klassenzimmer wird deine Lehrnzeit bis zu einem Maximum effektiv gestalten.",
+      "3-headline": "Weltweite Community",
+      "3-text": "Du möchtest eine Sprache mit einem Muttersprachler lernen? Oder ein neues Fach, dass du in der Schule nicht hattest? Mit brainstr kannst du dich mit Tutoren auf der ganzen Welt verbinden!",
+      "4-headline": "Lerne von überall aus",
+      "4-text": "All unsere Lektionen sind online - lerne von jedem Ort auf der Welt, wann immer du willst."
+    },
+    "slider": {
+      "1": "Ein Tutor, der %sdeinen Anforderungen%d entspricht.",
+      "2": "Online Lektionen. %sSichere%d online Bezahlung.",
+      "3": "%sSchüler zu Schüler%d - Nachhilfe"
+    },
+    "textbox-placeholder": "Unterrichtsfach"
+  },
+  "index-new": {
+    "about-virtual-classroom": "Mehr über das virtuelle brainstr Klassenzimmer",
+    "blocks": {
+      "headline-1": "Verantwortungsbewusste und proaktive Tutoren",
+      "headline-2": "Peer-to-Peer-Lernen",
+      "headline-3": "Brainstr prüft die Qualität aller Lektionen",
+      "headline-4": "Schüler werden zu Tutoren",
+      "text-1": "Brainstrs Tutoren sind selbst Schüler oder Studenten. Sie warten bereits darauf, dir individuelle Hilfestellung zu geben und dich zu unterstützen.",
+      "text-2": "Unsere Tutoren haben selbst die Schwierigkeiten des Lernens oder des Übertritts an die Universität erlebt. Empathie mit Fachwissen vereint macht Nachhilfe mit brainstr inspirierend und zielorientiert.",
+      "text-3": "Wir führen Interviews mit unseren Tutoren und überprüfen Noten, um die Qualität unserer Tutoren zu gewährleisten. Wenn dir die Lektion nicht gefällt, erstatten wir dir dein Geld zurück.",
+      "text-4": "Unser Ziel ist, dass Schüler selbst zu Tutoren werden und sich Geld für ihre eigene Entwicklung verdienen können.<br><br>Wir laden die besten Schüler ein, Teil unseres Teams zu werden und Online-Nachhilfe zu geben."
+    },
+    "cta": {
+      "btn": "Jetzt registrieren",
+      "headline": "Buche deine %s erste Stunde %s noch heute!",
+      "text": ""
+    },
+    "explore-tutors": "Entdecke unsere Tutoren",
+    "head": {
+      "btn-text": "Tutor finden",
+      "headline": "Welches Fach<br>möchtest du lernen?",
+      "link-tutors": "Alle Tutoren durchsuchen",
+      "subheadline": "👋 Interaktive Plattform, auf der Schüler Schüler unterrichten",
+      "subtext": "Tutoren %s auf der ganzen Welt %s. Lektionen %s ab 2€ %s."
+    },
+    "howto": {
+      "btn": "Finde jetzt deinen Tutor",
+      "headline": "So einfach wie %s1-2-3%s",
+      "step1": "Melde dich an und wähle einen Tutor, der zu deinen Zielen passt",
+      "step2": "Lade dein brainstr Guthaben auf und wähle eine Zeit, die dir passt",
+      "step3": "Der Tutor trifft dich im virtuellen und interaktiven Klassenzimmer von brainstr, in dem die Lektion zur abgemachten Zeit gehalten wird"
+    },
+    "principals": {
+      "headline": "Unsere %sWerte%s",
+      "headline-1": "Lehren und Lernen",
+      "headline-2": "Jeder Schüler ist einzigartig und hat Wachstumspotenzial",
+      "headline-3": "Fokus auf Ergebnisse und langfristigen Erfolg",
+      "text-1": "Wir glauben an den Erfolg des Peer-to-Peer-Lernens, wenn der Tutor selbst Schüler ist. Es ist ein gegenseitiges Lernen, wobei der Schüler auf das Wissen und die Erfahrungen des Tutors zurückgreifen kann.",
+      "text-2": "Verschiedene Menschen lernen auf unterschiedliche Weise. Individuelle Zusammenarbeit mit unseren Tutoren hilft dir, deinen Weg zu finden und deine Ziele zu erreichen.",
+      "text-3": "Es ist wichtig für uns, dass Kinder und Eltern qualitativ hochwertige Bildung und damit Chancen für die Zukunft erhalten. Unsere Tutoren helfen nicht nur bei der Wissensvermittlung, sondern teilen auch Lerntips, und Erfahrungen mit dir - sodass auch du Tutor bei brainstr werden kannst."
+    },
+    "qa": {
+      "headline-1": "Wie viel %skostet Online-Nachhilfe%s?",
+      "text-1": "Du zahlst die Kosten der Lektion, die durch den Tutor vorgegeben wird und 20% Kommission für brainstr. Die Gesamtkosten werden dir auf dem Profil der Tutoren angezeigt und beträgt in der Regel zwischen 6 und 15 Euro."
+    },
+    "shortinfo": {
+      "1-headline": "Individuelles Lernen",
+      "1-text": "Wähle aus einer Vielzahl an Tutoren für deine Einzelstunde und lasse dir genau die Themen erklären, für die du Hilfe benötigst.",
+      "2-headline": "Bezahle sicher und pro Lektion",
+      "2-text": "Durch unseren Zahlungsprozess auf brainstr ist dein Geld jederzeit sicher - und Lektionen zahlst bequem online.",
+      "3-headline": "COVID-19 sicher",
+      "3-text": "Sicherer Fernunterricht - ohne Maske und Risiken. Ausgezeichnete Nachhilfe trotz der Pandemie mit brainstr."
+    },
+    "team": {
+      "all-link": "Alle Tutoren durchsuchen",
+      "btn": "Jetzt Lektion buchen",
+      "headline": "Lerne %sunser Tutoren-Team%s kennen"
+    },
+    "whattutorsprovide": {
+      "1": "📚 Hausaufgaben für Schulfächer",
+      "2": "📘 Vorbereitung auf Prüfungen und Tests",
+      "3": "👩‍💻 Erklärung eines schwierigen Themas, mit dem du noch Probleme hast",
+      "4": "👩🏼‍🎨 Hilfe ein Fach zu erlernen, dass du nicht in der Schule hast. Zum Beispiel eine neue Sprache oder Computer zu programmieren",
+      "5": "🧑🏻‍💼 Erfahrungen mit dem Übergang und Auswahlverfahren von Universitäten",
+      "btn": "Finde jetzt deinen Tutor",
+      "headline": "Wobei dir unsere %sTutoren helfen%s können"
+    }
+  },
+  "lesson": {
+    "back": "Zurück zur Übersicht",
+    "details": "Lektionen-Details"
+  },
+  "lessons": {
+    "my-lessons": "Meine Lektionen",
+    "start-dispute-headline": "Problem melden",
+    "start-dispute-text": "Wir werden die Situation klären und entscheiden, was passieren wird. Bitte gib uns weitere Details zu deinem Fall, damit wir deine Anfrage schnell bearbeiten können.",
+    "start-dispute-textarea-placeholder": "Erkläre uns, was vorgefallen ist...",
+    "student-lessons": "Lektionen als Schüler",
+    "teacher-lessons": "Lektionen als Lehrer"
+  },
+  "login": {
+    "failed-auth": "E-Mail oder Passwort falsch!",
+    "headline": "Willkommen zurück!",
+    "no-account-link": "Registriere dich und beginne noch heute kostenlos!",
+    "no-account-notice": "Noch kein brainstr?",
+    "reset-password": "Passwort zurücksetzen",
+    "sign-in": "Anmelden"
+  },
+  "mail": {
+    "subjects": {
+      "deposit-success": "Deine Einzahlung war erfolgreich",
+      "lessonRequest": "Neue Lektionsanfrage erhalten",
+      "mail-confirmation": "Bestätige deine E-Mail Adresse",
+      "mail-welcome": "Willkommen bei brainstr %s 🚀",
+      "password-reset": "Passwort zurücksetzen",
+      "teacherLessonAccept": "Deine Lektion ist jetzt geplant!",
+      "teacherLessonCanceled": "Deine Lektion wurde abgesagt",
+      "teacherLessonCompleted": "Du hast eine Lektion abgeschlossen 🎉",
+      "teacherLessonRejected": "Deine Lektionsanfrage wurde abgelehnt"
+    }
+  },
+  "messages": {
+    "msg": "Nachricht",
+    "send": "Senden"
+  },
+  "name": "brainstr",
+  "privacy": {
+    "headline": "Datenschutzerklärung"
+  },
+  "register": {
+    "accept-terms": "Mit der Registrierung akzeptierst du unsere %s und %s.",
+    "advantages": {
+      "1": "Tutoren aus der ganzen Welt",
+      "2": "Du wählst Uhrzeit & Datum",
+      "3": "Virtuelles Online-Klassenzimmer",
+      "4": "Sichere Online-Zahlung",
+      "5": "brainstr Supportteam",
+      "headline": "Jetzt testen!",
+      "subheadline": "Buche deine erste Lektion kostenlos"
+    },
+    "already-signed-link": "Anmelden",
+    "already-signed-text": "Du hast bereits ein Konto?",
+    "button": "Konto erstellen",
+    "headline": "Bereit, ein brainstr zu werden?",
+    "password-repeat": "Passwort wiederholen",
+    "profTeacher": "Ich bin ein professioneller Lehrer",
+    "socialTeacher": "Ich kann Schüler des Social Programs kostenlos unterrichten"
+  },
+  "reset-password": {
+    "button": "Passwort zurücksetzen",
+    "headline": "Hast du dein Passwort vergessen?",
+    "remember-link": "Jetzt anmelden!",
+    "remember-text": "Dir ist es wieder eingefallen?",
+    "set-btn": "Passwort festlegen",
+    "set-headline": "Neues Passwort festlegen",
+    "text": "Du erhälst eine E-Mail mit einem Link, um dein Passwort zurückzusetzen."
+  },
+  "settings": {
+    "btn-save": "Änderungen speichern",
+    "btn-set-pw": "Passwort speichern",
+    "c-pw": "Aktuelles Passwort",
+    "change-pw": "Passwort ändern",
+    "n-pw": "Neues Passwort",
+    "n-pw-repeat": "Passwort wiederholen",
+    "socialprogram-text": "We can provide you with free lessons in case you don't have access or currently not the financial possibilities. Lessons are being held by volunteering teachers or being payed by the brainstr Social Fund."
+  },
+  "social-program": {
+    "cta": {
+      "headline": "Building the %s future of education",
+      "text": "We at brainstr are empowered by the vision to eduacte children around the globe, no matter how there financial possibilities might be. Education is a human right we are fighting for."
+    },
+    "h1": "Das brainstr Social Programm",
+    "headline": "Kostenlose Bildung mit dem brainstr Social Program",
+    "partners-headline": "Für Partner / Mitwirkende",
+    "partners-text": "The brainstr Social Program cannot live without the amazing help of our partners and contributors. In order to provide our free education for children in need, we rely on donations from companies, organisations, people, our students and teachers. Only together we can keep this important project alive.",
+    "read-more-btn": "Mehr erfahren",
+    "sh1": "So funktioniert's",
+    "sh2": "Der Fonds",
+    "st1": "Students that can't afford lessons sign up and simply enroll with one click in the program. We provide those students with volunteering teachers or, if no suitable is available, we pay for the lesson using the brainstr Social Fund. %s Teachers on brainstr can opt-in to give volunteering lessons to students next to giving regular payed lessons. It's their choice and they can change this setting anytime.",
+    "st2": "Contributions from our partners, people, students and teachers are all going into the fund.%sThe fund is being used to pay for the operational costs of the project - the infrastructure, employees making this project possible and teachers.",
+    "students-headline": "Für Schüler",
+    "students-text": "We provide students with no financial possibilities with free education - online lessons with our teachers on brainstr. Simply sign up and book your first lesson - either with a volunteering teacher, or we pay for the lesson using the brainstr Social Fund.",
+    "subheadline": "Kostenlose Online-Nachhilfe für Schüler",
+    "t1": "The brainstr Social Program provides lessons to students who can't afford it themselves. If you can't afford the lessons, don't worry, we will take care of it. Your lessons will be held by volunteering teachers or we pay using the brainstr Social Program Fund.",
+    "teachers-headline": "Für Lehrer",
+    "teachers-text": "Help raising education levels across the globe with teaching as a volunteer for Social Students on brainstr. You deliver lessons for free to children who couldn't otherwise afford to be taught."
+  },
+  "social-program-partner": {
+    "contr-headline": "Beitrag leisten",
+    "contr-monthly": "Monatlichen beitragen",
+    "cta": "Beitragen",
+    "cta-btn": "Jetzt beitragen",
+    "cta-headline": "Hilf mit, %s unsere Zukunft zu unterrichten",
+    "cta-text": "Be part of our vision providing access to free education to all children around the world.%sWe are excited about the future we are building, are you ready to join?",
+    "h1": "Schülern helfen",
+    "h2": "Lehrern helfen",
+    "h3": "Bildung %s zugänglich machen",
+    "h4": "Partner werden",
+    "headline": "Bildung zugänglich machen.<br>Zukünfte bauen",
+    "subheadline": "Brainstr Social Program helps children get the education we think they deserve while at the same time we build jobs for teachers worldwide.",
+    "t1": "Students profit from the brainstr Social Program if they cannot afford tutoring lessons by themselves or don't have access to schools. We provide those students with the tools and guidance required and pay for their lessons.",
+    "t2": "We help teachers to get back into a job where they can provide for themselves and their family. We are also working on our own program to train people to become teachers on brainstr.",
+    "t3": "Bringing high quality education to everyone - that is brainstr's vision. No matter of heritage, location or the current situation, with our brainstr teachers we want to give every child sufficient education to be successfull in life.",
+    "t4": "If you are interested in a partnership or a special contribution, please reach out to us directly at %s to discuss in detail.%sWe are constantly looking into all directions to secure funding for our Social Program and progressing with our vision."
+  },
+  "social-program-student": {
+    "cta": "Beginne mit brainstr zu lernen",
+    "cta-btn": "Beginne zu Lernen",
+    "cta-headline": "Start %sboosting your skills",
+    "cta-text": "Be part of our vision providing access to free education to all children around the world.%sWe are excited about the future we are building, are you ready to join?",
+    "h1": "Das brainstr Social Program",
+    "h2": "Lernen mit Brainstr",
+    "headline": "Erhalte Nachhilfestunden%s- auch wenn du nicht bezahlen kannst",
+    "social-student-option": "Ich kann den Unterricht nicht bezahlen",
+    "subheadline": "Unterrichte kostenlos oder erhalte Kompensation aus unserem brainstr Social Fonds - um die Zukunft unserer Kinder zu verbessern.",
+    "t1": "The brainstr Social Program provides lessons to students who can't afford it themselves. If you can't afford the lessons, don't worry, we will take care of it. Your lessons will be held by volunteering teachers or we pay using the brainstr Social Fund.",
+    "t2": "Find your perfect online teacher on brainstr. Select according to your requirements, set lessons at times that work for you. Learn on the brainstr platform using our virtual classroom and secure payment processing."
+  },
+  "social-program-teacher": {
+    "cta": "Werde Tutor",
+    "cta-headline": "Hilf mit, %s unsere Zukunft zu unterrichten",
+    "cta-text": "Be part of our vision providing access to free education to all children around the world.%sWe are excited about the future we are building, are you ready to join?",
+    "cta2": "Beginne zu Unterrichten",
+    "h1": "Das brainstr Social Program",
+    "h2": "Unterrichten mit brainstr",
+    "headline": "Unterrichte Schüler, die keinen Zugang zu Bildung haben",
+    "subheadline": "Unterrichte kostenlos oder erhalte Kompensation aus unserem brainstr Social Fonds - um die Zukunft unserer Kinder zu verbessern.",
+    "t1": "The brainstr Social Program provides lessons to students who can't afford it themselves. You can either teach on a voluntary basis or we pay you from the brainstr Social Funds. This fund is filled by donations.",
+    "t2": "We provide you all the tools you need to start. Sign up, fill out your profile and wait for the first student booking a lesson. You get paid right after each regular lesson that is not done for the brainstr Social Program."
+  },
+  "teacher": {
+    "about": "Über mich",
+    "back-to-entry": "Zurück zur Eingabe",
+    "book-btn": "Jetzt buchen",
+    "book-headline": "Lektion buchen",
+    "book-note": "Der Betrag wird nach der Buchung gesperrt, aber erst nach dem Unterricht abgebucht.",
+    "book-success-headline": "Alles erledigt!",
+    "book-success-text": "Deine Unterrichtsanfrage wurde gesendet.",
+    "book-terms": "Mit Klick auf \"Jetzt buchen\" akzeptierst du unsere",
+    "ccontactMe": "Nachricht senden",
+    "feedback": "Feedback von Schülern",
+    "socialTeacherTooltip": "Ich unterrichte ehrenamtlich für das brainstr Social Program",
+    "toclassroom": "Klassenzimmer beitreten",
+    "verified": {
+      "text": "Verifiziert",
+      "tooltip": "Dieser Tutor ist von brainstr verifiziert"
+    }
+  },
+  "teacherSettings": {
+    "add-language": "Sprache hinzufügen",
+    "add-subject": "Fach hinzufügen",
+    "add-timetable-entry": "Stundenplan-Eintrag hinzufügen",
+    "challenge-del-subject-text": "Bist du sicher, dieses Fach zu löschen?",
+    "challenge-headline": "Bist du sicher?",
+    "description-info": "Stelle dich deinen Schülern vor und erzähle ihnen, was sie von dir erwarten können.",
+    "edit-timetable-entry": "Stundenplan-Eintrag ändern",
+    "headline": "Tutor-Einstellungen",
+    "my-subjects": "Meine Fächer",
+    "my-timetable": "Mein Stundenplan",
+    "select-level": "Niveau auswählen",
+    "select-weekday": "Wochentag auswählen",
+    "social-program-headline": "brainstr Social Program 🇺🇦",
+    "social-program-optin": "Ich kann Schüler des Social Programs kostenlos unterrichten",
+    "social-program-text": "With the brainstr Social Program we provide lessons for children that cannot afford or do not have access to education. You can help us spread knowledge to everyone around the globe.",
+    "upload-picture": "Profilbild hochladen"
+  },
+  "teachers": {
+    "filter-language": "Mein Tutor spricht",
+    "filter-location": "Tutor kommt aus",
+    "filter-subject": "Ich lerne",
+    "infotext": "Online %s Nachhilfelehrer finden. Finde jetzt in sekundenschnelle deinen perfekten %s Nachhilfelehrer auf brainstr. Ganz egal wann und wo, mit brainstr kannst du jederzeit dank dem virtuellen Onlineklassenzimmer deine %s Nachhilfe nehmen.\nDas Beste daran ist, dass dein Tutor selbst ein Schüler ist, und somit sich in der gleichen Situation wie du befindet. Dein Tutor wird ganz auf dich eingehen, um dir bei jedem Problem oder bei jeder Frage optimal zu helfen und um Klarheit zu schaffen.\nWähle deinen %s Tutor und buche deine erste kostenlose Stunde, um brainstr zu testen. Du kannst diese nutzen, um ein bestimmtes Thema zu lernen, für deine Prüfungsvorbereitung oder einfach eine allgemeine Nachhilfestunde."
+  },
+  "terms": {
+    "headline": "Nutzungsbedingungen"
+  },
+  "title": {
+    "balance": "Kontoübersicht - brainstr",
+    "blog": "Blog - brainstr",
+    "book": "Lektion buchen - brainstr",
+    "classroom": "Klassenzimmer - brainstr",
+    "how_it_works_student": "Online-Nachhilfe mit brainstr - brainstr",
+    "how_it_works_tutor": "Werde ein Tutor bei brainstr - brainstr",
+    "imprint": "Impressum - brainstr",
+    "index": "brainstr - finde deinen online Nachhilfelehrer kostenlos",
+    "lesson": "Details zur Lektion - brainstr",
+    "lessons": "Meine Lektionen - brainstr",
+    "login": "Anmelden - brainstr",
+    "messages": "Nachrichten - brainstr",
+    "privacy": "Datenschutz - brainstr",
+    "refund": "Widerruf - brainstr",
+    "register": "Werde ein brainstr - brainstr",
+    "registerTeacher": "Werde ein Lehrer - brainstr",
+    "reset": "Passwort zurücksetzen - brainstr",
+    "settingsTeacher": "Tutor-Einstellungen - brainstr",
+    "social-program": "Social Program - brainstr",
+    "social-program-partners": "Zum Social Program beitragen - brainstr",
+    "social-program-students": "Social program für Schüler - brainstr",
+    "social-program-teacher": "Social Program für Lehrer - brainstr",
+    "teacher": "Lehrer Details - brainstr",
+    "teachers": "Online %s Tutoren - brainstr",
+    "teachers-subject": "Online %s Tutoren",
+    "terms": "Nutzungsbedingungen - brainstr",
+    "virtual_classroom": "Virtuelles Klassenzimmer - brainstr"
+  },
+  "virtual-classroom": {
+    "boxes": {
+      "1": {
+        "headline": "Funktioniert in jedem modernen Browser",
+        "text": "Mit nur einem Klick bist du im virtuellen Klassenzimmer von brainstr - keine Installation erforderlich."
+      },
+      "2": {
+        "headline": "Whiteboard & Bildschirmübertragung",
+        "text": "Interaktive Lektionen mit gemeinsamen Whiteboard oder Bildschirmübertragung für inspirierende Lektionen."
+      },
+      "3": {
+        "headline": "Hochqualitatives Audio & Video",
+        "text": "Neueste Technologie mit qualitativ hochwertigem Video und Audio lassen dich vergessen, dass ihr nur per Bildschirm verbunden seid."
+      },
+      "4": {
+        "headline": "Automatisiertes Unterricht-Management",
+        "text": "Unsere automatische Statusprüfung deiner Lektionen bietet dir ein Maximum an Sicherheit und bei Bedarf eine schnelle Rückerstattung."
+      }
+    },
+    "features": {
+      "1": {
+        "headline": "Exzellente Tutoren",
+        "text": "Hoch motivierte und wissensstarke Tutoren warten bei brainstr auf dich. Schüler-Schüler Nachhilfe für dein persönliches Wachstum."
+      },
+      "2": {
+        "headline": "COVID-19 sicher",
+        "text": "Sicherer Fernunterricht - ohne Maske und Risiken. Großartige Bildung trotz der aktuellen Umstände mit brainstr."
+      },
+      "3": {
+        "headline": "Datenschutz",
+        "text": "Alle Nachhilfe-Lektionen bei brainstr sind Ende-zu-Ende verschlüsselt. Höchste Datenschutzstandards werden angewendet."
+      }
+    },
+    "headline": "Virtuelles Klassenzimmer",
+    "slides": {
+      "1": {
+        "btn": "Buche deine erste Lektion",
+        "headline": "<b>Motivierende</b> Lektionen mit brainstr",
+        "text": "Brainstr virtuelles Klassenzimmer ist viel mehr als nur ein Videochat. Erlebe großartige Lektionen mit unserem interaktiven Whiteboard, auf dem Schüler und Tutor gemeinsam neue Konzepte erarbeiten können - <b>als ob sie nebeneinander stehen würden</b>."
+      }
+    },
+    "subheadline": "Die einfachste Art, Online-Nachhilfe zu nehmen.<br>Voll integriert, kein Setup erforderlich. Funktioniert auf jedem Gerät."
+  }
+}
