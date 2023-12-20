@@ -5,7 +5,9 @@
     <div class="col-xl-12">
         <div class="dashboard-box margin-top-0">
             <div class="headline">
-                <h3><%= __('general.general') %></h3>
+                <h3>
+                    <%= __('general.general') %>
+                </h3>
             </div>
 
             <div class="content with-padding padding-bottom-0">
@@ -39,22 +41,22 @@
                             <div class="col-xl-3">
                                 <div class="submit-field">
                                     <select class="selectpicker currency-switcher show-tick" data-dropup-auto="false" data-size="5" id="settings-currency-picker">
-                                        <option value="aud" <% if(user.currency == "aud"){ %> selected <% } %>>AUD $</option>
-                                        <option value="cad" <% if(user.currency == "cad"){ %> selected <% } %>>CAD $</option>
-                                        <option value="chf" <% if(user.currency == "chf"){ %> selected <% } %>>CHF fr</option>
-                                        <option value="cny" <% if(user.currency == "cny"){ %> selected <% } %>>CNY CN¥</option>
-                                        <option value="czk" <% if(user.currency == "czk"){ %> selected <% } %>>CZK Kč</option>
-                                        <option value="dkk" <% if(user.currency == "dkk"){ %> selected <% } %>>DKK kr</option>
-                                        <option value="eur" <% if(user.currency == "eur"){ %> selected <% } %>>EUR €</option>
-                                        <option value="gbp" <% if(user.currency == "gbp"){ %> selected <% } %>>GBP £</option>
-                                        <option value="hkd" <% if(user.currency == "hkd"){ %> selected <% } %>>HKD HK$</option>
-                                        <option value="jpy" <% if(user.currency == "jpy"){ %> selected <% } %>>JPY ¥</option>
-                                        <option value="nok" <% if(user.currency == "nok"){ %> selected <% } %>>NOK kr</option>
-                                        <option value="nzd" <% if(user.currency == "nzd"){ %> selected <% } %>>NZD $</option>
-                                        <option value="rub" <% if(user.currency == "rub"){ %> selected <% } %>>RUB ₽</option>
-                                        <option value="sek" <% if(user.currency == "sek"){ %> selected <% } %>>SEK kr</option>
-                                        <option value="usd" <% if(user.currency == "usd"){ %> selected <% } %>>USD $</option>
-                                        <option value="zar" <% if(user.currency == "zar"){ %> selected <% } %>>ZAR R</option>
+                                        <option value="aud" <% if(user.currency=="aud" ){ %> selected <% } %>>AUD $</option>
+                                        <option value="cad" <% if(user.currency=="cad" ){ %> selected <% } %>>CAD $</option>
+                                        <option value="chf" <% if(user.currency=="chf" ){ %> selected <% } %>>CHF fr</option>
+                                        <option value="cny" <% if(user.currency=="cny" ){ %> selected <% } %>>CNY CN¥</option>
+                                        <option value="czk" <% if(user.currency=="czk" ){ %> selected <% } %>>CZK Kč</option>
+                                        <option value="dkk" <% if(user.currency=="dkk" ){ %> selected <% } %>>DKK kr</option>
+                                        <option value="eur" <% if(user.currency=="eur" ){ %> selected <% } %>>EUR €</option>
+                                        <option value="gbp" <% if(user.currency=="gbp" ){ %> selected <% } %>>GBP £</option>
+                                        <option value="hkd" <% if(user.currency=="hkd" ){ %> selected <% } %>>HKD HK$</option>
+                                        <option value="jpy" <% if(user.currency=="jpy" ){ %> selected <% } %>>JPY ¥</option>
+                                        <option value="nok" <% if(user.currency=="nok" ){ %> selected <% } %>>NOK kr</option>
+                                        <option value="nzd" <% if(user.currency=="nzd" ){ %> selected <% } %>>NZD $</option>
+                                        <option value="rub" <% if(user.currency=="rub" ){ %> selected <% } %>>RUB ₽</option>
+                                        <option value="sek" <% if(user.currency=="sek" ){ %> selected <% } %>>SEK kr</option>
+                                        <option value="usd" <% if(user.currency=="usd" ){ %> selected <% } %>>USD $</option>
+                                        <option value="zar" <% if(user.currency=="zar" ){ %> selected <% } %>>ZAR R</option>
                                     </select>
                                 </div>
                             </div>
@@ -62,32 +64,23 @@
                             <div class="col-xl-3">
                                 <div class="submit-field">
                                     <select class="selectpicker language-switcher" data-selected-text-format="count" data-size="5" id="settings-language-picker">
-                                        <option value="en" <% if(locale != "de" && locale != "ru" && locale != "uk"){ %> selected <% } %> data-content="<img src='data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxMiA1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjM0MS4zMzciIHk9Ijg1LjMzMyIgZmlsbD0iI2YwZjBmMCIvPjxwb2x5Z29uIGZpbGw9IiNkODAwMjciIHBvaW50cz0iMjg4IDg1LjMzIDIyNCA4NS4zMyAyMjQgMjIzLjk5NiAwIDIyMy45OTYgMCAyODcuOTk2IDIyNCAyODcuOTk2IDIyNCA0MjYuNjYyIDI4OCA0MjYuNjYyIDI4OCAyODcuOTk2IDUxMiAyODcuOTk2IDUxMiAyMjMuOTk2IDI4OCAyMjMuOTk2Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSIzOTMuNzg1IDMxNS4zNTggNTEyIDM4MS4wMzQgNTEyIDMxNS4zNTgiLz48cG9seWdvbiBmaWxsPSIjMDA1MmI0IiBwb2ludHM9IjMxMS42NTIgMzE1LjM1OCA1MTIgNDI2LjY2MiA1MTIgMzk1LjE4OCAzNjguMzA3IDMxNS4zNTgiLz48cG9seWdvbiBmaWxsPSIjMDA1MmI0IiBwb2ludHM9IjQ1OC42MzQgNDI2LjY2MiAzMTEuNjUyIDM0NC45OTggMzExLjY1MiA0MjYuNjYyIi8+PHBvbHlnb24gZmlsbD0iI2YwZjBmMCIgcG9pbnRzPSIzMTEuNjUyIDMxNS4zNTggNTEyIDQyNi42NjIgNTEyIDM5NS4xODggMzY4LjMwNyAzMTUuMzU4Ii8+PHBvbHlnb24gZmlsbD0iI2Q4MDAyNyIgcG9pbnRzPSIzMTEuNjUyIDMxNS4zNTggNTEyIDQyNi42NjIgNTEyIDM5NS4xODggMzY4LjMwNyAzMTUuMzU4Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSI5MC4zNDEgMzE1LjM1NiAwIDM2NS41NDYgMCAzMTUuMzU2Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSIyMDAuMzQ4IDMyOS41MSAyMDAuMzQ4IDQyNi42NjEgMjUuNDkxIDQyNi42NjEiLz48cG9seWdvbiBmaWxsPSIjZDgwMDI3IiBwb2ludHM9IjE0My42OTMgMzE1LjM1OCAwIDM5NS4xODggMCA0MjYuNjYyIDAgNDI2LjY2MiAyMDAuMzQ4IDMxNS4zNTgiLz48cG9seWdvbiBmaWxsPSIjMDA1MmI0IiBwb2ludHM9IjExOC4yMTUgMTk2LjYzNCAwIDEzMC45NTggMCAxOTYuNjM0Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSIyMDAuMzQ4IDE5Ni42MzQgMCA4NS4zMyAwIDExNi44MDQgMTQzLjY5MyAxOTYuNjM0Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSI1My4zNjYgODUuMzMgMjAwLjM0OCAxNjYuOTk0IDIwMC4zNDggODUuMzMiLz48cG9seWdvbiBmaWxsPSIjZjBmMGYwIiBwb2ludHM9IjIwMC4zNDggMTk2LjYzNCAwIDg1LjMzIDAgMTE2LjgwNCAxNDMuNjkzIDE5Ni42MzQiLz48cG9seWdvbiBmaWxsPSIjZDgwMDI3IiBwb2ludHM9IjIwMC4zNDggMTk2LjYzNCAwIDg1LjMzIDAgMTE2LjgwNCAxNDMuNjkzIDE5Ni42MzQiLz48cG9seWdvbiBmaWxsPSIjMDA1MmI0IiBwb2ludHM9IjQyMS42NTkgMTk2LjYzNiA1MTIgMTQ2LjQ0NiA1MTIgMTk2LjYzNiIvPjxwb2x5Z29uIGZpbGw9IiMwMDUyYjQiIHBvaW50cz0iMzExLjY1MiAxODIuNDgyIDMxMS42NTIgODUuMzMxIDQ4Ni41MDkgODUuMzMxIi8+PHBvbHlnb24gZmlsbD0iI2Q4MDAyNyIgcG9pbnRzPSIzNjguMzA3IDE5Ni42MzQgNTEyIDExNi44MDQgNTEyIDg1LjMzIDUxMiA4NS4zMyAzMTEuNjUyIDE5Ni42MzQiLz48L3N2Zz4=' alt='English' height='19px' class='lp-flag' loading='lazy'> English">
+                                        <option value="en" <% if(locale !="de" && locale !="ru" && locale !="uk" ){ %> selected <% } %> data-content="<img src='data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxMiA1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjM0MS4zMzciIHk9Ijg1LjMzMyIgZmlsbD0iI2YwZjBmMCIvPjxwb2x5Z29uIGZpbGw9IiNkODAwMjciIHBvaW50cz0iMjg4IDg1LjMzIDIyNCA4NS4zMyAyMjQgMjIzLjk5NiAwIDIyMy45OTYgMCAyODcuOTk2IDIyNCAyODcuOTk2IDIyNCA0MjYuNjYyIDI4OCA0MjYuNjYyIDI4OCAyODcuOTk2IDUxMiAyODcuOTk2IDUxMiAyMjMuOTk2IDI4OCAyMjMuOTk2Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSIzOTMuNzg1IDMxNS4zNTggNTEyIDM4MS4wMzQgNTEyIDMxNS4zNTgiLz48cG9seWdvbiBmaWxsPSIjMDA1MmI0IiBwb2ludHM9IjMxMS42NTIgMzE1LjM1OCA1MTIgNDI2LjY2MiA1MTIgMzk1LjE4OCAzNjguMzA3IDMxNS4zNTgiLz48cG9seWdvbiBmaWxsPSIjMDA1MmI0IiBwb2ludHM9IjQ1OC42MzQgNDI2LjY2MiAzMTEuNjUyIDM0NC45OTggMzExLjY1MiA0MjYuNjYyIi8+PHBvbHlnb24gZmlsbD0iI2YwZjBmMCIgcG9pbnRzPSIzMTEuNjUyIDMxNS4zNTggNTEyIDQyNi42NjIgNTEyIDM5NS4xODggMzY4LjMwNyAzMTUuMzU4Ii8+PHBvbHlnb24gZmlsbD0iI2Q4MDAyNyIgcG9pbnRzPSIzMTEuNjUyIDMxNS4zNTggNTEyIDQyNi42NjIgNTEyIDM5NS4xODggMzY4LjMwNyAzMTUuMzU4Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSI5MC4zNDEgMzE1LjM1NiAwIDM2NS41NDYgMCAzMTUuMzU2Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSIyMDAuMzQ4IDMyOS41MSAyMDAuMzQ4IDQyNi42NjEgMjUuNDkxIDQyNi42NjEiLz48cG9seWdvbiBmaWxsPSIjZDgwMDI3IiBwb2ludHM9IjE0My42OTMgMzE1LjM1OCAwIDM5NS4xODggMCA0MjYuNjYyIDAgNDI2LjY2MiAyMDAuMzQ4IDMxNS4zNTgiLz48cG9seWdvbiBmaWxsPSIjMDA1MmI0IiBwb2ludHM9IjExOC4yMTUgMTk2LjYzNCAwIDEzMC45NTggMCAxOTYuNjM0Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSIyMDAuMzQ4IDE5Ni42MzQgMCA4NS4zMyAwIDExNi44MDQgMTQzLjY5MyAxOTYuNjM0Ii8+PHBvbHlnb24gZmlsbD0iIzAwNTJiNCIgcG9pbnRzPSI1My4zNjYgODUuMzMgMjAwLjM0OCAxNjYuOTk0IDIwMC4zNDggODUuMzMiLz48cG9seWdvbiBmaWxsPSIjZjBmMGYwIiBwb2ludHM9IjIwMC4zNDggMTk2LjYzNCAwIDg1LjMzIDAgMTE2LjgwNCAxNDMuNjkzIDE5Ni42MzQiLz48cG9seWdvbiBmaWxsPSIjZDgwMDI3IiBwb2ludHM9IjIwMC4zNDggMTk2LjYzNCAwIDg1LjMzIDAgMTE2LjgwNCAxNDMuNjkzIDE5Ni42MzQiLz48cG9seWdvbiBmaWxsPSIjMDA1MmI0IiBwb2ludHM9IjQyMS42NTkgMTk2LjYzNiA1MTIgMTQ2LjQ0NiA1MTIgMTk2LjYzNiIvPjxwb2x5Z29uIGZpbGw9IiMwMDUyYjQiIHBvaW50cz0iMzExLjY1MiAxODIuNDgyIDMxMS42NTIgODUuMzMxIDQ4Ni41MDkgODUuMzMxIi8+PHBvbHlnb24gZmlsbD0iI2Q4MDAyNyIgcG9pbnRzPSIzNjguMzA3IDE5Ni42MzQgNTEyIDExNi44MDQgNTEyIDg1LjMzIDUxMiA4NS4zMyAzMTEuNjUyIDE5Ni42MzQiLz48L3N2Zz4=' alt='English' height='19px' class='lp-flag' loading='lazy'> English">
                                         </option>
-                                        <option value="de" <% if(locale == "de"){ %> selected <% } %> data-content="<img src='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFz/2wBDAQQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFz/wAARCAAqAEADASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAcCBQH/xAAlEAABAgILAQEAAAAAAAAAAAABAAIDUQUREhYXVFWjpNLiITL/xAAYAQEBAQEBAAAAAAAAAAAAAAAABwEDBf/EACURAAACCQUBAQAAAAAAAAAAAAABAgMEBREVVKPRFBZVkpTSUf/aAAwDAQACEQMRAD8AiL4sWI98SJFe57nEucSSST9JJK8tOmV3bs03kdyH2S7NN5Hch9l31bLVKe5D1JA/eEb/ADLMDhWnTKWnTK7t2abyO5D7Jdmm8juQ+yaxlqlPcgkD94Rv8yzA4Vp0ylp0yu7dmm8juQ+yXZpvI7kPsmsZapT3IJA/eEb/ADLMDhWnTK9ZFiw3siQ4r2va4FrgSCCPoIIXcuzTeR3IfZLs03kdyH2TVstUp7kEgfvCN/mWYFWRVjC8a5xfaYXjXOL7UunzqqraeBft0uKutLPkSdFWMLxrnF9pheNc4vtJ86qq2ngN0uKutLPkSdFWMLxrnF9pheNc4vtJ86qq2ngN0uKutLPkSdFWMLxrnF9pheNc4vtJ86qq2ngN0uKutLPkVpFt/wC3iRSoSU5SRgZlER+Iwi3UJJUJLIBEYRbqEkqEkgERhFuoSRn7YJlaSMTIv0wiP//Z' alt='Deutsch' height='12px' class='lp-flag' loading='lazy'> Deutsch">
+                                        <option value="de" <% if(locale=="de" ){ %> selected <% } %> data-content="<img src='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFz/2wBDAQQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFz/wAARCAAqAEADASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAcCBQH/xAAlEAABAgILAQEAAAAAAAAAAAABAAIDUQUREhYXVFWjpNLiITL/xAAYAQEBAQEBAAAAAAAAAAAAAAAABwEDBf/EACURAAACCQUBAQAAAAAAAAAAAAABAgMEBREVVKPRFBZVkpTSUf/aAAwDAQACEQMRAD8AiL4sWI98SJFe57nEucSSST9JJK8tOmV3bs03kdyH2S7NN5Hch9l31bLVKe5D1JA/eEb/ADLMDhWnTKWnTK7t2abyO5D7Jdmm8juQ+yaxlqlPcgkD94Rv8yzA4Vp0ylp0yu7dmm8juQ+yXZpvI7kPsmsZapT3IJA/eEb/ADLMDhWnTK9ZFiw3siQ4r2va4FrgSCCPoIIXcuzTeR3IfZLs03kdyH2TVstUp7kEgfvCN/mWYFWRVjC8a5xfaYXjXOL7UunzqqraeBft0uKutLPkSdFWMLxrnF9pheNc4vtJ86qq2ngN0uKutLPkSdFWMLxrnF9pheNc4vtJ86qq2ngN0uKutLPkSdFWMLxrnF9pheNc4vtJ86qq2ngN0uKutLPkVpFt/wC3iRSoSU5SRgZlER+Iwi3UJJUJLIBEYRbqEkqEkgERhFuoSRn7YJlaSMTIv0wiP//Z' alt='Deutsch' height='12px' class='lp-flag' loading='lazy'> Deutsch">
                                         </option>
                                         <option value="uk" <% if(locale=="uk" ){ %> selected <% } %> data-content="<img src='data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxMiA1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjM0MS4zMjYiIHk9Ijg1LjMzNyIgZmlsbD0iI2ZmZGE0NCIvPjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iMTcwLjY2MyIgeT0iODUuMzM3IiBmaWxsPSIjMzM4YWYzIi8+PC9zdmc+' alt='Українською' height='18px' class='lp-flag' loading='lazy'> Українською">
                                         </option>
-                                        <option value="ru" <% if(locale == "ru"){ %> selected <% } %> data-content="<img src='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFz/2wBDAQQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFz/wAARCAAqAEADASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAMGBwQI/8QAIxAAAgACCwEAAAAAAAAAAAAAAAECBAcRFhdRVFajpNPiA//EABoBAQACAwEAAAAAAAAAAAAAAAABBgIEBwj/xAAmEQAAAwUJAQEAAAAAAAAAAAAAAQIDBhZUowQRExRSVZPR0hIx/9oADAMBAAIRAxEAPwD3UDLL6qM9S8Oa6xfVRnqXhzXWbeQt0k341dDDERrIamDLL6qM9S8Oa6xfVRnqXhzXWMhbpJvxq6DERrIamDLL6qM9S8Oa6xfVRnqXhzXWMhbpJvxq6DERrIamDLL6qM9S8Oa6xfVRnqXhzXWMhbpJvxq6DERrIeBgXOySz+16Fkln9r0WmLHfn6TXyLBAD27TXY+xTAXOySz+16Fkln9r0Isd+fpNfIQA9u012PsUwFzsks/tehZJZ/a9CLHfn6TXyEAPbtNdj7FMBc7JLP7XoWSWf2vQix35+k18hAD27TXY+xcwd07BBBOzUEECUK+v0SSVSVTOapYHGR6SSv6Iju/SIxECWpYCpYATeIgS1LAVLABeIgS1LA6ZKCCOdlYI4E4X9fmmmq062BCl/KTO78K8f//Z' alt='Русский' height='12px' class='lp-flag' loading='lazy'> Русский">
+                                        <option value="ru" <% if(locale=="ru" ){ %> selected <% } %> data-content="<img src='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFz/2wBDAQQEBAQEBAQEBAQGBgUGBggHBwcHCAwJCQkJCQwTDA4MDA4MExEUEA8QFBEeFxUVFx4iHRsdIiolJSo0MjRERFz/wAARCAAqAEADASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAMGBwQI/8QAIxAAAgACCwEAAAAAAAAAAAAAAAECBAcRFhdRVFajpNPiA//EABoBAQACAwEAAAAAAAAAAAAAAAABBgIEBwj/xAAmEQAAAwUJAQEAAAAAAAAAAAAAAQIDBhZUowQRExRSVZPR0hIx/9oADAMBAAIRAxEAPwD3UDLL6qM9S8Oa6xfVRnqXhzXWbeQt0k341dDDERrIamDLL6qM9S8Oa6xfVRnqXhzXWMhbpJvxq6DERrIamDLL6qM9S8Oa6xfVRnqXhzXWMhbpJvxq6DERrIamDLL6qM9S8Oa6xfVRnqXhzXWMhbpJvxq6DERrIeBgXOySz+16Fkln9r0WmLHfn6TXyLBAD27TXY+xTAXOySz+16Fkln9r0Isd+fpNfIQA9u012PsUwFzsks/tehZJZ/a9CLHfn6TXyEAPbtNdj7FMBc7JLP7XoWSWf2vQix35+k18hAD27TXY+xcwd07BBBOzUEECUK+v0SSVSVTOapYHGR6SSv6Iju/SIxECWpYCpYATeIgS1LAVLABeIgS1LA6ZKCCOdlYI4E4X9fmmmq062BCl/KTO78K8f//Z' alt='Русский' height='12px' class='lp-flag' loading='lazy'> Русский">
                                         </option>
                                     </select>
                                 </div>
                             </div>
 
-                            <div class="col-xl-12">
-                                <div class="submit-field">
-                                    <h5><%= __('teacherSettings.social-program-headline') %></h5>
-                                    <p class="legal"><%= __('settings.socialprogram-text') %> <a href="/social-program/"><%= __('general.learn-more') %></a></p>
-                                    <div class="checkbox ts-freeteaching-checkbox">
-                                        <input type="checkbox" id="socialStudent" <% if(user.socialStudent){ %> checked <% } %> />
-                                        <label for="socialStudent"><span class="checkbox-icon"></span><%= __('social-program-student.social-student-option') %></label>
-                                    </div>
-                                </div>
-                            </div>
-
                             <div class="col-xl-3">
                                 <div class="submit-field margin-top-2">
-                                    <button class="button button-primary button-block" id="btn-save-general"><%= __('settings.btn-save') %></button>
+                                    <button class="button button-primary button-block" id="btn-save-general">
+                                        <%= __('settings.btn-save') %>
+                                    </button>
                                 </div>
                             </div>
 
@@ -107,21 +100,27 @@
     <div class="col-xl-12">
         <div class="dashboard-box">
             <div class="headline">
-                <h3><%= __('settings.change-pw') %></h3>
+                <h3>
+                    <%= __('settings.change-pw') %>
+                </h3>
             </div>
 
             <div class="content with-padding padding-bottom-0">
                 <div class="row">
                     <div class="col-xl-3">
                         <div class="submit-field">
-                            <h5><%= __('settings.c-pw') %></h5>
+                            <h5>
+                                <%= __('settings.c-pw') %>
+                            </h5>
                             <input type="password" class="with-border" id="old-pw">
                         </div>
                     </div>
 
                     <div class="col-xl-3">
                         <div class="submit-field">
-                            <h5><%= __('settings.n-pw') %></h5>
+                            <h5>
+                                <%= __('settings.n-pw') %>
+                            </h5>
                             <input type="password" class="with-border" id="new-pw">
                         </div>
                     </div>
@@ -129,7 +128,9 @@
 
                     <div class="col-xl-3">
                         <div class="submit-field">
-                            <h5><%= __('settings.n-pw-repeat') %></h5>
+                            <h5>
+                                <%= __('settings.n-pw-repeat') %>
+                            </h5>
                             <input type="password" class="with-border" id="repeat-pw">
                         </div>
                     </div>
@@ -137,7 +138,9 @@
                     <div class="col-xl-3">
                         <div class="submit-field margin-top-2">
                             <h5>&nbsp;</h5>
-                            <button class="button button-primary button-block" id="btn-set-pw"><%= __('settings.btn-set-pw') %></button>
+                            <button class="button button-primary button-block" id="btn-set-pw">
+                                <%= __('settings.btn-set-pw') %>
+                            </button>
                         </div>
                     </div>
 

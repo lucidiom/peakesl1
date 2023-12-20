@@ -173,66 +173,6 @@ router.post("/payment/stripe/createSinglePayment", isAuth, async (req, res) => {
     });
 });
 
-router.post("/payment/stripe/createContributionPayment", async (req, res) => {
-    const proxyHost = req.headers["x-forwarded-host"];
-    const host = proxyHost == undefined ? req.headers.host : proxyHost;
-
-    var amount = parseFloat(req.body.amount);
-    var type = req.body.type == "payment" ? "payment" : "subscription";
-
-    var item;
-
-    var locale = req.getLocale();
-    var paymentMethods = [];
-
-    switch (locale) {
-        case "de":
-            paymentMethods = ['sepa_debit', 'card', 'sofort', 'ideal'];
-            break;
-        default:
-            paymentMethods = ['sepa_debit', 'card', 'p24', 'ideal', 'sofort'];
-    }
-
-    if (type == "payment") {
-        item = {
-            price_data: {
-                currency: 'eur',
-                product_data: {
-                    name: 'PeakESL Social Program',
-                },
-                unit_amount: Math.round(amount * 100),
-            },
-            quantity: 1,
-        };
-    } else {
-        item = {
-            price: "price_1Kz0F9LVOLfe8u22A6bAZFix",
-            quantity: Math.ceil(amount / 1),
-        };
-
-        paymentMethods = ['sepa_debit', 'card'];
-    }
-
-
-    const session = await stripe.checkout.sessions.create({
-        payment_method_types: paymentMethods,
-        line_items: [item],
-        mode: type,
-        success_url: req.protocol + '://' + host + '/social-program/partner/thank-you/',
-        cancel_url: req.protocol + '://' + host + '/social-program/partner/join/',
-        metadata: {
-            action: "social_program_contribution",
-            amount: amount,
-            locale: req.locale
-        },
-        locale: req.locale == "uk" ? "en" : req.locale
-    });
-
-    res.json({
-        id: session.id
-    });
-});
-
 router.post("/payment/stripe/createTutorSignupPayment", async (req, res) => {
     const proxyHost = req.headers["x-forwarded-host"];
     const host = proxyHost == undefined ? req.headers.host : proxyHost;

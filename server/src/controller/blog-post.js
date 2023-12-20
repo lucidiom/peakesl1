@@ -24,7 +24,7 @@ $("#share-tw").on("click", function () {
     var params = {
         url: window.location.href,
         text: post.headline,
-        via: "peakesl",
+        via: "peakeslteam",
     }
     for (var prop in params) shareURL += '&' + prop + '=' + encodeURIComponent(params[prop]);
     popupwindow(shareURL, $.i18n('_bstr.blog.share.twitter') + ' - ' + post.headline, 550, 450);

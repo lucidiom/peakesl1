@@ -58,18 +58,18 @@
             <script>
         /* beautify preserve:start */
         <% if (user != undefined) { %>
-        var uData = JSON.parse(<% - JSON.stringify(JSON.stringify(user)) %>);
+        var uData = JSON.parse(<%- JSON.stringify(JSON.stringify(user)) %>);
         <% } %>
 
         <% if (locals.notifications) { %>
-        var notifications = JSON.parse(<% - JSON.stringify(JSON.stringify(notifications)) %>);
+        var notifications = JSON.parse(<%- JSON.stringify(JSON.stringify(notifications)) %>);
         <% } %>
 
         <% if (locals.data) { %>
-        var pageData = JSON.parse(<% - JSON.stringify(JSON.stringify(data)) %>);
+        var pageData = JSON.parse(<%- JSON.stringify(JSON.stringify(data)) %>);
         <% } %>
 
-        var EXCHANGE_RATES = JSON.parse(<% - JSON.stringify(JSON.stringify(exchangeRates)) %>);
+        var EXCHANGE_RATES = JSON.parse(<%- JSON.stringify(JSON.stringify(exchangeRates)) %>);
                 /* beautify preserve:end */
             </script>
 

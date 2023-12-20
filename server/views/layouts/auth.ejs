@@ -10,7 +10,7 @@
 
     <% if(locals.meta) { %>
         <meta property="og:site_name" content="PeakESL">
-        <meta name="twitter:site" content="@peakesl">
+        <meta name="twitter:site" content="@peakeslteam">
 
         <meta property="og:title" content="<%= title %>">
         <meta property="og:site_name" content="PeakESL">
@@ -73,14 +73,14 @@
 
         /* beautify preserve:start */
         <% if (locals.user) { %>
-        var uData = JSON.parse(<% - JSON.stringify(JSON.stringify(user)) %>);
+        var uData = JSON.parse(<%- JSON.stringify(JSON.stringify(user)) %>);
         <% } %>
 
         <% if (locals.data) { %>
-        var pageData = JSON.parse(<% - JSON.stringify(JSON.stringify(data)) %>);
+        var pageData = JSON.parse(<%- JSON.stringify(JSON.stringify(data)) %>);
         <% } %>
 
-        var EXCHANGE_RATES = JSON.parse(<% - JSON.stringify(JSON.stringify(exchangeRates)) %>);
+        var EXCHANGE_RATES = JSON.parse(<%- JSON.stringify(JSON.stringify(exchangeRates)) %>);
                         /* beautify preserve:end */
                     </script>
 

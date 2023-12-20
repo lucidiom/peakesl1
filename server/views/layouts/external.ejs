@@ -10,7 +10,7 @@
 
     <% if(locals.meta) { %>
         <meta property="og:site_name" content="PeakESL">
-        <meta name="twitter:site" content="@peakesl">
+        <meta name="twitter:site" content="@peakeslteam">
 
         <meta property="og:title" content="<%= title %>">
         <meta property="og:site_name" content="PeakESL">
@@ -64,14 +64,14 @@
 
         /* beautify preserve:start */
         <% if (locals.user) { %>
-        var uData = JSON.parse(<% - JSON.stringify(JSON.stringify(user)) %>);
+        var uData = JSON.parse(<%- JSON.stringify(JSON.stringify(user)) %>);
         <% } %>
 
         <% if (locals.data) { %>
-        var pageData = JSON.parse(<% - JSON.stringify(JSON.stringify(data)) %>);
+        var pageData = JSON.parse(<%- JSON.stringify(JSON.stringify(data)) %>);
         <% } %>
 
-        var EXCHANGE_RATES = JSON.parse(<% - JSON.stringify(JSON.stringify(exchangeRates)) %>);
+        var EXCHANGE_RATES = JSON.parse(<%- JSON.stringify(JSON.stringify(exchangeRates)) %>);
                         /* beautify preserve:end */
                     </script>
 
@@ -139,50 +139,7 @@
         <% if(noHeader !=true) { %>
             <%- include('../external/partials/header'); %>
 
-                <!--<div class="nav-notification nav-notification-countdown" style="display:block;">
-                    <div class="">
-                        <span>
-                            🧑‍🏫 We are accepting new tutors again!
-                            &nbsp;-<a href="/become-a-tutor/" style="text-decoration: underline;margin:0 !important;">
-                                Apply now
-                            </a>
-                        </span>
-                    </div>
-                </div>-->
 
-                <!-- SPECIAL OFFER COUNTDOWN -->
-                <!--<div class="nav-notification nav-notification-countdown" style="display:block;">
-            <div class="">
-                <span>
-                    🇺🇦 &nbsp;<%= __('banner.text') %>
-                    &nbsp;-<a href="/social-program/student/join/" style="text-decoration: underline;margin:0 !important;"><%= __('general.learn-more') %></a>
-                </span>
-            </div>
-            <script>
-                /*var ctd_time = moment.utc('<%- specialOfferExpires %>', "YYYY-MM-DD HH:mm:ss");
-                var ctd_active = false;
-                var ctd_interval = setInterval(function() {
-                    var ctd_now = moment();
-                    if (ctd_now.isBefore(ctd_time)) {
-                        ctd_active = true;
-                        $(".nav-notification-countdown").show();
-                        var ctd_to = moment.utc(ctd_time.diff(ctd_now));
-                        var ctd_to_days = ctd_time.diff(ctd_now, "days");
-
-                        if (ctd_to_days == 0) {
-                            //$("#countdown").text(ctd_to.format("HH:mm:ss"));
-                        } else {
-                            var ctd_txt_dys = ctd_to_days == 1 ? $.i18n('_bstr.general.day') : $.i18n('_bstr.general.days');
-                            //$("#countdown").text(ctd_to_days + " " + ctd_txt_dys + " " + ctd_to.format("HH:mm:ss"));
-                        }
-                    } else {
-                        ctd_active = false;
-                        $(".nav-notification-countdown").hide();
-                        clearInterval(ctd_interval);
-                    }
-                }, 0);*/
-            </script>
-        </div>-->
                 <% } %>
 
                     <%- body %>

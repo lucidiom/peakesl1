@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <meta property="og:site_name" content="PeakESL">
-    <meta name="twitter:site" content="@peakesl">
+    <meta name="twitter:site" content="@peakeslteam">
 
     <meta property="og:title" content="<%- post.meta.title %>">
     <meta property="og:description" content="<%- post.meta.description %>">
@@ -74,16 +74,16 @@
             <% if (locals.user) { %>
                 <script>
                     /* beautify preserve:start */
-                    var uData = JSON.parse(<% - JSON.stringify(JSON.stringify(user)) %>);
+                    var uData = JSON.parse(<%- JSON.stringify(JSON.stringify(user)) %>);
                     /* beautify preserve:end */
                 </script>
                 <% } %>
 
                     <script>
                         /* beautify preserve:start */
-                        var post = JSON.parse(<% - JSON.stringify(JSON.stringify(post)) %>);
-                        var relatedPosts = JSON.parse(<% - JSON.stringify(JSON.stringify(relatedPosts)) %>);
-                        var EXCHANGE_RATES = JSON.parse(<% - JSON.stringify(JSON.stringify(exchangeRates)) %>);
+                        var post = JSON.parse(<%- JSON.stringify(JSON.stringify(post)) %>);
+                        var relatedPosts = JSON.parse(<%- JSON.stringify(JSON.stringify(relatedPosts)) %>);
+                        var EXCHANGE_RATES = JSON.parse(<%- JSON.stringify(JSON.stringify(exchangeRates)) %>);
                         /* beautify preserve:end */
                     </script>
 
