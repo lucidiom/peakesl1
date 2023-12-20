@@ -170,7 +170,7 @@ body,
 .video-control.active {
     transition: background-color 150ms ease;
     transition: color 150ms ease;
-    background-color: #ffba60;
+    background-color: #EC7700;
     color: var(--dark-blue);
     cursor: pointer;
 }
@@ -359,7 +359,7 @@ body,
 }
 
 .freelancer.available {
-    background-color: #ffba60;
+    background-color: #EC7700;
 }
 
 .freelancer.available>div>div>div>h4 {
@@ -421,7 +421,7 @@ body,
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background-color: #ffba60;
+    background-color: #EC7700;
     cursor: pointer;
 }
 
@@ -429,7 +429,7 @@ body,
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background: #ffba60;
+    background: #EC7700;
     cursor: pointer;
 }
 

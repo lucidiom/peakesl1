@@ -3,8 +3,8 @@
     font-style: normal;
     font-weight: 400;
     font-display: auto;
-    src: url(https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/fonts/summernote.eot);
-    src: url(https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/fonts/summernote.eot?#iefix) format("embedded-opentype"), url(https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/fonts/summernote.woff2) format("woff2"), url(https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/fonts/summernote.woff) format("woff"), url(https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/fonts/summernote.ttf) format("truetype")
+    src: url(https://peakesl.nyc3.digitaloceanspaces.com/web/fonts/summernote.eot);
+    src: url(https://peakesl.nyc3.digitaloceanspaces.com/web/fonts/summernote.eot?#iefix) format("embedded-opentype"), url(https://peakesl.nyc3.digitaloceanspaces.com/web/fonts/summernote.woff2) format("woff2"), url(https://peakesl.nyc3.digitaloceanspaces.com/web/fonts/summernote.woff) format("woff"), url(https://peakesl.nyc3.digitaloceanspaces.com/web/fonts/summernote.ttf) format("truetype")
 }
 
 [class*=" note-icon"]:before,

@@ -3306,13 +3306,13 @@ screen and (-ms-high-contrast:none) {
 
 .blog-cta .button {
     padding: 17px 50px 15px 50px;
-    background-color: #ffba60;
+    background-color: #EC7700;
     color: var(--dark-blue) !important;
     transition: background-color 150ms ease
 }
 
 .blog-cta .button:hover {
-    background-color: #f7bb4e;
+    background-color: #FF9300;
     transition: background-color 150ms ease
 }
 
@@ -20090,7 +20090,6 @@ input[type=text]:disabled {
 .button-primary {
     transition: box-shadow .2s ease;
     transition: background-color .2s ease;
-    background-color: var(--primary);
     color: var(--dark-blue) !important;
     font-weight: 500
 }
@@ -20759,7 +20758,7 @@ div.resize-and-crop img {
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
-    background-color: #ffba6096
+    background-color: #EC770096
 }
 
 .nav-notification-countdown a {

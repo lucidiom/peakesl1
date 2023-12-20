@@ -43,8 +43,8 @@
 
 
 :root {
-    --primary: #ffba60;
-    --primary-hover: #f7bb4e;
+    --primary: #EC7700;
+    --primary-hover: #FF9300;
     --dark-blue: #262b31;
     --green: #38b653;
     --red: #de5959;
@@ -3473,13 +3473,13 @@ screen and (-ms-high-contrast: none) {
 
 .blog-cta .button {
     padding: 17px 50px 15px 50px;
-    background-color: #ffba60;
+    background-color: #EC7700;
     color: var(--dark-blue) !important;
     transition: background-color 150ms ease;
 }
 
 .blog-cta .button:hover {
-    background-color: #f7bb4e;
+    background-color: #FF9300;
     transition: background-color 150ms ease;
 }
 
@@ -14257,13 +14257,13 @@ body #submit_map {
 }
 
 .leaflet-control-layers-toggle {
-    background-image: url(https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/layers.png);
+    background-image: url(https://peakesl.nyc3.digitaloceanspaces.com/web/images/layers.png);
     width: 36px;
     height: 36px;
 }
 
 .leaflet-retina .leaflet-control-layers-toggle {
-    background-image: url(https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/layers-2x.png);
+    background-image: url(https://peakesl.nyc3.digitaloceanspaces.com/web/images/layers-2x.png);
     background-size: 26px 26px;
 }
 
@@ -14312,7 +14312,7 @@ body #submit_map {
 
 /* Default icon URLs */
 .leaflet-default-icon-path {
-    background-image: url(https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/marker-icon.png);
+    background-image: url(https://peakesl.nyc3.digitaloceanspaces.com/web/images/marker-icon.png);
 }
 
 
@@ -14936,7 +14936,7 @@ body #submit_map {
     height: 26px;
     border: none;
     background-color: white;
-    background-image: url(https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/geocoder.png);
+    background-image: url(https://peakesl.nyc3.digitaloceanspaces.com/web/images/geocoder.png);
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -14948,7 +14948,7 @@ body #submit_map {
 }
 
 .leaflet-control-geocoder-throbber .leaflet-control-geocoder-icon {
-    background-image: url(https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/throbber.gif);
+    background-image: url(https://peakesl.nyc3.digitaloceanspaces.com/web/images/throbber.gif);
 }
 
 .leaflet-control-geocoder-form-no-error {
@@ -15352,7 +15352,7 @@ text-overflow: ellipsis; */
     height: 26px;
     border: none;
     background-color: white;
-    background-image: url(https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/geocoder.png);
+    background-image: url(https://peakesl.nyc3.digitaloceanspaces.com/web/images/geocoder.png);
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -15364,7 +15364,7 @@ text-overflow: ellipsis; */
 }
 
 .leaflet-control-geocoder-throbber .leaflet-control-geocoder-icon {
-    background-image: url(https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/throbber.gif);
+    background-image: url(https://peakesl.nyc3.digitaloceanspaces.com/web/images/throbber.gif);
 }
 
 .leaflet-control-geocoder-form-no-error {
@@ -21725,7 +21725,7 @@ div.resize-and-crop img {
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
-    background-color: #ffba6096;
+    background-color: #EC770096;
 }
 
 .nav-notification-countdown a {
@@ -21810,7 +21810,7 @@ div.resize-and-crop img {
 }
 
 .points-explain {
-    background-image: url('https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/section-background.webp');
+    background-image: url('https://peakesl.nyc3.digitaloceanspaces.com/web/images/section-background.webp');
     min-height: 250px;
     background-position: center;
     background-size: cover;
@@ -22652,7 +22652,7 @@ video:active {
     background-color: #f8f8f8;
     padding: 100px 75px;
     color: #262b31;
-    background-image: url('https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/Learning-bro.png');
+    background-image: url('https://peakesl.nyc3.digitaloceanspaces.com/web/images/Learning-bro.png');
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
