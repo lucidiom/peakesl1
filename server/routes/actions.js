@@ -334,7 +334,7 @@ router.post("/saveTeacherSettings", isAuth, async (req, res) => {
     }
 
     try {
-        await mail.updateEmailContact(req.user.email, data.firstname, data.lastname, req.user.locale, req.user.currency);
+        //await mail.updateEmailContact(req.user.email, data.firstname, data.lastname, req.user.locale, req.user.currency);
         await user.update(req.user.id, data.firstname, data.lastname, data.availability, data.description, data.languages, data.country, data.subjects, data.timetable, visible, data.activeSince, req.body.tz, { socialTeacher: data.socialTeacher }, data.video, data.video_source, data.video_id);
     } catch (error) {
         console.log(error);
