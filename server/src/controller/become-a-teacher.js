@@ -1,7 +1,7 @@
 var stripe = Stripe(STRIPE_PUBLIC_KEY);
 var urlVars = getUrlVars();
 
-if(Object.keys(urlVars).includes("cp")){
+if (Object.keys(urlVars).includes("cp")) {
     $('#signup-form').hide();
     $('#retry-payment').show();
 }
@@ -54,7 +54,8 @@ async function onClickRegister(token) {
             currency: i18n_currency,
             token: token,
             socialteacher: false,
-            profteacher: false
+            profteacher: false,
+            isTeacher: true
         });
 
         if (response.status == "ok") {

@@ -152,7 +152,11 @@ const userSchema = new Schema({
     professionalTeacher: {
         type: Boolean,
         default: false
-    }
+    },
+    isTeacher: {
+        type: Boolean,
+        default: false
+    },
 }, { timestamps: true });
 
 

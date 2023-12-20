@@ -11,7 +11,7 @@ const bcrypt = require('bcrypt');
 const mail = require('./../class/Mail.js');
 
 
-exports.create = async (email, password, firstName, lastName, locale, currency, socialstudent = false, socialteacher = false, profteacher = false) => {
+exports.create = async (email, password, firstName, lastName, locale, currency, socialstudent = false, socialteacher = false, profteacher = false, isTeacher = false) => {
     try {
         hashed = await bcrypt.hash(password, 10);
         emailVerifyCode = this.getVerificationCode();
@@ -26,7 +26,8 @@ exports.create = async (email, password, firstName, lastName, locale, currency, 
             emailCode: emailVerifyCode,
             socialStudent: socialstudent,
             socialTeacher: socialteacher,
-            professionalTeacher: profteacher
+            professionalTeacher: profteacher,
+            isTeacher: isTeacher
         });
 
         await user.save();

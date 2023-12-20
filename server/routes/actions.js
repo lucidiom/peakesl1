@@ -197,8 +197,9 @@ router.post('/register', async (req, res, next) => {
     var socialstudent = req.body.socialstudent == undefined ? false : req.body.socialstudent;
     var socialteacher = req.body.socialteacher == undefined ? false : req.body.socialteacher;
     var profteacher = req.body.profteacher == undefined ? false : req.body.profteacher;
+    var isTeacher = req.body.isTeacher == undefined ? false : true;
 
-    await user.create(req.body.email, req.body.password, req.body.firstName, req.body.lastName, req.getLocale(), req.body.currency, socialstudent, socialteacher, profteacher);
+    await user.create(req.body.email, req.body.password, req.body.firstName, req.body.lastName, req.getLocale(), req.body.currency, socialstudent, socialteacher, profteacher, isTeacher);
 
     var newuser = await user.getUserByEmail(req.body.email);
     req.logIn(newuser[0], (err) => {

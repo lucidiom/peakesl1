@@ -77,93 +77,91 @@
                 </div>
 
 
-                <% if (user.visible==false || user.availability==0) { %>
-                    <div class="header-widget" id="become-a-teacher-btn">
-                        <a href="/settings-teacher/" class="button button-primary regteacher-btn">
-                            <%= __('header.becomeTeacher') %>
-                        </a>
-                    </div>
-                    <% } %>
 
 
-                        <div class="header-widget padding-left-5">
-                            <div class="header-notifications user-menu">
-                                <div class="header-notifications-trigger">
-                                    <a href="#">
-                                        <div class="user-avatar"><img src="/profilepicture/<%= user._id %>" alt=""></div>
-                                    </a>
-                                </div>
 
-                                <div class="header-notifications-dropdown">
-                                    <div class="user-status">
-                                        <div class="user-details">
-                                            <div class="user-avatar"><img src="/profilepicture/<%= user._id %>" alt=""></div>
-                                            <div class="user-name">
-                                                <span>
-                                                    <%= user.firstname %>
-                                                        <%= user.lastname %>
-                                                </span>
-                                                <small>
-                                                    <%= user.email %>
-                                                </small>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <ul class="user-menu-small-nav">
-                                        <li><a href="/balance/" id="header-balance"><i class="icon-line-awesome-money"> </i> <span>
-                                                    <%= __('header.freePoints',user.balance.toFixed(2)) %>
-                                                </span></a></li>
-
-                                        <li><a href="/settings"><i class="icon-feather-settings"></i>
-                                                <span>
-                                                    <%= __('header.settings') %>
-                                                </span></a>
-                                        </li>
-
-                                        <li class="user-menu-seperator"> </li>
-
-                                        <li class="subheadline">
-                                            <%= __('header.teacher-subheadline') %>
-                                        </li>
-                                        <% if (user.visible==true) { %>
-                                            <li><a id="header-profile-link" href="/teacher/<%= user.id %>/"><i class="icon-feather-user"> </i>
-                                                    <span>
-                                                        <%= __('header.profile') %>
-                                                    </span> </a> </li>
-                                            <% } %>
-                                                <li><a href="/settings-teacher/"><i class="icon-feather-settings"></i>
-                                                        <span>
-                                                            <%= __('header.teacherSettings') %>
-                                                        </span></a>
-                                                </li>
-
-                                                <li class="user-menu-seperator"> </li>
-
-
-                                                <li id="btn-logout">
-                                                    <form action="/logout" method="POST">
-                                                        <button href="#" type="submit">
-                                                            <span>
-                                                                <%= __('general.sign-out') %>
-                                                            </span>
-                                                        </button>
-                                                    </form>
-                                                </li>
-                                    </ul>
-
-                                </div>
-                            </div>
+                <div class="header-widget padding-left-5">
+                    <div class="header-notifications user-menu">
+                        <div class="header-notifications-trigger">
+                            <a href="#">
+                                <div class="user-avatar"><img src="/profilepicture/<%= user._id %>" alt=""></div>
+                            </a>
                         </div>
 
+                        <div class="header-notifications-dropdown">
+                            <div class="user-status">
+                                <div class="user-details">
+                                    <div class="user-avatar"><img src="/profilepicture/<%= user._id %>" alt=""></div>
+                                    <div class="user-name">
+                                        <span>
+                                            <%= user.firstname %>
+                                                <%= user.lastname %>
+                                        </span>
+                                        <small>
+                                            <%= user.email %>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <span class="mmenu-trigger">
-                            <button class="hamburger hamburger--collapse" type="button">
-                                <span class="hamburger-box">
-                                    <span class="hamburger-inner"></span>
-                                </span>
-                            </button>
+                            <ul class="user-menu-small-nav">
+                                <li><a href="/balance/" id="header-balance"><i class="icon-line-awesome-money"> </i> <span>
+                                            <%= __('header.freePoints',user.balance.toFixed(2)) %>
+                                        </span></a></li>
+
+                                <li><a href="/settings"><i class="icon-feather-settings"></i>
+                                        <span>
+                                            <%= __('header.settings') %>
+                                        </span></a>
+                                </li>
+
+
+                                <% if (user.isTeacher==true) { %>
+                                    <li class="user-menu-seperator"> </li>
+
+                                    <li class="subheadline">
+                                        <%= __('header.teacher-subheadline') %>
+                                    </li>
+                                    <% if (user.visible==true) { %>
+                                        <li><a id="header-profile-link" href="/teacher/<%= user.id %>/"><i class="icon-feather-user"> </i>
+                                                <span>
+                                                    <%= __('header.profile') %>
+                                                </span> </a> </li>
+                                        <% } %>
+                                            <li><a href="/settings-teacher/"><i class="icon-feather-settings"></i>
+                                                    <span>
+                                                        <%= __('header.teacherSettings') %>
+                                                    </span></a>
+                                            </li>
+
+                                            <li class="user-menu-seperator"> </li>
+
+
+                                            <li id="btn-logout">
+                                                <form action="/logout" method="POST">
+                                                    <button href="#" type="submit">
+                                                        <span>
+                                                            <%= __('general.sign-out') %>
+                                                        </span>
+                                                    </button>
+                                                </form>
+                                            </li>
+
+                                            <% } %>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <span class="mmenu-trigger">
+                    <button class="hamburger hamburger--collapse" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
                         </span>
+                    </button>
+                </span>
 
             </div>
 
