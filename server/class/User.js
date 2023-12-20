@@ -311,13 +311,13 @@ exports.updatePassword = async (uid, password) => {
     await db.User.updateOne({ _id: uid }, { password: pw })
 }
 
-exports.updateGeneral = async (uid, firstname, lastname, language, currency, socialStudent) => {
+exports.updateGeneral = async (uid, firstname, lastname, language, currency) => {
     await db.User.updateOne({ _id: uid }, {
         firstname: firstname,
         lastname: lastname,
         locale: language,
         currency: currency,
-        socialStudent: socialStudent
+        socialStudent: false
     })
 }
 

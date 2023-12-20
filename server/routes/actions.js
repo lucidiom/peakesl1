@@ -279,7 +279,7 @@ router.post("/saveTeacherSettings", isAuth, async (req, res) => {
     data.name = data.name == undefined ? "DE" : data.name;
     data.lastname = data.lastname == undefined ? "" : data.lastname;
 
-    data.socialTeacher = data.socialTeacher == undefined ? false : data.socialTeacher;
+    data.socialTeacher = false;
 
     data.description = data.description == undefined ? "" : helper.cleanString(data.description);
     data.country = data.country == undefined ? "DE" : data.country;
@@ -827,7 +827,7 @@ router.post('/user/action/updategeneral', async (req, res) => {
         return;
     }
 
-    await user.updateGeneral(req.user.id, req.body.firstname, req.body.lastname, req.body.language, req.body.currency, req.body.socialStudent);
+    await user.updateGeneral(req.user.id, req.body.firstname, req.body.lastname, req.body.language, req.body.currency);
     res.json({ status: "ok" });
 });
 
