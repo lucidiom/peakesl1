@@ -21,7 +21,7 @@ const admin = require('./../class/Admin.js');
 router.get('/sitemap.xml', (req, res) => {
     res.header('Content-Type', 'application/xml');
 
-    if (req.get('host') == "brainstr.ru") {
+    if (req.get('host') == "peakesl.ru") {
         res.sendFile(process.cwd() + "/sitemap_ru.xml");
     } else {
         res.sendFile(process.cwd() + "/sitemap_de.xml");
@@ -29,7 +29,7 @@ router.get('/sitemap.xml', (req, res) => {
 });
 
 router.get('/robots.txt', (req, res) => {
-    if (req.get('host') == "brainstr.ru") {
+    if (req.get('host') == "peakesl.ru") {
         res.sendFile(process.cwd() + "/robots_ru.txt");
     } else {
         res.sendFile(process.cwd() + "/robots_de.txt");
@@ -208,13 +208,13 @@ router.get('/virtual-classroom', async (req, res) => {
     }, req));
 });
 
-router.get('/teaching-with-brainstr', async (req, res) => {
+router.get('/teaching-with-peakesl', async (req, res) => {
     res.render("external/how-it-works-tutor", await getCommonNavigationData({
         title: res.__('title.how_it_works_tutor'),
         meta: meta.data[req.getLocale()].how_it_works_tutor
     }, req));
 });
-router.get('/teaching-with-brainstr/*', async (req, res) => {
+router.get('/teaching-with-peakesl/*', async (req, res) => {
     res.render("external/how-it-works-tutor", await getCommonNavigationData({
         title: res.__('title.how_it_works_tutor'),
         meta: meta.data[req.getLocale()].how_it_works_tutor
@@ -254,44 +254,6 @@ router.get('/online-nachhilfe', async (req, res) => {
     }, req));
 });
 
-router.get('/social-program/teacher/join', async (req, res) => {
-    res.render("external/social_program_teacher_join", await getCommonNavigationData({
-        title: res.__('title.social-program-students'),
-        meta: meta.data[req.getLocale()].social_program_teacher_join,
-        gcaptcha_key: process.env.RECAPTCHA_SITEKEY
-    }, req, false, false));
-});
-
-router.get('/social-program/student/join', async (req, res) => {
-    res.render("external/social_program_student_join", await getCommonNavigationData({
-        title: res.__('title.social-program-teacher'),
-        meta: meta.data[req.getLocale()].social_program_student_join,
-        gcaptcha_key: process.env.RECAPTCHA_SITEKEY
-    }, req, false, false));
-});
-
-router.get('/social-program/partner/join', async (req, res) => {
-    res.render("external/social_program_partner_join", await getCommonNavigationData({
-        title: res.__('title.social-program-partners'),
-        meta: meta.data[req.getLocale()].social_program_partner_join,
-        gcaptcha_key: process.env.RECAPTCHA_SITEKEY
-    }, req, false, false));
-});
-
-router.get('/social-program/', async (req, res) => {
-    res.render("external/social_program", await getCommonNavigationData({
-        title: res.__('title.social-program'),
-        meta: meta.data[req.getLocale()].social_program
-    }, req, false, false));
-});
-
-router.get('/watch/:id', (req, res) => {
-    res.redirect(`https://link.brainstr.org/?link=https://brainstr.org/app/watch/${req.params.id}&apn=com.leonfiedler.brainstrwatch&isi=6443959677&ibi=com.leonfiedler.brainstrwatch`)
-});
-
-router.get('/app/watch/:id', (req, res) => {
-    res.redirect('https://app.brainstr.org');
-});
 
 
 // USER ACCESS
@@ -542,7 +504,7 @@ router.get('/receipt/:tid', isAuthNav, async (req, res) => {
         return;
     }
 
-    res.sendFile(process.cwd() + '/data/invoice/archive/brainstr_invoice_' + tid + '.pdf', {}, function (err) {
+    res.sendFile(process.cwd() + '/data/invoice/archive/PeakESL_invoice_' + tid + '.pdf', {}, function (err) {
         if (err) {
             res.redirect("/balance/");
             return;
@@ -554,14 +516,6 @@ router.get('/receipt/:tid', isAuthNav, async (req, res) => {
 
 
 
-// LANDING PAGES
-router.get('/join-olympiad-winner-community', async (req, res) => {
-    res.render("landing_pages/olympiad_students_1", await getCommonNavigationData({
-        layout: "layouts/landing_page"
-    }, req));
-});
-
-
 
 
 
@@ -569,7 +523,7 @@ router.get('/join-olympiad-winner-community', async (req, res) => {
 // ADMIN AREA
 router.get('/admin', isAdminAuthNav, async (req, res) => {
     res.render("admin/index", await getCommonNavigationData({
-        title: "[Admin] Dashboard - brainstr",
+        title: "[Admin] Dashboard - PeakESL",
         layout: "layouts/internal"
     }, req, true));
 });
@@ -578,7 +532,7 @@ router.get('/admin/stats', isAdminAuthNav, async (req, res) => {
     var data = await admin.getStatsOverviewData("", "");
 
     res.render("admin/stats", await getCommonNavigationData({
-        title: "[Admin] Statistics - brainstr",
+        title: "[Admin] Statistics - PeakESL",
         layout: "layouts/internal",
         data: data
     }, req, true));

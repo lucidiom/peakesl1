@@ -10,7 +10,7 @@ var framerate = 30;
 
 
 function preload() {
-    branding = loadImage('https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/logo.png');
+    branding = loadImage('https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/logo.png');
 }
 
 function setup() {
@@ -125,6 +125,6 @@ function eraseWhiteboard() {
 }
 
 function downloadWhiteboard() {
-    saveCanvas(canvas, 'brainstr_whiteboard', 'jpg');
+    saveCanvas(canvas, 'peakesl_whiteboard', 'jpg');
     redraw();
 }

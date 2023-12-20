@@ -25,7 +25,7 @@ function loadteacher() {
 
 
     //$('#ti-rating').html('<div class="star-rating" data-rating="' + teacherData.rating + '"></div>');
-    $('#ti-location').html('<img class="flag" src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/flags/' + teacherData.country.toLowerCase() + '.svg" alt=""> ' + countryData[teacherData.country.toUpperCase()]);
+    $('#ti-location').html('<img class="flag" src="https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/flags/' + teacherData.country.toLowerCase() + '.svg" alt=""> ' + countryData[teacherData.country.toUpperCase()]);
     $('#ti-description').html(teacherData.description.replace(/\r\n|\r|\n/g, "<br />"));
 
 
@@ -514,7 +514,7 @@ $("#continue-booking-btn").on("click", async function () {
         bookingRequest.tid = teacherData._id;
         bookingRequest.tz = moment().utcOffset();
 
-        setLocalStorage('brainstr_booking_request_' + teacherData._id, JSON.stringify(bookingRequest), 3);
+        setLocalStorage('peakesl_booking_request_' + teacherData._id, JSON.stringify(bookingRequest), 3);
         $("#redirect").val("/teacher/" + teacherData._id + '/book/');
 
         //var url = '/teacher/60439fc3b8eb841b080180ae/?booking=' + $('#ti-subjectselect').val() + "&duration=" + $('#ti-duration').val() + "&date=" + moment($('#ti-dateselect-container').datepicker("getDate")).format('DD.MM.YYYY') + "&time=" + $('#ti-timeselect').val();
@@ -559,7 +559,7 @@ $("#continue-booking-btn").on("click", async function () {
         bookingRequest.tid = teacherData._id;
         bookingRequest.tz = moment().utcOffset();
 
-        setLocalStorage('brainstr_booking_request_' + teacherData._id, JSON.stringify(bookingRequest), 3);
+        setLocalStorage('peakesl_booking_request_' + teacherData._id, JSON.stringify(bookingRequest), 3);
         window.location.href = "/teacher/" + teacherData._id + '/book/';
 
         return;

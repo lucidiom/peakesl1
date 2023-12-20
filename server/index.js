@@ -72,32 +72,14 @@ app.use(function (req, res, next) {
     var proxyHost = req.headers["x-forwarded-host"];
     var host = proxyHost == undefined ? req.headers.host : proxyHost;
 
-    var cookieLang = req.cookies['brainstr-c-language'];
+    var cookieLang = req.cookies['peakesl-c-language'];
 
     if (cookieLang != undefined) {
         next();
         return;
     }
 
-    switch (host) {
-        case "brainstr.ru":
-            req.cookies['brainstr-c-language'] = "ru";
-            break;
-        case "brainstr.org":
-            req.cookies['brainstr-c-language'] = "en";
-            break;
-        case "test.brainstr.ru":
-            req.cookies['brainstr-c-language'] = "ru";
-            break;
-        case "brainstr.de":
-            req.cookies['brainstr-c-language'] = "de";
-            break;
-        case "test.brainstr.de":
-            req.cookies['brainstr-c-language'] = "de";
-            break;
-        default:
-            req.cookies['brainstr-c-language'] = "en";
-    }
+    req.cookies['peakesl-c-language'] = "en";
     next();
 });
 
@@ -110,7 +92,7 @@ i18n.configure({
         'en-*': 'en',
         'de-*': 'de'
     },
-    cookie: 'brainstr-c-language',
+    cookie: 'peakesl-c-language',
     objectNotation: true,
     updateFiles: false,
     queryParameter: 'lang'
@@ -182,19 +164,6 @@ const user = require('./class/User.js');
 const balance = require('./class/Balance.js');
 
 
-/*app.get('/.well-known/apple-developer-merchantid-domain-association/merchant.ru.yoomoney', function(req, res) {
-    var proxyHost = req.headers["x-forwarded-host"];
-    var host = proxyHost == undefined ? req.headers.host : proxyHost;
-
-    if (host == "brainstr.ru") {
-        res.attachment(process.cwd() + '/merchant.ru.yoomoney');
-        res.end('Downloaded', 'UTF-8');
-    } else if (host == "brainstr.de") {
-        //res.attachment(process.cwd() + '/merchant.ru.yoomoney');
-        //res.end('Downloaded', 'UTF-8');
-        res.redirect("/");
-    }
-});*/
 
 app.get('*', async function (req, res) {
     var notifications;
@@ -208,7 +177,7 @@ app.get('*', async function (req, res) {
     res.render("404", {
         env: process.env.ENV,
         layout: "layouts/404",
-        title: "Page not found - brainstr",
+        title: "Page not found - PeakESL",
         locale: req.getLocale(),
         user: req.user,
         notifications: notifications,
@@ -218,4 +187,4 @@ app.get('*', async function (req, res) {
 });
 
 
-http.listen(process.env.PORT, () => console.log(`brainstr running on http://localhost:${process.env.PORT}`));
+http.listen(process.env.PORT, () => console.log(`PeakESL running on http://localhost:${process.env.PORT}`));

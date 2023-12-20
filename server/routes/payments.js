@@ -50,7 +50,7 @@ router.post("/payment/stripe/createPayment", isAuth, async (req, res) => {
             price_data: {
                 currency: 'eur',
                 product_data: {
-                    name: 'brainstr Balance',
+                    name: 'PeakESL Balance',
                 },
                 unit_amount: amount * 100,
             },
@@ -128,7 +128,7 @@ router.post("/payment/stripe/createSinglePayment", isAuth, async (req, res) => {
             price_data: {
                 currency: 'eur',
                 product_data: {
-                    name: 'brainstr Social Program',
+                    name: 'PeakESL Social Program',
                 },
                 unit_amount: Math.round(priceData.donation * 100),
             },
@@ -198,7 +198,7 @@ router.post("/payment/stripe/createContributionPayment", async (req, res) => {
             price_data: {
                 currency: 'eur',
                 product_data: {
-                    name: 'brainstr Social Program',
+                    name: 'PeakESL Social Program',
                 },
                 unit_amount: Math.round(amount * 100),
             },

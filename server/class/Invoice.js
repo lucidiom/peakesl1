@@ -93,7 +93,7 @@ exports.createPDF = async (tid, locale, content) => {
     }
 
     var pdfBuffer = await html_to_pdf.generatePdf({ content: content }, options);
-    await fs.promises.writeFile(process.cwd() + '/data/invoice/archive/brainstr_invoice_' + tid + '.pdf', pdfBuffer);
+    await fs.promises.writeFile(process.cwd() + '/data/invoice/archive/PeakESL_invoice_' + tid + '.pdf', pdfBuffer);
 }
 
 

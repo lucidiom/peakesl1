@@ -1,7 +1,7 @@
 <script>
     /* beautify preserve:start */
-    var teacherData = JSON.parse(<%- JSON.stringify(JSON.stringify(teacher)) %>);
-    var bookedTimes = JSON.parse(<%- JSON.stringify(JSON.stringify(bookedTimes)) %>);
+    var teacherData = JSON.parse(<% - JSON.stringify(JSON.stringify(teacher)) %>);
+    var bookedTimes = JSON.parse(<% - JSON.stringify(JSON.stringify(bookedTimes)) %>);
     /* beautify preserve:end */
 </script>
 <script src="https://js.stripe.com/v3/"></script>
@@ -27,8 +27,12 @@
                         <div class="row">
 
                             <div class="col-md-12" id="panel-pay">
-                                <h3 class="margin-bottom-25"><%= __('booking.booking.headline') %></h3>
-                                <h4><b><%= __('booking.booking.subheadline') %></b></h4>
+                                <h3 class="margin-bottom-25">
+                                    <%= __('booking.booking.headline') %>
+                                </h3>
+                                <h4><b>
+                                        <%= __('booking.booking.subheadline') %>
+                                    </b></h4>
                                 <small style="display: flex;line-height: 1.4;">
                                     <i class="icon-material-outline-lock text-green" style="margin-right: 7px;margin-top: 1px;"></i>
                                     <%= __('booking.booking.safety') %>
@@ -36,42 +40,49 @@
                                 <div class="payment-methods margin-top-20">
                                     <div class="payment-method noselect inactive" id="payment-method-balance" data-payment="balance">
                                         <span>
-                                            <%- __('booking.booking.pm-balance', '<b>', '</b>') %>
+                                            <%- __('booking.booking.pm-balance', '<b>' , '</b>' ) %>
                                         </span>
                                     </div>
 
                                     <div class="payment-method noselect active" data-payment="credit">
                                         <span>
-                                            <%- __('booking.booking.pm-card', '<b>', '</b><br><small>') %></small>
+                                            <%- __('booking.booking.pm-card', '<b>' , '</b><br><small>' ) %></small>
                                         </span>
                                     </div>
 
-                                    <% if(user.socialStudent == true){ %>
-                                    <div class="payment-method noselect" data-payment="brainstr_social">
-                                        <span>
-                                            <%- __('booking.booking.pm-sp', '<b>', '</b> <div class="verified-badge-with-title badge-socialteacher"  style="display: flex;float: right;margin-left: 10px;width: 26px !important;max-width: 26px !important;padding: 0;" data-tippy-placement="top" title="' + __('teacher.socialTeacherTooltip') + '"></div> <br/><small class="legal"><a href="/social-program/" target="_blank">', '</a>') %></small>
-                                        </span>
-                                    </div>
-                                    <% } %>
+                                    <% if(user.socialStudent==true){ %>
+                                        <div class="payment-method noselect" data-payment="peakesl_social">
+                                            <span>
+                                                <%- __('booking.booking.pm-sp', '<b>' , '</b> <div class="verified-badge-with-title badge-socialteacher"  style="display: flex;float: right;margin-left: 10px;width: 26px !important;max-width: 26px !important;padding: 0;" data-tippy-placement="top" title="' + __('teacher.socialTeacherTooltip') + '"></div> <br/><small class="legal"><a href="/social-program/" target="_blank">' , '</a>' ) %></small>
+                                            </span>
+                                        </div>
+                                        <% } %>
                                 </div>
 
                                 <button id="btn-ctn" class="button button-green margin-top-20" style="margin: auto;
     display: block;
     padding-left: 30px;
-    padding-right: 30px;display:none;"><%= __('general.continue') %></button>
+    padding-right: 30px;display:none;">
+                                    <%= __('general.continue') %>
+                                </button>
                             </div>
 
 
                             <div class="col-md-12" id="panel-success" style="display:none">
                                 <h3 class="margin-bottom-25"></h3>
 
-                                <p class="legal"><%= __('booking.confirmation.headline') %> <br><%= __('booking.confirmation.text') %><br><br>
-                                    <%= __('booking.confirmation.text2') %> <a href="mailto:support@brainstr.org">support@brainstr.org</a></p>
+                                <p class="legal">
+                                    <%= __('booking.confirmation.headline') %> <br>
+                                        <%= __('booking.confirmation.text') %><br><br>
+                                            <%= __('booking.confirmation.text2') %> <a href="mailto:support@peakesl.org">support@peakesl.org</a>
+                                </p>
 
                                 <button id="btn-complete" class="button button-primary margin-top-20" style="margin: auto;
     display: block;
     padding-left: 30px;
-    padding-right: 30px;"><%= __('booking.confirmation.btn') %></button>
+    padding-right: 30px;">
+                                    <%= __('booking.confirmation.btn') %>
+                                </button>
                             </div>
 
 
@@ -96,8 +107,12 @@
                                 </div>
                             </div>
                             <div class="col-md-11" style="padding-left:30px;">
-                                <h4><b><%= __('booking.guarantee.headline') %></b></h4>
-                                <p><%= __('booking.guarantee.text') %></p>
+                                <h4><b>
+                                        <%= __('booking.guarantee.headline') %>
+                                    </b></h4>
+                                <p>
+                                    <%= __('booking.guarantee.text') %>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -121,10 +136,12 @@
                                     <img src="/profilepicture/<%= teacher._id %>" style="border-radius: 50%;" />
                                 </div>
                                 <div class="col-8 col-md-8 align-self-center">
-                                    <h3><%= teacher.firstname %> <%= teacher.lastname %> 
-                                        <% if(teacher.verified){ %>
-                                        <div class="verified-badge" data-tippy-placement="top" style="border-radius: 5px;margin-left: 10px;" title="<%= __('teacher.verified.tooltip') %>"></div>
-                                        <% } %>
+                                    <h3>
+                                        <%= teacher.firstname %>
+                                            <%= teacher.lastname %>
+                                                <% if(teacher.verified){ %>
+                                                    <div class="verified-badge" data-tippy-placement="top" style="border-radius: 5px;margin-left: 10px;" title="<%= __('teacher.verified.tooltip') %>"></div>
+                                                    <% } %>
                                     </h3>
                                 </div>
                             </div>
@@ -132,11 +149,19 @@
 
 
                             <div class="bidding-fields">
-                                <b style="display: block;width: 100%;"><%= __('booking.sidebar.advantages-headline') %></b>
+                                <b style="display: block;width: 100%;">
+                                    <%= __('booking.sidebar.advantages-headline') %>
+                                </b>
                                 <ul class="advantages-ul">
-                                    <li><i class="icon-material-outline-check"></i> <%= __('booking.sidebar.advantages-1') %></li>
-                                    <li><i class="icon-material-outline-check"></i> <%= __('booking.sidebar.advantages-2') %></li>
-                                    <li><i class="icon-material-outline-check"></i> <%= __('booking.sidebar.advantages-3') %></li>
+                                    <li><i class="icon-material-outline-check"></i>
+                                        <%= __('booking.sidebar.advantages-1') %>
+                                    </li>
+                                    <li><i class="icon-material-outline-check"></i>
+                                        <%= __('booking.sidebar.advantages-2') %>
+                                    </li>
+                                    <li><i class="icon-material-outline-check"></i>
+                                        <%= __('booking.sidebar.advantages-3') %>
+                                    </li>
                                 </ul>
                             </div>
 
@@ -152,7 +177,9 @@
                             </div>
                             <div class="row">
                                 <div class="col-8 col-md-8">
-                                    <span style="font-size: 14px;"><%= __('booking.sidebar.processing-fee') %> <i class="help-icon help-gray" data-tippy-placement="top" title="<%= __('booking.sidebar.processing-fee-tooltip') %>"></i></span>
+                                    <span style="font-size: 14px;">
+                                        <%= __('booking.sidebar.processing-fee') %> <i class="help-icon help-gray" data-tippy-placement="top" title="<%= __('booking.sidebar.processing-fee-tooltip') %>"></i>
+                                    </span>
                                 </div>
                                 <div class="col-4 col-md-4 text-right">
                                     <span style="font-size: 14px;" id="processing-fee" data-currency="0">-</span>
@@ -160,7 +187,9 @@
                             </div>
                             <div class="row">
                                 <div class="col-8 col-md-8">
-                                    <span style="font-size: 14px;"><%= __('general.socialprogram') %> <i class="help-icon help-gray" data-tippy-placement="top" title="<%= __('booking.booking.socialprogram-tooltip') %>"></i></span>
+                                    <span style="font-size: 14px;">
+                                        <%= __('general.socialprogram') %> <i class="help-icon help-gray" data-tippy-placement="top" title="<%= __('booking.booking.socialprogram-tooltip') %>"></i>
+                                    </span>
                                 </div>
                                 <div class="col-4 col-md-4 text-right">
                                     <span style="font-size: 14px;" id="social-donation" data-currency="0">-</span>
@@ -176,9 +205,11 @@
                             </div>-->
                             <div class="row">
                                 <div class="col-8 col-md-8">
-                                    <span style="font-size: 14px;"><%= __('booking.sidebar.lesson-cancellation') %> <i class="help-icon help-gray" data-tippy-placement="top" title="<%= __('booking.sidebar.lesson-cancellation-tooltip') %>"></i></span>
+                                    <span style="font-size: 14px;">
+                                        <%= __('booking.sidebar.lesson-cancellation') %> <i class="help-icon help-gray" data-tippy-placement="top" title="<%= __('booking.sidebar.lesson-cancellation-tooltip') %>"></i>
+                                    </span>
                                 </div>
-                                <div class="col-4 col-md-4 text-right text-green" style="font-size: 14px;" >
+                                <div class="col-4 col-md-4 text-right text-green" style="font-size: 14px;">
                                     <%= __('general.free') %>
                                 </div>
                             </div>
@@ -191,7 +222,9 @@
 
                             <div class="row row-total">
                                 <div class="col-6 col-md-6">
-                                    <span><b><%= __('general.total') %></b></span>
+                                    <span><b>
+                                            <%= __('general.total') %>
+                                        </b></span>
                                 </div>
                                 <div class="col-6 col-md-6 text-right">
                                     <small><span id="total-cost-converted" data-currency-converted="">-</span></small> &nbsp; <b><span id="total-cost" data-currency="">-</span></b>
@@ -210,7 +243,9 @@
 
 
                             <!--<button id="send-booking" class="button button-green full-width margin-top-20">Confirm & Pay</button>-->
-                            <small class="d-block text-center margin-top-20"><i class="icon-material-outline-lock"></i> <%= __('booking.sidebar.ssl-protection') %></small>
+                            <small class="d-block text-center margin-top-20"><i class="icon-material-outline-lock"></i>
+                                <%= __('booking.sidebar.ssl-protection') %>
+                            </small>
                         </div>
 
                         <!--<div class="bidding-signup legal">FAQ & Help: <a href="#sign-in-dialog" class="register-tab sign-in popup-with-zoom-anim">Support Centre</a></div>-->

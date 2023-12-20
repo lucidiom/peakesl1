@@ -4,7 +4,7 @@ var unreadNotificationCount = 0;
 
 
 function i18_init() {
-    var currencyCookie = getCookie("brainstr-c-currency");
+    var currencyCookie = getCookie("peakesl-c-currency");
 
     if (currencyCookie != undefined) {
         i18n_currency = currencyCookie;
@@ -59,12 +59,12 @@ function i18n_update() {
 
     loc_tmp[i18n_locale] = i18nTranslations;
 
-    $.i18n().load(loc_tmp).then(function() {
+    $.i18n().load(loc_tmp).then(function () {
         $.i18n({
             locale: i18n_locale
         });
 
-        $("[data-i18n]").each(function() {
+        $("[data-i18n]").each(function () {
             txt = $.i18n($(this).data("i18n"));
             if (!txt.startsWith("_bstr")) {
                 $(this).i18n();
@@ -78,7 +78,7 @@ function i18n_update() {
 
 function i18n_changeLanguage(loc, reload = true) {
     i18n_locale = loc;
-    setCookie("brainstr-c-language", i18n_locale, 365);
+    setCookie("peakesl-c-language", i18n_locale, 365);
     $("#i18-language-picker").val(i18n_locale);
 
     if (reload) {
@@ -88,7 +88,7 @@ function i18n_changeLanguage(loc, reload = true) {
 
 
 
-window.onload = async function() {
+window.onload = async function () {
     if (typeof uData != "undefined") {
         interpretNotifications();
     }
@@ -97,7 +97,7 @@ window.onload = async function() {
     i18n_updatePrices();
     $("#i18-language-picker").val(i18n_locale);
 
-    $("#i18-language-picker").on("change", async function() {
+    $("#i18-language-picker").on("change", async function () {
         if (typeof uData != "undefined") {
             try {
                 await r('updateLocale', { locale: $("#i18-language-picker").val() });
@@ -110,7 +110,7 @@ window.onload = async function() {
     });
 
 
-    $("#i18-currency-picker").on("change", async function() {
+    $("#i18-currency-picker").on("change", async function () {
         if (typeof uData != "undefined") {
             try {
                 await r('updateCurrency', { currency: $("#i18-currency-picker").val() });
@@ -205,13 +205,13 @@ async function i18n_cc(price, currency = "eur", prependCurrency = false) {
 }
 
 function i18n_updatePrices() {
-    $("[data-currency]").each(async function() {
+    $("[data-currency]").each(async function () {
         var price = parseFloat($(this).data('currency'));
         priceFormat = await i18n_cc(price);
         $(this).text(priceFormat);
     });
 
-    $("[data-currency-converted]").each(async function() {
+    $("[data-currency-converted]").each(async function () {
         var price = parseFloat($(this).data('currency-converted'));
         priceFormat = await i18n_cc(price, i18n_currency);
         $(this).text(priceFormat);
@@ -221,7 +221,7 @@ function i18n_updatePrices() {
 function i18n_updateCurrency(currency) {
     i18n_currency = currency;
 
-    setCookie("brainstr-c-currency", i18n_currency, 365);
+    setCookie("peakesl-c-currency", i18n_currency, 365);
     $("#i18-currency-picker").val(i18n_currency);
 
     i18n_updatePrices();
@@ -235,11 +235,11 @@ async function resetNotifications() {
 }
 
 function interpretNotifications() {
-    if (typeof(notifications) == "undefined") {
+    if (typeof (notifications) == "undefined") {
         return;
     }
 
-    $.each(notifications, async function(i, notification) {
+    $.each(notifications, async function (i, notification) {
         addNotification(notification);
     });
 

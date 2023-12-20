@@ -12,7 +12,7 @@ $("body").append(`  <a class="popup-with-zoom-anim" href="#small-dialog" id="pop
 
               <div class="popup-tab-content" id="login">
                   <div class="welcome-text">
-                      <h3>Sign in to brainstr</h3>
+                      <h3>Sign in to PeakESL</h3>
                   </div>
 
                   <form method="post" id="send-pm">

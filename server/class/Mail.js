@@ -226,7 +226,7 @@ exports.sendDepositSuccessful = async (tid, receiver, firstname, locale = "en") 
     data[locale] = true;
 
     // fetch invoice and attach to mail
-    var invoice = fs.readFileSync(process.cwd() + '/data/invoice/archive/brainstr_invoice_' + tid + '.pdf').toString("base64");
+    var invoice = fs.readFileSync(process.cwd() + '/data/invoice/archive/PeakESL_invoice_' + tid + '.pdf').toString("base64");
 
     mail.send({
         to: receiver,
@@ -239,7 +239,7 @@ exports.sendDepositSuccessful = async (tid, receiver, firstname, locale = "en") 
         },
         attachments: [{
             content: invoice,
-            filename: 'brainstr_' + tid + '.pdf',
+            filename: 'PeakESL_' + tid + '.pdf',
             type: "application/pdf",
             disposition: "attachment"
         }]
@@ -248,11 +248,11 @@ exports.sendDepositSuccessful = async (tid, receiver, firstname, locale = "en") 
     mail.send({
         to: process.env.EMAIL_INVOICE_COPY,
         from: process.env.SENDGRID_SENDER,
-        subject: "brainstr Deposit Invoice",
+        subject: "PeakESL Deposit Invoice",
         html: `You did it again - great job!`,
         attachments: [{
             content: invoice,
-            filename: 'brainstr_' + tid + '.pdf',
+            filename: 'PeakESL_' + tid + '.pdf',
             type: "application/pdf",
         }]
     });
@@ -315,13 +315,7 @@ exports.sendWelcomeTutor = async (receiver, firstname, locale = "en") => {
         to: receiver,
         from: process.env.SENDGRID_SENDER,
         templateId: 'd-e799d1570f884133b18a28c103a072d5',
-        dynamicTemplateData: data,
-        attachments: [{
-            content: pdfAttachment,
-            filename: 'Welcome_Tutor_brainstr.pdf',
-            type: "application/pdf",
-            disposition: "attachment"
-        }]
+        dynamicTemplateData: data
     });
 }
 

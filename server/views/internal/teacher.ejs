@@ -1,8 +1,8 @@
 <script>
     /* beautify preserve:start */
-    var teacherData = JSON.parse(<%- JSON.stringify(JSON.stringify(teacher)) %>);
-    var bookedTimes = JSON.parse(<%- JSON.stringify(JSON.stringify(bookedTimes)) %>);
-    var reviews = JSON.parse(<%- JSON.stringify(JSON.stringify(reviews)) %>);
+    var teacherData = JSON.parse(<% - JSON.stringify(JSON.stringify(teacher)) %>);
+    var bookedTimes = JSON.parse(<% - JSON.stringify(JSON.stringify(bookedTimes)) %>);
+    var reviews = JSON.parse(<% - JSON.stringify(JSON.stringify(reviews)) %>);
     /* beautify preserve:end */
 </script>
 
@@ -11,15 +11,15 @@
     {
         "@context": "http://schema.org",
         "@type": "Product",
-        "name": "Online Tutor <%= teacher.firstname %> on brainstr",
+        "name": "Online Tutor <%= teacher.firstname %> on PeakESL",
         "description": "<%= __('teacher.about') %>",
         "offers": {
             "@type": "Offer",
-            "url": "https://brainstr.de/teacher/<%= teacher._id %>/",
+            "url": "https://peakesl.de/teacher/<%= teacher._id %>/",
             "priceCurrency": "EUR",
             "availability": "https://schema.org/OnlineOnly"
         },
-        "image": "https://brainstr.de/profilepicture/<%= teacher._id %>/"
+        "image": "https://peakesl.de/profilepicture/<%= teacher._id %>/"
     }
 </script>
 
@@ -65,11 +65,11 @@
 
         <div class="panel">
 
-            <% if(teacher.video !=false && teacher.video !=undefined && teacher.video_source == "youtube"){ %>
+            <% if(teacher.video !=false && teacher.video !=undefined && teacher.video_source=="youtube" ){ %>
                 <div class="plyr__video-embed teacher-video-top" id="player">
                     <iframe src="https://www.youtube.com/embed/<%= teacher.video_id %>?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency allow="autoplay"></iframe>
                 </div>
-            <% } %>
+                <% } %>
 
                     <!--<iframe id="player" type="text/html" width="640" height="390" src="https://www.youtube-nocookie.com/embed/M7lc1UVf-VE?hl=<%= locale %>&rel=0&modestbranding=1&showinfo=0" frameborder="0"></iframe>
                 -->

@@ -1,33 +1,33 @@
 {
-	"name": "brainstr",
+	"name": "PeakESL",
 	"title": {
-		"index": "brainstr - find your online tutor for free",
-		"login": "Login - brainstr",
-		"reset": "Reset your password - brainstr",
-		"register": "Become a brainstr - brainstr",
-		"imprint": "Imprint - brainstr",
-		"privacy": "Privacy Policy - brainstr",
-		"refund": "Refund Policy - brainstr",
-		"terms": "Terms of Service - brainstr",
-		"teachers": "Online %s tutors - brainstr",
+		"index": "PeakESL - find your online tutor for free",
+		"login": "Login - PeakESL",
+		"reset": "Reset your password - PeakESL",
+		"register": "Become a PeakESL - PeakESL",
+		"imprint": "Imprint - PeakESL",
+		"privacy": "Privacy Policy - PeakESL",
+		"refund": "Refund Policy - PeakESL",
+		"terms": "Terms of Service - PeakESL",
+		"teachers": "Online %s tutors - PeakESL",
 		"teachers-subject": "Online %s tutors",
-		"teacher": "Teacher Profile - brainstr",
-		"lesson": "Lesson Details - brainstr",
-		"lessons": "My lessons - brainstr",
-		"classroom": "Classroom - brainstr",
-		"registerTeacher": "Become a Teacher - brainstr",
-		"settingsTeacher": "Teacher settings - brainstr",
-		"balance": "Account Balance - brainstr",
-		"messages": "Messages - brainstr",
-		"blog": "Blog - brainstr",
-		"virtual_classroom": "Virtual Classroom - brainstr",
-		"how_it_works_student": "Online Tutoring with brainstr - brainstr",
-		"how_it_works_tutor": "Become a Tutor at brainstr - brainstr",
-		"book": "Book a lesson - brainstr",
-		"social-program": "Social Program - brainstr",
-		"social-program-students": "Social Program for Students - brainstr",
-		"social-program-teacher": "Social Program for Teachers - brainstr",
-		"social-program-partners": "Contributing to the Social Program - brainstr"
+		"teacher": "Teacher Profile - PeakESL",
+		"lesson": "Lesson Details - PeakESL",
+		"lessons": "My lessons - PeakESL",
+		"classroom": "Classroom - PeakESL",
+		"registerTeacher": "Become a Teacher - PeakESL",
+		"settingsTeacher": "Teacher settings - PeakESL",
+		"balance": "Account Balance - PeakESL",
+		"messages": "Messages - PeakESL",
+		"blog": "Blog - PeakESL",
+		"virtual_classroom": "Virtual Classroom - PeakESL",
+		"how_it_works_student": "Online Tutoring with PeakESL - PeakESL",
+		"how_it_works_tutor": "Become a Tutor at PeakESL - PeakESL",
+		"book": "Book a lesson - PeakESL",
+		"social-program": "Social Program - PeakESL",
+		"social-program-students": "Social Program for Students - PeakESL",
+		"social-program-teacher": "Social Program for Teachers - PeakESL",
+		"social-program-partners": "Contributing to the Social Program - PeakESL"
 	},
 	"general": {
 		"yes": "Yes",
@@ -77,7 +77,7 @@
 		"readmore": "Read more",
 		"free": "Free",
 		"total": "Total",
-		"socialprogram": "brainstr Social Program",
+		"socialprogram": "PeakESL Social Program",
 		"socialprogram-short": "Social Program",
 		"weekdays": {
 			"short": {
@@ -114,7 +114,7 @@
 		},
 		"description": "Description",
 		"my-profile": "My Profile",
-		"404": "Let's go back to brainstr",
+		"404": "Let's go back to PeakESL",
 		"learn-more": "Learn more",
 		"star": "Star",
 		"stars": "Stars",
@@ -131,7 +131,7 @@
 		"getStarted": "Start for free",
 		"getStarted-loggedIn": "Dashboard",
 		"virtual-classroom": "Virtual Classroom",
-		"toBrainstr": "View brainstr",
+		"toPeakESL": "View PeakESL",
 		"quicklinks": "Quicklinks",
 		"social": "Social Media",
 		"further": "Further links",
@@ -194,7 +194,7 @@
 		}
 	},
 	"banner": {
-		"text": "Get FREE education via the brainstr Social Program (no requirements)"
+		"text": "Get FREE education via the PeakESL Social Program (no requirements)"
 	},
 	"index": {
 		"headline": "Find your perfect online tutor",
@@ -209,30 +209,30 @@
 			"1-headline": "Inspiring teachers",
 			"1-text": "All teachers are students or recent graduates from leading World Universities and schools. They are full of energy and know what are the student's challenges.",
 			"2-headline": "Interactive lessons",
-			"2-text": "brainstr provides you engaging and interesting lessons. Interactive tools will make your tutoring sessions educational and enjoyable.",
+			"2-text": "PeakESL provides you engaging and interesting lessons. Interactive tools will make your tutoring sessions educational and enjoyable.",
 			"3-headline": "Worldwide Community",
-			"3-text": "Want to learn a language with a native speaker? Or learn a new subject which you don't have at school? With brainstr you can connect with teachers from anywhere.",
+			"3-text": "Want to learn a language with a native speaker? Or learn a new subject which you don't have at school? With PeakESL you can connect with teachers from anywhere.",
 			"4-headline": "Learn from anywhere",
 			"4-text": "All our lessons are online - study from any place on the world, at any time you want."
 		},
 		"banner-1": {
 			"headline": "Homeschooling just became cool",
-			"text": "Get the education you deserve. With interactive lessons and teachers, who are highly motivated and care about your progress and success. brainstr is providing you with all the tools you need to become a rockstar from your living room.",
+			"text": "Get the education you deserve. With interactive lessons and teachers, who are highly motivated and care about your progress and success. PeakESL is providing you with all the tools you need to become a rockstar from your living room.",
 			"button": "Start now for free"
 		},
 		"banner-2": {
 			"headline": "Start growing beyond yourself",
-			"text": "You don't need to waste time with mediocre teachers and laggy video chats. brainstr gives you everything you need so you can concentrate on changing your education for the better, start growing and exceed your goals. What are you waiting for?",
+			"text": "You don't need to waste time with mediocre teachers and laggy video chats. PeakESL gives you everything you need so you can concentrate on changing your education for the better, start growing and exceed your goals. What are you waiting for?",
 			"button": "Start now for free"
 		},
 		"banner-3": {
 			"headline": "Your life. Your education. Your schedule.",
-			"text": "Education should be a significant part of your live, but you have a lot more going on. We understand that! That's why you decide when and for how long you spent time studying on brainstr so your have the perfect live-work balance.",
+			"text": "Education should be a significant part of your live, but you have a lot more going on. We understand that! That's why you decide when and for how long you spent time studying on PeakESL so your have the perfect live-work balance.",
 			"button": "Start now for free"
 		},
 		"cta-1": {
-			"headline": "Teach and Study - that's brainstr",
-			"text": "With brainstr you can find the perfect tutor for online lessons for you. However, you can become a teacher yourself and start earning money from home teaching students.",
+			"headline": "Teach and Study - that's PeakESL",
+			"text": "With PeakESL you can find the perfect tutor for online lessons for you. However, you can become a teacher yourself and start earning money from home teaching students.",
 			"btn-left": "Register as Student",
 			"btn-right": "Register as a Teacher"
 		}
@@ -251,15 +251,15 @@
 			"2-headline": "Pay safely and per lesson",
 			"2-text": "We implemented a secure payment flow to protect your money - and you keep in budget by paying only by lessons.",
 			"3-headline": "COVID-19 safe",
-			"3-text": "Safe distance learning - without mask and risks. Great education despite the pandemic with brainstr."
+			"3-text": "Safe distance learning - without mask and risks. Great education despite the pandemic with PeakESL."
 		},
 		"blocks": {
 			"headline-1": "Responsible and proactive tutors",
-			"text-1": "Brainstrs tutors are students of leading world universities and best high school students.  They love to study, pass exams with a high score and are engaged in social activities.",
+			"text-1": "PeakESLs tutors are students of leading world universities and best high school students.  They love to study, pass exams with a high score and are engaged in social activities.",
 			"headline-2": "Peer-to-peer learning",
 			"text-2": "Our tutors have coped with the difficulties of study and admission on their own.  They speak the same language as students, can clearly explain the material and, by their example, inspire to learn.",
-			"headline-3": "Brainstr checks the quality of all lessons",
-			"text-3": "We conduct interviews with each tutor on brainstr, check grades and take feedback from their teachers.  If you don't like the lesson - we can refund your money.",
+			"headline-3": "PeakESL checks the quality of all lessons",
+			"text-3": "We conduct interviews with each tutor on PeakESL, check grades and take feedback from their teachers.  If you don't like the lesson - we can refund your money.",
 			"headline-4": "Students can become tutors",
 			"text-4": "We aim to teach in a way that our students can become tutors themselves and earn money for their development.<br><br>We invite the best students to our team and conduct online tutoring training."
 		},
@@ -272,7 +272,7 @@
 			"headline": "As easy as %s1-2-3%s",
 			"step1": "Sign up and choose a tutor based on your goals",
 			"step2": "Deposit money to your account and choose a convenient time",
-			"step3": "The tutor meets with the student in the brainstr virtual and interactive classroom and conducts the lesso at the choosen time",
+			"step3": "The tutor meets with the student in the PeakESL virtual and interactive classroom and conducts the lesso at the choosen time",
 			"btn": "Find your tutor now"
 		},
 		"whattutorsprovide": {
@@ -286,7 +286,7 @@
 		},
 		"qa": {
 			"headline-1": "%sHow much%s I need to pay?",
-			"text-1": "You pay the cost of the lesson which is defined by tutors and 20% commission for Brainstr services. The final cost of the lesson is indicated on tutor profile and usually around 6-15 euros."
+			"text-1": "You pay the cost of the lesson which is defined by tutors and 20% commission for PeakESL services. The final cost of the lesson is indicated on tutor profile and usually around 6-15 euros."
 		},
 		"principals": {
 			"headline": "Our %sprincipals%s",
@@ -303,7 +303,7 @@
 			"btn": "Register now"
 		},
 		"explore-tutors": "Explore our Tutors",
-		"about-virtual-classroom": "More about brainstr Virtual Classroom"
+		"about-virtual-classroom": "More about PeakESL Virtual Classroom"
 	},
 	"imprint": {
 		"headline": "Imprint",
@@ -311,7 +311,7 @@
 		"contact": "Contact",
 		"vat": "VAT-ID",
 		"disclaimer-headline": "Disclaimer",
-		"disclaimer": "The information provided by brainstr (\"we\", \"us\" or \"our\") on brainstr.de (the \"Site\") is for general information purpose only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, epxress or implied, regarding the accuracy, aedequacy, validity, reliability, availability or completeness of any information on the Site. UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK."
+		"disclaimer": "The information provided by PeakESL (\"we\", \"us\" or \"our\") on PeakESL.de (the \"Site\") is for general information purpose only. All information on the Site is provided in good faith, however we make no representation or warranty of any kind, epxress or implied, regarding the accuracy, aedequacy, validity, reliability, availability or completeness of any information on the Site. UNDER NO CIRCUMSTANCE SHALL WE HAVE ANY LIABILITY TO YOU FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF THE SITE OR RELIANCE ON ANY INFORMATION PROVIDED ON THE SITE. YOUR USE OF THE SITE AND YOUR RELIANCE ON ANY INFORMATION ON THE SITE IS SOLELY AT YOUR OWN RISK."
 	},
 	"privacy": {
 		"headline": "Privacy Policy"
@@ -321,14 +321,14 @@
 	},
 	"login": {
 		"headline": "Welcome back!",
-		"no-account-notice": "Not a brainstr yet?",
+		"no-account-notice": "Not a PeakESL yet?",
 		"no-account-link": "Register and get started for free today!",
 		"reset-password": "Reset Password",
 		"sign-in": "Sign In",
 		"failed-auth": "E-Mail or password incorrect!"
 	},
 	"register": {
-		"headline": "Ready to become a brainstr?",
+		"headline": "Ready to become a PeakESL?",
 		"already-signed-text": "Already have an account?",
 		"already-signed-link": "Sign in!",
 		"password-repeat": "Repeat password",
@@ -341,7 +341,7 @@
 			"2": "You choose time & date",
 			"3": "Virtual Online Classroom",
 			"4": "Secure online payment",
-			"5": "brainstr Support Team"
+			"5": "PeakESL Support Team"
 		},
 		"profTeacher": "I am a professional teacher",
 		"socialTeacher": "I can teach Social Program Students for free"
@@ -372,38 +372,38 @@
 		"book-terms": "Clicking 'Book now' you accept our",
 		"verified": {
 			"text": "Verified",
-			"tooltip": "This tutor is verified by brainstr"
+			"tooltip": "This tutor is verified by PeakESL"
 		},
 		"toclassroom": "Join classroom",
 		"feedback": "Students' feedback",
 		"ccontactMe": "Send Message",
-		"socialTeacherTooltip": "I am a volunteer for the brainstr Social Program"
+		"socialTeacherTooltip": "I am a volunteer for the PeakESL Social Program"
 	},
 	"booking": {
 		"booking": {
 			"headline": "Secure Checkout",
 			"subheadline": "Payment method",
-			"safety": "It’s safe to pay on brainstr. All transactions are protected by SSL encryption and brainstr buyer protection service.",
-			"pm-balance": "Pay with available %sbrainstr balance%s",
+			"safety": "It’s safe to pay on PeakESL. All transactions are protected by SSL encryption and PeakESL buyer protection service.",
+			"pm-balance": "Pay with available %sPeakESL balance%s",
 			"pm-card": "Pay via %s online payment %s Credit card, SEPA Debit, Apple & Google Pay",
-			"pm-sp": "Book via the %s brainstr Social Program %s Learn more %s about how we provide free education",
+			"pm-sp": "Book via the %s PeakESL Social Program %s Learn more %s about how we provide free education",
 			"socialprogram-tooltip": "We use donations to provide free lessons and education to children and people without financial possibilities."
 		},
 		"confirmation": {
 			"headline": "Congratulations 🚀",
-			"text": "You scheduled your lesson and got the first step to improve yourself. Make sure to go to brainstr 10 minutes before your lesson starts. You will see an invitation on the website to join our virtual classroom, where your lesson will take place.",
+			"text": "You scheduled your lesson and got the first step to improve yourself. Make sure to go to PeakESL 10 minutes before your lesson starts. You will see an invitation on the website to join our virtual classroom, where your lesson will take place.",
 			"text2": "Please feel free to reach out to us any time you have a question at",
-			"btn": "Continue to brainstr"
+			"btn": "Continue to PeakESL"
 		},
 		"guarantee": {
 			"headline": "Learn with 100% satisfaction guarantee",
 			"text": "If your lesson does not take place, or you are not satisfied with the tutor, we will provide you with a free replacement to another tutor of your choice or offer you a full refund."
 		},
 		"sidebar": {
-			"advantages-headline": "Your brainstr advantages",
+			"advantages-headline": "Your PeakESL advantages",
 			"advantages-1": "Virtual Classroom",
 			"advantages-2": "Secure Payment",
-			"advantages-3": "brainstr Support",
+			"advantages-3": "PeakESL Support",
 			"processing-fee": "Processing Fee",
 			"processing-fee-tooltip": "Processing fees are charged by third party payment providers in order to transfer the funds from your account to our escrow and ultimately to the tutor after the lesson is completed.",
 			"lesson-cancellation": "Lesson cancellation",
@@ -425,8 +425,8 @@
 		"my-subjects": "My subjects",
 		"select-weekday": "Select weekday",
 		"select-level": "Select level",
-		"social-program-headline": "brainstr Social Program 🇺🇦",
-		"social-program-text": "With the brainstr Social Program we provide lessons for children that cannot afford or do not have access to education. You can help us spread knowledge to everyone around the globe.",
+		"social-program-headline": "PeakESL Social Program 🇺🇦",
+		"social-program-text": "With the PeakESL Social Program we provide lessons for children that cannot afford or do not have access to education. You can help us spread knowledge to everyone around the globe.",
 		"social-program-optin": "I can teach Social Program Students for free"
 	},
 	"lessons": {
@@ -473,12 +473,12 @@
 		"blocked": "Locked Balance",
 		"available-note": "The amount of balance available to use.",
 		"blocked-note": "The amount of balance reserved for pending lesson requests.",
-		"buy-points": "Top up your brainstr balance",
+		"buy-points": "Top up your PeakESL balance",
 		"buy-note": "Deposit money in order to take lessons and start improving your skills and growth.",
-		"buy-btn": "Buy brainstr credit",
+		"buy-btn": "Buy PeakESL credit",
 		"footnote-1": "Your final payment will be made in EUR.",
 		"footnote-2": "All currency conversions are estimates, may vary and are not binding.",
-		"footnote-3": "All sales are final, purchases may be refunded for brainstr balance only.",
+		"footnote-3": "All sales are final, purchases may be refunded for PeakESL balance only.",
 		"payout": {
 			"method": "Payout method",
 			"sepa": "SEPA Wire Transfer",
@@ -497,7 +497,7 @@
 			"teacherLessonRejected": "Your lesson request was rejected",
 			"teacherLessonCanceled": "Your lesson was cancelled",
 			"teacherLessonCompleted": "You completed a lesson 🎉",
-			"mail-welcome": "Welcome to brainstr %s 🚀",
+			"mail-welcome": "Welcome to PeakESL %s 🚀",
 			"mail-confirmation": "Verify your email address",
 			"password-reset": "Reset your password"
 		}
@@ -509,17 +509,17 @@
 		"minread": "%s min read",
 		"share": "Don't forget to share this post!",
 		"cta": {
-			"title": "Become a brainstr today!",
-			"text": "With brainstr you will find your highly motivated online tutor to improve your skills and get you ready for life. Furthermore, you can start teaching on brainstr and earn money from home.",
+			"title": "Become a PeakESL today!",
+			"text": "With PeakESL you will find your highly motivated online tutor to improve your skills and get you ready for life. Furthermore, you can start teaching on PeakESL and earn money from home.",
 			"btn": "Start for free",
 			"or": "or",
 			"learn-more": "learn more"
 		},
 		"helpfull-text": "Was this article helpful?"
 	},
-	"brainstr-as-tutor": {
-		"headline": "Become a Tutor with brainstr",
-		"subheadline": "Teach online and earn money.<br>brainstr provides everything you need to get you started within minutes.",
+	"PeakESL-as-tutor": {
+		"headline": "Become a Tutor with PeakESL",
+		"subheadline": "Teach online and earn money.<br>PeakESL provides everything you need to get you started within minutes.",
 		"cta-btn": "Start teaching now",
 		"boxes": {
 			"1": {
@@ -528,11 +528,11 @@
 			},
 			"2": {
 				"headline": "Work from Home",
-				"text": "All you need for brainstr is a device connected to the internet with a webcam and microphone."
+				"text": "All you need for PeakESL is a device connected to the internet with a webcam and microphone."
 			},
 			"3": {
 				"headline": "Your timetable",
-				"text": "Be your own boss and decide when you want to teach on brainstr. Take breaks when you need them."
+				"text": "Be your own boss and decide when you want to teach on PeakESL. Take breaks when you need them."
 			},
 			"4": {
 				"headline": "Low Commission",
@@ -540,7 +540,7 @@
 			},
 			"5": {
 				"headline": "No monthly costs",
-				"text": "We don't charge you for any services on brainstr except a commission per completed lesson."
+				"text": "We don't charge you for any services on PeakESL except a commission per completed lesson."
 			},
 			"6": {
 				"headline": "Worldwide Students",
@@ -548,17 +548,17 @@
 			},
 			"7": {
 				"headline": "Interactive Tools",
-				"text": "brainstr provides you with the tools for awesome lessons - interactive, fun and engaging."
+				"text": "PeakESL provides you with the tools for awesome lessons - interactive, fun and engaging."
 			},
 			"8": {
 				"headline": "Inspired Team",
-				"text": "Our team is working super hard to make brainstr better every single day. Tell us what you like or dislike!"
+				"text": "Our team is working super hard to make PeakESL better every single day. Tell us what you like or dislike!"
 			}
 		},
 		"slides": {
 			"1": {
-				"headline": "Have <b>awesome lessons</b> with brainstr",
-				"text": "Our interactive virtual classroom on brainstr helps you in every way creating interesting and <b>interactive lessons</b> to keep your <b>students engaged and happy</b>. The platform is super simple to use and works on every device."
+				"headline": "Have <b>awesome lessons</b> with PeakESL",
+				"text": "Our interactive virtual classroom on PeakESL helps you in every way creating interesting and <b>interactive lessons</b> to keep your <b>students engaged and happy</b>. The platform is super simple to use and works on every device."
 			},
 			"2": {
 				"headline": "<b>Customize</b> your profile",
@@ -570,7 +570,7 @@
 			},
 			"4": {
 				"headline": "Pricing is <b>up to you</b>",
-				"text": "Pricing of your lessons on brainstr is up to you and super flexibel. <b>Decide for each subject and time interval</b>, how much you want to charge your students. And of course, you can always change it afterwards with just a few clicks."
+				"text": "Pricing of your lessons on PeakESL is up to you and super flexibel. <b>Decide for each subject and time interval</b>, how much you want to charge your students. And of course, you can always change it afterwards with just a few clicks."
 			},
 			"5": {
 				"headline": "<b>Get paid</b> at your will",
@@ -584,7 +584,7 @@
 		"boxes": {
 			"1": {
 				"headline": "Works in every modern browser",
-				"text": "Join with one click via brainstr the virtual classroom - no installation needed."
+				"text": "Join with one click via PeakESL the virtual classroom - no installation needed."
 			},
 			"2": {
 				"headline": "Whiteboard & Screen Share",
@@ -592,7 +592,7 @@
 			},
 			"3": {
 				"headline": "High Quality Audo & Video",
-				"text": "Newest technology with high quality video and audio makes every lesson on brainstr like it was in person."
+				"text": "Newest technology with high quality video and audio makes every lesson on PeakESL like it was in person."
 			},
 			"4": {
 				"headline": "Automated Lesson Management",
@@ -601,29 +601,29 @@
 		},
 		"slides": {
 			"1": {
-				"headline": "Have <b>engaging</b> lessons with brainstr",
-				"text": "Brainstr's virtuell classroom is way more than just a video chat. Have awesome lessons with our interactive whiteboard, where student and teacher can work out concepts together just <b>like standing next to each other</b>.",
+				"headline": "Have <b>engaging</b> lessons with PeakESL",
+				"text": "PeakESL's virtuell classroom is way more than just a video chat. Have awesome lessons with our interactive whiteboard, where student and teacher can work out concepts together just <b>like standing next to each other</b>.",
 				"btn": "Book your first lesson"
 			}
 		},
 		"features": {
 			"1": {
 				"headline": "Excellent Tutors",
-				"text": "Highly motivated and educated tutors are waiting on brainstr. Student-to-Student tutoring for your personal growth."
+				"text": "Highly motivated and educated tutors are waiting on PeakESL. Student-to-Student tutoring for your personal growth."
 			},
 			"2": {
 				"headline": "COVID-19 safe",
-				"text": "Safe distance learning - without mask and risks. Great education despite circumstances with brainstr."
+				"text": "Safe distance learning - without mask and risks. Great education despite circumstances with PeakESL."
 			},
 			"3": {
 				"headline": "Data Protection",
-				"text": "All tutoring lessons on brainstr are end-to-end encrypted. Highest data protection standards are applied."
+				"text": "All tutoring lessons on PeakESL are end-to-end encrypted. Highest data protection standards are applied."
 			}
 		}
 	},
-	"brainstr-as-student": {
-		"headline": "Online Tutoring with brainstr",
-		"text": "Take online lessons with tutors all over the world.<br>Get help with homework, prepare for exams, learn a new language and much more with brainstr.",
+	"PeakESL-as-student": {
+		"headline": "Online Tutoring with PeakESL",
+		"text": "Take online lessons with tutors all over the world.<br>Get help with homework, prepare for exams, learn a new language and much more with PeakESL.",
 		"cta-btn": "Sign up for free",
 		"blocks": {
 			"1": {
@@ -632,7 +632,7 @@
 			},
 			"2": {
 				"headline": "Take lessons anytime",
-				"text": "As long as you have your laptop and an internet connection, you can take a lesson on brainstr."
+				"text": "As long as you have your laptop and an internet connection, you can take a lesson on PeakESL."
 			},
 			"3": {
 				"headline": "International Community",
@@ -648,7 +648,7 @@
 			},
 			"6": {
 				"headline": "Homework Assistance",
-				"text": "Help from parents is nice, but with brainstr you can get real help for your homework."
+				"text": "Help from parents is nice, but with PeakESL you can get real help for your homework."
 			},
 			"7": {
 				"headline": "Learn with native speakers",
@@ -656,29 +656,29 @@
 			},
 			"8": {
 				"headline": "Exam Preperation",
-				"text": "Don't worry about exams anymore! Brainstr tutors will prepare you perfectly for those."
+				"text": "Don't worry about exams anymore! PeakESL tutors will prepare you perfectly for those."
 			}
 		},
 		"slides": {
 			"1": {
 				"headline": "Virtual Classroom for <b>engaging lessons</b>",
-				"text": "All lessons on brainstr are done in the integrated virtual classroom, which provides you with <b>everything you need for an awesome tutoring lesson</b>. Works in every browser, no download needed."
+				"text": "All lessons on PeakESL are done in the integrated virtual classroom, which provides you with <b>everything you need for an awesome tutoring lesson</b>. Works in every browser, no download needed."
 			},
 			"2": {
 				"headline": "Find <b>your perfect</b> Tutor",
-				"text": "Finding a tutor is now as simple as signing up for brainstr. You can define with our filters <b>your requirements</b> and you get immediately shown <b>suited tutors</b> who will be happy to have a first lesson with you."
+				"text": "Finding a tutor is now as simple as signing up for PeakESL. You can define with our filters <b>your requirements</b> and you get immediately shown <b>suited tutors</b> who will be happy to have a first lesson with you."
 			},
 			"3": {
 				"headline": "<b>Easy & secure</b> lesson booking",
-				"text": "Top up your brainstr balance with one of our many secure payment options. Therafter you can book lessons with <b>just a few clicks</b>. It's never been easier to book tutoring lessons."
+				"text": "Top up your PeakESL balance with one of our many secure payment options. Therafter you can book lessons with <b>just a few clicks</b>. It's never been easier to book tutoring lessons."
 			},
 			"4": {
 				"headline": "<b>Become a tutor</b> yourself",
-				"text": "Register as tutor, start <b>teaching students and earn money</b> for every lesson you hold. We have all the tools and education on brainstr for you ready to get started."
+				"text": "Register as tutor, start <b>teaching students and earn money</b> for every lesson you hold. We have all the tools and education on PeakESL for you ready to get started."
 			},
 			"5": {
 				"headline": "Dispute & <b>Resolution Centre</b>",
-				"text": "In case at anytime something went not as planned - we're here for you! All lessons on brainstr are part of our Dispute & Resolution Policy. We will handle your case and clarify the situation.",
+				"text": "In case at anytime something went not as planned - we're here for you! All lessons on PeakESL are part of our Dispute & Resolution Policy. We will handle your case and clarify the situation.",
 				"btn": "Book your first lesson now"
 			}
 		}
@@ -690,70 +690,70 @@
 		"c-pw": "Current Password",
 		"n-pw": "New Password",
 		"n-pw-repeat": "Repeat Password",
-		"socialprogram-text": "We can provide you with free lessons in case you don't have access or currently not the financial possibilities. Lessons are being held by volunteering teachers or being payed by the brainstr Social Fund."
+		"socialprogram-text": "We can provide you with free lessons in case you don't have access or currently not the financial possibilities. Lessons are being held by volunteering teachers or being payed by the PeakESL Social Fund."
 	},
 	"messages": {
 		"send": "Send",
 		"msg": "Message"
 	},
 	"social-program": {
-		"headline": "Free education with the brainstr Social Program",
+		"headline": "Free education with the PeakESL Social Program",
 		"subheadline": "Providing students with free online teaching",
-		"h1": "The brainstr Social Program",
-		"t1": "The brainstr Social Program provides lessons to students who can't afford it themselves. If you can't afford the lessons, don't worry, we will take care of it. Your lessons will be held by volunteering teachers or we pay using the brainstr Social Program Fund.",
+		"h1": "The PeakESL Social Program",
+		"t1": "The PeakESL Social Program provides lessons to students who can't afford it themselves. If you can't afford the lessons, don't worry, we will take care of it. Your lessons will be held by volunteering teachers or we pay using the PeakESL Social Program Fund.",
 		"sh1": "How it works",
-		"st1": "Students that can't afford lessons sign up and simply enroll with one click in the program. We provide those students with volunteering teachers or, if no suitable is available, we pay for the lesson using the brainstr Social Fund. %s Teachers on brainstr can opt-in to give volunteering lessons to students next to giving regular payed lessons. It's their choice and they can change this setting anytime.",
+		"st1": "Students that can't afford lessons sign up and simply enroll with one click in the program. We provide those students with volunteering teachers or, if no suitable is available, we pay for the lesson using the PeakESL Social Fund. %s Teachers on PeakESL can opt-in to give volunteering lessons to students next to giving regular payed lessons. It's their choice and they can change this setting anytime.",
 		"sh2": "The Fund",
 		"st2": "Contributions from our partners, people, students and teachers are all going into the fund.%sThe fund is being used to pay for the operational costs of the project - the infrastructure, employees making this project possible and teachers.",
 		"read-more-btn": "Read more",
 		"students-headline": "For Students",
-		"students-text": "We provide students with no financial possibilities with free education - online lessons with our teachers on brainstr. Simply sign up and book your first lesson - either with a volunteering teacher, or we pay for the lesson using the brainstr Social Fund.",
+		"students-text": "We provide students with no financial possibilities with free education - online lessons with our teachers on PeakESL. Simply sign up and book your first lesson - either with a volunteering teacher, or we pay for the lesson using the PeakESL Social Fund.",
 		"teachers-headline": "For Teachers",
-		"teachers-text": "Help raising education levels across the globe with teaching as a volunteer for Social Students on brainstr. You deliver lessons for free to children who couldn't otherwise afford to be taught.",
+		"teachers-text": "Help raising education levels across the globe with teaching as a volunteer for Social Students on PeakESL. You deliver lessons for free to children who couldn't otherwise afford to be taught.",
 		"partners-headline": "For Partners / Contributors",
-		"partners-text": "The brainstr Social Program cannot live without the amazing help of our partners and contributors. In order to provide our free education for children in need, we rely on donations from companies, organisations, people, our students and teachers. Only together we can keep this important project alive.",
+		"partners-text": "The PeakESL Social Program cannot live without the amazing help of our partners and contributors. In order to provide our free education for children in need, we rely on donations from companies, organisations, people, our students and teachers. Only together we can keep this important project alive.",
 		"cta": {
 			"headline": "Building the %s future of education",
-			"text": "We at brainstr are empowered by the vision to eduacte children around the globe, no matter how there financial possibilities might be. Education is a human right we are fighting for."
+			"text": "We at PeakESL are empowered by the vision to eduacte children around the globe, no matter how there financial possibilities might be. Education is a human right we are fighting for."
 		}
 	},
 	"social-program-student": {
 		"headline": "Get tutoring lessons%s- even if you can't pay",
-		"subheadline": "Teach for free or receive compensation from our brainstr Social Fund to improve our children future.",
+		"subheadline": "Teach for free or receive compensation from our PeakESL Social Fund to improve our children future.",
 		"cta-btn": "Start Learning",
-		"social-student-option": "Enroll in the brainstr Social Program",
-		"h1": "The brainstr Social Program",
-		"t1": "The brainstr Social Program provides lessons to students who can't afford it themselves. If you can't afford the lessons, don't worry, we will take care of it. Your lessons will be held by volunteering teachers or we pay using the brainstr Social Fund.",
-		"h2": "Learning with brainstr",
-		"t2": "Find your perfect online teacher on brainstr. Select according to your requirements, set lessons at times that work for you. Learn on the brainstr platform using our virtual classroom and secure payment processing.",
+		"social-student-option": "Enroll in the PeakESL Social Program",
+		"h1": "The PeakESL Social Program",
+		"t1": "The PeakESL Social Program provides lessons to students who can't afford it themselves. If you can't afford the lessons, don't worry, we will take care of it. Your lessons will be held by volunteering teachers or we pay using the PeakESL Social Fund.",
+		"h2": "Learning with PeakESL",
+		"t2": "Find your perfect online teacher on PeakESL. Select according to your requirements, set lessons at times that work for you. Learn on the PeakESL platform using our virtual classroom and secure payment processing.",
 		"cta-headline": "Start %sboosting your skills",
 		"cta-text": "Be part of our vision providing access to free education to all children around the world.%sWe are excited about the future we are building, are you ready to join?",
-		"cta": "Start learning with brainstr"
+		"cta": "Start learning with PeakESL"
 	},
 	"social-program-teacher": {
 		"headline": "Teaching Students that don't have access to education",
-		"subheadline": "Teach for free or receive compensation from our brainstr Social Fund to improve our children future.",
+		"subheadline": "Teach for free or receive compensation from our PeakESL Social Fund to improve our children future.",
 		"cta": "Become a Teacher",
 		"cta2": "Start Teaching",
-		"h1": "The brainstr Social Program",
-		"t1": "The brainstr Social Program provides lessons to students who can't afford it themselves. You can either teach on a voluntary basis or we pay you from the brainstr Social Funds. This fund is filled by donations.",
-		"h2": "Teaching with brainstr",
-		"t2": "We provide you all the tools you need to start. Sign up, fill out your profile and wait for the first student booking a lesson. You get paid right after each regular lesson that is not done for the brainstr Social Program.",
+		"h1": "The PeakESL Social Program",
+		"t1": "The PeakESL Social Program provides lessons to students who can't afford it themselves. You can either teach on a voluntary basis or we pay you from the PeakESL Social Funds. This fund is filled by donations.",
+		"h2": "Teaching with PeakESL",
+		"t2": "We provide you all the tools you need to start. Sign up, fill out your profile and wait for the first student booking a lesson. You get paid right after each regular lesson that is not done for the PeakESL Social Program.",
 		"cta-headline": "Help educate %sour future",
 		"cta-text": "Be part of our vision providing access to free education to all children around the world.%sWe are excited about the future we are building, are you ready to join?"
 	},
 	"social-program-partner": {
 		"headline": "Making education accessible.<br>Creating Futures.",
-		"subheadline": "Brainstr Social Program helps children get the education we think they deserve while at the same time we build jobs for teachers worldwide.",
+		"subheadline": "PeakESL Social Program helps children get the education we think they deserve while at the same time we build jobs for teachers worldwide.",
 		"contr-headline": "Make a contribution",
 		"contr-monthly": "Make contribution monthly",
 		"cta": "Contribute",
 		"h1": "Helping Students",
-		"t1": "Students profit from the brainstr Social Program if they cannot afford tutoring lessons by themselves or don't have access to schools. We provide those students with the tools and guidance required and pay for their lessons.",
+		"t1": "Students profit from the PeakESL Social Program if they cannot afford tutoring lessons by themselves or don't have access to schools. We provide those students with the tools and guidance required and pay for their lessons.",
 		"h2": "Helping Teachers",
-		"t2": "We help teachers to get back into a job where they can provide for themselves and their family. We are also working on our own program to train people to become teachers on brainstr.",
+		"t2": "We help teachers to get back into a job where they can provide for themselves and their family. We are also working on our own program to train people to become teachers on PeakESL.",
 		"h3": "Making education %saccessible",
-		"t3": "Bringing high quality education to everyone - that is brainstr's vision. No matter of heritage, location or the current situation, with our brainstr teachers we want to give every child sufficient education to be successfull in life.",
+		"t3": "Bringing high quality education to everyone - that is PeakESL's vision. No matter of heritage, location or the current situation, with our PeakESL teachers we want to give every child sufficient education to be successfull in life.",
 		"h4": "Becoming a partner",
 		"t4": "If you are interested in a partnership or a special contribution, please reach out to us directly at %s to discuss in detail.%sWe are constantly looking into all directions to secure funding for our Social Program and progressing with our vision.",
 		"cta-headline": "Help educate %sour future",

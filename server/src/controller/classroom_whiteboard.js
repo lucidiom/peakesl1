@@ -29,7 +29,7 @@ const pickrPen = Pickr.create({
 });
 
 
-$("#video-control-whiteboard").on("click", function() {
+$("#video-control-whiteboard").on("click", function () {
     toggleWhiteboard();
 });
 
@@ -67,7 +67,7 @@ function openWhiteboard() {
 
     whiteboardHeight = $("#whiteboard").height();
 
-    $(window).on('resize', function() {
+    $(window).on('resize', function () {
         $("#whiteboard").width($("#whiteboard").height() / 9 * 16);
         $("#whiteboard").css("max-height", ($("#content-whiteboard").width() - 30) / 16 * 9);
 
@@ -86,38 +86,38 @@ function openWhiteboard() {
     whiteboard_canvas.freeDrawingBrush.color = "rgb(" + Math.round(c[0]) + "," + Math.round(c[1]) + "," + Math.round(c[2]) + ")";
 
 
-    whiteboard_canvas.on('object:modified', function(options) {
+    whiteboard_canvas.on('object:modified', function (options) {
         if (rx) return;
         console.log("object:modified");
         sendWhiteboard();
     });
-    whiteboard_canvas.on('object:added', function(options) {
+    whiteboard_canvas.on('object:added', function (options) {
         if (rx) return;
         console.log("object:added");
         sendWhiteboard();
     });
-    whiteboard_canvas.on('object:removed', function(options) {
+    whiteboard_canvas.on('object:removed', function (options) {
         if (rx) return;
         console.log("object:removed");
         sendWhiteboard();
     });
-    whiteboard_canvas.on('object:moving', function(options) {
+    whiteboard_canvas.on('object:moving', function (options) {
         if (rx) return;
         console.log("object:moving");
         sendWhiteboard();
     });
-    whiteboard_canvas.on('object:scaling', function(options) {
+    whiteboard_canvas.on('object:scaling', function (options) {
         if (rx) return;
         console.log("object:scaling");
         sendWhiteboard();
     });
-    whiteboard_canvas.on('path:created', function(options) {
+    whiteboard_canvas.on('path:created', function (options) {
         if (rx) return;
         //console.log("path:created");
         //sendWhiteboard();
     });
 
-    whiteboard_canvas.on('selection:created', function(e) {
+    whiteboard_canvas.on('selection:created', function (e) {
         $("#video-control-whiteboard-delete-item").css("display", "inline-block");
 
         switch (whiteboard_canvas.getActiveObject().get('type')) {
@@ -133,7 +133,7 @@ function openWhiteboard() {
         }
     });
 
-    whiteboard_canvas.on('selection:cleared', function(options) {
+    whiteboard_canvas.on('selection:cleared', function (options) {
         $("#video-control-whiteboard-delete-item").css("display", "none");
         $("#whiteboard-controls-text").removeClass("d-inline-block");
         $("#whiteboard-controls-text").addClass("d-none");
@@ -257,11 +257,11 @@ pickrPen.on('change', (color, instance) => {
 
 });
 
-$("#whiteboard-controls-brushwidth").on("change", function() {
+$("#whiteboard-controls-brushwidth").on("change", function () {
     whiteboard_canvas.freeDrawingBrush.width = parseInt($(this).val());
 })
 
-$("#video-control-whiteboard-drawing").on("click", function() {
+$("#video-control-whiteboard-drawing").on("click", function () {
     whiteboard_canvas.isDrawingMode = !whiteboard_canvas.isDrawingMode;
 
     if (whiteboard_canvas.isDrawingMode) {
@@ -278,12 +278,12 @@ function downloadWhiteboard() {
     var date = moment();
 
     var link = document.createElement('a');
-    link.download = 'brainstr_whiteboard_' + date.format("YYYMMDD_HHmmSS") + '.png';
+    link.download = 'peakesl_whiteboard_' + date.format("YYYMMDD_HHmmSS") + '.png';
     link.href = data;
     link.click();
 }
 
-$("#video-control-whiteboard-text").on("click", function() {
+$("#video-control-whiteboard-text").on("click", function () {
     var text = new fabric.IText('Text', {
         left: getWhiteboardMiddleWidth() - 25,
         top: getWhiteboardMiddleHeight() - 25,
@@ -294,7 +294,7 @@ $("#video-control-whiteboard-text").on("click", function() {
     whiteboard_canvas.renderAll();
 });
 
-$("#video-control-whiteboard-form-square").on("click", function() {
+$("#video-control-whiteboard-form-square").on("click", function () {
     var rect = new fabric.Rect({
         left: getWhiteboardMiddleWidth() - 25,
         top: getWhiteboardMiddleHeight() - 25,
@@ -306,7 +306,7 @@ $("#video-control-whiteboard-form-square").on("click", function() {
     whiteboard_canvas.renderAll();
 });
 
-$("#video-control-whiteboard-form-circle").on("click", function() {
+$("#video-control-whiteboard-form-circle").on("click", function () {
     var circle = new fabric.Circle({
         left: getWhiteboardMiddleWidth() - 25,
         top: getWhiteboardMiddleHeight() - 25,
@@ -317,7 +317,7 @@ $("#video-control-whiteboard-form-circle").on("click", function() {
     whiteboard_canvas.renderAll();
 });
 
-$("#video-control-whiteboard-form-triangle").on("click", function() {
+$("#video-control-whiteboard-form-triangle").on("click", function () {
     var triangle = new fabric.Triangle({
         left: getWhiteboardMiddleWidth() - 25,
         top: getWhiteboardMiddleHeight() - 25,
@@ -337,7 +337,7 @@ function getWhiteboardMiddleHeight() {
     return whiteboard_canvas.height / 2;
 }
 
-$("#video-control-whiteboard-text-bold").on("click", function() {
+$("#video-control-whiteboard-text-bold").on("click", function () {
     if (whiteboard_canvas.getActiveObject().selectionEnd == 0 || whiteboard_canvas.getActiveObject().getSelectionStyles()[0] == undefined) {
         if (whiteboard_canvas.getActiveObject().fontWeight == "normal" || whiteboard_canvas.getActiveObject().fontWeight == undefined) {
             whiteboard_canvas.getActiveObject().set("fontWeight", "bold");
@@ -358,7 +358,7 @@ $("#video-control-whiteboard-text-bold").on("click", function() {
     sendWhiteboard();
 });
 
-$("#video-control-whiteboard-text-italic").on("click", function() {
+$("#video-control-whiteboard-text-italic").on("click", function () {
     if (whiteboard_canvas.getActiveObject().selectionEnd == 0 || whiteboard_canvas.getActiveObject().getSelectionStyles()[0] == undefined) {
         if (whiteboard_canvas.getActiveObject().fontStyle == "normal" || whiteboard_canvas.getActiveObject().fontStyle == undefined) {
             whiteboard_canvas.getActiveObject().set("fontStyle", "italic");
@@ -379,7 +379,7 @@ $("#video-control-whiteboard-text-italic").on("click", function() {
     sendWhiteboard();
 });
 
-$("#video-control-whiteboard-text-underline").on("click", function() {
+$("#video-control-whiteboard-text-underline").on("click", function () {
     if (whiteboard_canvas.getActiveObject().selectionEnd == 0 || whiteboard_canvas.getActiveObject().getSelectionStyles()[0] == undefined) {
         if (whiteboard_canvas.getActiveObject().underline == false || whiteboard_canvas.getActiveObject().underline == undefined) {
             whiteboard_canvas.getActiveObject().set("underline", true);
@@ -400,25 +400,25 @@ $("#video-control-whiteboard-text-underline").on("click", function() {
     sendWhiteboard();
 });
 
-$("#video-control-whiteboard-text-align-left").on("click", function() {
+$("#video-control-whiteboard-text-align-left").on("click", function () {
     whiteboard_canvas.getActiveObject().set('textAlign', "left");
     whiteboard_canvas.requestRenderAll();
     sendWhiteboard();
 });
 
-$("#video-control-whiteboard-text-align-center").on("click", function() {
+$("#video-control-whiteboard-text-align-center").on("click", function () {
     whiteboard_canvas.getActiveObject().set('textAlign', "center");
     whiteboard_canvas.requestRenderAll();
     sendWhiteboard();
 });
 
-$("#video-control-whiteboard-text-align-right").on("click", function() {
+$("#video-control-whiteboard-text-align-right").on("click", function () {
     whiteboard_canvas.getActiveObject().set('textAlign', "right");
     whiteboard_canvas.requestRenderAll();
     sendWhiteboard();
 });
 
-$("#whiteboard-controls-fontSize").on("change", function() {
+$("#whiteboard-controls-fontSize").on("change", function () {
     if (whiteboard_canvas.getActiveObject().selectionEnd == 0) {
         whiteboard_canvas.getActiveObject().set('fontSize', $(this).val());
     } else {
@@ -428,7 +428,7 @@ $("#whiteboard-controls-fontSize").on("change", function() {
     sendWhiteboard();
 });
 
-$("#video-control-whiteboard-delete-item").on("click", function() {
+$("#video-control-whiteboard-delete-item").on("click", function () {
     whiteboard_canvas.getActiveObjects().forEach((obj) => {
         whiteboard_canvas.remove(obj);
     });

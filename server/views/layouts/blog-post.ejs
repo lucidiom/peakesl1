@@ -8,8 +8,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <meta property="og:site_name" content="brainstr">
-    <meta name="twitter:site" content="@brainstr3">
+    <meta property="og:site_name" content="PeakESL">
+    <meta name="twitter:site" content="@peakesl">
 
     <meta property="og:title" content="<%- post.meta.title %>">
     <meta property="og:description" content="<%- post.meta.description %>">
@@ -22,7 +22,7 @@
     <meta name="twitter:image" content="<%- post.meta.image %>">
     <meta name="twitter:card" content="summary_large_image">
 
-    <meta property="og:site_name" content="brainstr">
+    <meta property="og:site_name" content="PeakESL">
 
     <meta name="title" content="<%- post.meta.title %>">
     <meta name="description" content="<%- post.meta.description %>">
@@ -30,12 +30,12 @@
     <meta name="author" content="<%= post.author %>">
 
 
-    <link rel="icon" type="image/png" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/favicon.png">
-    <link rel="apple-touch-icon" href=https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/favicon.png">
+    <link rel="apple-touch-icon" href=https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/apple-touch-icon.png" />
 
-    <link rel="preload" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/fonts/Material-Icons.ttf?e8u1sb" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/fonts/Feather-Icons.ttf?7ncawf" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/fonts/Line-Awesome.ttf?15lwq9" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/fonts/Material-Icons.ttf?e8u1sb" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/fonts/Feather-Icons.ttf?7ncawf" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/fonts/Line-Awesome.ttf?15lwq9" as="font" crossorigin="anonymous" />
 
     <link rel="preload" href="/css/bootstrap-grid.css" as="style">
     <link rel="preload" href="/css/style.css" as="style" />
@@ -74,16 +74,16 @@
             <% if (locals.user) { %>
                 <script>
                     /* beautify preserve:start */
-                    var uData = JSON.parse(<%- JSON.stringify(JSON.stringify(user)) %>);
+                    var uData = JSON.parse(<% - JSON.stringify(JSON.stringify(user)) %>);
                     /* beautify preserve:end */
                 </script>
                 <% } %>
 
                     <script>
                         /* beautify preserve:start */
-                        var post = JSON.parse(<%- JSON.stringify(JSON.stringify(post)) %>);
-                        var relatedPosts = JSON.parse(<%- JSON.stringify(JSON.stringify(relatedPosts)) %>);
-                        var EXCHANGE_RATES = JSON.parse(<%- JSON.stringify(JSON.stringify(exchangeRates)) %>);
+                        var post = JSON.parse(<% - JSON.stringify(JSON.stringify(post)) %>);
+                        var relatedPosts = JSON.parse(<% - JSON.stringify(JSON.stringify(relatedPosts)) %>);
+                        var EXCHANGE_RATES = JSON.parse(<% - JSON.stringify(JSON.stringify(exchangeRates)) %>);
                         /* beautify preserve:end */
                     </script>
 
@@ -94,11 +94,11 @@
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             "headline": "<%- post.headline %>",
-            "image": "https://brainstr.de/<%- post.small_image %>",
+            "image": "https://peakesl.com/<%- post.small_image %>",
             "editor": "<%- post.headline %>",
             "genre": "<%- post.category %>",
             "keywords": "<%- post.meta.keywords %>",
-            "publisher": "brainstr",
+            "publisher": "PeakESL",
             "datePublished": "<%- post.createdAt.toISOString().split('T')[0] %>",
             "dateModified": "<%- post.updatedAt.toISOString().split('T')[0] %>",
             "description": "<%- post.meta.description %>",

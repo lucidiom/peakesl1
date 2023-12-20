@@ -100,17 +100,17 @@ exports.getBasicInfo = async (uid) => {
 exports.getTransactions = async (uid) => {
     return db.Transaction.find({
         $or: [{
-                $and: [
-                    { rxid: uid },
-                    {
-                        $and: [
-                            { status: { $ne: "blocked" } },
-                            { status: { $ne: "unblocked" } }
-                        ]
-                    }
-                ]
-            },
-            { txid: uid }
+            $and: [
+                { rxid: uid },
+                {
+                    $and: [
+                        { status: { $ne: "blocked" } },
+                        { status: { $ne: "unblocked" } }
+                    ]
+                }
+            ]
+        },
+        { txid: uid }
         ]
     });
 }
@@ -138,13 +138,12 @@ exports.getTeachers = async (filter, user) => {
     try {
         var mFilter = {
             visible: true,
-            availability: 2,
-            email: { $ne: "elizaveta@brainstr.ru" }
+            availability: 2
         };
 
         var sort = {};
-        
-        if(user == undefined){
+
+        if (user == undefined) {
             sort = {
                 rating: -1,
                 video: -1,
@@ -152,7 +151,7 @@ exports.getTeachers = async (filter, user) => {
                 verified: -1,
                 activeSince: -1
             };
-        }else if(user.socialStudent){
+        } else if (user.socialStudent) {
             sort = {
                 video: -1,
                 socialTeacher: -1,
@@ -160,7 +159,7 @@ exports.getTeachers = async (filter, user) => {
                 rating: -1,
                 activeSince: -1
             };
-        }else{
+        } else {
             sort = {
                 video: -1,
                 rating: -1,

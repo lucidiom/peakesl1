@@ -30,7 +30,7 @@ socket.on("message", function (data) {
 
     if (document.hidden) {
         messageSound.play();
-        changeFavicon("https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/favicon_notification.png");
+        changeFavicon("https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/favicon_notification.png");
 
         unreadMessages++;
 

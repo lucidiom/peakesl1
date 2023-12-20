@@ -38,22 +38,22 @@ $("#regteacher-submit").click(function () {
         firebase.auth().currentUser.getIdToken(true).then(function (idToken) {
 
             $.ajax({
-                    url: window.location.origin + "/teacherRegistration",
-                    type: 'post',
-                    headers: {
-                        authorization: idToken,
-                        uid: firebase.auth().currentUser.uid
-                    },
-                    data: {
-                        email: firebase.auth().currentUser.email,
-                        type: type,
-                        text: text,
-                        name: sessionStorage.getItem("brainstr-name")
-                    }
-                }).done(function () {
-                    window.location.href = "teachers?teacherrequest=success"
-                    return;
-                })
+                url: window.location.origin + "/teacherRegistration",
+                type: 'post',
+                headers: {
+                    authorization: idToken,
+                    uid: firebase.auth().currentUser.uid
+                },
+                data: {
+                    email: firebase.auth().currentUser.email,
+                    type: type,
+                    text: text,
+                    name: sessionStorage.getItem("peakesl-name")
+                }
+            }).done(function () {
+                window.location.href = "teachers?teacherrequest=success"
+                return;
+            })
                 .fail(function () {
                     showErrorMessage("Sorry! Es gab einen Fehler bei der Anfrage. Bitte versuche es erneut oder kontaktiere unseren Support.");
                     return;

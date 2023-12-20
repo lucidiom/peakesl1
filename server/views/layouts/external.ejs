@@ -9,11 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <% if(locals.meta) { %>
-        <meta property="og:site_name" content="brainstr">
-        <meta name="twitter:site" content="@brainstr3">
+        <meta property="og:site_name" content="PeakESL">
+        <meta name="twitter:site" content="@peakesl">
 
         <meta property="og:title" content="<%= title %>">
-        <meta property="og:site_name" content="brainstr">
+        <meta property="og:site_name" content="PeakESL">
         <meta property="og:url" content="<%= meta.url %>">
         <meta property="og:description" content="<%= meta.description %>">
         <meta property="og:image" content="<%= meta.image %>">
@@ -30,13 +30,13 @@
         <% } %>
 
 
-            <link rel="icon" type="image/png" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/favicon.png" />
-            <link rel="apple-touch-icon" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/apple-touch-icon.png" />
+            <link rel="icon" type="image/png" href="https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/favicon.png" />
+            <link rel="apple-touch-icon" href="https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/apple-touch-icon.png" />
 
 
-            <link rel="preload" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/fonts/Material-Icons.ttf?e8u1sb" as="font" crossorigin="anonymous" />
-            <link rel="preload" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/fonts/Feather-Icons.ttf?7ncawf" as="font" crossorigin="anonymous" />
-            <link rel="preload" href="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/fonts/Line-Awesome.ttf?15lwq9" as="font" crossorigin="anonymous" />
+            <link rel="preload" href="https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/fonts/Material-Icons.ttf?e8u1sb" as="font" crossorigin="anonymous" />
+            <link rel="preload" href="https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/fonts/Feather-Icons.ttf?7ncawf" as="font" crossorigin="anonymous" />
+            <link rel="preload" href="https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/fonts/Line-Awesome.ttf?15lwq9" as="font" crossorigin="anonymous" />
 
             <link rel="preload" href="/css/bootstrap-grid.css" as="style">
             <link rel="preload" href="/css/style.css" as="style" />
@@ -64,14 +64,14 @@
 
         /* beautify preserve:start */
         <% if (locals.user) { %>
-        var uData = JSON.parse(<%- JSON.stringify(JSON.stringify(user)) %>);
+        var uData = JSON.parse(<% - JSON.stringify(JSON.stringify(user)) %>);
         <% } %>
 
         <% if (locals.data) { %>
-        var pageData = JSON.parse(<%- JSON.stringify(JSON.stringify(data)) %>);
+        var pageData = JSON.parse(<% - JSON.stringify(JSON.stringify(data)) %>);
         <% } %>
 
-        var EXCHANGE_RATES = JSON.parse(<%- JSON.stringify(JSON.stringify(exchangeRates)) %>);
+        var EXCHANGE_RATES = JSON.parse(<% - JSON.stringify(JSON.stringify(exchangeRates)) %>);
                         /* beautify preserve:end */
                     </script>
 

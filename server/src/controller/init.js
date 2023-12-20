@@ -5,7 +5,7 @@ var messageSound = new Audio(CDN + '/sounds/message.mp3');
 
 
 async function checkForUpcomingLessons() {
-    var cookie = getCookie("brainstr-upcoming-lesson");
+    var cookie = getCookie("peakesl-upcoming-lesson");
     var upcomingData = {};
     var data;
 
@@ -31,7 +31,7 @@ async function checkForUpcomingLessons() {
 
 
     if (data.status == "no") {
-        setCookieMinutes("brainstr-upcoming-lesson", JSON.stringify({
+        setCookieMinutes("peakesl-upcoming-lesson", JSON.stringify({
             status: "no",
             uid: uData._id
         }), 5);
@@ -45,7 +45,7 @@ async function checkForUpcomingLessons() {
 
     var cookieData = JSON.stringify(data);
     var cookieLife = (endtime.unix() - now) / 60;
-    setCookieMinutes("brainstr-upcoming-lesson", cookieData, cookieLife);
+    setCookieMinutes("peakesl-upcoming-lesson", cookieData, cookieLife);
 
     var time = moment.utc(data.starttime).add(UTCOffset, "minutes");
     $("body").append(`<div class="notification-sticky"><p>${$.i18n('_bstr.general.lessonStart', time.format("LT"))} </p><a href="/classroom/${data.lessonid}">${$.i18n('_bstr.general.lessonStart.btn')}</a></div>`);
@@ -138,7 +138,7 @@ const changeFavicon = link => {
 }
 
 $(window).focus(function () {
-    changeFavicon("https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/favicon.png");
+    changeFavicon("https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/favicon.png");
 });
 
 
@@ -154,7 +154,7 @@ function setupSocket() {
             if (document.hidden) {
                 messageSound.play();
                 changeFavicon();
-                changeFavicon("https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/favicon_notification.png");
+                changeFavicon("https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/favicon_notification.png");
             }
         }
     });
@@ -169,7 +169,7 @@ function setupSocket() {
         if (document.hidden) {
             messageSound.play();
             changeFavicon();
-            changeFavicon("https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/favicon_notification.png");
+            changeFavicon("https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/favicon_notification.png");
         }
     });
 }

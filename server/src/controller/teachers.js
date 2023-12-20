@@ -27,7 +27,7 @@ $("#filter-container-subjects").html(subjectlist);
 $("#filter-subjects").on("change", function () {
     if ($("#filter-subjects").selectpicker("val") == "reset") {
         $("h1").html($.i18n('_bstr.teachers.headline', ''));
-        document.title = $.i18n('_bstr.teachers.headline', '') + " - brainstr";
+        document.title = $.i18n('_bstr.teachers.headline', '') + " - PeakESL";
 
         $('.readmore>p>b').each(function () {
             $(this).html('');
@@ -44,13 +44,13 @@ $("#filter-subjects").on("change", function () {
 
     if ($.i18n().locale == "ru") {
         $("h1").html($.i18n('_bstr.teachers.headline', '<mark class="color" id="h-subject">' + subjectDataDeclined[$("#filter-subjects").selectpicker("val")] + '</mark>'));
-        document.title = $.i18n('_bstr.teachers.headline', subjectDataDeclined[$("#filter-subjects").selectpicker("val")]) + " - brainstr";
+        document.title = $.i18n('_bstr.teachers.headline', subjectDataDeclined[$("#filter-subjects").selectpicker("val")]) + " - PeakESL";
         $('.readmore>p>b').each(function () {
             $(this).html(subjectDataDeclined[$("#filter-subjects").selectpicker("val")]);
         });
     } else {
         $("h1").html($.i18n('_bstr.teachers.headline', '<mark class="color" id="h-subject">' + subjectData[$("#filter-subjects").selectpicker("val")] + '</mark>'));
-        document.title = $.i18n('_bstr.teachers.headline', subjectData[$("#filter-subjects").selectpicker("val")]) + " - brainstr";
+        document.title = $.i18n('_bstr.teachers.headline', subjectData[$("#filter-subjects").selectpicker("val")]) + " - PeakESL";
         $('.readmore>p>b').each(function () {
             $(this).html(subjectData[$("#filter-subjects").selectpicker("val")]);
         });
@@ -152,13 +152,13 @@ if (typeof (pageData) != "undefined") {
 
     if ($.i18n().locale == "ru") {
         $("h1").html($.i18n('_bstr.teachers.headline', '<mark class="color" id="h-subject">' + subjectDataDeclined[pageData.subject] + '</mark>'));
-        document.title = $.i18n('_bstr.teachers.headline', subjectDataDeclined[pageData.subject]) + " - brainstr";
+        document.title = $.i18n('_bstr.teachers.headline', subjectDataDeclined[pageData.subject]) + " - PeakESL";
         $('.readmore>p>b').each(function () {
             $(this).html(subjectDataDeclined[pageData.subject]);
         });
     } else {
         $("h1").html($.i18n('_bstr.teachers.headline', '<mark class="color" id="h-subject">' + subjectData[pageData.subject] + '</mark>'));
-        document.title = $.i18n('_bstr.teachers.headline', subjectData[pageData.subject]) + " - brainstr";
+        document.title = $.i18n('_bstr.teachers.headline', subjectData[pageData.subject]) + " - PeakESL";
         $('.readmore>p>b').each(function () {
             $(this).html(subjectData[pageData.subject]);
         });
@@ -406,7 +406,7 @@ function addTeacherToDOM(teacher) {
                                                 <div class="freelancer-avatar">
                                                     <a href="/teacher/` + teacher._id + `">
                                                         <!--<div class="avatar-flag">
-                                                            <img class="flag" src="https://brstr.nyc3.cdn.digitaloceanspaces.com/web/images/flags/` + teacher.country.toLowerCase() + `.svg" alt="" title="` + countryData[teacher.country.toUpperCase()] + `" data-tippy-placement="top" />
+                                                            <img class="flag" src="https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/images/flags/` + teacher.country.toLowerCase() + `.svg" alt="" title="` + countryData[teacher.country.toUpperCase()] + `" data-tippy-placement="top" />
                                                         </div>-->
                                                         <img src="/profilepicture/${teacher._id}" alt="" id="teacherimg-` + teacher._id + `"/>
                                                     </a>

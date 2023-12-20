@@ -9,380 +9,380 @@
 
     
     <url>
-        <loc>https://brainstr.de/</loc>
+        <loc>https://peakesl.com/</loc>
         <priority>1.00</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/tutors/</loc>
+        <loc>https://peakesl.com/tutors/</loc>
         <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/tutors/?lang=en" />
     </url>
 
       <url>
-        <loc>https://brainstr.de/german-tutors/</loc>
+        <loc>https://peakesl.com/german-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/german-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/german-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/german-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/german-tutors/?lang=en" />
     </url>
 
        <url>
-        <loc>https://brainstr.de/english-tutors/</loc>
+        <loc>https://peakesl.com/english-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/english-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/english-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/english-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/english-tutors/?lang=en" />
     </url>
 
        <url>
-        <loc>https://brainstr.de/italian-tutors/</loc>
+        <loc>https://peakesl.com/italian-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/italian-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/italian-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/italian-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/italian-tutors/?lang=en" />
     </url>
 
        <url>
-        <loc>https://brainstr.de/spanish-tutors/</loc>
+        <loc>https://peakesl.com/spanish-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/spanish-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/spanish-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/spanish-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/spanish-tutors/?lang=en" />
     </url>
 
        <url>
-        <loc>https://brainstr.de/russian-tutors/</loc>
+        <loc>https://peakesl.com/russian-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/russian-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/russian-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/russian-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/russian-tutors/?lang=en" />
     </url>
 
        <url>
-        <loc>https://brainstr.de/french-tutors/</loc>
+        <loc>https://peakesl.com/french-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/french-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/french-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/french-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/french-tutors/?lang=en" />
     </url>
 
        <url>
-        <loc>https://brainstr.de/dutch-tutors/</loc>
+        <loc>https://peakesl.com/dutch-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/dutch-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/dutch-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/dutch-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/dutch-tutors/?lang=en" />
     </url>
 
        <url>
-        <loc>https://brainstr.de/maths-tutors/</loc>
+        <loc>https://peakesl.com/maths-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/maths-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/maths-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/maths-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/maths-tutors/?lang=en" />
     </url>
 
        <url>
-        <loc>https://brainstr.de/latin-tutors/</loc>
+        <loc>https://peakesl.com/latin-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/latin-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/latin-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/latin-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/latin-tutors/?lang=en" />
     </url>
 
        <url>
-        <loc>https://brainstr.de/greek-tutors/</loc>
+        <loc>https://peakesl.com/greek-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/greek-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/greek-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/greek-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/greek-tutors/?lang=en" />
     </url>
 
        <url>
-        <loc>https://brainstr.de/chemistry-tutors/</loc>
+        <loc>https://peakesl.com/chemistry-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/chemistry-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/chemistry-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/chemistry-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/chemistry-tutors/?lang=en" />
     </url>
 
       <url>
-        <loc>https://brainstr.de/geography-tutors/</loc>
+        <loc>https://peakesl.com/geography-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/geography-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/geography-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/geography-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/geography-tutors/?lang=en" />
     </url>
 
       <url>
-        <loc>https://brainstr.de/physics-tutors/</loc>
+        <loc>https://peakesl.com/physics-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/physics-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/physics-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/physics-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/physics-tutors/?lang=en" />
     </url>
 
       <url>
-        <loc>https://brainstr.de/biology-tutors/</loc>
+        <loc>https://peakesl.com/biology-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/biology-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/biology-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/biology-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/biology-tutors/?lang=en" />
     </url>
 
       <url>
-        <loc>https://brainstr.de/economics-tutors/</loc>
+        <loc>https://peakesl.com/economics-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/economics-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/economics-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/economics-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/economics-tutors/?lang=en" />
     </url>
 
       <url>
-        <loc>https://brainstr.de/music-tutors/</loc>
+        <loc>https://peakesl.com/music-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/music-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/music-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/music-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/music-tutors/?lang=en" />
     </url>
 
       <url>
-        <loc>https://brainstr.de/arts-tutors/</loc>
+        <loc>https://peakesl.com/arts-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/arts-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/arts-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/arts-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/arts-tutors/?lang=en" />
     </url>
 
       <url>
-        <loc>https://brainstr.de/politics-tutors/</loc>
+        <loc>https://peakesl.com/politics-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/politics-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/politics-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/politics-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/politics-tutors/?lang=en" />
     </url>
 
       <url>
-        <loc>https://brainstr.de/history-tutors/</loc>
+        <loc>https://peakesl.com/history-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/history-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/history-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/history-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/history-tutors/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/webdev-tutors/</loc>
+        <loc>https://peakesl.com/webdev-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/webdev-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/webdev-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/webdev-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/webdev-tutors/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/softdev-tutors/</loc>
+        <loc>https://peakesl.com/softdev-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/softdev-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/softdev-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/softdev-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/softdev-tutors/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/accounting-tutors/</loc>
+        <loc>https://peakesl.com/accounting-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/accounting-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/accounting-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/accounting-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/accounting-tutors/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/finances-tutors/</loc>
+        <loc>https://peakesl.com/finances-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/finances-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/finances-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/finances-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/finances-tutors/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/consulting-tutors/</loc>
+        <loc>https://peakesl.com/consulting-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/consulting-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/consulting-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/consulting-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/consulting-tutors/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/coaching-tutors/</loc>
+        <loc>https://peakesl.com/coaching-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/coaching-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/coaching-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/coaching-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/coaching-tutors/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/writing-and-translations-tutors/</loc>
+        <loc>https://peakesl.com/writing-and-translations-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/writing-and-translations-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/writing-and-translations-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/writing-and-translations-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/writing-and-translations-tutors/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/sales-and-marketing-tutors/</loc>
+        <loc>https://peakesl.com/sales-and-marketing-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/sales-and-marketing-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/sales-and-marketing-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/sales-and-marketing-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/sales-and-marketing-tutors/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/graphics-and-design-tutors/</loc>
+        <loc>https://peakesl.com/graphics-and-design-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/graphics-and-design-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/graphics-and-design-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/graphics-and-design-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/graphics-and-design-tutors/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/digital-marketing-tutors/</loc>
+        <loc>https://peakesl.com/digital-marketing-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/digital-marketing-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/digital-marketing-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/digital-marketing-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/digital-marketing-tutors/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/education-and-training-tutors/</loc>
+        <loc>https://peakesl.com/education-and-training-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/education-and-training-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/education-and-training-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/education-and-training-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/education-and-training-tutors/?lang=en" />
     </url>
 
       <url>
-        <loc>https://brainstr.de/computer-science-tutors/</loc>
+        <loc>https://peakesl.com/computer-science-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/it-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/it-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/it-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/it-tutors/?lang=en" />
     </url>
 
       <url>
-        <loc>https://brainstr.de/philosophy-tutors/</loc>
+        <loc>https://peakesl.com/philosophy-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/philosophy-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/philosophy-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/philosophy-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/philosophy-tutors/?lang=en" />
     </url>
 
      <url>
-        <loc>https://brainstr.de/technical-drawing-tutors/</loc>
+        <loc>https://peakesl.com/technical-drawing-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/technical-drawing-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/technical-drawing-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/technical-drawing-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/technical-drawing-tutors/?lang=en" />
     </url>
 
      <url>
-        <loc>https://brainstr.de/theater-tutors/</loc>
+        <loc>https://peakesl.com/theater-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/theater-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/theater-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/theater-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/theater-tutors/?lang=en" />
     </url>
 
       <url>
-        <loc>https://brainstr.de/astrophysics-tutors/</loc>
+        <loc>https://peakesl.com/astrophysics-tutors/</loc>
         <priority>0.75</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/astrophysics-tutors/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/astrophysics-tutors/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/astrophysics-tutors/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/astrophysics-tutors/?lang=en" />
     </url>
 
 
 
 
     <url>
-        <loc>https://brainstr.de/virtual-classroom/</loc>
+        <loc>https://peakesl.com/virtual-classroom/</loc>
         <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/virtual-classroom/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/virtual-classroom/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/virtual-classroom/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/virtual-classroom/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/online-tutoring/</loc>
+        <loc>https://peakesl.com/online-tutoring/</loc>
         <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/online-tutoring/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/online-tutoring/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/online-tutoring/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/online-tutoring/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/online-nachhilfe/</loc>
+        <loc>https://peakesl.com/online-nachhilfe/</loc>
         <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/online-nachhilfe/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/online-nachhilfe/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/online-nachhilfe/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/online-nachhilfe/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/online-nachhilfe-geben/</loc>
+        <loc>https://peakesl.com/online-nachhilfe-geben/</loc>
         <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/online-nachhilfe-geben/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/online-nachhilfe-geben/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/online-nachhilfe-geben/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/online-nachhilfe-geben/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/teaching-with-brainstr/</loc>
+        <loc>https://peakesl.com/teaching-with-peakesl/</loc>
         <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/teaching-with-brainstr/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/teaching-with-brainstr/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/teaching-with-peakesl/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/teaching-with-peakesl/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/online-nachhilfelehrer-werden/</loc>
+        <loc>https://peakesl.com/online-nachhilfelehrer-werden/</loc>
         <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/online-nachhilfelehrer-werden/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/online-nachhilfelehrer-werden/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/online-nachhilfelehrer-werden/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/online-nachhilfelehrer-werden/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/register/</loc>
+        <loc>https://peakesl.com/register/</loc>
         <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/register/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/register/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/register/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/register/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/terms-of-service/</loc>
+        <loc>https://peakesl.com/terms-of-service/</loc>
         <priority>0.60</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/terms-of-service/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="de" href="https://brainstr.de/terms-of-service/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/terms-of-service/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://peakesl.com/terms-of-service/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/refund/</loc>
+        <loc>https://peakesl.com/refund/</loc>
         <priority>0.60</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/refund/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/refund/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/refund/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/refund/?lang=en" />
     </url>
 
     <url>
-        <loc>https://brainstr.de/privacy/</loc>
+        <loc>https://peakesl.com/privacy/</loc>
         <priority>0.60</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/privacy/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/privacy/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/privacy/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/privacy/?lang=en" />
     </url>
     
     <url>
-        <loc>https://brainstr.de/imprint/</loc>
+        <loc>https://peakesl.com/imprint/</loc>
         <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/imprint/?lang=ru" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/imprint/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/imprint/?lang=ru" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/imprint/?lang=en" />
     </url>
 
 
     <url>
-        <loc>https://brainstr.de/blog/de/</loc>
+        <loc>https://peakesl.com/blog/de/</loc>
         <priority>0.80</priority>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://brainstr.de/blog/ru/" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://brainstr.de/blog/en/" />
+        <xhtml:link rel="alternate" hreflang="ru" href="https://peakesl.com/blog/ru/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/blog/en/" />
     </url>
 
    
     <url>
-        <loc>https://brainstr.de/blog/en/online-tutoring-what-you-are-missing-out-on/</loc>
+        <loc>https://peakesl.com/blog/en/online-tutoring-what-you-are-missing-out-on/</loc>
         <priority>0.80</priority>
           <news:news>
             <news:publication>
-                <news:name>brainstr</news:name>
+                <news:name>Peak ESL</news:name>
                 <news:language>en</news:language>
             </news:publication>
             <news:publication_date>2021-03-23</news:publication_date>
             <news:title>Online Tutoring – Here’s What You’re Missing Out On!</news:title>
             <news:genres>Blog</news:genres> 
-            <news:keywords>online tutoring, brainstr, benefits of online tutoring, how to find online tutor, challenges of online tutoring</news:keywords> 
+            <news:keywords>online tutoring, Peak ESL, benefits of online tutoring, how to find online tutor, challenges of online tutoring</news:keywords> 
         </news:news>
     </url>
 
     <url>
-        <loc>https://brainstr.de/blog/de/flaechen-und-flaechenberechnung/</loc>
+        <loc>https://peakesl.com/blog/de/flaechen-und-flaechenberechnung/</loc>
         <priority>0.80</priority>
     </url>
 
 
     <url>
-        <loc>https://brainstr.de/blog/de/5-tipps-die-dir-das-homeschooling-erleichtern/</loc>
+        <loc>https://peakesl.com/blog/de/5-tipps-die-dir-das-homeschooling-erleichtern/</loc>
         <priority>0.80</priority>
           <news:news>
             <news:publication>
-                <news:name>brainstr</news:name>
+                <news:name>Peak ESL</news:name>
                 <news:language>de</news:language>
             </news:publication>
             <news:publication_date>2021-04-14</news:publication_date>
@@ -393,11 +393,11 @@
     </url>
 
         <url>
-        <loc>https://brainstr.ru/blog/ru/who-is-the-best-tutor</loc>
+        <loc>https://peakesl.com/blog/ru/who-is-the-best-tutor</loc>
         <priority>0.80</priority>
           <news:news>
             <news:publication>
-                <news:name>brainstr</news:name>
+                <news:name>Peak ESL</news:name>
                 <news:language>ru</news:language>
             </news:publication>
             <news:publication_date>2021-03-21</news:publication_date>
@@ -408,11 +408,11 @@
     </url>
 
       <url>
-        <loc>https://brainstr.ru/blog/ru/brene-brown-for-online-tutors/</loc>
+        <loc>https://peakesl.com/blog/ru/brene-brown-for-online-tutors/</loc>
         <priority>0.80</priority>
           <news:news>
             <news:publication>
-                <news:name>brainstr</news:name>
+                <news:name>Peak ESL</news:name>
                 <news:language>ru</news:language>
             </news:publication>
             <news:publication_date>2021-03-23</news:publication_date>
@@ -423,11 +423,11 @@
     </url>
 
      <url>
-        <loc>https://brainstr.ru/blog/ru/anna-teacher-online-turkey/</loc>
+        <loc>https://peakesl.com/blog/ru/anna-teacher-online-turkey/</loc>
         <priority>0.80</priority>
           <news:news>
             <news:publication>
-                <news:name>brainstr</news:name>
+                <news:name>Peak ESL</news:name>
                 <news:language>ru</news:language>
             </news:publication>
             <news:publication_date>2021-04-14</news:publication_date>

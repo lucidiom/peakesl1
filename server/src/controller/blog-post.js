@@ -12,7 +12,7 @@ if (relatedPosts[2] != undefined) {
 
 
 
-$("#share-tw").on("click", function() {
+$("#share-tw").on("click", function () {
     if (CFG_ENV == "production") {
         gtag('event', 'share', {
             'event_label': 'twitter'
@@ -24,13 +24,13 @@ $("#share-tw").on("click", function() {
     var params = {
         url: window.location.href,
         text: post.headline,
-        via: "brainstr3",
+        via: "peakesl",
     }
     for (var prop in params) shareURL += '&' + prop + '=' + encodeURIComponent(params[prop]);
     popupwindow(shareURL, $.i18n('_bstr.blog.share.twitter') + ' - ' + post.headline, 550, 450);
 })
 
-$("#share-fb").on("click", function() {
+$("#share-fb").on("click", function () {
     if (CFG_ENV == "production") {
         gtag('event', 'share', {
             'event_label': 'facebook'
@@ -39,7 +39,7 @@ $("#share-fb").on("click", function() {
     popupwindow('https://www.facebook.com/sharer/sharer.php?u=' + encodeURI(window.location.href), post.headline, 626, 436);
 });
 
-$("#share-li").on("click", function() {
+$("#share-li").on("click", function () {
     if (CFG_ENV == "production") {
         gtag('event', 'share', {
             'event_label': 'linkedin'
@@ -48,7 +48,7 @@ $("#share-li").on("click", function() {
     popupwindow('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURI(window.location.href), post.headline, 550, 450);
 });
 
-$("#share-em").on("click", function() {
+$("#share-em").on("click", function () {
     if (CFG_ENV == "production") {
         gtag('event', 'share', {
             'event_label': 'email'
@@ -57,7 +57,7 @@ $("#share-em").on("click", function() {
     document.location.href = "mailto:?subject=" + post.headline + "&body=" + window.location.href;
 });
 
-$("#share-ok").on("click", function() {
+$("#share-ok").on("click", function () {
     if (CFG_ENV == "production") {
         gtag('event', 'share', {
             'event_label': 'ok'
@@ -66,7 +66,7 @@ $("#share-ok").on("click", function() {
     popupwindow('https://connect.ok.ru/offer?url=' + encodeURI(window.location.href), post.headline, 550, 450);
 });
 
-$("#share-vk").on("click", function() {
+$("#share-vk").on("click", function () {
     if (CFG_ENV == "production") {
         gtag('event', 'share', {
             'event_label': 'vk'
@@ -75,7 +75,7 @@ $("#share-vk").on("click", function() {
     popupwindow('http://vk.com/share.php?url=' + encodeURI(window.location.href), post.headline, 550, 450);
 });
 
-$("#share-telegram").on("click", function() {
+$("#share-telegram").on("click", function () {
     if (CFG_ENV == "production") {
         gtag('event', 'share', {
             'event_label': 'telegram'
@@ -90,12 +90,12 @@ function popupwindow(url, title, w, h) {
     return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
 }
 
-$("#helpful-yes").on("click", async function() {
+$("#helpful-yes").on("click", async function () {
     await r('rateBlogHelpfull', { id: post._id, rating: 1 });
     successHelpful();
 });
 
-$("#helpful-no").on("click", async function() {
+$("#helpful-no").on("click", async function () {
     await r('rateBlogHelpfull', { id: post._id, rating: 0 });
     successHelpful();
 });
@@ -108,7 +108,7 @@ function successHelpful() {
 var initPos = $(document).scrollTop();
 var fadededIn = false;
 
-$(document).on("scroll", function() {
+$(document).on("scroll", function () {
     if (fadededIn == false && post.cta.active == true) {
         var scrollPos = $(document).scrollTop();
         if (scrollPos >= initPos + 750) {
@@ -119,6 +119,6 @@ $(document).on("scroll", function() {
     }
 });
 
-$("#cta-close").on("click", function() {
+$("#cta-close").on("click", function () {
     $(".sticky-information").fadeOut("fast");
 });

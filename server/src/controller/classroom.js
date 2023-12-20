@@ -53,9 +53,9 @@ function setUpLocalTracks() {
             frameRate: 24
         }
     }).then(tracks => {
-        $.each(tracks, function(index, item) {
+        $.each(tracks, function (index, item) {
             if (item.kind == "video") {
-                item.on("started", function() {
+                item.on("started", function () {
                     $('.local-media-container').css("height", $('#local-media>video').height() + "px");
                 });
 
@@ -75,14 +75,14 @@ function setUpLocalTracks() {
         }
 
 
-        $("#local-media>video").on("canplay", function() {
+        $("#local-media>video").on("canplay", function () {
             $('.local-media-container').css("height", $('#local-media>video').height() + "px");
             $(".local-media-container").show();
             //loadBodyPix();
         });
 
 
-        $("#preview-media>video").on("playing", function() {
+        $("#preview-media>video").on("playing", function () {
             canvas.height = $("#preview-media>video").height();
             canvas.width = $("#preview-media>video").width();
             $("#preview-media>video")[0].width = $("#preview-media>video").width();
@@ -90,7 +90,7 @@ function setUpLocalTracks() {
         });
 
         $("#login-controls").css("display", "unset");
-    }).catch(function(error) {
+    }).catch(function (error) {
         console.log(error);
         $("#login-controls").css("display", "unset");
     });
@@ -126,7 +126,7 @@ async function perform(net) {
 
 
 function connectToVideoChat() {
-    var tmpHistory = localStorage.getItem('brainstr-chathis-' + lessonData._id);
+    var tmpHistory = localStorage.getItem('peakesl-chathis-' + lessonData._id);
     if (tmpHistory != "" && tmpHistory != undefined && tmpHistory != null) {
         chatHistory = tmpHistory;
         $("#chat-container").html(chatHistory);
@@ -232,7 +232,7 @@ function connectToVideoChat() {
 
             if (role == "teacher") {
                 if (whiteboard) {
-                    setTimeout(function() {
+                    setTimeout(function () {
                         sendMessage('{"type": "command", "cmd": "whiteboard_open" }');
                         sendWhiteboard();
                     }, 1500);
@@ -416,8 +416,8 @@ function removeRemoteMedia() {
 }
 
 function mute() {
-    var videoTracks = localTracks.filter(function(i) { return i.kind == "audio"; });
-    $.each(videoTracks, function(i, track) {
+    var videoTracks = localTracks.filter(function (i) { return i.kind == "audio"; });
+    $.each(videoTracks, function (i, track) {
         track.disable();
     })
 
@@ -425,8 +425,8 @@ function mute() {
 }
 
 function unmute() {
-    var videoTracks = localTracks.filter(function(i) { return i.kind == "audio"; });
-    $.each(videoTracks, function(i, track) {
+    var videoTracks = localTracks.filter(function (i) { return i.kind == "audio"; });
+    $.each(videoTracks, function (i, track) {
         track.enable();
     });
 
@@ -434,7 +434,7 @@ function unmute() {
 }
 
 function toggleAudio() {
-    var audioTracks = localTracks.filter(function(i) { return i.kind == "audio"; });
+    var audioTracks = localTracks.filter(function (i) { return i.kind == "audio"; });
     if (audioTracks[0].isEnabled == false) {
         unmute();
     } else {
@@ -443,8 +443,8 @@ function toggleAudio() {
 }
 
 function disableVideo() {
-    var videoTracks = localTracks.filter(function(i) { return i.kind == "video"; });
-    $.each(videoTracks, function(i, track) {
+    var videoTracks = localTracks.filter(function (i) { return i.kind == "video"; });
+    $.each(videoTracks, function (i, track) {
         track.disable();
     });
 
@@ -452,8 +452,8 @@ function disableVideo() {
 }
 
 function enableVideo() {
-    var videoTracks = localTracks.filter(function(i) { return i.kind == "video"; });
-    $.each(videoTracks, function(i, track) {
+    var videoTracks = localTracks.filter(function (i) { return i.kind == "video"; });
+    $.each(videoTracks, function (i, track) {
         track.enable();
     });
 
@@ -465,7 +465,7 @@ function enableVideo() {
 }
 
 function toggleVideo() {
-    var videoTracks = localTracks.filter(function(i) { return i.kind == "video"; });
+    var videoTracks = localTracks.filter(function (i) { return i.kind == "video"; });
     if (videoTracks[0].isEnabled == false) {
         enableVideo();
     } else {
@@ -474,11 +474,11 @@ function toggleVideo() {
 }
 
 
-$("#video-control-video").on("click", function() {
+$("#video-control-video").on("click", function () {
     toggleVideo();
 });
 
-$("#video-control-microphone").on("click", function() {
+$("#video-control-microphone").on("click", function () {
     toggleAudio();
 });
 
@@ -489,11 +489,11 @@ function disconnectFromVideoChat() {
     window.location.href = "/lessons";
 }
 
-$("#button-leave").on("click", function() {
+$("#button-leave").on("click", function () {
     disconnectFromVideoChat();
 });
 
-$("#chat-submit").on("click", function() {
+$("#chat-submit").on("click", function () {
     var chatmsg = $("#chat-msg").val();
     if (chatmsg == "") {
         return;
@@ -514,7 +514,7 @@ $("#chat-submit").on("click", function() {
     $("#chat-container").scrollTop($('#chat-container')[0].scrollHeight);
 });
 
-$("#chat-msg").keypress(function(e) {
+$("#chat-msg").keypress(function (e) {
     if (e.which == 13) {
         $('#chat-submit').click();
         return false;
@@ -522,7 +522,7 @@ $("#chat-msg").keypress(function(e) {
 });
 
 
-$('#video-control-fullscreen').on('click', function() {
+$('#video-control-fullscreen').on('click', function () {
     if (
         document.fullscreenElement ||
         document.webkitFullscreenElement ||
@@ -573,7 +573,7 @@ function adjustLocalMediaPosition() {
     $("#local-media>video").css("left", "-" + px + "px");
 }
 
-$("#video-control-chat").on("click", function() {
+$("#video-control-chat").on("click", function () {
     toggleChat();
 });
 
@@ -587,7 +587,7 @@ function toggleChat() {
     chat = !chat;
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     tippy('[data-tippy-placement]', {
         delay: 100,
         arrow: true,
@@ -670,7 +670,7 @@ function switchToLocalVideo() {
 
 
 
-$("#video-control-screensharing").on("click", function() {
+$("#video-control-screensharing").on("click", function () {
     $("#video-control-whiteboard").removeClass("active");
     toggleScreenshare();
 });
@@ -900,7 +900,7 @@ function openTeachers() {
 function createTextLinks_(text) {
     return (text || "").replace(
         /([^\S]|^)(((https?\:\/\/)|(www\.))(\S+))/gi,
-        function(match, space, url) {
+        function (match, space, url) {
             var hyperlink = url;
             if (!hyperlink.match('^https?:\/\/')) {
                 hyperlink = 'http://' + hyperlink;
@@ -948,12 +948,12 @@ function addChatMessage(msg) {
     }
 
     $("#chat-container").append(msg);
-    var old = localStorage.getItem('brainstr-chathis-' + lessonData._id);
+    var old = localStorage.getItem('peakesl-chathis-' + lessonData._id);
 
     if (old == null || old == undefined) {
         old = "";
     }
 
-    localStorage.setItem('brainstr-chathis-' + lessonData._id, old + msg);
+    localStorage.setItem('peakesl-chathis-' + lessonData._id, old + msg);
     $("#chat-container").scrollTop($('#chat-container')[0].scrollHeight);
 }

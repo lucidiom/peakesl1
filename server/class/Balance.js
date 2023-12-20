@@ -99,7 +99,7 @@ exports.depositBalance = async (uid, amount, fee) => {
 
     var tx = new db.Transaction({
         rxid: uid,
-        txid: "brainstr_deposit",
+        txid: "PeakESL_deposit",
         status: "completed",
         type: "deposit",
         fee: fee,

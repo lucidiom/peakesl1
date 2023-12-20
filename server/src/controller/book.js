@@ -6,7 +6,7 @@ try {
 } catch (error) {
 }
 
-var rawRequest = getLocalStorage('brainstr_booking_request_' + teacherData._id);
+var rawRequest = getLocalStorage('peakesl_booking_request_' + teacherData._id);
 if (typeof (rawRequest) == "undefined") {
     window.location.href = '/teacher/' + teacherData._id + "/";
 }
@@ -54,7 +54,7 @@ async function getPaymentFee(reloadFee = true) {
 getPaymentFee();
 
 function checkSufficientBalance() {
-    if (bookingRequest.paymentMethod == "brainstr_social") {
+    if (bookingRequest.paymentMethod == "peakesl_social") {
         return;
     }
 
@@ -84,7 +84,7 @@ $('.payment-method').on("click", function () {
     $(this).addClass('active');
     bookingRequest.paymentMethod = $(this).data('payment');
 
-    if (bookingRequest.paymentMethod == "balance" || bookingRequest.paymentMethod == "brainstr_social") {
+    if (bookingRequest.paymentMethod == "balance" || bookingRequest.paymentMethod == "peakesl_social") {
         bookingRequest.donation = 0;
         bookingRequest.total = bookingRequest.price + bookingRequest.donation;
         bookingRequest.fee = 0;
@@ -95,7 +95,7 @@ $('.payment-method').on("click", function () {
         $("#btn-ctn").text($.i18n("_bstr.book.continue"));
     }
 
-    if (bookingRequest.paymentMethod == "brainstr_social") {
+    if (bookingRequest.paymentMethod == "peakesl_social") {
         bookingRequest.donation = -1 * bookingRequest.price;
         bookingRequest.total = 0;
         getPaymentFee(false);
@@ -112,7 +112,7 @@ $("#btn-ctn").on("click", function () {
             createStripePayment();
             break;
 
-        case "brainstr_social":
+        case "peakesl_social":
             payByBalance();
             break;
 
@@ -191,5 +191,5 @@ function showSuccess() {
     $("#panel-pay").hide();
     $("#panel-success").show();
 
-    setLocalStorage('brainstr_booking_request_' + teacherData._id, "", -1);
+    setLocalStorage('peakesl_booking_request_' + teacherData._id, "", -1);
 }
