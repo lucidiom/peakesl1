@@ -20090,6 +20090,7 @@ input[type=text]:disabled {
 .button-primary {
     transition: box-shadow .2s ease;
     transition: background-color .2s ease;
+    background-color: var(--primary);
     color: var(--dark-blue) !important;
     font-weight: 500
 }
