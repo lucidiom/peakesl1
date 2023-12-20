@@ -1,7 +1,7 @@
 const UTCOffset = moment().utcOffset();
 
 var socket;
-var messageSound = new Audio(CDN + '/sounds/message.mp3');
+var messageSound = new Audio(CDN + 'sounds/message.mp3');
 
 
 async function checkForUpcomingLessons() {

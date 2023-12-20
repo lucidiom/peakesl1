@@ -1,7 +1,7 @@
 <script>
     /* beautify preserve:start */
-    var teacherData = JSON.parse(<% - JSON.stringify(JSON.stringify(teacher)) %>);
-    var bookedTimes = JSON.parse(<% - JSON.stringify(JSON.stringify(bookedTimes)) %>);
+    var teacherData = JSON.parse(<%- JSON.stringify(JSON.stringify(teacher)) %>);
+    var bookedTimes = JSON.parse(<%- JSON.stringify(JSON.stringify(bookedTimes)) %>);
     /* beautify preserve:end */
 </script>
 <script src="https://js.stripe.com/v3/"></script>
@@ -175,16 +175,6 @@
                                 </div>
                                 <div class="col-4 col-md-4 text-right">
                                     <span style="font-size: 14px;" id="processing-fee" data-currency="0">-</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-8 col-md-8">
-                                    <span style="font-size: 14px;">
-                                        <%= __('general.socialprogram') %> <i class="help-icon help-gray" data-tippy-placement="top" title="<%= __('booking.booking.socialprogram-tooltip') %>"></i>
-                                    </span>
-                                </div>
-                                <div class="col-4 col-md-4 text-right">
-                                    <span style="font-size: 14px;" id="social-donation" data-currency="0">-</span>
                                 </div>
                             </div>
                             <!--<div class="row">
