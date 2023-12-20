@@ -9,10 +9,10 @@ var firebaseConfig = {
 };
 
 const CFG_ENV = "production";
-const CFG_DOMAIN = "https://xxx.org";
-const STRIPE_PUBLIC_KEY = "xxx";
+const CFG_DOMAIN = "https://whale-app-o2jqe.ondigitalocean.app";
+const STRIPE_PUBLIC_KEY = "";
 
-const CDN = "https://xxx.xxx/";
+const CDN = "https://peakesl.nyc3.cdn.digitaloceanspaces.com/web/";
 
 const POINTS_FACTOR_EUR = 10;
 const DEPOSIT_FEE_PCTG = 0.96;
