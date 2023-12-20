@@ -1,7 +1,7 @@
 <script>
     /* beautify preserve:start */
-    var teacherData = JSON.parse(<%- JSON.stringify(JSON.stringify(teacher)) %>);
-    var bookedTimes = JSON.parse(<%- JSON.stringify(JSON.stringify(bookedTimes)) %>);
+    var teacherData = JSON.parse(<% - JSON.stringify(JSON.stringify(teacher)) %>);
+    var bookedTimes = JSON.parse(<% - JSON.stringify(JSON.stringify(bookedTimes)) %>);
     /* beautify preserve:end */
 </script>
 <script src="https://js.stripe.com/v3/"></script>
@@ -49,14 +49,6 @@
                                             <%- __('booking.booking.pm-card', '<b>' , '</b><br><small>' ) %></small>
                                         </span>
                                     </div>
-
-                                    <% if(user.socialStudent==true){ %>
-                                        <div class="payment-method noselect" data-payment="peakesl_social">
-                                            <span>
-                                                <%- __('booking.booking.pm-sp', '<b>' , '</b> <div class="verified-badge-with-title badge-socialteacher"  style="display: flex;float: right;margin-left: 10px;width: 26px !important;max-width: 26px !important;padding: 0;" data-tippy-placement="top" title="' + __('teacher.socialTeacherTooltip') + '"></div>
-                                            </span>
-                                        </div>
-                                        <% } %>
                                 </div>
 
                                 <button id="btn-ctn" class="button button-green margin-top-20" style="margin: auto;
@@ -64,37 +56,37 @@
     padding-left: 30px;
     padding-right: 30px;display:none;">
                                     <%= __(' general.continue') %>
-                                                    </button>
-                                        </div>
+                                </button>
+                            </div>
 
 
-                                        <div class="col-md-12" id="panel-success" style="display:none">
-                                            <h3 class="margin-bottom-25"></h3>
+                            <div class="col-md-12" id="panel-success" style="display:none">
+                                <h3 class="margin-bottom-25"></h3>
 
-                                            <p class="legal">
-                                                <%= __('booking.confirmation.headline') %> <br>
-                                                    <%= __('booking.confirmation.text') %><br><br>
-                                                        <%= __('booking.confirmation.text2') %> <a href="mailto:support@peakesl.org">support@peakesl.org</a>
-                                            </p>
+                                <p class="legal">
+                                    <%= __('booking.confirmation.headline') %> <br>
+                                        <%= __('booking.confirmation.text') %><br><br>
+                                            <%= __('booking.confirmation.text2') %> <a href="mailto:support@peakesl.org">support@peakesl.org</a>
+                                </p>
 
-                                            <button id="btn-complete" class="button button-primary margin-top-20" style="margin: auto;
+                                <button id="btn-complete" class="button button-primary margin-top-20" style="margin: auto;
     display: block;
     padding-left: 30px;
     padding-right: 30px;">
-                                                <%= __('booking.confirmation.btn') %>
-                                            </button>
-                                        </div>
+                                    <%= __('booking.confirmation.btn') %>
+                                </button>
+                            </div>
 
 
 
-                                </div>
+                        </div>
 
 
-                                <div class="row align-items-center" style=" border-top: solid 1px #eee;
+                        <div class="row align-items-center" style=" border-top: solid 1px #eee;
     padding-top: 20px;
     margin-top: 30px;">
-                                    <div class="col-md-1 text-center">
-                                        <div style="border: solid 1px;
+                            <div class="col-md-1 text-center">
+                                <div style="border: solid 1px;
     background-color: var(--green);
     color: #fff;
     display: flex;
@@ -103,149 +95,18 @@
     border-radius: 50%;
     width: 40px;
     height: 40px;">
-                                            <i class="icon-feather-thumbs-up"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-11" style="padding-left:30px;">
-                                        <h4><b>
-                                                <%= __('booking.guarantee.headline') %>
-                                            </b></h4>
-                                        <p>
-                                            <%= __('booking.guarantee.text') %>
-                                        </p>
-                                    </div>
+                                    <i class="icon-feather-thumbs-up"></i>
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
-                <div class="col-xl-5 col-lg-5">
-                    <div class="sidebar-container" id="ti-sidebar">
-
-                        <div class="sidebar-widget" id="ti-bookingpanel">
-                            <div class="bidding-widget">
-
-                                <div class="bidding-inner padding-top-30" id="panel-booking">
-                                    <div class="row">
-                                        <div class="col-4 col-md-4">
-                                            <img src="/profilepicture/<%= teacher._id %>" style="border-radius: 50%;" />
-                                        </div>
-                                        <div class="col-8 col-md-8 align-self-center">
-                                            <h3>
-                                                <%= teacher.firstname %>
-                                                    <%= teacher.lastname %>
-                                                        <% if(teacher.verified){ %>
-                                                            <div class="verified-badge" data-tippy-placement="top" style="border-radius: 5px;margin-left: 10px;" title="<%= __('teacher.verified.tooltip') %>"></div>
-                                                            <% } %>
-                                            </h3>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="bidding-fields">
-                                        <b style="display: block;width: 100%;">
-                                            <%= __('booking.sidebar.advantages-headline') %>
-                                        </b>
-                                        <ul class="advantages-ul">
-                                            <li><i class="icon-material-outline-check"></i>
-                                                <%= __('booking.sidebar.advantages-1') %>
-                                            </li>
-                                            <li><i class="icon-material-outline-check"></i>
-                                                <%= __('booking.sidebar.advantages-2') %>
-                                            </li>
-                                            <li><i class="icon-material-outline-check"></i>
-                                                <%= __('booking.sidebar.advantages-3') %>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-
-
-                                    <div class="row margin-top-30">
-                                        <div class="col-8 col-md-8">
-                                            <span style="font-size: 14px;" id="lesson-info"></span>
-                                        </div>
-                                        <div class="col-4 col-md-4 text-right">
-                                            <span style="font-size: 14px;" id="lesson-cost" data-currency="">-</span>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8 col-md-8">
-                                            <span style="font-size: 14px;">
-                                                <%= __('booking.sidebar.processing-fee') %> <i class="help-icon help-gray" data-tippy-placement="top" title="<%= __('booking.sidebar.processing-fee-tooltip') %>"></i>
-                                            </span>
-                                        </div>
-                                        <div class="col-4 col-md-4 text-right">
-                                            <span style="font-size: 14px;" id="processing-fee" data-currency="0">-</span>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8 col-md-8">
-                                            <span style="font-size: 14px;">
-                                                <%= __('general.socialprogram') %> <i class="help-icon help-gray" data-tippy-placement="top" title="<%= __('booking.booking.socialprogram-tooltip') %>"></i>
-                                            </span>
-                                        </div>
-                                        <div class="col-4 col-md-4 text-right">
-                                            <span style="font-size: 14px;" id="social-donation" data-currency="0">-</span>
-                                        </div>
-                                    </div>
-                                    <!--<div class="row">
-                                <div class="col-8 col-md-8 text-green">
-                                    <span><b>Promo Code</b></span>
-                                </div>
-                                <div class="col-4 col-md-4 text-right text-green">
-                                    <b>- <span data-currency="5"></span></b>
-                                </div>
-                            </div>-->
-                                    <div class="row">
-                                        <div class="col-8 col-md-8">
-                                            <span style="font-size: 14px;">
-                                                <%= __('booking.sidebar.lesson-cancellation') %> <i class="help-icon help-gray" data-tippy-placement="top" title="<%= __('booking.sidebar.lesson-cancellation-tooltip') %>"></i>
-                                            </span>
-                                        </div>
-                                        <div class="col-4 col-md-4 text-right text-green" style="font-size: 14px;">
-                                            <%= __('general.free') %>
-                                        </div>
-                                    </div>
-
-                                    <!--<div class="row">
-                                <div class="col-12">
-                                    <input type="text" class=" with-border promo-input" placeholder="Promo Code">
-                                </div>
-                            </div>-->
-
-                                    <div class="row row-total">
-                                        <div class="col-6 col-md-6">
-                                            <span><b>
-                                                    <%= __('general.total') %>
-                                                </b></span>
-                                        </div>
-                                        <div class="col-6 col-md-6 text-right">
-                                            <small><span id="total-cost-converted" data-currency-converted="">-</span></small> &nbsp; <b><span id="total-cost" data-currency="">-</span></b>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                    <!--<button id="send-booking" class="button button-green full-width margin-top-20">Confirm & Pay</button>-->
-                                    <small class="d-block text-center margin-top-20"><i class="icon-material-outline-lock"></i>
-                                        <%= __('booking.sidebar.ssl-protection') %>
-                                    </small>
-                                </div>
-
-                                <!--<div class="bidding-signup legal">FAQ & Help: <a href="#sign-in-dialog" class="register-tab sign-in popup-with-zoom-anim">Support Centre</a></div>-->
+                            <div class="col-md-11" style="padding-left:30px;">
+                                <h4><b>
+                                        <%= __('booking.guarantee.headline') %>
+                                    </b></h4>
+                                <p>
+                                    <%= __('booking.guarantee.text') %>
+                                </p>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
 
@@ -254,10 +115,141 @@
 
 
 
-        <script src="./data/<%= locale %>.js"></script>
-        <script>
-            $(' head').append('<link rel="stylesheet" type="text/css" href="/css/bootstrap-datepicker3.min.css">');
-        </script>
-        <script src="/js/bootstrap-datepicker.min.js"></script>
-        <script src="/js/datepicker-locales/bootstrap-datepicker.<%= locale %>.min.js"></script>
-        <script src="/controller/book.js" defer></script>
+
+        <div class="col-xl-5 col-lg-5">
+            <div class="sidebar-container" id="ti-sidebar">
+
+                <div class="sidebar-widget" id="ti-bookingpanel">
+                    <div class="bidding-widget">
+
+                        <div class="bidding-inner padding-top-30" id="panel-booking">
+                            <div class="row">
+                                <div class="col-4 col-md-4">
+                                    <img src="/profilepicture/<%= teacher._id %>" style="border-radius: 50%;" />
+                                </div>
+                                <div class="col-8 col-md-8 align-self-center">
+                                    <h3>
+                                        <%= teacher.firstname %>
+                                            <%= teacher.lastname %>
+                                                <% if(teacher.verified){ %>
+                                                    <div class="verified-badge" data-tippy-placement="top" style="border-radius: 5px;margin-left: 10px;" title="<%= __('teacher.verified.tooltip') %>"></div>
+                                                    <% } %>
+                                    </h3>
+                                </div>
+                            </div>
+
+
+
+                            <div class="bidding-fields">
+                                <b style="display: block;width: 100%;">
+                                    <%= __('booking.sidebar.advantages-headline') %>
+                                </b>
+                                <ul class="advantages-ul">
+                                    <li><i class="icon-material-outline-check"></i>
+                                        <%= __('booking.sidebar.advantages-1') %>
+                                    </li>
+                                    <li><i class="icon-material-outline-check"></i>
+                                        <%= __('booking.sidebar.advantages-2') %>
+                                    </li>
+                                    <li><i class="icon-material-outline-check"></i>
+                                        <%= __('booking.sidebar.advantages-3') %>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+
+                            <div class="row margin-top-30">
+                                <div class="col-8 col-md-8">
+                                    <span style="font-size: 14px;" id="lesson-info"></span>
+                                </div>
+                                <div class="col-4 col-md-4 text-right">
+                                    <span style="font-size: 14px;" id="lesson-cost" data-currency="">-</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 col-md-8">
+                                    <span style="font-size: 14px;">
+                                        <%= __('booking.sidebar.processing-fee') %> <i class="help-icon help-gray" data-tippy-placement="top" title="<%= __('booking.sidebar.processing-fee-tooltip') %>"></i>
+                                    </span>
+                                </div>
+                                <div class="col-4 col-md-4 text-right">
+                                    <span style="font-size: 14px;" id="processing-fee" data-currency="0">-</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 col-md-8">
+                                    <span style="font-size: 14px;">
+                                        <%= __('general.socialprogram') %> <i class="help-icon help-gray" data-tippy-placement="top" title="<%= __('booking.booking.socialprogram-tooltip') %>"></i>
+                                    </span>
+                                </div>
+                                <div class="col-4 col-md-4 text-right">
+                                    <span style="font-size: 14px;" id="social-donation" data-currency="0">-</span>
+                                </div>
+                            </div>
+                            <!--<div class="row">
+                                <div class="col-8 col-md-8 text-green">
+                                    <span><b>Promo Code</b></span>
+                                </div>
+                                <div class="col-4 col-md-4 text-right text-green">
+                                    <b>- <span data-currency="5"></span></b>
+                                </div>
+                            </div>-->
+                            <div class="row">
+                                <div class="col-8 col-md-8">
+                                    <span style="font-size: 14px;">
+                                        <%= __('booking.sidebar.lesson-cancellation') %> <i class="help-icon help-gray" data-tippy-placement="top" title="<%= __('booking.sidebar.lesson-cancellation-tooltip') %>"></i>
+                                    </span>
+                                </div>
+                                <div class="col-4 col-md-4 text-right text-green" style="font-size: 14px;">
+                                    <%= __('general.free') %>
+                                </div>
+                            </div>
+
+                            <!--<div class="row">
+                                <div class="col-12">
+                                    <input type="text" class=" with-border promo-input" placeholder="Promo Code">
+                                </div>
+                            </div>-->
+
+                            <div class="row row-total">
+                                <div class="col-6 col-md-6">
+                                    <span><b>
+                                            <%= __('general.total') %>
+                                        </b></span>
+                                </div>
+                                <div class="col-6 col-md-6 text-right">
+                                    <small><span id="total-cost-converted" data-currency-converted="">-</span></small> &nbsp; <b><span id="total-cost" data-currency="">-</span></b>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <!--<button id="send-booking" class="button button-green full-width margin-top-20">Confirm & Pay</button>-->
+                            <small class="d-block text-center margin-top-20"><i class="icon-material-outline-lock"></i>
+                                <%= __('booking.sidebar.ssl-protection') %>
+                            </small>
+                        </div>
+
+                        <!--<div class="bidding-signup legal">FAQ & Help: <a href="#sign-in-dialog" class="register-tab sign-in popup-with-zoom-anim">Support Centre</a></div>-->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script src="./data/<%= locale %>.js"></script>
+<script>
+    $(' head').append('<link rel="stylesheet" type="text/css" href="/css/bootstrap-datepicker3.min.css">');
+</script>
+<script src="/js/bootstrap-datepicker.min.js"></script>
+<script src="/js/datepicker-locales/bootstrap-datepicker.<%= locale %>.min.js"></script>
+<script src="/controller/book.js" defer></script>
