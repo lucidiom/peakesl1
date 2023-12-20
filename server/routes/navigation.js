@@ -173,13 +173,6 @@ router.get('/register', loggedInRedirect, async (req, res) => {
     }, req));
 });
 
-router.get('/imprint', async (req, res) => {
-    res.render("external/imprint", await getCommonNavigationData({
-        title: res.__('title.imprint'),
-        meta: meta.data[req.getLocale()].imprint,
-    }, req));
-});
-
 router.get('/terms-of-service', async (req, res) => {
     res.render("external/terms-of-service", await getCommonNavigationData({
         title: res.__('title.terms'),
@@ -191,13 +184,6 @@ router.get('/privacy', async (req, res) => {
     res.render("external/privacy", await getCommonNavigationData({
         title: res.__('title.privacy'),
         meta: meta.data[req.getLocale()].privacy,
-    }, req));
-});
-
-router.get('/refund', async (req, res) => {
-    res.render("external/refund", await getCommonNavigationData({
-        title: res.__('title.refund'),
-        meta: meta.data[req.getLocale()].refund,
     }, req));
 });
 

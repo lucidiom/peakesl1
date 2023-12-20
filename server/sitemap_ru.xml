@@ -335,24 +335,10 @@
     </url>
 
     <url>
-        <loc>https://peakesl.com/refund/</loc>
-        <priority>0.60</priority>
-         <xhtml:link rel="alternate" hreflang="de" href="https://peakesl.com/refund/?lang=de" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/refund/?lang=en" />
-    </url>
-
-    <url>
         <loc>https://peakesl.com/privacy/</loc>
         <priority>0.60</priority>
          <xhtml:link rel="alternate" hreflang="de" href="https://peakesl.com/privacy/?lang=de" />
         <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/privacy/?lang=en" />
-    </url>
-
-    <url>
-        <loc>https://peakesl.com/imprint/</loc>
-        <priority>0.80</priority>
-         <xhtml:link rel="alternate" hreflang="de" href="https://peakesl.com/imprint/?lang=de" />
-        <xhtml:link rel="alternate" hreflang="en" href="https://peakesl.com/imprint/?lang=en" />
     </url>
 
 

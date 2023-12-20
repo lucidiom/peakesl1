@@ -18,23 +18,11 @@ exports.data = {
             keywords: "terms, terms of service, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
             url: "https://peakesl.com/terms-of-service"
         },
-        imprint: {
-            description: "Imprint of PeakESL - the easy way to find your online tutor. Worldwide. Secure.",
-            image: "https://peakesl.com/images/section-background.webp",
-            keywords: "imprint, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/imprint"
-        },
         privacy: {
             description: "Learn how PeakESL is collection and managing data of you while browsing our site or using our service.",
             image: "https://peakesl.com/images/section-background.webp",
             keywords: "privacy, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
             url: "https://peakesl.com/privacy"
-        },
-        refund: {
-            description: "Learn more about how we handle refunds here at PeakESL.",
-            image: "https://peakesl.com/images/section-background.webp",
-            keywords: "refund, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/refund"
         },
         login: {
             description: "With PeakESL you will find your online tutor and take online lessons. Super easy, fully secure. Get started for free.",
@@ -72,30 +60,6 @@ exports.data = {
             keywords: "teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
             url: "https://peakesl.com/teaching-with-peakesl"
         },
-        social_program: {
-            description: "Free education for children that otherwise wouldn't have access or financial support to do so - with the PeakESL Social Program.",
-            image: "https://images.pexels.com/photos/1720188/pexels-photo-1720188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/"
-        },
-        social_program_student_join: {
-            description: "We provide students with no financial possibilities with free education - online lessons with our teachers on PeakESL.",
-            image: "https://images.pexels.com/photos/6325984/pexels-photo-6325984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/student/join"
-        },
-        social_program_teacher_join: {
-            description: "Help raising education levels across the globe with teaching as a volunteer for Social Students on PeakESL.",
-            image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/teacher/join"
-        },
-        social_program_partner_join: {
-            description: "PeakESL Social Program helps children get the education we think they deserve while at the same time we build jobs for teachers worldwide.",
-            image: "https://peakesl.com/social-program/partner/join/images/bsp_partner.jpg",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/partner/join"
-        }
     },
     de: {
         index: {
@@ -116,23 +80,11 @@ exports.data = {
             keywords: "agb, allgemeine nutzungsbedingungen, terms of service, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, nachhilfe, lehrer, online nachhilfe, online schule, online lehrer, weltweite tutor community, PeakESL",
             url: "https://peakesl.com/terms-of-service"
         },
-        imprint: {
-            description: "Impressum von PeakESL - deiner Online-Nachhilfe Platform.",
-            image: "https://peakesl.com/images/section-background.webp",
-            keywords: "impressum, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, nachhilfe, lehrer, online nachhilfe, online schule, online lehrer, weltweite tutor community, PeakESL",
-            url: "https://peakesl.com/imprint"
-        },
         privacy: {
             description: "Lese, welche Daten wir sammeln und wie wir diese verarbeiten.",
             image: "https://peakesl.com/images/section-background.webp",
             keywords: "datenschutz, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, nachhilfe, lehrer, online nachhilfe, online schule, online lehrer, weltweite tutor community, PeakESL",
             url: "https://peakesl.com/privacy"
-        },
-        refund: {
-            description: "Deine Rechte auf Widerruf bei Käufen auf PeakESL.",
-            image: "https://peakesl.com/images/section-background.webp",
-            keywords: "widerruf, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, nachhilfe, lehrer, online nachhilfe, online schule, online lehrer, weltweite tutor community, PeakESL",
-            url: "https://peakesl.com/refund"
         },
         login: {
             description: "Melde dich an, um deinen perfekten Online-Tutor zu finden oder selbst Online-Nachhilfe zu geben.",
@@ -169,30 +121,6 @@ exports.data = {
             image: "https://peakesl.com/images/section-background.webp",
             keywords: "unterrichten mit PeakESL, PeakESL lehrer werden, tutor werden, nachhilfe geben, registrierung, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, nachhilfe, lehrer, online nachhilfe, online schule, online lehrer, weltweite tutor community, PeakESL",
             url: "https://peakesl.com/teaching-with-peakesl"
-        },
-        social_program: {
-            description: "Free education for children that otherwise wouldn't have access or financial support to do so - with the PeakESL Social Program.",
-            image: "https://images.pexels.com/photos/1720188/pexels-photo-1720188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/"
-        },
-        social_program_student_join: {
-            description: "We provide students with no financial possibilities with free education - online lessons with our teachers on PeakESL.",
-            image: "https://images.pexels.com/photos/6325984/pexels-photo-6325984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/student/join"
-        },
-        social_program_teacher_join: {
-            description: "Help raising education levels across the globe with teaching as a volunteer for Social Students on PeakESL.",
-            image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/teacher/join"
-        },
-        social_program_partner_join: {
-            description: "PeakESL Social Program helps children get the education we think they deserve while at the same time we build jobs for teachers worldwide.",
-            image: "https://peakesl.com/social-program/partner/join/images/bsp_partner.jpg",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/partner/join"
         }
     },
     ru: {
@@ -214,23 +142,11 @@ exports.data = {
             keywords: "онлайн-репетитор, видео-репетитор, студенты для студентов, глобальное сообщество репетиторов, международное сообщество репетиторов, онлайн-преподаватель, онлайн-образование, онлайн-школа домашнее обучение, дополнительное образование",
             url: "https://peakesl.com/terms-of-service"
         },
-        imprint: {
-            description: "PeakESL - самый простой способ найти своего онлайн-репетитора. По всему миру. Доступно.",
-            image: "https://peakesl.com/images/section-background.webp",
-            keywords: "онлайн-репетитор, видео-репетитор, студенты для студентов, глобальное сообщество репетиторов, международное сообщество репетиторов, онлайн-преподаватель, онлайн-образование, онлайн-школа домашнее обучение, дополнительное образование",
-            url: "https://peakesl.com/imprint"
-        },
         privacy: {
             description: "Узнай, как PeakESL собирает и управляет твоими данными во время просмотра нашего сайта или использования нашего сервиса.",
             image: "https://peakesl.com/images/section-background.webp",
             keywords: "онлайн-репетитор, видео-репетитор, студенты для студентов, глобальное сообщество репетиторов, международное сообщество репетиторов, онлайн-преподаватель, онлайн-образование, онлайн-школа домашнее обучение, дополнительное образование",
             url: "https://peakesl.com/privacy"
-        },
-        refund: {
-            description: "Узнай больше о том, как мы обрабатываем возврат средств в PeakESL.",
-            image: "https://peakesl.com/images/section-background.webp",
-            keywords: "онлайн-репетитор, видео-репетитор, студенты для студентов, глобальное сообщество репетиторов, международное сообщество репетиторов, онлайн-преподаватель, онлайн-образование, онлайн-школа домашнее обучение, дополнительное образование",
-            url: "https://peakesl.com/refund"
         },
         login: {
             description: "С помощью PeakESL ты найдешь своего репетитора и сможешь заниматься онлайн",
@@ -267,30 +183,6 @@ exports.data = {
             image: "https://peakesl.com/images/section-background.webp",
             keywords: "онлайн-репетитор, видео-репетитор, студенты для студентов, глобальное сообщество репетиторов, международное сообщество репетиторов, онлайн-преподаватель, онлайн-образование, онлайн-школа домашнее обучение, дополнительное образование",
             url: "https://peakesl.com/teaching-with-peakesl"
-        },
-        social_program: {
-            description: "Free education for children that otherwise wouldn't have access or financial support to do so - with the PeakESL Social Program.",
-            image: "https://images.pexels.com/photos/1720188/pexels-photo-1720188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/"
-        },
-        social_program_student_join: {
-            description: "We provide students with no financial possibilities with free education - online lessons with our teachers on PeakESL.",
-            image: "https://images.pexels.com/photos/6325984/pexels-photo-6325984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/student/join"
-        },
-        social_program_teacher_join: {
-            description: "Help raising education levels across the globe with teaching as a volunteer for Social Students on PeakESL.",
-            image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/teacher/join"
-        },
-        social_program_partner_join: {
-            description: "PeakESL Social Program helps children get the education we think they deserve while at the same time we build jobs for teachers worldwide.",
-            image: "https://peakesl.com/social-program/partner/join/images/bsp_partner.jpg",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/partner/join"
         }
     },
     uk: {
@@ -312,23 +204,11 @@ exports.data = {
             keywords: "terms, terms of service, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
             url: "https://peakesl.com/terms-of-service"
         },
-        imprint: {
-            description: "Imprint of PeakESL - the easy way to find your online tutor. Worldwide. Secure.",
-            image: "https://peakesl.com/images/section-background.webp",
-            keywords: "imprint, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/imprint"
-        },
         privacy: {
             description: "Learn how PeakESL is collection and managing data of you while browsing our site or using our service.",
             image: "https://peakesl.com/images/section-background.webp",
             keywords: "privacy, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
             url: "https://peakesl.com/privacy"
-        },
-        refund: {
-            description: "Learn more about how we handle refunds here at PeakESL.",
-            image: "https://peakesl.com/images/section-background.webp",
-            keywords: "refund, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/refund"
         },
         login: {
             description: "With PeakESL you will find your online tutor and take online lessons. Super easy, fully secure. Get started for free.",
@@ -365,30 +245,6 @@ exports.data = {
             image: "https://peakesl.com/images/section-background.webp",
             keywords: "teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
             url: "https://peakesl.com/teaching-with-peakesl"
-        },
-        social_program: {
-            description: "Free education for children that otherwise wouldn't have access or financial support to do so - with the PeakESL Social Program.",
-            image: "https://images.pexels.com/photos/1720188/pexels-photo-1720188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/"
-        },
-        social_program_student_join: {
-            description: "We provide students with no financial possibilities with free education - online lessons with our teachers on PeakESL.",
-            image: "https://images.pexels.com/photos/6325984/pexels-photo-6325984.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/student/join"
-        },
-        social_program_teacher_join: {
-            description: "Help raising education levels across the globe with teaching as a volunteer for Social Students on PeakESL.",
-            image: "https://images.pexels.com/photos/6325954/pexels-photo-6325954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/teacher/join"
-        },
-        social_program_partner_join: {
-            description: "PeakESL Social Program helps children get the education we think they deserve while at the same time we build jobs for teachers worldwide.",
-            image: "https://peakesl.com/social-program/partner/join/images/bsp_partner.jpg",
-            keywords: "PeakESL social program, free education, charity, donation, teaching with PeakESL, online tutoring, video tutoring, student to student tutoring, worldwide tutoring community, online teachers, online education, video education, online school homeschooling, PeakESL",
-            url: "https://peakesl.com/social-program/partner/join"
         }
     }
 };
