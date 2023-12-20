@@ -59,35 +59,7 @@ async function onClickRegister(token) {
         });
 
         if (response.status == "ok") {
-
-            if (CFG_ENV == "production") {
-                try {
-                    ttq.track('SubmitForm');
-
-                    fbq('track', 'CompleteRegistration');
-
-                    gtag('event', 'sign_up', {
-                        'event_label': 'email'
-                    });
-                } catch (error) {
-                }
-            }
-
-            var session = await r('payment/stripe/createTutorSignupPayment', {
-                currency: i18n_currency,
-            });
-
-            if (session.status != undefined) {
-                if (session.status == "error") {
-                    alert($.i18n('_bstr.balance.error.general'));
-                    return;
-                }
-            }
-
-            await stripe.redirectToCheckout({
-                sessionId: session.id
-            });
-
+            window.location.href = "/settings-teacher/";
             return;
         }
 
