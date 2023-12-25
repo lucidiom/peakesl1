@@ -31,8 +31,8 @@ exports.create = async (email, password, firstName, lastName, locale, currency, 
         });
 
         await user.save();
-        await mail.createEmailContact(email.toLowerCase(), firstName, lastName, locale, currency);
-        await mail.sendVerifyEmail(email.toLowerCase(), firstName, user._id, emailVerifyCode, locale);
+        //await mail.createEmailContact(email.toLowerCase(), firstName, lastName, locale, currency);
+        // await mail.sendVerifyEmail(email.toLowerCase(), firstName, user._id, emailVerifyCode, locale);
         return hashed;
     } catch (error) {
         throw error;
