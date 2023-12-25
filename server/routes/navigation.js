@@ -358,6 +358,26 @@ router.get('/lessons', isAuthNav, async (req, res) => {
     }, req, true));
 });
 
+router.get('/lessons-teacher', isAuthNav, async (req, res) => {
+    var usercache = {};
+    var data = await lesson.getAllLessonsUID(req.user.id);
+
+    for (item of data) {
+        var otherId = item.sid == req.user.id ? item.tid : item.sid;
+        if (usercache[otherId] == undefined) {
+            var userData = await user.getBasicInfo(otherId);
+            usercache[otherId] = userData;
+        }
+    }
+
+    res.render("internal/lessons-teacher", await getCommonNavigationData({
+        title: res.__('title.lessons'),
+        layout: "layouts/internal",
+        lessons: data,
+        usercache: usercache,
+    }, req, true));
+});
+
 router.get('/lesson/:id', isAuthNav, async (req, res) => {
     var lessonData = await lesson.getLessonById(req.params.id);
 

@@ -8,8 +8,23 @@
 
 
 <div class="dashboard-headline">
-    <h3 class="pagetitle"><a href="/lessons"><i class="icon-line-awesome-long-arrow-left"></i>
-            <%= __('lesson.back') %></a> <%= __('lesson.details') %></h3>
+    <h3 class="pagetitle">
+
+        <% if(user.isTeacher){ %>
+        <a href="/lessons-teacher"><i class="icon-line-awesome-long-arrow-left"></i>
+            <%= __('lesson.back') %>
+        </a>
+        <%= __('lesson.details') %>
+            </h3>
+            <% } %>
+                <% else{ %>
+                    <a href="/lessons"><i class="icon-line-awesome-long-arrow-left"></i>
+                        <%= __('lesson.back') %>
+                    </a>
+                    <%= __('lesson.details') %>
+                        </h3>
+                    <% } %>
+        
 </div>
 
 

@@ -11,6 +11,17 @@
                         <li><a href="/teachers/">
                                 <%= __('header.findTeacher') %>
                             </a></li>
+
+                        <% if(user.isTeacher){ %>
+                            <li><a href="/lessons-teacher/">
+                                    <%= __('header.lessons') %>
+                                </a></li>
+                        <% }else{ %>
+                            <li><a href="/lessons/">
+                                    <%= __('header.lessons') %>
+                                </a></li>
+                        <% } %>
+
                         <li><a href="/lessons/">
                                 <%= __('header.lessons') %>
                             </a></li>
