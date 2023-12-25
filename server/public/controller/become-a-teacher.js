@@ -1,4 +1,3 @@
-var stripe = Stripe(STRIPE_PUBLIC_KEY);
 var urlVars = getUrlVars();
 
 if (Object.keys(urlVars).includes("cp")) {
@@ -85,21 +84,4 @@ async function onClickRegister(token) {
         console.log(error);
         showErrorMessage($.i18n("_bstr.register.error.defaulterror"));
     }
-}
-
-async function pay() {
-    var session = await r('payment/stripe/createTutorSignupPayment', {
-        currency: i18n_currency,
-    });
-
-    if (session.status != undefined) {
-        if (session.status == "error") {
-            alert($.i18n('_bstr.balance.error.general'));
-            return;
-        }
-    }
-
-    await stripe.redirectToCheckout({
-        sessionId: session.id
-    });
 }
