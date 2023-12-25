@@ -77,10 +77,12 @@ async function onClickRegister(token) {
                 showErrorMessage($.i18n("_bstr.register.error.invalid-name"));
                 break;
             default:
+                console.log(response);
                 showErrorMessage($.i18n("_bstr.register.error.defaulterror"));
                 break;
         }
     } catch (error) {
+        console.log(error);
         showErrorMessage($.i18n("_bstr.register.error.defaulterror"));
     }
 }
